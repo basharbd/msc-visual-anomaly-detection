@@ -218,3 +218,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+
+# Thesis datasets
+data/
+datasets/
+
+# Model checkpoints and weights
+checkpoints/
+models/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Generated outputs
+outputs/
+wandb/
+runs/
+
+# Local environment and system files
+.env
+.DS_Store
