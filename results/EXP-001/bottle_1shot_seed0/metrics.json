@@ -1,0 +1,20 @@
+{
+  "experiment": "EXP-001",
+  "category": "bottle",
+  "model": "dinov2_vits14",
+  "resolution": 448,
+  "shots": 1,
+  "seed": 0,
+  "preprocess": "agnostic",
+  "rotation": true,
+  "masking": false,
+  "faiss_on_cpu": true,
+  "reference_image": "000.png",
+  "dataset_revision": "c75b39616f84db43677bcc8228caaafaf5096d7f",
+  "checkpoint_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+  "test_images": 83,
+  "normal_images": 20,
+  "anomalous_images": 63,
+  "image_auroc": 0.9984126984126984,
+  "memory_bank_seconds": 2.08852219581604
+}

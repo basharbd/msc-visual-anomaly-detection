@@ -241,3 +241,9 @@ runs/
 # Local environment and system files
 .env
 .DS_Store
+
+# HPC scheduler logs
+/logs/
+
+# Generated experiment outputs (add selected results explicitly)
+/results/

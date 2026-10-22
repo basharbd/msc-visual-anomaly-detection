@@ -1,0 +1,28 @@
+#!/bin/bash
+#BSUB -q gpua100
+#BSUB -J EXP001_Bottle
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -W 01:00
+#BSUB -oo logs/exp001_%J.out
+#BSUB -eo logs/exp001_%J.err
+
+set -euo pipefail
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+cd "$HOME/msc-visual-anomaly-detection"
+
+export MPLBACKEND=Agg
+
+echo "=== EXP-001 ==="
+echo "Date: $(date -Is)"
+echo "Node: $(hostname)"
+echo "AnomalyDINO commit:"
+git -C third_party/AnomalyDINO rev-parse HEAD
+
+nvidia-smi
+
+python -u scripts/exp001_bottle.py
