@@ -1,0 +1,20 @@
+#!/bin/bash
+#BSUB -q hpc
+#BSUB -J mvtec_extract
+#BSUB -n 1
+#BSUB -R "rusage[mem=2GB]"
+#BSUB -W 02:00
+#BSUB -oo logs/mvtec_extract_%J.out
+
+set -euo pipefail
+
+ARCHIVE=/work3/s183356/datasets/mvtec_anomaly_detection.tar.xz
+TARGET=/work3/s183356/datasets/mvtec_official
+
+mkdir -p "$TARGET"
+
+tar -xJf "$ARCHIVE" -C "$TARGET" \
+  --no-same-owner --no-same-permissions
+
+echo "MVTec EXTRACTION FINISHED"
+du -sh "$TARGET"

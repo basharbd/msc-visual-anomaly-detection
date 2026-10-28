@@ -1,0 +1,13 @@
+#!/bin/bash
+#BSUB -q hpc
+#BSUB -J mvtec_xz_verify
+#BSUB -n 1
+#BSUB -R "rusage[mem=2GB]"
+#BSUB -W 02:00
+#BSUB -oo logs/mvtec_xz_%J.out
+
+set -euo pipefail
+
+xz -t /work3/s183356/datasets/mvtec_anomaly_detection.tar.xz
+
+echo "MVTec XZ INTEGRITY PASSED"
