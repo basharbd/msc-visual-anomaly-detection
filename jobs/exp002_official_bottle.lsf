@@ -1,0 +1,34 @@
+#!/bin/bash
+#BSUB -J EXP002_Bottle
+#BSUB -q gpua100
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -W 01:00
+#BSUB -o logs/exp002_official_bottle_%J.out
+#BSUB -e logs/exp002_official_bottle_%J.err
+
+set -euo pipefail
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+
+echo "=== EXP-002 OFFICIAL BOTTLE PILOT ==="
+echo "Job ID: ${LSB_JOBID:-unknown}"
+echo "Host: $(hostname)"
+echo "Python: $(python --version)"
+echo "Git commit: $(git rev-parse HEAD)"
+
+nvidia-smi
+
+if [ -e results/EXP-002/official_bottle_1shot_seed0 ]; then
+    echo "ERROR: EXP-002 output already exists."
+    exit 1
+fi
+
+python -u scripts/exp002_official_bottle.py
+
+echo "=== EXP-002 JOB COMPLETED ==="

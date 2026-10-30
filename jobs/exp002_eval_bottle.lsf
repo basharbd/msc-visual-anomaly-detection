@@ -1,0 +1,37 @@
+#!/bin/bash
+#BSUB -J EXP002_Eval
+#BSUB -q hpc
+#BSUB -n 1
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=32GB]"
+#BSUB -W 02:00
+#BSUB -o logs/exp002_eval_bottle_%J.out
+#BSUB -e logs/exp002_eval_bottle_%J.err
+
+set -euo pipefail
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+
+echo "=== EXP-002 CPU EVALUATION ==="
+echo "Job ID: ${LSB_JOBID:-unknown}"
+echo "Host: $(hostname)"
+echo "Python: $(python --version)"
+
+RESULTS="results/EXP-002/official_bottle_1shot_seed0"
+
+if [ ! -f "$RESULTS/metrics.json" ]; then
+    echo "ERROR: EXP-002 inference has not completed."
+    exit 1
+fi
+
+if [ -e "$RESULTS/evaluation_metrics.json" ]; then
+    echo "ERROR: Evaluation results already exist."
+    exit 1
+fi
+
+python -u scripts/exp002_eval_bottle.py
+
+echo "=== EXP-002 CPU EVALUATION COMPLETED ==="

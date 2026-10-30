@@ -1,0 +1,49 @@
+#!/bin/bash
+#BSUB -q gpua100
+#BSUB -J P04_GPU_Check
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -W 00:10
+#BSUB -oo logs/phase04_gpu_%J.out
+#BSUB -eo logs/phase04_gpu_%J.err
+
+set -euo pipefail
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+echo "=== PHASE 04 GPU VERIFICATION ==="
+echo "Date: $(date -Is)"
+echo "Node: $(hostname)"
+
+nvidia-smi
+
+python - <<'PY'
+import sys
+import torch
+import faiss
+
+print("Python:", sys.version.split()[0])
+print("PyTorch:", torch.__version__)
+print("CUDA build:", torch.version.cuda)
+print("FAISS:", faiss.__version__)
+
+assert torch.cuda.is_available(), "CUDA unavailable"
+assert torch.cuda.device_count() >= 1, "No GPU detected"
+
+device = torch.device("cuda:0")
+print("GPU:", torch.cuda.get_device_name(0))
+
+a = torch.randn(256, 256, device=device)
+b = a @ a
+torch.cuda.synchronize()
+
+assert torch.isfinite(b).all().item()
+
+print("GPU COMPUTATION: PASSED")
+print("PHASE 04 GPU CHECK: PASSED")
+PY
