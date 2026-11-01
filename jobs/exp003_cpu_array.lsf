@@ -1,0 +1,57 @@
+#!/bin/bash
+#BSUB -J "EXP003_CPU[1-43]%1"
+#BSUB -q hpc
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=16GB]"
+#BSUB -W 02:00
+#BSUB -o logs/exp003_cpu_%J_%I.out
+#BSUB -e logs/exp003_cpu_%J_%I.err
+
+set -euo pipefail
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+
+MANIFEST="protocols/exp003_remaining_runs.tsv"
+
+test "$(wc -l < "$MANIFEST")" -eq 43
+[[ "${LSB_JOBINDEX:-}" =~ ^[0-9]+$ ]]
+test "$LSB_JOBINDEX" -ge 1
+test "$LSB_JOBINDEX" -le 43
+
+TASK=$(sed -n "${LSB_JOBINDEX}p" "$MANIFEST")
+IFS=$'\t' read -r CATEGORY SEED <<< "$TASK"
+
+test -n "$CATEGORY"
+[[ "$SEED" =~ ^[012]$ ]]
+
+OUTPUT="results/EXP-003/${CATEGORY}_1shot_seed${SEED}"
+WORK="/work3/s183356/exp003_eval_workspaces/${CATEGORY}_1shot_seed${SEED}"
+
+echo "=== EXP-003 CPU ARRAY TASK ==="
+echo "Array index: $LSB_JOBINDEX"
+echo "Category: $CATEGORY"
+echo "Seed: $SEED"
+echo "Host: $(hostname)"
+echo "Git commit: $(git rev-parse HEAD)"
+
+# Require completed GPU inference.
+if [ ! -f "$OUTPUT/run_complete.json" ]; then
+    echo "ERROR: GPU inference not completed."
+    exit 1
+fi
+
+# Protect completed or interrupted evaluations.
+if [ -e "$OUTPUT/evaluation_metrics.json" ] || [ -e "$WORK" ]; then
+    echo "ERROR: Evaluation results or workspace already exist."
+    exit 1
+fi
+
+python -u scripts/exp003_eval_category.py \
+    --category "$CATEGORY" \
+    --seed "$SEED"
+
+echo "=== EXP-003 CPU ARRAY TASK COMPLETED ==="

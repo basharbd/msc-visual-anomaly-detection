@@ -1,0 +1,40 @@
+{
+  "experiment": "EXP-003",
+  "protocol": "ADINO-MVTEC-P01",
+  "aggregation": "Equal-weight category macro average; three deterministic reference seeds",
+  "sd_definition": "Sample and population SD across three dataset-wide seed macro means",
+  "categories": 15,
+  "runs": 45,
+  "metrics": {
+    "image_auroc": {
+      "macro_mean": 0.9651921988152378,
+      "seed_sd_sample": 0.004890277291857088,
+      "seed_sd_population": 0.003992894688589812
+    },
+    "image_ap": {
+      "macro_mean": 0.9814499823382499,
+      "seed_sd_sample": 0.0031045803116448853,
+      "seed_sd_population": 0.002534879209673583
+    },
+    "image_f1max": {
+      "macro_mean": 0.9595650829872951,
+      "seed_sd_sample": 0.002650471919021785,
+      "seed_sd_population": 0.002164101259726236
+    },
+    "pixel_auroc": {
+      "macro_mean": 0.9626194288763742,
+      "seed_sd_sample": 0.0017698207260870896,
+      "seed_sd_population": 0.0014450525717051342
+    },
+    "pixel_f1max": {
+      "macro_mean": 0.5793947989731802,
+      "seed_sd_sample": 0.009549175803530863,
+      "seed_sd_population": 0.007796869394260722
+    },
+    "pixel_aupro": {
+      "macro_mean": 0.9172033899353706,
+      "seed_sd_sample": 0.0007738017308482548,
+      "seed_sd_population": 0.0006318064675535565
+    }
+  }
+}

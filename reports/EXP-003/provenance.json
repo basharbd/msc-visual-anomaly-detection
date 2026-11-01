@@ -1,0 +1,89 @@
+{
+  "experiments": 45,
+  "categories": 15,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "validated_map_paths": 5175,
+  "metric_boundary_tolerance": 1e-12,
+  "floating_point_boundary_cases": [
+    [
+      "leather",
+      0,
+      "image_ap",
+      1.0000000000000002
+    ],
+    [
+      "leather",
+      1,
+      "image_ap",
+      1.0000000000000002
+    ],
+    [
+      "leather",
+      2,
+      "image_ap",
+      1.0000000000000002
+    ]
+  ],
+  "configurations": {
+    "protocol": [
+      "ADINO-MVTEC-P01"
+    ],
+    "model": [
+      "dinov2_vits14"
+    ],
+    "shots": [
+      "1"
+    ],
+    "resolution": [
+      "448"
+    ],
+    "preprocessing": [
+      "agnostic"
+    ],
+    "rotation": [
+      "True"
+    ],
+    "masking": [
+      "False",
+      "True"
+    ],
+    "knn_metric": [
+      "L2_normalized"
+    ],
+    "knn_neighbors": [
+      "1"
+    ],
+    "checkpoint_sha256": [
+      "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9"
+    ],
+    "dinov2_source_fingerprint": [
+      "fabaa1cb43240673152198284e8cf911268e7d3a0b2214ede94527774e15f5dc"
+    ],
+    "upstream_commit": [
+      "b9d1c2648e3a5247437d4d953d907a8f3d994457"
+    ],
+    "thesis_commit": [
+      "561c1674bd1f75be5a78f988b6b4dc63223a8df6",
+      "a9f4320704946256c66a3d640c52f48236f8f650",
+      "f11d108c7446969bfab3407a49d09e55e1fafd7f"
+    ],
+    "python_version": [
+      "3.11.13"
+    ],
+    "torch_version": [
+      "2.5.1+cu121"
+    ]
+  },
+  "source_sha256": {
+    "protocols/adino_mvtec_1shot_448_references.json": "f96909d3797b6578f55d55f426f28fa54d41189f9fd3d64c1dfb501d048cc382",
+    "protocols/exp003_remaining_runs.tsv": "93afb6a11935f93ea0d7d84aa3ddea08c8a4411160127b7b2a922d4147a428db",
+    "scripts/exp003_full_baseline.py": "edbda029f55f44984f3fe2c0a10a1f325f25c18f41fdcd32acd55b6bdea82ef2",
+    "scripts/exp003_eval_category.py": "451120634b3659652cf1aabb9ff3ced2321bf34c5a6f2194e57c265d4910548d",
+    "jobs/exp003_gpu_array.lsf": "8599217905de3801e291ddfe66452e2a56043026bab3e36ae12582228fe3c939",
+    "jobs/exp003_cpu_array.lsf": "775b73471e3836882e7f98bb63c209c6ec961b630d07ab55ba5cc0c5a1a9b286"
+  }
+}
