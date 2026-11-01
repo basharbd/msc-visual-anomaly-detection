@@ -1,0 +1,58 @@
+#!/bin/bash
+#BSUB -J "EXP003_GPU[1-43]%2"
+#BSUB -q gpua100
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -W 01:00
+#BSUB -o logs/exp003_gpu_%J_%I.out
+#BSUB -e logs/exp003_gpu_%J_%I.err
+
+set -euo pipefail
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+
+MANIFEST="protocols/exp003_remaining_runs.tsv"
+
+# Refuse to run if the task manifest changed in length.
+test "$(wc -l < "$MANIFEST")" -eq 43
+
+# Each LSF array index selects exactly one manifest row.
+TASK=$(sed -n "${LSB_JOBINDEX}p" "$MANIFEST")
+IFS=$'\t' read -r CATEGORY SEED <<< "$TASK"
+
+test -n "$CATEGORY"
+[[ "$SEED" =~ ^[012]$ ]]
+
+OUTPUT="results/EXP-003/${CATEGORY}_1shot_seed${SEED}"
+
+echo "=== EXP-003 GPU ARRAY TASK ==="
+echo "Array index: $LSB_JOBINDEX"
+echo "Category: $CATEGORY"
+echo "Seed: $SEED"
+echo "Host: $(hostname)"
+echo "Git commit: $(git rev-parse HEAD)"
+
+# Never overwrite an existing experiment.
+if [ -e "$OUTPUT" ]; then
+    echo "ERROR: Existing output: $OUTPUT"
+    exit 1
+fi
+
+# Verify reference, model and dataset before GPU inference.
+python -u scripts/exp003_full_baseline.py \
+    --category "$CATEGORY" \
+    --seed "$SEED" \
+    --preflight
+
+nvidia-smi
+
+python -u scripts/exp003_full_baseline.py \
+    --category "$CATEGORY" \
+    --seed "$SEED"
+
+echo "=== EXP-003 ARRAY TASK COMPLETED ==="
