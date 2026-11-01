@@ -1,0 +1,36 @@
+#!/bin/bash
+#BSUB -J EXP003_Eval_Bottle
+#BSUB -q hpc
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -W 01:00
+#BSUB -o logs/exp003_eval_bottle_%J.out
+#BSUB -e logs/exp003_eval_bottle_%J.err
+
+set -euo pipefail
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+
+echo "=== EXP-003 CPU EVALUATION ==="
+echo "Job ID: ${LSB_JOBID:-unknown}"
+echo "Host: $(hostname)"
+echo "Python: $(python --version)"
+echo "Git commit: $(git rev-parse HEAD)"
+
+if [ -e results/EXP-003/bottle_1shot_seed0/evaluation_metrics.json ]; then
+    echo "ERROR: EXP-003 evaluation already exists."
+    exit 1
+fi
+
+if [ -e results/EXP-003_eval_workspaces/bottle_1shot_seed0 ]; then
+    echo "ERROR: Evaluation workspace already exists."
+    exit 1
+fi
+
+python -u scripts/exp003_eval_bottle.py
+
+echo "=== EXP-003 CPU EVALUATION JOB COMPLETED ==="
