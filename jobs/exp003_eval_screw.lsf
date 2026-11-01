@@ -1,0 +1,38 @@
+#!/bin/bash
+#BSUB -J EXP003_Eval_Screw
+#BSUB -q hpc
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=16GB]"
+#BSUB -W 02:00
+#BSUB -o logs/exp003_eval_screw_%J.out
+#BSUB -e logs/exp003_eval_screw_%J.err
+
+set -euo pipefail
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+
+echo "=== EXP-003 SCREW CPU EVALUATION ==="
+echo "Job ID: ${LSB_JOBID:-unknown}"
+echo "Host: $(hostname)"
+echo "Python: $(python --version)"
+echo "Git commit: $(git rev-parse HEAD)"
+
+if [ -e results/EXP-003/screw_1shot_seed0/evaluation_metrics.json ]; then
+    echo "ERROR: Screw evaluation already completed."
+    exit 1
+fi
+
+if [ -e /work3/s183356/exp003_eval_workspaces/screw_1shot_seed0 ]; then
+    echo "ERROR: Screw evaluation workspace already exists."
+    exit 1
+fi
+
+python -u scripts/exp003_eval_category.py \
+    --category screw \
+    --seed 0
+
+echo "=== EXP-003 SCREW CPU EVALUATION COMPLETED ==="
