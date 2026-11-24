@@ -1,0 +1,19 @@
+#!/bin/bash
+#BSUB -J lighting_blur_identity
+#BSUB -q gpua100
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -W 01:00
+#BSUB -o logs/lighting_blur_identity_%J.out
+#BSUB -e logs/lighting_blur_identity_%J.err
+
+set -euo pipefail
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+
+python -u scripts/run_baseline.py --category bottle --seed 0 --condition original

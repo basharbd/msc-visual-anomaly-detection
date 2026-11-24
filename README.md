@@ -8,7 +8,7 @@ DTU MSc thesis in Human-Centered Artificial Intelligence. This project studies h
 | --- | --- | --- |
 | Bottle smoke test | Can the pipeline score and rank the 83 Bottle test images? | [Run record](research_logs/bottle_smoke_test.md) · [Predictions](results/bottle_smoke_test/bottle_1shot_seed0/predictions.csv) |
 | Baseline reproduction | How well does one-shot AnomalyDINO perform on the original MVTec AD benchmark? | [Summary](reports/baseline_reproduction/summary.json) · [Category results](reports/baseline_reproduction/per_category.csv) · [All runs](reports/baseline_reproduction/per_run.csv) |
-| Lighting and blur robustness | How do controlled changes to test images affect detection and localization with the reference fixed? | Planned |
+| Lighting and blur robustness | How do controlled changes to test images affect detection and localization with the reference fixed? | [Pilot protocol](protocols/lighting_blur.md) · identity check pending |
 
 ## Baseline results
 

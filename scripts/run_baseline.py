@@ -1,5 +1,6 @@
 import argparse
 import csv
+from contextlib import nullcontext
 import hashlib
 import json
 import os
@@ -10,6 +11,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from lighting_blur import CONDITIONS, study_data
 from result_paths import result_directory
 
 import numpy as np
@@ -78,6 +80,7 @@ def main():
         choices=(0, 1, 2)
     )
     parser.add_argument("--preflight", action="store_true")
+    parser.add_argument("--condition", choices=CONDITIONS, help="Run the lighting and blur study")
     args = parser.parse_args()
 
     category = args.category
@@ -87,6 +90,10 @@ def main():
         result_directory(ROOT, "baseline_reproduction")
         / f"{category}_1shot_seed{seed}"
     )
+
+    baseline_output = output
+    if args.condition:
+        output = ROOT / "results/lighting_blur" / args.condition / output.name
 
     assert not output.exists(), (
         f"Output already exists; refusing overwrite: {output}"
@@ -150,7 +157,7 @@ def main():
     )
     assert set(objects) == set(EXPECTED_COUNTS)
 
-    print("Experiment: baseline_reproduction", flush=True)
+    print("Study:", "lighting_blur" if args.condition else "baseline_reproduction", flush=True)
     print("Category:", category, flush=True)
     print("Seed:", seed, flush=True)
     print("Reference:", reference, flush=True)
@@ -180,24 +187,27 @@ def main():
         for name, types in anomalies.items()
     }
 
-    scores, memory_time, inference_times = run_anomaly_detection(
-        model=model,
-        object_name=category,
-        data_root=str(DATA),
-        n_ref_samples=1,
-        object_anomalies=fresh_anomalies,
-        plots_dir=str(output),
-        save_examples=False,
-        masking=masking[category],
-        mask_ref_images=False,
-        rotation=rotation[category],
-        knn_metric="L2_normalized",
-        knn_neighbors=1,
-        faiss_on_cpu=True,
-        seed=seed,
-        save_patch_dists=True,
-        save_tiffs=False,
-    )
+    inputs = (study_data(DATA, category, args.condition, model.transform.transforms[0])
+              if args.condition else nullcontext(DATA))
+    with inputs as input_root:
+        scores, memory_time, inference_times = run_anomaly_detection(
+            model=model,
+            object_name=category,
+            data_root=str(input_root),
+            n_ref_samples=1,
+            object_anomalies=fresh_anomalies,
+            plots_dir=str(output),
+            save_examples=False,
+            masking=masking[category],
+            mask_ref_images=False,
+            rotation=rotation[category],
+            knn_metric="L2_normalized",
+            knn_neighbors=1,
+            faiss_on_cpu=True,
+            seed=seed,
+            save_patch_dists=True,
+            save_tiffs=False,
+        )
 
     assert set(scores) == expected_keys
     assert set(inference_times) == expected_keys
@@ -285,6 +295,32 @@ def main():
         "memory_bank_seconds": float(memory_time),
         "pixel_metrics": "PENDING_CPU_EVALUATION",
     }
+
+    if args.condition:
+        result.update(experiment="lighting_blur", condition=args.condition,
+                      transform_sha256=sha256(ROOT / "scripts/lighting_blur.py"))
+        if args.condition == "original":
+            with (baseline_output / "predictions.csv").open(newline="") as stream:
+                archived_rows = list(csv.DictReader(stream))
+            archived = {r["image"]: r for r in archived_rows}
+            if len(archived_rows) != len(paths) or set(archived) != set(paths):
+                raise ValueError("Archived and current test image sets differ")
+            errors = []
+            for key, label, value in zip(paths, labels, values):
+                if int(archived[key]["label"]) != label:
+                    raise ValueError(f"Label mismatch: {key}")
+                errors.append(abs(value - float(archived[key]["anomaly_score"])))
+            if not np.all(np.asarray(errors) <= 1e-6):
+                raise ValueError("Original-image scores exceed the baseline tolerance")
+            for path in npy_files:
+                prior = baseline_output / path.relative_to(output)
+                original = np.load(prior, allow_pickle=False)
+                current = np.load(path, allow_pickle=False)
+                if original.shape != current.shape or not np.allclose(original, current, atol=1e-6, rtol=0):
+                    raise ValueError(f"Original-image map mismatch: {prior}")
+            result.update(identity_check="passed", max_score_error=max(errors),
+                          maps_compared=len(npy_files),
+                          baseline_record_sha256=sha256(baseline_output / "run_complete.json"))
 
     temporary = output / "run_complete.json.tmp"
     temporary.write_text(json.dumps(result, indent=2) + "\n")
