@@ -2,15 +2,14 @@
 
 DTU MSc thesis in Human-Centered Artificial Intelligence. This project studies how vision foundation models detect defective products and localize defects when few normal reference images are available.
 
-## Studies
+## Explore the notebooks
 
-[Lighting and Blur Robustness](notebooks/lighting_and_blur_robustness.ipynb) — An executed one-shot MVTec AD bottle pilot comparing image-level scores across five conditions, with a visual comparison of anomaly maps.
-
-| Study | Research question | Evidence |
-| --- | --- | --- |
-| Bottle smoke test | Can the pipeline score and rank the 83 Bottle test images? | [Run record](research_logs/bottle_smoke_test.md) · [Predictions](results/bottle_smoke_test/bottle_1shot_seed0/predictions.csv) |
-| Baseline reproduction | How well does one-shot AnomalyDINO perform on the original MVTec AD benchmark? | [Summary](reports/baseline_reproduction/summary.json) · [Category results](reports/baseline_reproduction/per_category.csv) · [All runs](reports/baseline_reproduction/per_run.csv) |
-| Lighting and blur robustness | How do controlled changes to test images affect detection and localization with the reference fixed? | [Pilot protocol](protocols/lighting_blur.md) · identity check pending |
+| Notebook | What to look for |
+| --- | --- |
+| [Dataset Exploration](notebooks/dataset_exploration.ipynb) | Verified splits, mask pairing, and a normal reference alongside a defective test image and its mask. |
+| [Baseline Setup and Smoke Test](notebooks/baseline_setup_and_smoke_test.ipynb) | The first bottle run, recomputed image AUROC, and the normal/defective pairs that overlap. |
+| [Baseline Reproduction](notebooks/baseline_reproduction.ipynb) | All 45 clean runs, category variation, and the six macro means compared with the matched published setting. |
+| [Lighting and Blur Robustness](notebooks/lighting_and_blur_robustness.ipynb) | Executed image-level bottle pilot. See the [pilot localization results](reports/lighting_blur/bottle_seed0_pilot.csv) and [full-study protocol](protocols/lighting_blur.md). |
 
 ## Baseline results
 
