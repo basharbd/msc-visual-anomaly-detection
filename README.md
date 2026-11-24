@@ -4,6 +4,8 @@ DTU MSc thesis in Human-Centered Artificial Intelligence. This project studies h
 
 ## Studies
 
+[Lighting and Blur Robustness](notebooks/lighting_and_blur_robustness.ipynb) — An executed one-shot MVTec AD bottle pilot comparing image-level scores across five conditions, with a visual comparison of anomaly maps.
+
 | Study | Research question | Evidence |
 | --- | --- | --- |
 | Bottle smoke test | Can the pipeline score and rank the 83 Bottle test images? | [Run record](research_logs/bottle_smoke_test.md) · [Predictions](results/bottle_smoke_test/bottle_1shot_seed0/predictions.csv) |
