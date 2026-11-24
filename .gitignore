@@ -78,6 +78,7 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+/notebooks/*.bundle
 
 # IPython
 profile_default/
@@ -238,8 +239,7 @@ outputs/
 wandb/
 runs/
 
-# Local environment and system files
-.env
+# macOS system files
 .DS_Store
 
 # HPC scheduler logs
