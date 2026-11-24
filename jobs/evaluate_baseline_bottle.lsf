@@ -1,0 +1,37 @@
+#!/bin/bash
+#BSUB -J baseline_reproduction_Eval_Bottle
+#BSUB -q hpc
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -W 01:00
+#BSUB -o logs/evaluate_baseline_bottle_%J.out
+#BSUB -e logs/evaluate_baseline_bottle_%J.err
+
+set -euo pipefail
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+BASELINE_REPRODUCTION_DIR=$(python scripts/result_paths.py baseline_reproduction)
+
+echo "=== baseline_reproduction CPU EVALUATION ==="
+echo "Job ID: ${LSB_JOBID:-unknown}"
+echo "Host: $(hostname)"
+echo "Python: $(python --version)"
+echo "Git commit: $(git rev-parse HEAD)"
+
+if [ -e "$BASELINE_REPRODUCTION_DIR/bottle_1shot_seed0/evaluation_metrics.json" ]; then
+    echo "ERROR: baseline_reproduction evaluation already exists."
+    exit 1
+fi
+
+if [ -e results/EXP-003_eval_workspaces/bottle_1shot_seed0 ]; then
+    echo "ERROR: Evaluation workspace already exists."
+    exit 1
+fi
+
+python -u scripts/evaluate_baseline_bottle.py
+
+echo "=== baseline_reproduction CPU EVALUATION JOB COMPLETED ==="

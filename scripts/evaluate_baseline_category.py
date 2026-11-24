@@ -5,6 +5,8 @@ import resource
 import sys
 from pathlib import Path
 
+from result_paths import result_directory
+
 import numpy as np
 import tifffile
 from PIL import Image
@@ -44,7 +46,7 @@ def main():
     seed = args.seed
 
     output = (
-        ROOT / "results/EXP-003"
+        result_directory(ROOT, "baseline_reproduction")
         / f"{category}_1shot_seed{seed}"
     )
     source = (
@@ -63,7 +65,7 @@ def main():
 
     inference = json.loads(inference_path.read_text())
 
-    assert inference["experiment"] == "EXP-003"
+    assert inference["experiment"] in {"baseline_reproduction", "EXP-003"}
     assert inference["status"] == "INFERENCE_COMPLETED"
     assert inference["category"] == category
     assert inference["seed"] == seed
@@ -97,7 +99,7 @@ def main():
     assert normal_count == inference["normal_images"]
     assert anomalous_count == inference["anomalous_images"]
 
-    print("=== EXP-003 CPU EVALUATION ===", flush=True)
+    print("=== baseline_reproduction CPU EVALUATION ===", flush=True)
     print("Category:", category, flush=True)
     print("Seed:", seed, flush=True)
     print("Images:", len(files), flush=True)
@@ -195,7 +197,7 @@ def main():
     )
 
     record = {
-        "experiment": "EXP-003",
+        "experiment": "baseline_reproduction",
         "protocol": "ADINO-MVTEC-P01",
         "category": category,
         "seed": seed,
@@ -221,7 +223,7 @@ def main():
         print(f"{name}: {value:.12f}", flush=True)
 
     print("Peak Python RSS MiB:", peak_rss_mib, flush=True)
-    print("EXP-003 CATEGORY EVALUATION: PASSED", flush=True)
+    print("baseline_reproduction CATEGORY EVALUATION: PASSED", flush=True)
 
 
 if __name__ == "__main__":

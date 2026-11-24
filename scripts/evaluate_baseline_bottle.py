@@ -4,6 +4,8 @@ import resource
 import sys
 from pathlib import Path
 
+from result_paths import result_directory
+
 import numpy as np
 import tifffile
 from PIL import Image
@@ -11,8 +13,8 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 DATA = Path("/work3/s183356/datasets/mvtec_official")
 
-NEW = ROOT / "results/EXP-003/bottle_1shot_seed0"
-OLD = ROOT / "results/EXP-002/official_bottle_1shot_seed0"
+NEW = result_directory(ROOT, "baseline_reproduction") / "bottle_1shot_seed0"
+OLD = result_directory(ROOT, "official_bottle_pilot") / "official_bottle_1shot_seed0"
 
 WORK = ROOT / "results/EXP-003_eval_workspaces/bottle_1shot_seed0"
 MAPS = WORK / "anomaly_maps/seed=0"
@@ -30,10 +32,10 @@ from src.post_eval import (
 
 def main():
     assert (NEW / "run_complete.json").is_file(), (
-        "EXP-003 inference has not completed"
+        "baseline_reproduction inference has not completed"
     )
     assert not RESULT.exists(), (
-        "EXP-003 evaluation result already exists"
+        "baseline_reproduction evaluation result already exists"
     )
     assert not WORK.exists(), (
         "Evaluation workspace already exists; refusing overwrite"
@@ -42,7 +44,7 @@ def main():
     inference = json.loads(
         (NEW / "run_complete.json").read_text()
     )
-    assert inference["experiment"] == "EXP-003"
+    assert inference["experiment"] in {"baseline_reproduction", "EXP-003"}
     assert inference["category"] == "bottle"
     assert inference["seed"] == 0
     assert inference["test_images"] == 83
@@ -63,7 +65,7 @@ def main():
     }
     assert actual == expected, "Prediction pairing mismatch"
 
-    print("=== EXP-003 CPU EVALUATION ===", flush=True)
+    print("=== baseline_reproduction CPU EVALUATION ===", flush=True)
     print("Original inference:", NEW, flush=True)
     print("Isolated workspace:", WORK, flush=True)
     print("Predictions:", len(files), flush=True)
@@ -149,15 +151,15 @@ def main():
         (OLD / "evaluation_metrics.json").read_text()
     )
 
-    print("\n=== EXP-002 vs EXP-003 METRICS ===", flush=True)
+    print("\n=== official_bottle_pilot vs baseline_reproduction METRICS ===", flush=True)
 
     for name, value in measured.items():
         previous = float(old_metrics[name])
         difference = abs(value - previous)
 
         print(
-            f"{name}: EXP-002={previous:.12f}, "
-            f"EXP-003={value:.12f}, "
+            f"{name}: official_bottle_pilot={previous:.12f}, "
+            f"baseline_reproduction={value:.12f}, "
             f"difference={difference:.3e}",
             flush=True,
         )
@@ -178,13 +180,13 @@ def main():
     )
 
     result = {
-        "experiment": "EXP-003",
+        "experiment": "baseline_reproduction",
         "category": "bottle",
         "seed": 0,
         "test_images": 83,
         "metrics": measured,
         "pro_fpr_limit": 0.3,
-        "comparison": "EXP-002",
+        "comparison": "official_bottle_pilot",
         "comparison_tolerance": 1e-10,
         "comparison_passed": True,
         "reconstructed_tiff_maps": reconstructed_count,
@@ -197,10 +199,10 @@ def main():
         json.dump(result, handle, indent=2)
         handle.write("\n")
 
-    print("\nALL SIX METRICS: MATCH EXP-002", flush=True)
-    print("EXP-003 CPU EVALUATION: PASSED", flush=True)
+    print("\nALL SIX METRICS: MATCH official_bottle_pilot", flush=True)
+    print("baseline_reproduction CPU EVALUATION: PASSED", flush=True)
     print("Peak Python RSS:", peak_ram_mib, "MiB", flush=True)
-    print("Original EXP-003 predictions preserved.", flush=True)
+    print("Original baseline_reproduction predictions preserved.", flush=True)
 
 
 if __name__ == "__main__":

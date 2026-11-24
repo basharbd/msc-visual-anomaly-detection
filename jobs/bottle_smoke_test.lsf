@@ -1,13 +1,13 @@
 #!/bin/bash
 #BSUB -q gpua100
-#BSUB -J EXP001_Bottle
+#BSUB -J bottle_smoke_test_Bottle
 #BSUB -n 4
 #BSUB -R "span[hosts=1]"
 #BSUB -R "rusage[mem=4GB]"
 #BSUB -gpu "num=1:mode=exclusive_process"
 #BSUB -W 01:00
-#BSUB -oo logs/exp001_%J.out
-#BSUB -eo logs/exp001_%J.err
+#BSUB -oo logs/bottle_smoke_test_%J.out
+#BSUB -eo logs/bottle_smoke_test_%J.err
 
 set -euo pipefail
 
@@ -17,7 +17,7 @@ cd "$HOME/msc-visual-anomaly-detection"
 
 export MPLBACKEND=Agg
 
-echo "=== EXP-001 ==="
+echo "=== bottle_smoke_test ==="
 echo "Date: $(date -Is)"
 echo "Node: $(hostname)"
 echo "AnomalyDINO commit:"
@@ -25,4 +25,4 @@ git -C third_party/AnomalyDINO rev-parse HEAD
 
 nvidia-smi
 
-python -u scripts/exp001_bottle.py
+python -u scripts/bottle_smoke_test.py

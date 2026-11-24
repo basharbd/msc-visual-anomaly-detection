@@ -1,6 +1,8 @@
 import sys
 from pathlib import Path
 
+from result_paths import result_directory
+
 import numpy as np
 import tifffile
 from PIL import Image
@@ -8,7 +10,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 DATA = Path("/work3/s183356/datasets/mvtec_official")
 MAPS = (
-    ROOT / "results/EXP-002/official_bottle_1shot_seed0/"
+    result_directory(ROOT, "official_bottle_pilot") / "official_bottle_1shot_seed0/"
     "anomaly_maps/seed=0/bottle/test"
 )
 

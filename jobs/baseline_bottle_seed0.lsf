@@ -1,0 +1,37 @@
+#!/bin/bash
+#BSUB -J baseline_reproduction_Bottle_S0
+#BSUB -q gpua100
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -W 01:00
+#BSUB -o logs/baseline_bottle_seed0_%J.out
+#BSUB -e logs/baseline_bottle_seed0_%J.err
+
+set -euo pipefail
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+BASELINE_REPRODUCTION_DIR=$(python scripts/result_paths.py baseline_reproduction)
+
+echo "=== baseline_reproduction CONTROLLED GPU PILOT ==="
+echo "Job ID: ${LSB_JOBID:-unknown}"
+echo "Host: $(hostname)"
+echo "Python: $(python --version)"
+echo "Git commit: $(git rev-parse HEAD)"
+
+nvidia-smi
+
+if [ -e "$BASELINE_REPRODUCTION_DIR/bottle_1shot_seed0" ]; then
+    echo "ERROR: baseline_reproduction pilot output already exists."
+    exit 1
+fi
+
+python -u scripts/run_baseline.py \
+    --category bottle \
+    --seed 0
+
+echo "=== baseline_reproduction GPU PILOT COMPLETED ==="

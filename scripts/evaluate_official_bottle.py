@@ -3,11 +3,13 @@ import resource
 import sys
 from pathlib import Path
 
+from result_paths import result_directory
+
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = Path("/work3/s183356/datasets/mvtec_official")
-OUTPUT = ROOT / "results/EXP-002/official_bottle_1shot_seed0"
+OUTPUT = result_directory(ROOT, "official_bottle_pilot") / "official_bottle_1shot_seed0"
 MAPS = OUTPUT / "anomaly_maps/seed=0"
 RESULT = OUTPUT / "evaluation_metrics.json"
 
@@ -21,7 +23,7 @@ from src.post_eval import (
 
 
 def main():
-    assert OUTPUT.is_dir(), "EXP-002 inference outputs not found"
+    assert OUTPUT.is_dir(), "official_bottle_pilot inference outputs not found"
     assert not RESULT.exists(), "Evaluation results already exist"
 
     gt_files, pred_stems = parse_dataset_files(
@@ -47,7 +49,7 @@ def main():
         if gt is not None:
             assert Path(gt).is_file(), gt
 
-    print("EXP-002 prediction pairing: PASSED", flush=True)
+    print("official_bottle_pilot prediction pairing: PASSED", flush=True)
     print("Test images:", len(pred_stems), flush=True)
     print("Normal:", normal_count, flush=True)
     print("Anomalous:", anomaly_count, flush=True)
@@ -79,7 +81,7 @@ def main():
     )
 
     metrics = {
-        "experiment": "EXP-002",
+        "experiment": "official_bottle_pilot",
         "category": "bottle",
         "seed": 0,
         "test_images": len(pred_stems),
@@ -100,7 +102,7 @@ def main():
         json.dump(metrics, f, indent=2)
         f.write("\n")
 
-    print("EXP-002 EVALUATION COMPLETED", flush=True)
+    print("official_bottle_pilot EVALUATION COMPLETED", flush=True)
     print("Metrics saved:", RESULT, flush=True)
     print(f"Peak Python RSS: {peak_ram_mib:.1f} MiB")
 

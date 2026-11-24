@@ -1,12 +1,12 @@
 #!/bin/bash
-#BSUB -J EXP002_Verify
+#BSUB -J official_bottle_pilot_Verify
 #BSUB -q hpc
 #BSUB -n 1
 #BSUB -R "span[hosts=1]"
 #BSUB -R "rusage[mem=4GB]"
 #BSUB -W 00:30
-#BSUB -o logs/exp002_verify_%J.out
-#BSUB -e logs/exp002_verify_%J.err
+#BSUB -o logs/official_bottle_pilot_verify_%J.out
+#BSUB -e logs/official_bottle_pilot_verify_%J.err
 
 set -euo pipefail
 
@@ -15,11 +15,11 @@ cd "$HOME/msc-visual-anomaly-detection"
 module load python3/3.11.13
 source "$HOME/.venvs/vad-py311/bin/activate"
 
-echo "=== EXP-002 FULL RECONSTRUCTION VERIFICATION ==="
+echo "=== official_bottle_pilot FULL RECONSTRUCTION VERIFICATION ==="
 echo "Job ID: ${LSB_JOBID:-unknown}"
 echo "Host: $(hostname)"
 echo "Python: $(python --version)"
 
-python -u scripts/exp002_verify_reconstruction.py
+python -u scripts/verify_bottle_maps.py
 
 echo "=== RECONSTRUCTION JOB COMPLETED ==="

@@ -1,12 +1,14 @@
 import csv
 from pathlib import Path
 
+from result_paths import result_directory
+
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 
-OLD = ROOT / "results/EXP-002/official_bottle_1shot_seed0"
-NEW = ROOT / "results/EXP-003/bottle_1shot_seed0"
+OLD = result_directory(ROOT, "official_bottle_pilot") / "official_bottle_1shot_seed0"
+NEW = result_directory(ROOT, "baseline_reproduction") / "bottle_1shot_seed0"
 
 TOLERANCE = 1e-6
 
@@ -40,7 +42,7 @@ def read_maps(folder):
 def main():
     assert (OLD / "predictions.csv").is_file()
     assert (NEW / "run_complete.json").is_file(), (
-        "EXP-003 inference has not completed"
+        "baseline_reproduction inference has not completed"
     )
 
     old_scores = read_scores(OLD)
@@ -85,7 +87,7 @@ def main():
 
     max_score_error = max(score_errors)
 
-    print("=== EXP-002 vs EXP-003 ===")
+    print("=== official_bottle_pilot vs baseline_reproduction ===")
     print("Image scores compared:", len(score_errors))
     print("Maximum score difference:", max_score_error)
     print("Maps compared:", len(old_maps))

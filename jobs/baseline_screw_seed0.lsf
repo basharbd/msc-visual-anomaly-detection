@@ -1,13 +1,13 @@
 #!/bin/bash
-#BSUB -J EXP003_Screw_S0
+#BSUB -J baseline_reproduction_Screw_S0
 #BSUB -q gpua100
 #BSUB -n 4
 #BSUB -R "span[hosts=1]"
 #BSUB -R "rusage[mem=4GB]"
 #BSUB -gpu "num=1:mode=exclusive_process"
 #BSUB -W 01:00
-#BSUB -o logs/exp003_screw_seed0_%J.out
-#BSUB -e logs/exp003_screw_seed0_%J.err
+#BSUB -o logs/baseline_screw_seed0_%J.out
+#BSUB -e logs/baseline_screw_seed0_%J.err
 
 set -euo pipefail
 
@@ -15,8 +15,9 @@ cd "$HOME/msc-visual-anomaly-detection"
 
 module load python3/3.11.13
 source "$HOME/.venvs/vad-py311/bin/activate"
+BASELINE_REPRODUCTION_DIR=$(python scripts/result_paths.py baseline_reproduction)
 
-echo "=== EXP-003 SCREW GPU PILOT ==="
+echo "=== baseline_reproduction SCREW GPU PILOT ==="
 echo "Job ID: ${LSB_JOBID:-unknown}"
 echo "Host: $(hostname)"
 echo "Python: $(python --version)"
@@ -24,13 +25,13 @@ echo "Git commit: $(git rev-parse HEAD)"
 
 nvidia-smi
 
-if [ -e results/EXP-003/screw_1shot_seed0 ]; then
+if [ -e "$BASELINE_REPRODUCTION_DIR/screw_1shot_seed0" ]; then
     echo "ERROR: Screw output already exists."
     exit 1
 fi
 
-python -u scripts/exp003_full_baseline.py \
+python -u scripts/run_baseline.py \
     --category screw \
     --seed 0
 
-echo "=== EXP-003 SCREW GPU PILOT COMPLETED ==="
+echo "=== baseline_reproduction SCREW GPU PILOT COMPLETED ==="

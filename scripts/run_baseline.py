@@ -10,6 +10,8 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from result_paths import result_directory
+
 import numpy as np
 import torch
 from sklearn.metrics import roc_auc_score
@@ -82,7 +84,7 @@ def main():
     seed = args.seed
 
     output = (
-        ROOT / "results/EXP-003"
+        result_directory(ROOT, "baseline_reproduction")
         / f"{category}_1shot_seed{seed}"
     )
 
@@ -148,7 +150,7 @@ def main():
     )
     assert set(objects) == set(EXPECTED_COUNTS)
 
-    print("Experiment: EXP-003", flush=True)
+    print("Experiment: baseline_reproduction", flush=True)
     print("Category:", category, flush=True)
     print("Seed:", seed, flush=True)
     print("Reference:", reference, flush=True)
@@ -156,7 +158,7 @@ def main():
     print("Output:", output, flush=True)
 
     if args.preflight:
-        print("EXP-003 PREFLIGHT: PASSED", flush=True)
+        print("baseline_reproduction PREFLIGHT: PASSED", flush=True)
         return
 
     assert torch.cuda.is_available(), "CUDA GPU unavailable"
@@ -246,7 +248,7 @@ def main():
     ).strip()
 
     result = {
-        "experiment": "EXP-003",
+        "experiment": "baseline_reproduction",
         "protocol": "ADINO-MVTEC-P01",
         "status": "INFERENCE_COMPLETED",
         "category": category,
@@ -291,7 +293,7 @@ def main():
     print("Image AUROC:", image_auc, flush=True)
     print("NPY maps:", len(npy_files), flush=True)
     print("TIFF maps:", len(tiff_files), flush=True)
-    print("EXP-003 INFERENCE COMPLETED", flush=True)
+    print("baseline_reproduction INFERENCE COMPLETED", flush=True)
 
 
 if __name__ == "__main__":

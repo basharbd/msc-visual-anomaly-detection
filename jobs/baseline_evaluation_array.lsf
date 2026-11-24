@@ -1,12 +1,12 @@
 #!/bin/bash
-#BSUB -J "EXP003_CPU[1-43]%1"
+#BSUB -J "baseline_reproduction_CPU[1-43]%1"
 #BSUB -q hpc
 #BSUB -n 4
 #BSUB -R "span[hosts=1]"
 #BSUB -R "rusage[mem=16GB]"
 #BSUB -W 02:00
-#BSUB -o logs/exp003_cpu_%J_%I.out
-#BSUB -e logs/exp003_cpu_%J_%I.err
+#BSUB -o logs/baseline_reproduction_cpu_%J_%I.out
+#BSUB -e logs/baseline_reproduction_cpu_%J_%I.err
 
 set -euo pipefail
 
@@ -14,8 +14,9 @@ cd "$HOME/msc-visual-anomaly-detection"
 
 module load python3/3.11.13
 source "$HOME/.venvs/vad-py311/bin/activate"
+BASELINE_REPRODUCTION_DIR=$(python scripts/result_paths.py baseline_reproduction)
 
-MANIFEST="protocols/exp003_remaining_runs.tsv"
+MANIFEST="protocols/baseline_remaining_runs.tsv"
 
 test "$(wc -l < "$MANIFEST")" -eq 43
 [[ "${LSB_JOBINDEX:-}" =~ ^[0-9]+$ ]]
@@ -28,10 +29,10 @@ IFS=$'\t' read -r CATEGORY SEED <<< "$TASK"
 test -n "$CATEGORY"
 [[ "$SEED" =~ ^[012]$ ]]
 
-OUTPUT="results/EXP-003/${CATEGORY}_1shot_seed${SEED}"
+OUTPUT="${BASELINE_REPRODUCTION_DIR}/${CATEGORY}_1shot_seed${SEED}"
 WORK="/work3/s183356/exp003_eval_workspaces/${CATEGORY}_1shot_seed${SEED}"
 
-echo "=== EXP-003 CPU ARRAY TASK ==="
+echo "=== baseline_reproduction CPU ARRAY TASK ==="
 echo "Array index: $LSB_JOBINDEX"
 echo "Category: $CATEGORY"
 echo "Seed: $SEED"
@@ -50,8 +51,8 @@ if [ -e "$OUTPUT/evaluation_metrics.json" ] || [ -e "$WORK" ]; then
     exit 1
 fi
 
-python -u scripts/exp003_eval_category.py \
+python -u scripts/evaluate_baseline_category.py \
     --category "$CATEGORY" \
     --seed "$SEED"
 
-echo "=== EXP-003 CPU ARRAY TASK COMPLETED ==="
+echo "=== baseline_reproduction CPU ARRAY TASK COMPLETED ==="

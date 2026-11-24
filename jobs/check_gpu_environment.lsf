@@ -1,13 +1,13 @@
 #!/bin/bash
 #BSUB -q gpua100
-#BSUB -J P04_GPU_Check
+#BSUB -J GPU_Check
 #BSUB -n 4
 #BSUB -R "span[hosts=1]"
 #BSUB -R "rusage[mem=4GB]"
 #BSUB -gpu "num=1:mode=exclusive_process"
 #BSUB -W 00:10
-#BSUB -oo logs/phase04_gpu_%J.out
-#BSUB -eo logs/phase04_gpu_%J.err
+#BSUB -oo logs/gpu_check_%J.out
+#BSUB -eo logs/gpu_check_%J.err
 
 set -euo pipefail
 
@@ -16,7 +16,7 @@ source "$HOME/.venvs/vad-py311/bin/activate"
 
 cd "$HOME/msc-visual-anomaly-detection"
 
-echo "=== PHASE 04 GPU VERIFICATION ==="
+echo "=== GPU VERIFICATION ==="
 echo "Date: $(date -Is)"
 echo "Node: $(hostname)"
 
@@ -45,5 +45,5 @@ torch.cuda.synchronize()
 assert torch.isfinite(b).all().item()
 
 print("GPU COMPUTATION: PASSED")
-print("PHASE 04 GPU CHECK: PASSED")
+print("GPU CHECK: PASSED")
 PY

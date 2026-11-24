@@ -7,13 +7,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+from result_paths import result_directory
+
 import numpy as np
 import torch
 from sklearn.metrics import roc_auc_score
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = Path("/work3/s183356/datasets/mvtec_official")
-OUTPUT = ROOT / "results/EXP-002/official_bottle_1shot_seed0"
+OUTPUT = result_directory(ROOT, "official_bottle_pilot") / "official_bottle_1shot_seed0"
 MANIFEST = ROOT / "protocols/adino_mvtec_1shot_448_references.json"
 
 sys.path.insert(0, str(ROOT / "third_party/AnomalyDINO"))
@@ -98,7 +100,7 @@ def main():
 
     OUTPUT.mkdir(parents=True, exist_ok=False)
 
-    print("Experiment: EXP-002", flush=True)
+    print("Experiment: official_bottle_pilot", flush=True)
     print("Dataset:", DATA, flush=True)
     print("Reference:", reference, flush=True)
 
@@ -144,7 +146,7 @@ def main():
             writer.writerow([path, label, format(score, ".17g")])
 
     result = {
-        "experiment": "EXP-002",
+        "experiment": "official_bottle_pilot",
         "protocol": "ADINO-MVTEC-P01",
         "category": "bottle",
         "dataset_root": str(DATA),
@@ -181,7 +183,7 @@ def main():
     print("NPY maps:", npy_count, flush=True)
     print("TIFF maps:", tiff_count, flush=True)
     print("Results:", OUTPUT, flush=True)
-    print("EXP-002 INFERENCE COMPLETED", flush=True)
+    print("official_bottle_pilot INFERENCE COMPLETED", flush=True)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,35 @@
+#!/bin/bash
+#BSUB -J official_bottle_pilot_Bottle
+#BSUB -q gpua100
+#BSUB -n 4
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=4GB]"
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -W 01:00
+#BSUB -o logs/run_official_bottle_%J.out
+#BSUB -e logs/run_official_bottle_%J.err
+
+set -euo pipefail
+
+cd "$HOME/msc-visual-anomaly-detection"
+
+module load python3/3.11.13
+source "$HOME/.venvs/vad-py311/bin/activate"
+OFFICIAL_BOTTLE_PILOT_DIR=$(python scripts/result_paths.py official_bottle_pilot)
+
+echo "=== official_bottle_pilot OFFICIAL BOTTLE PILOT ==="
+echo "Job ID: ${LSB_JOBID:-unknown}"
+echo "Host: $(hostname)"
+echo "Python: $(python --version)"
+echo "Git commit: $(git rev-parse HEAD)"
+
+nvidia-smi
+
+if [ -e "$OFFICIAL_BOTTLE_PILOT_DIR/official_bottle_1shot_seed0" ]; then
+    echo "ERROR: official_bottle_pilot output already exists."
+    exit 1
+fi
+
+python -u scripts/run_official_bottle.py
+
+echo "=== official_bottle_pilot JOB COMPLETED ==="

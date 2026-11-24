@@ -11,7 +11,7 @@ from sklearn.metrics import roc_auc_score
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data/mvtec_anomaly_detection"
-OUTPUT = ROOT / "results/EXP-001/bottle_1shot_seed0"
+OUTPUT = ROOT / "outputs/bottle_smoke_test/bottle_1shot_seed0"
 
 sys.path.insert(0, str(ROOT / "third_party/AnomalyDINO"))
 
@@ -20,7 +20,7 @@ from src.detection import run_anomaly_detection
 from src.utils import get_dataset_info
 
 def main():
-    OUTPUT.mkdir(parents=True, exist_ok=True)
+    OUTPUT.mkdir(parents=True, exist_ok=False)
 
     random.seed(0)
     np.random.seed(0)
@@ -34,7 +34,7 @@ def main():
 
     reference = sorted((DATA / "bottle/train/good").glob("*.png"))[0]
 
-    print("Experiment: EXP-001", flush=True)
+    print("Experiment: bottle_smoke_test", flush=True)
     print("Category: bottle", flush=True)
     print("Reference:", reference.name, flush=True)
 
@@ -82,7 +82,7 @@ def main():
     )
 
     result = {
-        "experiment": "EXP-001",
+        "experiment": "bottle_smoke_test",
         "category": "bottle",
         "model": "dinov2_vits14",
         "resolution": 448,
@@ -110,7 +110,7 @@ def main():
 
     print("Image-level AUROC:", auc, flush=True)
     print("Results saved to:", OUTPUT, flush=True)
-    print("EXP-001 FINISHED", flush=True)
+    print("bottle_smoke_test FINISHED", flush=True)
 
 if __name__ == "__main__":
     main()

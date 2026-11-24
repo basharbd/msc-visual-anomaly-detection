@@ -1,4 +1,4 @@
-# EXP-001 — AnomalyDINO Bottle Baseline
+# bottle_smoke_test — AnomalyDINO Bottle Baseline
 
 ## Status
 Completed and independently verified on 22 October 2026.
