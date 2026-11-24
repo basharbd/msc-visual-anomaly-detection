@@ -1,0 +1,6 @@
+condition,image_auroc,image_auroc_change_pp,pixel_aupro,pixel_aupro_change_pp
+original,0.998413,0.00000,0.964145,0.000000
+brightness_085,0.998413,0.00000,0.963749,-0.039623
+brightness_070,0.998413,0.00000,0.964298,0.015269
+blur_075,0.998413,0.00000,0.963975,-0.017056
+blur_150,0.993651,-0.47619,0.959816,-0.432887

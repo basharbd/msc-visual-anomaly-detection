@@ -28,3 +28,11 @@ bsub < jobs/lighting_blur_identity.lsf
 ```
 
 The verification record is written to `results/lighting_blur/original/bottle_1shot_seed0/run_complete.json` only after successful comparisons. The job refuses to overwrite an existing output. Keep failed runs for diagnosis.
+
+## Full paired study on DTU
+
+From the repository root, run `bash jobs/submit_lighting_blur.sh` once. The inference array covers the four perturbations for each of the 45 category/reference pairs. Completed inference records are reused. The CPU array reconstructs maps in temporary WORK3 directories and evaluates against the original masks. LSF holds the summary until both arrays succeed. Inspect failed tasks in `logs/lighting_blur_*` before retrying. Partial inference directories are preserved for diagnosis.
+
+The summary reads the matched clean metrics from `reports/baseline_reproduction/per_run.csv`. The output under `reports/lighting_blur/` contains the 180 matched runs, category-level differences averaged across the three references, and the equally weighted macro change in percentage points. The existing executed notebook presents the bottle pilot.
+
+The [bottle seed-0 pilot table](../reports/lighting_blur/bottle_seed0_pilot.csv) transcribes the rounded results displayed by the executed HPC localization cells. The independently recomputed clean AUPRO was 0.964145085146, with zero observed difference from the archived baseline. Only the 1.50-pixel blur lowered both primary metrics in this pilot. The table covers one reference and one category.

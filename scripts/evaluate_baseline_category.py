@@ -3,6 +3,7 @@ import hashlib
 import json
 import resource
 import sys
+from tempfile import TemporaryDirectory
 from pathlib import Path
 
 from result_paths import result_directory
@@ -38,7 +39,16 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--category", required=True)
     parser.add_argument("--seed", type=int, required=True)
+    parser.add_argument("--condition", choices=("brightness_085", "brightness_070", "blur_075", "blur_150"))
     args = parser.parse_args()
+    if args.condition:
+        with TemporaryDirectory(dir=WORK_ROOT.parent, prefix="lighting_blur_eval_") as folder:
+            evaluate(args, Path(folder))
+    else:
+        evaluate(args, WORK_ROOT)
+
+
+def evaluate(args, work_root):
 
     assert args.seed in (0, 1, 2)
 
@@ -49,11 +59,13 @@ def main():
         result_directory(ROOT, "baseline_reproduction")
         / f"{category}_1shot_seed{seed}"
     )
+    if args.condition:
+        output = ROOT / "results/lighting_blur" / args.condition / output.name
     source = (
         output / "anomaly_maps"
         / f"seed={seed}" / category / "test"
     )
-    work = WORK_ROOT / f"{category}_1shot_seed{seed}"
+    work = work_root / f"{category}_1shot_seed{seed}"
     maps = work / "anomaly_maps" / f"seed={seed}"
     result = output / "evaluation_metrics.json"
 
@@ -65,7 +77,10 @@ def main():
 
     inference = json.loads(inference_path.read_text())
 
-    assert inference["experiment"] in {"baseline_reproduction", "EXP-003"}
+    if args.condition:
+        assert inference["experiment"] == "lighting_blur" and inference["condition"] == args.condition
+    else:
+        assert inference["experiment"] in {"baseline_reproduction", "EXP-003"}
     assert inference["status"] == "INFERENCE_COMPLETED"
     assert inference["category"] == category
     assert inference["seed"] == seed
@@ -212,6 +227,10 @@ def main():
         "evaluation_script_sha256": sha256(Path(__file__)),
         "peak_python_rss_mib": peak_rss_mib,
     }
+
+    if args.condition:
+        record.update(experiment="lighting_blur", condition=args.condition,
+                      inference_record_sha256=sha256(inference_path))
 
     # Save only after all checks and metrics succeed.
     with result.open("x") as handle:
