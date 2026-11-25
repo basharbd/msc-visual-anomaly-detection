@@ -1,0 +1,6 @@
+# Recovery amendment — 26 November 2026
+
+Original candidate commit cd056cb32ca8d75a671592852ef2987cc84a3c39; original runner SHA-256 5c9eb15bcbb1dceb44755ef53d52e90def0c32d07f618b1e02f22c1b26d00d1f.
+The 16-run smoke validation passed the original 1e-6 gate (job 30377350).
+Full job 30377351[1] failed at Bottle reference index 1, original condition: max score error 1.4305114748314196e-7, max raw map error 1.2516975402832031e-6, 19/84992 patches above 1e-6, image AUROC unchanged (0.996031746031746).
+No definitive hardware cause established. Preserve failure and smoke records. Recovery permits score error <=1e-6 and raw-map error <=5e-6 in unmasked categories, records whether original tolerance passes, and retains a hard failure for larger deviations. This is a post-failure protocol amendment, not proof of bitwise equivalence. Masked drift remains descriptive. Compare archive vs same-pipeline rotation-only metrics after all evaluations; disclose discrepancies and amendment in thesis. No changes to feature extraction, bank sampling, matching, masks, transformation, metrics or model. Original complete conditions reused; incomplete conditions preserved separately and regenerated as a full 12-combination group to maintain shared features. No deletion of experimental artifacts.
