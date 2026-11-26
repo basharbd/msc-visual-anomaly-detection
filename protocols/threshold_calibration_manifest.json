@@ -1,0 +1,879 @@
+{
+  "protocol": "ADINO-CAL-P01",
+  "n": 40,
+  "rank_1based": 39,
+  "nominal_tail": 0.05,
+  "selection": "First 40 by SHA-256 of CAL-v1|category|filename, excluding all three references",
+  "categories": {
+    "bottle": {
+      "references": {
+        "0": {
+          "path": "bottle/train/good/000.png",
+          "sha256": "8a25eb07475a5102f4823fefd82662dd65f8f2a0a333bf958124ceeee38f0e38"
+        },
+        "1": {
+          "path": "bottle/train/good/001.png",
+          "sha256": "ba13b82fc8c732a02277816521fe93a0fee00c524f2742bbb3feed0a31cda8df"
+        },
+        "2": {
+          "path": "bottle/train/good/002.png",
+          "sha256": "7de0414f1744aaf5cec488928ee3b761509e4bad4f607dc4f6d41ad7862dab69"
+        }
+      },
+      "calibration_paths": [
+        "bottle/train/good/063.png",
+        "bottle/train/good/118.png",
+        "bottle/train/good/081.png",
+        "bottle/train/good/082.png",
+        "bottle/train/good/096.png",
+        "bottle/train/good/173.png",
+        "bottle/train/good/091.png",
+        "bottle/train/good/068.png",
+        "bottle/train/good/061.png",
+        "bottle/train/good/079.png",
+        "bottle/train/good/048.png",
+        "bottle/train/good/201.png",
+        "bottle/train/good/170.png",
+        "bottle/train/good/171.png",
+        "bottle/train/good/031.png",
+        "bottle/train/good/143.png",
+        "bottle/train/good/077.png",
+        "bottle/train/good/085.png",
+        "bottle/train/good/120.png",
+        "bottle/train/good/150.png",
+        "bottle/train/good/200.png",
+        "bottle/train/good/207.png",
+        "bottle/train/good/202.png",
+        "bottle/train/good/135.png",
+        "bottle/train/good/019.png",
+        "bottle/train/good/152.png",
+        "bottle/train/good/180.png",
+        "bottle/train/good/044.png",
+        "bottle/train/good/194.png",
+        "bottle/train/good/208.png",
+        "bottle/train/good/027.png",
+        "bottle/train/good/004.png",
+        "bottle/train/good/055.png",
+        "bottle/train/good/106.png",
+        "bottle/train/good/112.png",
+        "bottle/train/good/023.png",
+        "bottle/train/good/084.png",
+        "bottle/train/good/115.png",
+        "bottle/train/good/093.png",
+        "bottle/train/good/103.png"
+      ]
+    },
+    "cable": {
+      "references": {
+        "0": {
+          "path": "cable/train/good/000.png",
+          "sha256": "7457390d52de2e34f706abcbc1185da287a5dfd90573af23fef6816fa5d7a1aa"
+        },
+        "1": {
+          "path": "cable/train/good/001.png",
+          "sha256": "9cb4ed588400ea96380e37b6b0d659fc68144cb8db832e8fa8869f2f4f989a1b"
+        },
+        "2": {
+          "path": "cable/train/good/002.png",
+          "sha256": "1402284830cf1992d9be60b38c0dda29859670062ce1e1c91aa02dd1808d2d00"
+        }
+      },
+      "calibration_paths": [
+        "cable/train/good/066.png",
+        "cable/train/good/074.png",
+        "cable/train/good/148.png",
+        "cable/train/good/038.png",
+        "cable/train/good/083.png",
+        "cable/train/good/095.png",
+        "cable/train/good/064.png",
+        "cable/train/good/197.png",
+        "cable/train/good/165.png",
+        "cable/train/good/127.png",
+        "cable/train/good/154.png",
+        "cable/train/good/096.png",
+        "cable/train/good/206.png",
+        "cable/train/good/171.png",
+        "cable/train/good/037.png",
+        "cable/train/good/221.png",
+        "cable/train/good/134.png",
+        "cable/train/good/053.png",
+        "cable/train/good/043.png",
+        "cable/train/good/058.png",
+        "cable/train/good/139.png",
+        "cable/train/good/216.png",
+        "cable/train/good/172.png",
+        "cable/train/good/217.png",
+        "cable/train/good/164.png",
+        "cable/train/good/106.png",
+        "cable/train/good/039.png",
+        "cable/train/good/077.png",
+        "cable/train/good/024.png",
+        "cable/train/good/186.png",
+        "cable/train/good/185.png",
+        "cable/train/good/140.png",
+        "cable/train/good/003.png",
+        "cable/train/good/193.png",
+        "cable/train/good/062.png",
+        "cable/train/good/072.png",
+        "cable/train/good/080.png",
+        "cable/train/good/028.png",
+        "cable/train/good/219.png",
+        "cable/train/good/188.png"
+      ]
+    },
+    "capsule": {
+      "references": {
+        "0": {
+          "path": "capsule/train/good/000.png",
+          "sha256": "96a77c1cca9d6efbd4fb487c9113fe775ac0559730131850c6c6523e944611d3"
+        },
+        "1": {
+          "path": "capsule/train/good/001.png",
+          "sha256": "8574a157d5f4f0c56caad60d026dbc9d11803a430032d7dc42e4ed2201c2af6c"
+        },
+        "2": {
+          "path": "capsule/train/good/002.png",
+          "sha256": "e8874cb38b54aa75a5cfaffa7c5ca58d3c7dc96879b2662d26318c1350ec8ae6"
+        }
+      },
+      "calibration_paths": [
+        "capsule/train/good/123.png",
+        "capsule/train/good/037.png",
+        "capsule/train/good/050.png",
+        "capsule/train/good/172.png",
+        "capsule/train/good/084.png",
+        "capsule/train/good/168.png",
+        "capsule/train/good/135.png",
+        "capsule/train/good/074.png",
+        "capsule/train/good/179.png",
+        "capsule/train/good/086.png",
+        "capsule/train/good/053.png",
+        "capsule/train/good/198.png",
+        "capsule/train/good/121.png",
+        "capsule/train/good/079.png",
+        "capsule/train/good/005.png",
+        "capsule/train/good/202.png",
+        "capsule/train/good/138.png",
+        "capsule/train/good/061.png",
+        "capsule/train/good/038.png",
+        "capsule/train/good/028.png",
+        "capsule/train/good/180.png",
+        "capsule/train/good/029.png",
+        "capsule/train/good/140.png",
+        "capsule/train/good/102.png",
+        "capsule/train/good/072.png",
+        "capsule/train/good/004.png",
+        "capsule/train/good/145.png",
+        "capsule/train/good/087.png",
+        "capsule/train/good/118.png",
+        "capsule/train/good/091.png",
+        "capsule/train/good/101.png",
+        "capsule/train/good/077.png",
+        "capsule/train/good/166.png",
+        "capsule/train/good/171.png",
+        "capsule/train/good/215.png",
+        "capsule/train/good/003.png",
+        "capsule/train/good/056.png",
+        "capsule/train/good/014.png",
+        "capsule/train/good/192.png",
+        "capsule/train/good/021.png"
+      ]
+    },
+    "carpet": {
+      "references": {
+        "0": {
+          "path": "carpet/train/good/000.png",
+          "sha256": "9fd2420a125701bb31dc8025cbf62cc7152dc04505fe5f151b782493e303f39e"
+        },
+        "1": {
+          "path": "carpet/train/good/001.png",
+          "sha256": "beff2c083b8b9213ea6560296dc9295592e9e209f31316df06ea829f082ea51a"
+        },
+        "2": {
+          "path": "carpet/train/good/002.png",
+          "sha256": "716386180b348b1f0397cbc18fd4435aa0a17287c0b22e6d1ea895e867829743"
+        }
+      },
+      "calibration_paths": [
+        "carpet/train/good/187.png",
+        "carpet/train/good/025.png",
+        "carpet/train/good/082.png",
+        "carpet/train/good/183.png",
+        "carpet/train/good/228.png",
+        "carpet/train/good/121.png",
+        "carpet/train/good/087.png",
+        "carpet/train/good/092.png",
+        "carpet/train/good/279.png",
+        "carpet/train/good/256.png",
+        "carpet/train/good/268.png",
+        "carpet/train/good/075.png",
+        "carpet/train/good/177.png",
+        "carpet/train/good/136.png",
+        "carpet/train/good/267.png",
+        "carpet/train/good/164.png",
+        "carpet/train/good/272.png",
+        "carpet/train/good/113.png",
+        "carpet/train/good/047.png",
+        "carpet/train/good/057.png",
+        "carpet/train/good/203.png",
+        "carpet/train/good/188.png",
+        "carpet/train/good/236.png",
+        "carpet/train/good/037.png",
+        "carpet/train/good/226.png",
+        "carpet/train/good/103.png",
+        "carpet/train/good/110.png",
+        "carpet/train/good/115.png",
+        "carpet/train/good/132.png",
+        "carpet/train/good/212.png",
+        "carpet/train/good/260.png",
+        "carpet/train/good/165.png",
+        "carpet/train/good/237.png",
+        "carpet/train/good/233.png",
+        "carpet/train/good/036.png",
+        "carpet/train/good/127.png",
+        "carpet/train/good/064.png",
+        "carpet/train/good/146.png",
+        "carpet/train/good/028.png",
+        "carpet/train/good/139.png"
+      ]
+    },
+    "grid": {
+      "references": {
+        "0": {
+          "path": "grid/train/good/000.png",
+          "sha256": "94e29cc6c4c46225590138559736c8649959c4fa8b25fb5569755e624af1b137"
+        },
+        "1": {
+          "path": "grid/train/good/001.png",
+          "sha256": "578683b92f8c10abfdc9e70157f313b285f072f8205ebc07cdd5aca0c835e398"
+        },
+        "2": {
+          "path": "grid/train/good/002.png",
+          "sha256": "0bbb01b644d7ca4ebeb74cc3d9aa8ba029ff435554c7ece08009bfebb17678f6"
+        }
+      },
+      "calibration_paths": [
+        "grid/train/good/125.png",
+        "grid/train/good/022.png",
+        "grid/train/good/231.png",
+        "grid/train/good/036.png",
+        "grid/train/good/260.png",
+        "grid/train/good/075.png",
+        "grid/train/good/162.png",
+        "grid/train/good/071.png",
+        "grid/train/good/178.png",
+        "grid/train/good/047.png",
+        "grid/train/good/197.png",
+        "grid/train/good/210.png",
+        "grid/train/good/114.png",
+        "grid/train/good/111.png",
+        "grid/train/good/175.png",
+        "grid/train/good/262.png",
+        "grid/train/good/067.png",
+        "grid/train/good/073.png",
+        "grid/train/good/083.png",
+        "grid/train/good/151.png",
+        "grid/train/good/116.png",
+        "grid/train/good/076.png",
+        "grid/train/good/037.png",
+        "grid/train/good/045.png",
+        "grid/train/good/191.png",
+        "grid/train/good/200.png",
+        "grid/train/good/033.png",
+        "grid/train/good/005.png",
+        "grid/train/good/110.png",
+        "grid/train/good/254.png",
+        "grid/train/good/021.png",
+        "grid/train/good/088.png",
+        "grid/train/good/263.png",
+        "grid/train/good/156.png",
+        "grid/train/good/098.png",
+        "grid/train/good/133.png",
+        "grid/train/good/153.png",
+        "grid/train/good/225.png",
+        "grid/train/good/117.png",
+        "grid/train/good/198.png"
+      ]
+    },
+    "hazelnut": {
+      "references": {
+        "0": {
+          "path": "hazelnut/train/good/000.png",
+          "sha256": "5e28a714fa36ef5198c683058b607435b792974cdd23f3e0810b887dbdfe7112"
+        },
+        "1": {
+          "path": "hazelnut/train/good/001.png",
+          "sha256": "612e2884069ce4ca26c96b9e885d54cee1cf3f16256c83a74b985966c4098c4f"
+        },
+        "2": {
+          "path": "hazelnut/train/good/002.png",
+          "sha256": "96ec0d30fb80620a0c3dc09173a856cda9681a24c383866272a04f05e360c2d2"
+        }
+      },
+      "calibration_paths": [
+        "hazelnut/train/good/127.png",
+        "hazelnut/train/good/265.png",
+        "hazelnut/train/good/175.png",
+        "hazelnut/train/good/207.png",
+        "hazelnut/train/good/263.png",
+        "hazelnut/train/good/171.png",
+        "hazelnut/train/good/248.png",
+        "hazelnut/train/good/222.png",
+        "hazelnut/train/good/128.png",
+        "hazelnut/train/good/159.png",
+        "hazelnut/train/good/168.png",
+        "hazelnut/train/good/221.png",
+        "hazelnut/train/good/388.png",
+        "hazelnut/train/good/120.png",
+        "hazelnut/train/good/370.png",
+        "hazelnut/train/good/292.png",
+        "hazelnut/train/good/098.png",
+        "hazelnut/train/good/028.png",
+        "hazelnut/train/good/193.png",
+        "hazelnut/train/good/135.png",
+        "hazelnut/train/good/229.png",
+        "hazelnut/train/good/257.png",
+        "hazelnut/train/good/350.png",
+        "hazelnut/train/good/260.png",
+        "hazelnut/train/good/322.png",
+        "hazelnut/train/good/119.png",
+        "hazelnut/train/good/356.png",
+        "hazelnut/train/good/242.png",
+        "hazelnut/train/good/196.png",
+        "hazelnut/train/good/093.png",
+        "hazelnut/train/good/276.png",
+        "hazelnut/train/good/262.png",
+        "hazelnut/train/good/211.png",
+        "hazelnut/train/good/328.png",
+        "hazelnut/train/good/252.png",
+        "hazelnut/train/good/174.png",
+        "hazelnut/train/good/086.png",
+        "hazelnut/train/good/212.png",
+        "hazelnut/train/good/008.png",
+        "hazelnut/train/good/277.png"
+      ]
+    },
+    "leather": {
+      "references": {
+        "0": {
+          "path": "leather/train/good/000.png",
+          "sha256": "b9b62731f4a804dbf941ae1c1f99506c784f256f634f5b3f28ac429e246e0d6a"
+        },
+        "1": {
+          "path": "leather/train/good/001.png",
+          "sha256": "110fc5bfbe7b7a76a0bd5040ea6a21d0c07ba00ae937bcd188a39a9a9d926e9f"
+        },
+        "2": {
+          "path": "leather/train/good/002.png",
+          "sha256": "8fd24f0c8f232fbb8779bb4ba0980f5f6135167c20a8cc45e054cdaa35d15540"
+        }
+      },
+      "calibration_paths": [
+        "leather/train/good/029.png",
+        "leather/train/good/008.png",
+        "leather/train/good/165.png",
+        "leather/train/good/170.png",
+        "leather/train/good/167.png",
+        "leather/train/good/115.png",
+        "leather/train/good/191.png",
+        "leather/train/good/016.png",
+        "leather/train/good/163.png",
+        "leather/train/good/155.png",
+        "leather/train/good/190.png",
+        "leather/train/good/104.png",
+        "leather/train/good/142.png",
+        "leather/train/good/219.png",
+        "leather/train/good/064.png",
+        "leather/train/good/123.png",
+        "leather/train/good/043.png",
+        "leather/train/good/141.png",
+        "leather/train/good/130.png",
+        "leather/train/good/179.png",
+        "leather/train/good/111.png",
+        "leather/train/good/136.png",
+        "leather/train/good/240.png",
+        "leather/train/good/220.png",
+        "leather/train/good/010.png",
+        "leather/train/good/031.png",
+        "leather/train/good/216.png",
+        "leather/train/good/211.png",
+        "leather/train/good/057.png",
+        "leather/train/good/058.png",
+        "leather/train/good/172.png",
+        "leather/train/good/021.png",
+        "leather/train/good/019.png",
+        "leather/train/good/174.png",
+        "leather/train/good/121.png",
+        "leather/train/good/234.png",
+        "leather/train/good/051.png",
+        "leather/train/good/030.png",
+        "leather/train/good/045.png",
+        "leather/train/good/194.png"
+      ]
+    },
+    "metal_nut": {
+      "references": {
+        "0": {
+          "path": "metal_nut/train/good/000.png",
+          "sha256": "b0309325bc305ae8b19246884f20397b951285786aecca0ebf1d009e9799e350"
+        },
+        "1": {
+          "path": "metal_nut/train/good/001.png",
+          "sha256": "6b7a678d0e13086f46a1c04c915b39b93f5551445613b24e1646d94cc84a8764"
+        },
+        "2": {
+          "path": "metal_nut/train/good/002.png",
+          "sha256": "cdfeb493f7d1b6b3c78b7e2e72a2267056f3b549913d2154ea67a6e9d45bca31"
+        }
+      },
+      "calibration_paths": [
+        "metal_nut/train/good/158.png",
+        "metal_nut/train/good/030.png",
+        "metal_nut/train/good/083.png",
+        "metal_nut/train/good/090.png",
+        "metal_nut/train/good/191.png",
+        "metal_nut/train/good/007.png",
+        "metal_nut/train/good/167.png",
+        "metal_nut/train/good/166.png",
+        "metal_nut/train/good/219.png",
+        "metal_nut/train/good/171.png",
+        "metal_nut/train/good/059.png",
+        "metal_nut/train/good/027.png",
+        "metal_nut/train/good/021.png",
+        "metal_nut/train/good/089.png",
+        "metal_nut/train/good/018.png",
+        "metal_nut/train/good/129.png",
+        "metal_nut/train/good/136.png",
+        "metal_nut/train/good/210.png",
+        "metal_nut/train/good/147.png",
+        "metal_nut/train/good/164.png",
+        "metal_nut/train/good/080.png",
+        "metal_nut/train/good/103.png",
+        "metal_nut/train/good/205.png",
+        "metal_nut/train/good/173.png",
+        "metal_nut/train/good/142.png",
+        "metal_nut/train/good/160.png",
+        "metal_nut/train/good/094.png",
+        "metal_nut/train/good/039.png",
+        "metal_nut/train/good/144.png",
+        "metal_nut/train/good/057.png",
+        "metal_nut/train/good/108.png",
+        "metal_nut/train/good/122.png",
+        "metal_nut/train/good/151.png",
+        "metal_nut/train/good/031.png",
+        "metal_nut/train/good/115.png",
+        "metal_nut/train/good/066.png",
+        "metal_nut/train/good/185.png",
+        "metal_nut/train/good/055.png",
+        "metal_nut/train/good/069.png",
+        "metal_nut/train/good/114.png"
+      ]
+    },
+    "pill": {
+      "references": {
+        "0": {
+          "path": "pill/train/good/000.png",
+          "sha256": "5f01a9be11029dcdac12a84308f345babe6bca33ccee4c50fb54e656fb42611a"
+        },
+        "1": {
+          "path": "pill/train/good/001.png",
+          "sha256": "8720754687b45728af0da6cc2a11a09818deccc7845ee4403bfcac331126fd54"
+        },
+        "2": {
+          "path": "pill/train/good/002.png",
+          "sha256": "161a78530a11fa6b349676c8ef4050518e7e13368043fe6444fbd26e5793e077"
+        }
+      },
+      "calibration_paths": [
+        "pill/train/good/138.png",
+        "pill/train/good/050.png",
+        "pill/train/good/228.png",
+        "pill/train/good/088.png",
+        "pill/train/good/118.png",
+        "pill/train/good/022.png",
+        "pill/train/good/242.png",
+        "pill/train/good/181.png",
+        "pill/train/good/105.png",
+        "pill/train/good/166.png",
+        "pill/train/good/029.png",
+        "pill/train/good/077.png",
+        "pill/train/good/097.png",
+        "pill/train/good/095.png",
+        "pill/train/good/150.png",
+        "pill/train/good/132.png",
+        "pill/train/good/093.png",
+        "pill/train/good/140.png",
+        "pill/train/good/235.png",
+        "pill/train/good/222.png",
+        "pill/train/good/263.png",
+        "pill/train/good/060.png",
+        "pill/train/good/025.png",
+        "pill/train/good/044.png",
+        "pill/train/good/220.png",
+        "pill/train/good/217.png",
+        "pill/train/good/160.png",
+        "pill/train/good/238.png",
+        "pill/train/good/169.png",
+        "pill/train/good/196.png",
+        "pill/train/good/039.png",
+        "pill/train/good/068.png",
+        "pill/train/good/042.png",
+        "pill/train/good/184.png",
+        "pill/train/good/147.png",
+        "pill/train/good/226.png",
+        "pill/train/good/056.png",
+        "pill/train/good/058.png",
+        "pill/train/good/054.png",
+        "pill/train/good/223.png"
+      ]
+    },
+    "screw": {
+      "references": {
+        "0": {
+          "path": "screw/train/good/000.png",
+          "sha256": "44b81b1b5779d5bc1695e8fdb1ca361eeda32b771ce91b0cc5468cc1f8aa735b"
+        },
+        "1": {
+          "path": "screw/train/good/001.png",
+          "sha256": "ce993d2c0b761f710ef845a92fcbfb49adb7af9570964cef6b7247b48a72a5ef"
+        },
+        "2": {
+          "path": "screw/train/good/002.png",
+          "sha256": "b51b65c5aa7ff9b21ef8ee7104dc19289525cf9e0b62fec2e591cee1d04619bc"
+        }
+      },
+      "calibration_paths": [
+        "screw/train/good/099.png",
+        "screw/train/good/252.png",
+        "screw/train/good/185.png",
+        "screw/train/good/056.png",
+        "screw/train/good/206.png",
+        "screw/train/good/117.png",
+        "screw/train/good/016.png",
+        "screw/train/good/316.png",
+        "screw/train/good/100.png",
+        "screw/train/good/315.png",
+        "screw/train/good/219.png",
+        "screw/train/good/280.png",
+        "screw/train/good/155.png",
+        "screw/train/good/022.png",
+        "screw/train/good/105.png",
+        "screw/train/good/220.png",
+        "screw/train/good/178.png",
+        "screw/train/good/181.png",
+        "screw/train/good/023.png",
+        "screw/train/good/176.png",
+        "screw/train/good/207.png",
+        "screw/train/good/240.png",
+        "screw/train/good/298.png",
+        "screw/train/good/182.png",
+        "screw/train/good/083.png",
+        "screw/train/good/250.png",
+        "screw/train/good/300.png",
+        "screw/train/good/027.png",
+        "screw/train/good/251.png",
+        "screw/train/good/313.png",
+        "screw/train/good/008.png",
+        "screw/train/good/084.png",
+        "screw/train/good/317.png",
+        "screw/train/good/157.png",
+        "screw/train/good/102.png",
+        "screw/train/good/134.png",
+        "screw/train/good/200.png",
+        "screw/train/good/075.png",
+        "screw/train/good/222.png",
+        "screw/train/good/078.png"
+      ]
+    },
+    "tile": {
+      "references": {
+        "0": {
+          "path": "tile/train/good/000.png",
+          "sha256": "522535bee0cc7e38a853dbdab79302f99f2f0f7fe66533e386f1b0c558ce5d0b"
+        },
+        "1": {
+          "path": "tile/train/good/001.png",
+          "sha256": "52199e4b50f6f4810ec40ade431de5942e5359de9e8eca70e4d817b14786fc0e"
+        },
+        "2": {
+          "path": "tile/train/good/002.png",
+          "sha256": "2500b57fe2e0a7988629a6ee3639a028687af02962cebac5f9e65103243c1b6f"
+        }
+      },
+      "calibration_paths": [
+        "tile/train/good/113.png",
+        "tile/train/good/022.png",
+        "tile/train/good/177.png",
+        "tile/train/good/191.png",
+        "tile/train/good/097.png",
+        "tile/train/good/068.png",
+        "tile/train/good/107.png",
+        "tile/train/good/102.png",
+        "tile/train/good/095.png",
+        "tile/train/good/077.png",
+        "tile/train/good/098.png",
+        "tile/train/good/023.png",
+        "tile/train/good/039.png",
+        "tile/train/good/085.png",
+        "tile/train/good/003.png",
+        "tile/train/good/091.png",
+        "tile/train/good/146.png",
+        "tile/train/good/176.png",
+        "tile/train/good/106.png",
+        "tile/train/good/220.png",
+        "tile/train/good/216.png",
+        "tile/train/good/135.png",
+        "tile/train/good/222.png",
+        "tile/train/good/228.png",
+        "tile/train/good/215.png",
+        "tile/train/good/050.png",
+        "tile/train/good/183.png",
+        "tile/train/good/029.png",
+        "tile/train/good/072.png",
+        "tile/train/good/090.png",
+        "tile/train/good/207.png",
+        "tile/train/good/044.png",
+        "tile/train/good/132.png",
+        "tile/train/good/163.png",
+        "tile/train/good/011.png",
+        "tile/train/good/134.png",
+        "tile/train/good/150.png",
+        "tile/train/good/164.png",
+        "tile/train/good/062.png",
+        "tile/train/good/140.png"
+      ]
+    },
+    "toothbrush": {
+      "references": {
+        "0": {
+          "path": "toothbrush/train/good/000.png",
+          "sha256": "91c3ac02df7e987a1571aa5a2eb5b7e1f6b291cf61450aa949267465b6a9473e"
+        },
+        "1": {
+          "path": "toothbrush/train/good/001.png",
+          "sha256": "344a89e778e52e0834f5fe9a4ec83021d735bd58f7a23d15be7d4f1f2697d611"
+        },
+        "2": {
+          "path": "toothbrush/train/good/002.png",
+          "sha256": "8fa5dd89a75aabf58e9771f3cd2785628c5b0472cd23c75cab8f94f3214d2907"
+        }
+      },
+      "calibration_paths": [
+        "toothbrush/train/good/019.png",
+        "toothbrush/train/good/033.png",
+        "toothbrush/train/good/011.png",
+        "toothbrush/train/good/021.png",
+        "toothbrush/train/good/035.png",
+        "toothbrush/train/good/028.png",
+        "toothbrush/train/good/010.png",
+        "toothbrush/train/good/012.png",
+        "toothbrush/train/good/023.png",
+        "toothbrush/train/good/048.png",
+        "toothbrush/train/good/056.png",
+        "toothbrush/train/good/006.png",
+        "toothbrush/train/good/043.png",
+        "toothbrush/train/good/009.png",
+        "toothbrush/train/good/037.png",
+        "toothbrush/train/good/054.png",
+        "toothbrush/train/good/018.png",
+        "toothbrush/train/good/014.png",
+        "toothbrush/train/good/055.png",
+        "toothbrush/train/good/049.png",
+        "toothbrush/train/good/058.png",
+        "toothbrush/train/good/003.png",
+        "toothbrush/train/good/022.png",
+        "toothbrush/train/good/024.png",
+        "toothbrush/train/good/031.png",
+        "toothbrush/train/good/013.png",
+        "toothbrush/train/good/016.png",
+        "toothbrush/train/good/057.png",
+        "toothbrush/train/good/038.png",
+        "toothbrush/train/good/051.png",
+        "toothbrush/train/good/045.png",
+        "toothbrush/train/good/032.png",
+        "toothbrush/train/good/017.png",
+        "toothbrush/train/good/041.png",
+        "toothbrush/train/good/034.png",
+        "toothbrush/train/good/042.png",
+        "toothbrush/train/good/044.png",
+        "toothbrush/train/good/040.png",
+        "toothbrush/train/good/030.png",
+        "toothbrush/train/good/007.png"
+      ]
+    },
+    "transistor": {
+      "references": {
+        "0": {
+          "path": "transistor/train/good/000.png",
+          "sha256": "d755cd3f9334acc338db228fbccfe531397add1794181c09dafafa35c9014741"
+        },
+        "1": {
+          "path": "transistor/train/good/001.png",
+          "sha256": "479e538decadde0c2d687834e117a6e1a3002ece07d6b02ed145b1f116497e75"
+        },
+        "2": {
+          "path": "transistor/train/good/002.png",
+          "sha256": "7e29cfe96f5183455a3f0298f4b29fd1879908887224cb79a2aab7bb102db828"
+        }
+      },
+      "calibration_paths": [
+        "transistor/train/good/012.png",
+        "transistor/train/good/157.png",
+        "transistor/train/good/188.png",
+        "transistor/train/good/066.png",
+        "transistor/train/good/172.png",
+        "transistor/train/good/166.png",
+        "transistor/train/good/025.png",
+        "transistor/train/good/204.png",
+        "transistor/train/good/150.png",
+        "transistor/train/good/061.png",
+        "transistor/train/good/039.png",
+        "transistor/train/good/208.png",
+        "transistor/train/good/033.png",
+        "transistor/train/good/090.png",
+        "transistor/train/good/075.png",
+        "transistor/train/good/103.png",
+        "transistor/train/good/050.png",
+        "transistor/train/good/202.png",
+        "transistor/train/good/173.png",
+        "transistor/train/good/027.png",
+        "transistor/train/good/175.png",
+        "transistor/train/good/084.png",
+        "transistor/train/good/088.png",
+        "transistor/train/good/030.png",
+        "transistor/train/good/199.png",
+        "transistor/train/good/069.png",
+        "transistor/train/good/071.png",
+        "transistor/train/good/123.png",
+        "transistor/train/good/211.png",
+        "transistor/train/good/131.png",
+        "transistor/train/good/118.png",
+        "transistor/train/good/022.png",
+        "transistor/train/good/117.png",
+        "transistor/train/good/178.png",
+        "transistor/train/good/104.png",
+        "transistor/train/good/143.png",
+        "transistor/train/good/185.png",
+        "transistor/train/good/054.png",
+        "transistor/train/good/179.png",
+        "transistor/train/good/023.png"
+      ]
+    },
+    "wood": {
+      "references": {
+        "0": {
+          "path": "wood/train/good/000.png",
+          "sha256": "d6d87826ab78b00bca17872acf7d06fc9d21b0e81567bed2ccebb7ba57b85e76"
+        },
+        "1": {
+          "path": "wood/train/good/001.png",
+          "sha256": "a7ad5db5ec0ba0aaf15a32b7d685e4e5e1f9d472c86844b6617ad3f09e0bd9f8"
+        },
+        "2": {
+          "path": "wood/train/good/002.png",
+          "sha256": "8b05ad057d645960666b5d6b0cdd08b2fc4f343f0b9f06589fb3e54fad45c0ff"
+        }
+      },
+      "calibration_paths": [
+        "wood/train/good/049.png",
+        "wood/train/good/082.png",
+        "wood/train/good/117.png",
+        "wood/train/good/026.png",
+        "wood/train/good/004.png",
+        "wood/train/good/200.png",
+        "wood/train/good/093.png",
+        "wood/train/good/017.png",
+        "wood/train/good/188.png",
+        "wood/train/good/194.png",
+        "wood/train/good/224.png",
+        "wood/train/good/163.png",
+        "wood/train/good/198.png",
+        "wood/train/good/099.png",
+        "wood/train/good/186.png",
+        "wood/train/good/226.png",
+        "wood/train/good/246.png",
+        "wood/train/good/197.png",
+        "wood/train/good/240.png",
+        "wood/train/good/165.png",
+        "wood/train/good/054.png",
+        "wood/train/good/086.png",
+        "wood/train/good/050.png",
+        "wood/train/good/135.png",
+        "wood/train/good/107.png",
+        "wood/train/good/021.png",
+        "wood/train/good/211.png",
+        "wood/train/good/183.png",
+        "wood/train/good/218.png",
+        "wood/train/good/158.png",
+        "wood/train/good/207.png",
+        "wood/train/good/223.png",
+        "wood/train/good/136.png",
+        "wood/train/good/144.png",
+        "wood/train/good/239.png",
+        "wood/train/good/020.png",
+        "wood/train/good/095.png",
+        "wood/train/good/033.png",
+        "wood/train/good/172.png",
+        "wood/train/good/217.png"
+      ]
+    },
+    "zipper": {
+      "references": {
+        "0": {
+          "path": "zipper/train/good/000.png",
+          "sha256": "42e15bf4d9672ad7b0fa08e99110aa9b9715b9c1889a820220db101cf76fec29"
+        },
+        "1": {
+          "path": "zipper/train/good/001.png",
+          "sha256": "0a21f15092b012e0c15fe403a32019664a825e6e45577bf4dd20bb5e0d29c814"
+        },
+        "2": {
+          "path": "zipper/train/good/002.png",
+          "sha256": "6bd470984283b152ad0e4bd36c1dfdc386f7cd2e5bbc29b02bfe4c1f197b83fd"
+        }
+      },
+      "calibration_paths": [
+        "zipper/train/good/189.png",
+        "zipper/train/good/068.png",
+        "zipper/train/good/118.png",
+        "zipper/train/good/200.png",
+        "zipper/train/good/177.png",
+        "zipper/train/good/059.png",
+        "zipper/train/good/109.png",
+        "zipper/train/good/012.png",
+        "zipper/train/good/075.png",
+        "zipper/train/good/228.png",
+        "zipper/train/good/147.png",
+        "zipper/train/good/125.png",
+        "zipper/train/good/003.png",
+        "zipper/train/good/146.png",
+        "zipper/train/good/152.png",
+        "zipper/train/good/234.png",
+        "zipper/train/good/092.png",
+        "zipper/train/good/112.png",
+        "zipper/train/good/082.png",
+        "zipper/train/good/024.png",
+        "zipper/train/good/130.png",
+        "zipper/train/good/089.png",
+        "zipper/train/good/172.png",
+        "zipper/train/good/213.png",
+        "zipper/train/good/178.png",
+        "zipper/train/good/066.png",
+        "zipper/train/good/040.png",
+        "zipper/train/good/106.png",
+        "zipper/train/good/070.png",
+        "zipper/train/good/053.png",
+        "zipper/train/good/218.png",
+        "zipper/train/good/155.png",
+        "zipper/train/good/078.png",
+        "zipper/train/good/052.png",
+        "zipper/train/good/110.png",
+        "zipper/train/good/030.png",
+        "zipper/train/good/044.png",
+        "zipper/train/good/132.png",
+        "zipper/train/good/133.png",
+        "zipper/train/good/083.png"
+      ]
+    }
+  }
+}
