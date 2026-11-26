@@ -1,48 +1,96 @@
-# Visual anomaly detection for industrial inspection
+![Vision foundation models for industrial anomaly detection](assets/project_banner.svg)
 
-DTU MSc thesis in Human-Centered Artificial Intelligence. This project studies how vision foundation models detect defective products and localize defects when few normal reference images are available.
+# Vision Foundation Models for Visual Anomaly Detection
 
-## Explore the notebooks
+**MSc thesis · Human-Centered Artificial Intelligence · Technical University of Denmark (DTU)**
 
-| Notebook | What to look for |
+Can an industrial inspection system recognize defects from only one defect-free reference image? This research investigates pretrained vision features for image-level detection and pixel-level localization, and measures how performance changes under controlled lighting and blur.
+
+**Python · PyTorch · DINOv2 · FAISS · OpenCV · NumPy · DTU HPC / LSF**
+
+[Results](#measured-results) · [Method](#method) · [Failure analysis](#failure-analysis) · [Explore the code](#explore-the-project) · [Reproducibility](#reproducibility)
+
+> **Research status:** Clean baseline and full lighting/blur benchmark completed and checked. Reference-augmentation ablation and normal-only threshold calibration are in progress. Zero-shot comparison remains a scope decision. This is a research prototype, not a validated production inspection system.
+
+## Measured results
+
+| Condition | Image AUROC | Image AP | Image F1-max | Pixel AUROC | Pixel F1-max | Pixel AUPRO |
+|---|---:|---:|---:|---:|---:|---:|
+| Clean | 96.52% | 98.14% | 95.96% | 96.26% | 57.94% | 91.72% |
+
+**Evaluation:** MVTec AD, all 15 categories, 3 deterministic reference choices per category, 45 clean runs. Each run uses one normal reference, frozen DINOv2 ViT-S/14 and 448-pixel short-edge resizing. Metrics are equal-weight category averages; AUPRO is evaluated up to a false-positive rate of 0.30. F1-max is a best-threshold summary, not a calibrated operating point.
+
+[Baseline metrics](reports/baseline_reproduction/summary.json) · [Category-level image AUROC](reports/baseline_reproduction/figures/image_auroc.svg) · [Pixel F1-max](reports/baseline_reproduction/figures/pixel_f1max.svg) · [Provenance](reports/baseline_reproduction/provenance.json)
+
+### Robustness under lighting changes and blur
+
+![Measured changes in image AUROC and pixel AUPRO](assets/robustness_results.svg)
+
+All 180 perturbed evaluations were completed with the same test images and reference identities as the clean baseline. The strongest blur decreased image AUROC by **3.08 percentage points** and pixel AUPRO by **1.53 percentage points**. The tested brightness reductions produced much smaller aggregate changes. These are controlled synthetic perturbations, not a validation on factory production lines.
+
+[Full results and six-metric table](reports/lighting_blur/README.md) · [Per-run CSV](reports/lighting_blur/per_run.csv) · [Category changes](reports/lighting_blur/per_category.csv) · [Protocol](protocols/lighting_blur.md)
+
+## Method
+
+![Anomaly detection pipeline schematic](assets/method_overview.svg)
+
+The baseline reproduces AnomalyDINO (WACV 2025). A frozen DINOv2 encoder extracts dense patch embeddings; a bank of normal reference patches is queried with FAISS nearest-neighbor search. Patch distances yield a spatial anomaly map, while top-patch pooling produces an image score. The controlled robustness experiments perturb only the test input, leaving reference images unchanged.
+
+The ongoing candidate study compares rotation-only reference banks with brightness, blur and combined augmentation at a fixed patch budget. No improvement is claimed until the full ablation is evaluated.
+
+## Failure analysis
+
+![Actual selected paired image scores under blur](assets/error_analysis.svg)
+
+Blur can raise a normal image's anomaly score and lower scores for real defects. These selected extreme cases are useful for diagnosis, but are not estimates of error rates. Independent normal-only threshold calibration is being evaluated separately.
+
+[Selected measured cases](reports/lighting_blur/selected_blur_cases.csv)
+
+## Engineering skills demonstrated
+
+| Capability | Evidence |
 | --- | --- |
-| [Dataset Exploration](notebooks/dataset_exploration.ipynb) | Verified splits, mask pairing, and a normal reference alongside a defective test image and its mask. |
-| [Baseline Setup and Smoke Test](notebooks/baseline_setup_and_smoke_test.ipynb) | The first bottle run, recomputed image AUROC, and the normal/defective pairs that overlap. |
-| [Baseline Reproduction](notebooks/baseline_reproduction.ipynb) | All 45 clean runs, category variation, and the six macro means compared with the matched published setting. |
-| [Lighting and Blur Robustness](notebooks/lighting_and_blur_robustness.ipynb) | Executed image-level bottle pilot. See the [pilot localization results](reports/lighting_blur/bottle_seed0_pilot.csv) and [full-study protocol](protocols/lighting_blur.md). |
+| Computer vision & deep learning | Frozen ViT features, patch embeddings, anomaly localization |
+| ML engineering | GPU inference, CPU metric evaluation, FAISS search, modular experiment scripts |
+| Experimental design | Fixed reference manifests, paired controls, controlled perturbations |
+| Scientific computing | AUROC, AP, F1-max, AUPRO, category-level variation and error analysis |
+| Reproducibility | Pinned upstream code, environment records, reference hashes and result provenance |
 
-## Baseline results
+## Explore the project
 
-The baseline uses frozen DINOv2 ViT-S/14 features and one normal reference per run. Each of the 15 categories was evaluated with three fixed reference choices, giving 45 runs. The table shows equal-weight category averages across those choices.
-
-| Image AUROC | Image AP | Image F1-max | Pixel AUROC | Pixel F1-max | Pixel AUPRO |
-| ---: | ---: | ---: | ---: | ---: | ---: |
-| 96.52% | 98.14% | 95.96% | 96.26% | 57.94% | 91.72% |
-
-[Image AUROC by category](reports/baseline_reproduction/figures/image_auroc.svg) · [Pixel F1-max by category](reports/baseline_reproduction/figures/pixel_f1max.svg) · [Evaluation provenance](reports/baseline_reproduction/provenance.json)
-
-To regenerate both figures from the archived CSV, run the following command from a checkout with Python and Matplotlib installed.
-
-```bash
-python scripts/plot_baseline.py
-```
-
-## Repository guide
-
-| Directory | What it contains and why it is here |
+| Start here | What you will find |
 | --- | --- |
-| [notebooks](notebooks/) | Executed, illustrated analyses for the dataset, smoke test, clean baseline, and robustness pilot. Start here to read the work without a DTU account. Re-executing the dataset and robustness notebooks requires access to the underlying data or run outputs. |
-| [configs](configs/) | The Python package versions recorded for the DTU experiment environment. This snapshot documents the environment used for the runs. |
-| [protocols](protocols/) | The 45 fixed one-shot reference selections with file hashes, the 43 remaining clean runs after the two initial runs, and the lighting/blur study design. These files define what gets compared. |
-| [scripts](scripts/) | Shared Python code for inference, evaluation, path resolution and plotting. The bottle-specific scripts also document the earlier checks on features, maps and predictions. |
-| [jobs](jobs/) | DTU LSF submission files for dataset preparation, GPU and CPU checks, pilot runs and full experiments. The lighting/blur launcher submits the dependent inference, evaluation and summary jobs. |
-| [results](results/) | The small, archived smoke-test inputs to the analysis notebook: per-image predictions and a run record. The full inference outputs and raw anomaly maps reside on DTU HPC. |
-| [reports](reports/) | Analysis tables and figures. The clean baseline includes per-run, per-category and macro summaries with provenance. The lighting/blur directory contains the measured bottle pilot table. |
-| [research_logs](research_logs/) | Dated records of the original dataset verification and smoke test. Their follow-up notes describe what was pending at the time. |
-| [third_party](third_party/) | The official AnomalyDINO implementation, pinned as a Git submodule so each experiment can identify the upstream revision. |
+| [Dataset exploration](notebooks/dataset_exploration.ipynb) | Data splits, masks and initial data checks |
+| [Baseline setup & smoke test](notebooks/baseline_setup_and_smoke_test.ipynb) | Initial pipeline validation |
+| [Baseline reproduction](notebooks/baseline_reproduction.ipynb) | 45 clean runs, category variation and published comparison |
+| [Full robustness report](reports/lighting_blur/README.md) | All 180 perturbed runs and measured changes |
+| [Robustness pilot notebook](notebooks/lighting_and_blur_robustness.ipynb) | Historical Bottle validation; full results are linked above |
+| [Inference](scripts/run_baseline.py) / [Evaluation](scripts/evaluate_baseline_category.py) | Core implementation and evaluation |
+| [Experiment protocols](protocols/) / [HPC jobs](jobs/) | Research design and scheduler orchestration |
 
-On DTU, `data/`, `logs/`, and `outputs/` hold local inputs, scheduler logs and generated files. Temporary Git transfer bundles are also local. The notebook and report links above point to the artifacts published on GitHub.
+## Reproducibility
 
-Start with the [reference protocol](protocols/adino_mvtec_1shot_448_references.json), [baseline inference script](scripts/run_baseline.py) and [category evaluator](scripts/evaluate_baseline_category.py) to trace a run. The [GPU array](jobs/baseline_inference_array.lsf) and [CPU array](jobs/baseline_evaluation_array.lsf) use the same category and reference manifest. These jobs expect the DTU HPC dataset, checkpoints and environment paths defined in the scripts. Initialize the upstream submodule with `git submodule update --init --recursive` before inference.
+    git clone --recurse-submodules https://github.com/basharbd/msc-visual-anomaly-detection.git
+    cd msc-visual-anomaly-detection
+    # Regenerate baseline figures (Python + Matplotlib)
+    python scripts/plot_baseline.py
+    # Regenerate portfolio graphics (Python standard library only)
+    python assets/generate_figures.py
 
-Study names describe the research question. Category and seed identify individual runs within a study. Archived machine-generated records retain their original identifiers and hashes. The baseline and official Bottle pilot scripts recognize existing HPC output directories. Fresh Bottle smoke-test runs write under `outputs/` so the archived predictions remain available.
+The full inference workflow uses DTU-specific dataset, environment and checkpoint paths. It is not a one-command portable demo yet. See [environment snapshot](configs/), [reference manifest](protocols/adino_mvtec_1shot_448_references.json), [GPU array](jobs/baseline_inference_array.lsf), [CPU array](jobs/baseline_evaluation_array.lsf), and [research logs](research_logs/). Raw prediction maps and full dataset files remain on HPC; published CSVs and figures can be inspected without a DTU account.
+
+The original AnomalyDINO implementation remains pinned in [third_party](third_party/) as a Git submodule. The thesis-specific scripts, protocols and analysis are separate from upstream. Development branches may contain ongoing work; the main branch presents verified published results.
+
+## References and data use
+
+- Damm et al., *AnomalyDINO: Boosting Patch-Based Few-Shot Anomaly Detection with DINOv2*, WACV 2025. [Paper](https://openaccess.thecvf.com/content/WACV2025/html/Damm_AnomalyDINO_Boosting_Patch-Based_Few-Shot_Anomaly_Detection_with_DINOv2_WACV_2025_paper.html)
+- Oquab et al., *DINOv2: Learning Robust Visual Features without Supervision*. [Paper](https://arxiv.org/abs/2304.07193)
+- Bergmann et al., *MVTec AD — A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection*, CVPR 2019. [Official dataset and terms](https://www.mvtec.com/research-teaching/datasets/mvtec-ad)
+
+MVTec AD data is licensed CC BY-NC-SA 4.0; the benchmark results are academic research and do not establish commercial dataset-use rights. The new portfolio graphics use original schematics and numerical results rather than redistributing dataset images. Upstream code and weights retain their own licenses.
+
+---
+
+**Bashar Khaled Bdewi** · MSc Human-Centered Artificial Intelligence, DTU
+
+[GitHub profile](https://github.com/basharbd)
