@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-27",
+  "reviewed_repository_revision": "5296f70ec15822f6fe2269257472e03aac372917",
+  "before_pages": 53,
+  "final_pdf": {
+    "pdf_sha256": "d727b4c9251715b146100ce997885e313ec4d375532b1c2a029ed3715ae70b76",
+    "pdf_bytes": 4578604,
+    "page_count": 51,
+    "pages": [
+      {
+        "pdf_page": 1,
+        "label": "i",
+        "text_characters": 198
+      },
+      {
+        "pdf_page": 2,
+        "label": "ii",
+        "text_characters": 0
+      },
+      {
+        "pdf_page": 3,
+        "label": "i",
+        "text_characters": 610
+      },
+      {
+        "pdf_page": 4,
+        "label": "ii",
+        "text_characters": 608
+      },
+      {
+        "pdf_page": 5,
+        "label": "iii",
+        "text_characters": 1641
+      },
+      {
+        "pdf_page": 6,
+        "label": "iv",
+        "text_characters": 657
+      },
+      {
+        "pdf_page": 7,
+        "label": "v",
+        "text_characters": 3138
+      },
+      {
+        "pdf_page": 8,
+        "label": "vi",
+        "text_characters": 1834
+      },
+      {
+        "pdf_page": 9,
+        "label": "1",
+        "text_characters": 2803
+      },
+      {
+        "pdf_page": 10,
+        "label": "2",
+        "text_characters": 2617
+      },
+      {
+        "pdf_page": 11,
+        "label": "3",
+        "text_characters": 2632
+      },
+      {
+        "pdf_page": 12,
+        "label": "4",
+        "text_characters": 2732
+      },
+      {
+        "pdf_page": 13,
+        "label": "5",
+        "text_characters": 2606
+      },
+      {
+        "pdf_page": 14,
+        "label": "6",
+        "text_characters": 2047
+      },
+      {
+        "pdf_page": 15,
+        "label": "7",
+        "text_characters": 2812
+      },
+      {
+        "pdf_page": 16,
+        "label": "8",
+        "text_characters": 2459
+      },
+      {
+        "pdf_page": 17,
+        "label": "9",
+        "text_characters": 2940
+      },
+      {
+        "pdf_page": 18,
+        "label": "10",
+        "text_characters": 3006
+      },
+      {
+        "pdf_page": 19,
+        "label": "11",
+        "text_characters": 2434
+      },
+      {
+        "pdf_page": 20,
+        "label": "12",
+        "text_characters": 1992
+      },
+      {
+        "pdf_page": 21,
+        "label": "13",
+        "text_characters": 2933
+      },
+      {
+        "pdf_page": 22,
+        "label": "14",
+        "text_characters": 2945
+      },
+      {
+        "pdf_page": 23,
+        "label": "15",
+        "text_characters": 2509
+      },
+      {
+        "pdf_page": 24,
+        "label": "16",
+        "text_characters": 2720
+      },
+      {
+        "pdf_page": 25,
+        "label": "17",
+        "text_characters": 2090
+      },
+      {
+        "pdf_page": 26,
+        "label": "18",
+        "text_characters": 2081
+      },
+      {
+        "pdf_page": 27,
+        "label": "19",
+        "text_characters": 2784
+      },
+      {
+        "pdf_page": 28,
+        "label": "20",
+        "text_characters": 2636
+      },
+      {
+        "pdf_page": 29,
+        "label": "21",
+        "text_characters": 1498
+      },
+      {
+        "pdf_page": 30,
+        "label": "22",
+        "text_characters": 2422
+      },
+      {
+        "pdf_page": 31,
+        "label": "23",
+        "text_characters": 1351
+      },
+      {
+        "pdf_page": 32,
+        "label": "24",
+        "text_characters": 2220
+      },
+      {
+        "pdf_page": 33,
+        "label": "25",
+        "text_characters": 1826
+      },
+      {
+        "pdf_page": 34,
+        "label": "26",
+        "text_characters": 2745
+      },
+      {
+        "pdf_page": 35,
+        "label": "27",
+        "text_characters": 1946
+      },
+      {
+        "pdf_page": 36,
+        "label": "28",
+        "text_characters": 1024
+      },
+      {
+        "pdf_page": 37,
+        "label": "29",
+        "text_characters": 2728
+      },
+      {
+        "pdf_page": 38,
+        "label": "30",
+        "text_characters": 1703
+      },
+      {
+        "pdf_page": 39,
+        "label": "31",
+        "text_characters": 1514
+      },
+      {
+        "pdf_page": 40,
+        "label": "32",
+        "text_characters": 1004
+      },
+      {
+        "pdf_page": 41,
+        "label": "33",
+        "text_characters": 1594
+      },
+      {
+        "pdf_page": 42,
+        "label": "34",
+        "text_characters": 2825
+      },
+      {
+        "pdf_page": 43,
+        "label": "35",
+        "text_characters": 1711
+      },
+      {
+        "pdf_page": 44,
+        "label": "36",
+        "text_characters": 2003
+      },
+      {
+        "pdf_page": 45,
+        "label": "37",
+        "text_characters": 3073
+      },
+      {
+        "pdf_page": 46,
+        "label": "38",
+        "text_characters": 2416
+      },
+      {
+        "pdf_page": 47,
+        "label": "39",
+        "text_characters": 3207
+      },
+      {
+        "pdf_page": 48,
+        "label": "40",
+        "text_characters": 736
+      },
+      {
+        "pdf_page": 49,
+        "label": "41",
+        "text_characters": 2653
+      },
+      {
+        "pdf_page": 50,
+        "label": "42",
+        "text_characters": 477
+      },
+      {
+        "pdf_page": 51,
+        "label": "43",
+        "text_characters": 121
+      }
+    ],
+    "figure_captions": [
+      "1.1",
+      "2.1",
+      "2.2",
+      "4.1",
+      "4.2",
+      "6.1",
+      "7.1",
+      "7.2",
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "9.1",
+      "9.2"
+    ],
+    "table_captions": [
+      "2.1",
+      "3.1",
+      "3.2",
+      "4.1",
+      "4.2",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "6.1",
+      "6.2",
+      "6.3",
+      "7.1",
+      "7.2",
+      "7.3",
+      "7.4",
+      "7.5",
+      "8.1",
+      "8.2",
+      "8.3",
+      "9.1",
+      "A.1"
+    ],
+    "changed_render_pages": [
+      27
+    ]
+  },
+  "live_source_verification": {
+    "status": {
+      "compile": "Recompile",
+      "pages": 51,
+      "logs": [
+        "All logs6",
+        "Errors0",
+        "Warnings0",
+        "Info6"
+      ],
+      "hboxes": []
+    },
+    "hashes": {
+      "Backmatter/Appendix.tex": "5b9910df6a5942c50b7f8830fc93fb3f8cecc46b70d50feceac25067f63f031f",
+      "Backmatter/unified_10_bottle_paired_scores.pdf": "4f5d04e784f1973a8ee44584b13efb423e3dd308b273d28dac6de4296d0ca515",
+      "Backmatter/unified_09_selected_blur_cases.pdf": "ca9be16e83a74d992d64eeb9b0e9889ea795339c9954b6e0339517a5432162f1",
+      "Backmatter/unified_08_robustness_macro_change.pdf": "9ba5f79f979fd9b4803bb18a63c7dcb172c202ed387f1967c5c03c9c104ddec8",
+      "Backmatter/unified_07_baseline_category_comparison.pdf": "baca7d0e77b0ac128927460b781458ac403335f6c3d0acbca8cfa61870007c61",
+      "Backmatter/unified_05_threshold_calibration.pdf": "97ded20fb336fcbf06240d01bb3aed6cd74755a57732127c52848598bd2668bc",
+      "Backmatter/unified_04_strong_blur_category_pixel.pdf": "e8d6c3f1af643126d9ff20c227ff388f6ee6ddb4599ec6224f6c293e2d0e0286",
+      "Backmatter/unified_03_strong_blur_category_image.pdf": "918655c929365678889b817114c94a4ef2fc6814854ba70f63568d0226dbdaab",
+      "Backmatter/unified_02_ablation_pixel_aupro.pdf": "fe103d7d9dbf1c94a6385a7ba26abb628f29b192ca5388651f410b30c18aa0cb",
+      "Backmatter/unified_01_ablation_image_auroc.pdf": "a1bef1b714877e267a34e2ef94f69587d04f0fe6582f0febe80453c9cdd84be2",
+      "main.tex": "fe60a08b0984df459b0d8816028382105ad7a97a876e8328f909507bcc08d215",
+      "bibliography.bib": "4a2d7932e8353d8290b1fe25dc2fbbb2afadd3d80bb23d28ca1615fbdcb1a514",
+      "Setup/Statics.tex": "18ee13c32b2f837a75b130c643b96683bca153dbcda759cdf50b9ee725342014",
+      "Setup/Settings.tex": "f646f71878ce7dc55d42267918fac134fe35a8f29a7ee0d35e8f1d2eed15e7d6",
+      "Setup/Preamble.tex": "979591ef083a02520898955d8ed233c5c3b22bc47f3f7d5308c1a55c70250ce9",
+      "Frontmatter/Frontpage.tex": "27da18a0f077c9be40f8804a03106d9d362715c2120ca38960ac47c061fa8d7b",
+      "Frontmatter/Copyright.tex": "2afb2a515768d11269d54f7174d4a2d80b38cc442ca801ee9074988e146b028c",
+      "Frontmatter/Approval.tex": "ea6160595145d88b4718d96f3f97632228373061c5a68bce297b12de11cb007b",
+      "Frontmatter/Acknowledgements.tex": "73742f6b0b78d9d1484099b95d9f45212ea9ceade7c9a441773a3847816c5176",
+      "Frontmatter/Abstract.tex": "31174317409ad498b913925a66a45db8c7b64bc4ad7d370c7c851f369d3cf888",
+      "Chapters/10_Conclusion.tex": "d9bfe644e7454a8f4020f2d9fa256ef27518961719b7e8f8bf100c067a0455d5",
+      "Chapters/09_Results_and_Discussion.tex": "95d05769cbc0be48b1df039c3c55b98b1538e7c1adce15734a382c6f6aae4b04",
+      "Chapters/08_Proposed_Improvement.tex": "e2e931838801ad41420d7e9d389c615365d1446f02f701be84ac0b3f62dc20d6",
+      "Chapters/07_Robustness_Analysis.tex": "843544001a347febb798c353854139d6adc6149c9322bad84bcf300b14fc558c",
+      "Chapters/06_Baseline_Reproduction.tex": "64972347e9327b47c5cbff8cea553c2db259c6dacdba62e56237c1ccc0747bc2",
+      "Chapters/05_Experimental_Setup.tex": "0914340564804e53bd82efbec57acb47108662b63aa1b0e5ef9df9857f313b97",
+      "Chapters/04_Methodology.tex": "2bf4cc72d4f5da95d5a52c20def68da37480240a305f84e543cf948f00f17c7c",
+      "Chapters/03_Related_Work.tex": "06e5d85728b65bcc1eea653278da75bc3392860fe90531b2e289a5e921b8d373",
+      "Chapters/02_Theoretical_Background.tex": "4ce6166d2dfd73e1a2dc7a5755d3f18138d28eb580858c35ae78d84d99f5dfc4",
+      "Chapters/01_Introduction.tex": "75d54cab9b812ba8a33b2a2d7e6e0119acdddbefabaefee7f8ca42ea00676507",
+      "Backmatter/Backpage.tex": "12f7f1fcb77ddf940567a43cb368d4463bfe6d300b6c1ed2230bdac5c7478940"
+    },
+    "changed_sources": [
+      "main.tex",
+      "Chapters/09_Results_and_Discussion.tex",
+      "Chapters/07_Robustness_Analysis.tex",
+      "Chapters/05_Experimental_Setup.tex",
+      "Setup/Preamble.tex",
+      "Frontmatter/Approval.tex"
+    ],
+    "unique_labels": 69,
+    "citation_keys": [
+      "bergmann2019mvtec",
+      "bergmann2021mvtec",
+      "damm2025anomalydino",
+      "defard2021padim",
+      "dosovitskiy2021vit",
+      "heckler2026mvtecad2",
+      "jeong2023winclip",
+      "oquab2024dinov2",
+      "pemula2025robustad",
+      "radford2021clip",
+      "roth2022patchcore",
+      "sklearnAP",
+      "wang2023mvtecc",
+      "zhou2024anomalyclip"
+    ],
+    "all_references_defined": true,
+    "tables_equations_citations_figure_references_unchanged": true
+  },
+  "visual_review": "All 53 original pages and 51 revised pages reviewed via rendered contact sheets. The final PDF was compared page-by-page to the reviewed revision; only printed page 19 changed and was visually inspected. The blank verso after the cover is intentional. Some chapter-end whitespace and the separate declaration page are retained.",
+  "scope": "Typesetting, contents, captions, references, source identity and visual preflight; no numerical results or equations modified. The 9 canonical experimental figure PDF hashes still agree with the repository.",
+  "bibliography_review": "All 14 entries cited and defined; public publication identities cross-checked. CVF open-access and IEEE-published pagination can differ; existing publisher pagination was retained where confirmed. This is not a new independent full-text literature review.",
+  "remaining": [
+    "Six informational typesetting messages remain; no overfull boxes detected.",
+    "Approval page signature/date remain for the author.",
+    "Preserve independent authorized backups of raw HPC archives; not completed by this audit.",
+    "No independent full GPU replay of reorganized inference performed.",
+    "Author must verify final content and submission requirements before formal submission."
+  ]
+}
