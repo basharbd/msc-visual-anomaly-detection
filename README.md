@@ -1,8 +1,8 @@
 ![Vision foundation models for industrial anomaly detection](assets/project_banner.svg)
 
-# Vision Foundation Models for Visual Anomaly Detection
+# Vision Foundation Models for Industrial Anomaly Detection
 
-*Zero- and Few-Shot Learning for Industrial Inspection*
+*Robustness and Reference Augmentation in One-Shot Learning*
 
 **MSc thesis | Human-Centered Artificial Intelligence | Technical University of Denmark (DTU)**
 
@@ -38,7 +38,7 @@ Each reference-selection run uses one original normal training image per categor
 
 ![Measured changes in image AUROC and pixel AUPRO](assets/robustness_results.svg)
 
-All 180 perturbed evaluations were completed with the same test images and reference identities as the clean baseline. The strongest blur decreased image AUROC by **3.08 percentage points** and pixel AUPRO by **1.53 percentage points**. The tested brightness reductions produced much smaller aggregate changes. These are controlled synthetic perturbations, not a validation on factory production lines.
+All 180 perturbed evaluations were completed with the same test images and reference identities as the clean baseline. The strongest blur (Pillow radius 1.50 pixels at the resized input scale) decreased image AUROC by **3.08 percentage points** and pixel AUPRO by **1.53 percentage points**. The tested brightness reductions produced much smaller aggregate changes. These are controlled synthetic perturbations, not a validation on factory production lines.
 
 [Full results and six-metric table](reports/lighting_blur/README.md) · [Per-run CSV](reports/lighting_blur/per_run.csv) · [Category changes](reports/lighting_blur/per_category.csv) · [Protocol](protocols/lighting_blur.md)
 
@@ -46,9 +46,9 @@ All 180 perturbed evaluations were completed with the same test images and refer
 
 ![Anomaly detection pipeline schematic](assets/method_overview.svg)
 
-AnomalyDINO (WACV 2025) uses a frozen DINOv2 encoder to extract dense patch embeddings from reference and test images. Normal reference embeddings form a memory bank. FAISS finds the nearest normal embedding for each test patch using normalized L2 distance. Patch-level distances form an anomaly map, while pooling the highest-scoring patches produces an image-level anomaly score. No model weights are updated. The robustness experiments transform only test inputs, keeping the normal reference fixed.
+AnomalyDINO (WACV 2025) uses a frozen DINOv2 encoder to extract dense patch embeddings from reference and test images. Normal reference embeddings form a memory bank. An exact CPU FAISS L2 index finds one nearest normal embedding per retained test patch. Unit-normalized features give cosine distance as half the squared L2 distance. Patch scores form an anomaly map, while averaging the highest-scoring one percent of patches gives the image-level score. No model weights are updated. The robustness experiments transform only test inputs, keeping the normal reference fixed.
 
-The augmentation study builds on the original rotation augmentation in AnomalyDINO. It compares four banks: rotation-only, brightness, blur and combined augmentation. Each bank uses one original normal reference and exactly 8,192 stored patch embeddings. Matched variants share test features and masks. The fixed budget controls the number of stored embeddings, not the complete computational cost.
+The augmentation study builds on the original rotation augmentation in AnomalyDINO. It compares four banks: rotation-only, brightness, blur and combined augmentation. Each bank uses one original normal reference and exactly 8,192 stored patch embeddings. Matched variants share test features and masks. The rotation-only bank is a same-pipeline comparator, distinct from the archived baseline; all 225 matched comparisons were checked against the archive. The fixed budget controls the number of stored embeddings, not the complete computational cost.
 
 ### Fixed-budget reference augmentation
 
@@ -69,7 +69,7 @@ Blur augmentation improves strong-blur image AUROC by **1.54 percentage points**
 
 ![False-positive and false-negative rates under controlled imaging shifts](reports/publication_assets/figures/05_threshold_calibration.png)
 
-For each reference choice, a threshold was calibrated on 40 additional normal training images per category, excluding all three reference images. The thresholds were frozen before applying them to the archived test scores. Across 225 matched condition/reference comparisons, strong blur increased the macro false-positive rate from **8.32% to 20.34% (+12.02 pp)**. This is one-shot reference detection with additional normal calibration data, not strictly one-shot total data usage. Calibration evaluates the original baseline only; it does not establish that augmentation reduces operational false alarms.
+For each reference choice, a threshold was calibrated on 40 additional normal training images per category, excluding all three reference images. All 45 thresholds were frozen before reading the archived test predictions for this retrospective operating-point analysis. Across 225 matched condition/reference comparisons, strong blur increased the macro false-positive rate from **8.32% to 20.34% (+12.02 pp)**. This is one-shot reference detection with additional normal calibration data, not strictly one-shot total data usage. Calibration evaluates the original baseline only; it does not establish that augmentation reduces operational false alarms.
 
 [Threshold results](reports/threshold_calibration/summary.json) · [Calibration protocol](protocols/threshold_calibration.md)
 
