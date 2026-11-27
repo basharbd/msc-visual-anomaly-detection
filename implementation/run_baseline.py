@@ -298,7 +298,7 @@ def main():
 
     if args.condition:
         result.update(experiment="lighting_blur", condition=args.condition,
-                      transform_sha256=sha256(ROOT / "scripts/lighting_blur.py"))
+                      transform_sha256=sha256(ROOT / "implementation/lighting_blur.py"))
         if args.condition == "original":
             with (baseline_output / "predictions.csv").open(newline="") as stream:
                 archived_rows = list(csv.DictReader(stream))

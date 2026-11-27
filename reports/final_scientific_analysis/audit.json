@@ -1,0 +1,37 @@
+{
+  "verified_runs": 900,
+  "unique_pairs": 225,
+  "bank_patches": [
+    8192
+  ],
+  "metric_range_tolerance": 1e-12,
+  "ap_max": 1.0000000000000002,
+  "archive_max_abs_metric_delta_pp": {
+    "image_auroc_archive_delta_pp": 0.0,
+    "image_ap_archive_delta_pp": 0.0,
+    "image_f1max_archive_delta_pp": 0.0,
+    "pixel_auroc_archive_delta_pp": 0.0002770766135196112,
+    "pixel_f1max_archive_delta_pp": 8.179139704411753e-05,
+    "pixel_aupro_archive_delta_pp": 0.0010116664461934377
+  },
+  "archive_max_map_error": 0.1692559123039245,
+  "strong_blur_image_auroc_delta_pp": 1.540091573027587,
+  "strong_blur_image_auroc_delta_excluding_transistor_pp": 0.6471219234819385,
+  "strong_blur_image_auroc_reference_means_pp": {
+    "0": 1.7040159605740888,
+    "1": 1.6156435464580832,
+    "2": 1.3006152120505896
+  },
+  "strong_blur_image_auroc_category_positive": 13,
+  "strong_blur_image_auroc_category_zero": 1,
+  "strong_blur_image_auroc_category_negative": 1,
+  "source_sha256": {
+    "/zhome/ef/1/136561/msc-vad-recovery/logs/night_run_30402340/reports/reference_augmentation/per_run.csv": "392badc6bf10bd9d6e66430fe9d5883c0b139eb5508ed59b8cd162d9cf0578dc",
+    "/zhome/ef/1/136561/msc-vad-recovery/logs/night_run_30402340/reports/reference_augmentation/per_category.csv": "0746b647f1b7ef476c26a534f6055e6f83d0d0647df07e036a1ddac563fbf622",
+    "/zhome/ef/1/136561/msc-vad-recovery/logs/night_run_30402340/reports/reference_augmentation/macro.csv": "da79c6de8aa8aae03b805c20a6598d2c7f41fb645641a84a7f39c0ab17d29547",
+    "/zhome/ef/1/136561/msc-vad-recovery/logs/night_run_30402340/reports/reference_augmentation/factorial_interaction_pp.csv": "0e36973f7bb26c6a0c000c7e24d12e8dd71ccac1c1ae8d98d527675d77fd6302",
+    "/zhome/ef/1/136561/msc-visual-anomaly-detection/reports/lighting_blur/per_run.csv": "f36b390360c2a0b6310c5160edd6b9324e39143134c3f4d58950c835deab0281",
+    "/zhome/ef/1/136561/msc-vad-recovery/logs/night_run_30402340/reports/threshold_calibration/macro.csv": "17dd70ae8f9d55a2ed69412e3e894d0fdacda4f0e6e3236f75a45ada7831e11a",
+    "/zhome/ef/1/136561/msc-vad-recovery/logs/night_run_30402340/reports/threshold_calibration/per_category.csv": "cf0cd231388225edf5d8073319dd5c2bb3b5ec127d62955d4614d4763cbc036d"
+  }
+}

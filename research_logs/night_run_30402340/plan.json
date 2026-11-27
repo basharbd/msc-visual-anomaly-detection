@@ -1,0 +1,2392 @@
+{
+  "reused": [
+    {
+      "path": "rotation_only/original/cable_1shot_seed0",
+      "record": "bedd8465496acffe1581dfa5a6a06456e38b4520375745b626e810dae437b41d",
+      "evaluation": "33a9864440f8afc00196dc98115025d901cdaf4fe162d8db33dcfeee9b111f40"
+    },
+    {
+      "path": "brightness/original/cable_1shot_seed0",
+      "record": "768f0085f72e131f15843880e4d5b8cb804ca84eb16ad9234c9af1db5bb91c02",
+      "evaluation": "5cd4bebcc8574e9aaacacbc657a62c268fab386e8fb551c635c72b2aa523ea2b"
+    },
+    {
+      "path": "blur/original/cable_1shot_seed0",
+      "record": "e9d76c5711e577f71ff211352498e72ee8c540575ba32d5345cd14066436e20d",
+      "evaluation": "b8a6d17bdd89f279b9478c1c60953ab1802153b65b26484a7b3ff5a33d381ef0"
+    },
+    {
+      "path": "combined/original/cable_1shot_seed0",
+      "record": "5e951bb7bd64df8697683c9be07498100e6f24964ab29a3cdb9189e8559df7d1",
+      "evaluation": "8f1f0f78f2ca117ca28c6aaee0729aa89e04ee83c111bc2f3a3513e82f083b53"
+    },
+    {
+      "path": "rotation_only/original/cable_1shot_seed1",
+      "record": "1942fe5fdfe64641b789830f5cd0c864b418744000d6b291c1884c04119062df",
+      "evaluation": "31d53c07fc738b8a5fdf15ce07160542358c96c21fc0e90e72b567e74b4beb50"
+    },
+    {
+      "path": "brightness/original/cable_1shot_seed1",
+      "record": "28e1655787375d592bd002398dfa42283d65d90154a1ad71f061d52fef8b7620",
+      "evaluation": "69008a7d50dcc3e9f9286f6c605ed8a94d8c64f18f700b0ec8dbf1820669c58d"
+    },
+    {
+      "path": "blur/original/cable_1shot_seed1",
+      "record": "3fa2b7c46bab9388d8b3e457a2bd629dc88741fe1540a0bb650977061a505767",
+      "evaluation": "d322b5287a335f5f841ee8f73e72812ccfa8487c9e13df473d0a9fcdd1585c17"
+    },
+    {
+      "path": "combined/original/cable_1shot_seed1",
+      "record": "51c7e101862447c02cb8bfeae7d4ef1061f93dc557cbce1b6262f48b1add72d6",
+      "evaluation": "90d849aa674851ab8eb83ce1edcf2f68f3f14ac3746a408ff393a958289e067e"
+    },
+    {
+      "path": "rotation_only/original/cable_1shot_seed2",
+      "record": "ee9a81716d126804188efc33a59d897a90e2d777be761e5db1f03baf5cfd885c",
+      "evaluation": "ee42028d15ee44f4d8ad92a08e21133ba2cc36902f4c0d642bb7f5753281a5bc"
+    },
+    {
+      "path": "brightness/original/cable_1shot_seed2",
+      "record": "914ed0cc3c29a22bc5140c5b421e3783c8aaf2ca5784fa4f5aa04897bf45435c",
+      "evaluation": "adc67b95184ccec90fc773131c709a2329b429fcd39af88b16e4729b67a7ab0a"
+    },
+    {
+      "path": "blur/original/cable_1shot_seed2",
+      "record": "f9a623d919ae387a2a4516592964d6e879306861541c285f4977a9c000c48417",
+      "evaluation": "219625b60e809ea4e52a99295e0c64e826c911a364fac4f783be888a3b54e73e"
+    },
+    {
+      "path": "combined/original/cable_1shot_seed2",
+      "record": "3b97de35fbb4429816884b2ec85aa703587c6772813ecdba096c4290cf3befac",
+      "evaluation": "6dd3d13dffe8f2b79a29538404e0ff718608bdfcb9cad19640a8feeb82abb8da"
+    },
+    {
+      "path": "rotation_only/brightness_085/cable_1shot_seed0",
+      "record": "5654ee676de13a4312ac240a08bb01e63d65b785e18a3363d855fa0e149a7cf2",
+      "evaluation": "09f971389806f2d8ab035501ca22256c65b215291efef3b9b65874f2ea9602ee"
+    },
+    {
+      "path": "brightness/brightness_085/cable_1shot_seed0",
+      "record": "aa801ba7509f79bd504755e3726972144bbc39a0ddf4aeb7e0b15969eef7090a",
+      "evaluation": "0f5b735751f079a5dfe8b9d50e38c02f6d850ca42a47e5216eb0ccf19e3c9c88"
+    },
+    {
+      "path": "blur/brightness_085/cable_1shot_seed0",
+      "record": "c1a93f7714b8240cb2ad022a5daf1b8e38c58198ccc25757a47254761f097f91",
+      "evaluation": "05fff5d298cb0ee3b0e3405b5aefe896ed3a5b29cc5d985121ca279888a31459"
+    },
+    {
+      "path": "combined/brightness_085/cable_1shot_seed0",
+      "record": "2ea3f6989343032cf56deea715eebf8e7ce4840c406dc07fae8ec2770ce40aec",
+      "evaluation": "b18fc2b26bf9e213d3d5a74370a062e6479efa9a9321c8bbfdadd3e20ef7aed5"
+    },
+    {
+      "path": "rotation_only/brightness_085/cable_1shot_seed1",
+      "record": "d88a90395299772cc182de4e280962f38124d1c0b76c354c8c6793fb207b310c",
+      "evaluation": "25631ccb941641085d7872a17683df3c1d5075464d0804cf3cc7ffb058da2d2a"
+    },
+    {
+      "path": "brightness/brightness_085/cable_1shot_seed1",
+      "record": "69371800526ce17edc2549dcc639e4c20c9dfffbb7025b6537c380f658a0e1b0",
+      "evaluation": "7ed25f9d9867fc6f825902b754f7af16522c75d875e5d0ec7d362a3b2ce011fb"
+    },
+    {
+      "path": "blur/brightness_085/cable_1shot_seed1",
+      "record": "0f8cd6fbd277e8081574c106bec1befae0dc8c00d14dcf4623a28a13792894bd",
+      "evaluation": "316a605fae388d6a0652163e473926a92e15f29e4df6b0aa406a6a2ce0f19b31"
+    },
+    {
+      "path": "combined/brightness_085/cable_1shot_seed1",
+      "record": "8ea3a0c5bd2d1e8f5bd6b11417a623436ccfb75ef20becd5c1a253190f7b4f02",
+      "evaluation": "1565ce0948f062c97f54c047bb72914ff0c75fe6d2ce839743be4794fcd311e4"
+    },
+    {
+      "path": "rotation_only/brightness_085/cable_1shot_seed2",
+      "record": "ea3b85bc18cc23ee069a3cbb666963aad8f97fd8c6cd1be987408b797036c7d7",
+      "evaluation": "898f2113196285a92edab9f7e97ed9eb87fef6c5cbb7cfa8f73044739cb7a78a"
+    },
+    {
+      "path": "brightness/brightness_085/cable_1shot_seed2",
+      "record": "548034ce9b877c7cabd23306ab3fd6714b63bb83f7aa98cadefe06a94943cedf",
+      "evaluation": "5cb9e541874118e25bcadb64a5a58308edfb2cef2af4d54b992d105610ee8c24"
+    },
+    {
+      "path": "blur/brightness_085/cable_1shot_seed2",
+      "record": "38eb9f6600bb69c43c3a370475dab05fb3389bca20a54a12d1cb28b35c753661",
+      "evaluation": "17243e2946bb8217147de0f411072a334411893ba79bc92802ea1104176fc9ea"
+    },
+    {
+      "path": "combined/brightness_085/cable_1shot_seed2",
+      "record": "de516ccb3fbbae1319a7c0f499531113aca57b2c595c29c59717de59753c8255",
+      "evaluation": "6a8d4e864be17320442ef8baefe886470ca9cf665d001791d226ba3f4b021bbe"
+    },
+    {
+      "path": "rotation_only/brightness_070/cable_1shot_seed0",
+      "record": "4b1cbc5d50aa826cb7e3535e02d9f2728cf815b656a33c56b566c46d974aeba8",
+      "evaluation": "8048cd56a172215c88079442102375a691220e43cfc65ca9d732a592efd0d212"
+    },
+    {
+      "path": "brightness/brightness_070/cable_1shot_seed0",
+      "record": "d9edf77a900523afc5dd17a01e62f357c90b07961908f4e77bb8ab77dc4a0bfe",
+      "evaluation": "27f607ac1eacf3109c637120abb78f548838c4b9ed8737588ed03a21a2ecaee9"
+    },
+    {
+      "path": "blur/brightness_070/cable_1shot_seed0",
+      "record": "19b182796037cf37413a62a2491ea3d7cac02dffac66bcc33e23ec8887fda5ca",
+      "evaluation": "ef7d147d7707e288ccab6e0df9c356077f9b90237cb7628b642c30b08d0e25ed"
+    },
+    {
+      "path": "combined/brightness_070/cable_1shot_seed0",
+      "record": "1506af4ddd81a6323ba4f948bca3f28cbc05848934438c0d2f29ed036e2afbdc",
+      "evaluation": "3f8125c6e8b3b51dc11dd66f0114e2ef56bb8d9263af40c06feb0ecddf7b61bb"
+    },
+    {
+      "path": "rotation_only/brightness_070/cable_1shot_seed1",
+      "record": "14feeea0aad3e5722d9592818e689e7193453b9c759364cc1aedb99cfafa7b74",
+      "evaluation": "05ec13219bdd5ed7828c9f6cc53f39ebbb0e9e704716c31198252de66597214f"
+    },
+    {
+      "path": "brightness/brightness_070/cable_1shot_seed1",
+      "record": "351383088ef6c87205147af323caa33d985f4dade91e7d2f0e913f280df78368",
+      "evaluation": "6635ff913742a3b06108ba064198d6140cd7f9e4a0e2a95f629e7aac3f560f10"
+    },
+    {
+      "path": "blur/brightness_070/cable_1shot_seed1",
+      "record": "a79e367bfb08e0bcb08fccfc5ab576bf549a39796d62852384cf5518dfc5e7df",
+      "evaluation": "c5d3aa7248cfa369df6d9e36fa733e9f48ababc5cba88742508ec3a88239c16f"
+    },
+    {
+      "path": "combined/brightness_070/cable_1shot_seed1",
+      "record": "4d9e475994a813536dedf3c87ea381fdde9c704e5105d48680e1c04dc50258d0",
+      "evaluation": "4d4805922d8782e1d7d859d786a27cb1b08e8a578a7cfe8ae4845ce666d7acd9"
+    },
+    {
+      "path": "rotation_only/brightness_070/cable_1shot_seed2",
+      "record": "4e25d010b65326b9403f68a048a1f4abd135fe17e54f647f1e97935d229986fc",
+      "evaluation": "db12a6ff74ee56c4e5ead0b4a1acdd301a5e0d279016ac8e1219453c63002205"
+    },
+    {
+      "path": "brightness/brightness_070/cable_1shot_seed2",
+      "record": "4786143860275d57e04ceecc47f8694fb8afdeb54583d71e6e729b3e3a319a35",
+      "evaluation": "0384902e6ab1095f2882cec86309af87f69bb032e8be6ea49fc968ac0f91a37b"
+    },
+    {
+      "path": "blur/brightness_070/cable_1shot_seed2",
+      "record": "3089b74746f28802f8f286b2991a7b41af48f9b0b3d7b5d00223745ec25bd99a",
+      "evaluation": "369c8be86a227567b1aba7353fcfb418361d3622242da8072eaa04faf7bdad4c"
+    },
+    {
+      "path": "combined/brightness_070/cable_1shot_seed2",
+      "record": "4e035984a68568ac2d47cfe3539842ddb02e50c02322d6d15c850e421147c9d7",
+      "evaluation": "5688142e78fe1892681558c63fc7110571b1b8d08e9d1568d7f8b72513266691"
+    },
+    {
+      "path": "rotation_only/blur_075/cable_1shot_seed0",
+      "record": "43a3b6d96474e0ca4adca32f867163077e0d705e9d3ad335997eeb7498e7abd2",
+      "evaluation": "f71730f6e38f7e7c2a9aeafe6fe9773abdb229b27e0ef31ae3fb6e1fc435eb0c"
+    },
+    {
+      "path": "brightness/blur_075/cable_1shot_seed0",
+      "record": "70a87c51718eefdf63e5b0c084c6765c990d7f2f038aa99bd1d431b1f29f6120",
+      "evaluation": "3f5439efbb0e7f4e216acc83346a9cd65329d334ead5ed7f9a9e03897c891459"
+    },
+    {
+      "path": "blur/blur_075/cable_1shot_seed0",
+      "record": "f1c3fe21e61ac2d978cda70546d30ab6ea27bf61a4790c0c8f250ef145881e68",
+      "evaluation": "ee3d146a834d29d2852f5b50d9caac6590969b2090938ff807bd135b4637d4d0"
+    },
+    {
+      "path": "combined/blur_075/cable_1shot_seed0",
+      "record": "bbb1d3241aa62b0e6a9641197f9fccacbbd406c7364635f5ef7fd7356cf6789c",
+      "evaluation": "3da4c470564be175a04480e5234b7bc10e07b75fe52f3834f448f669adeab3b2"
+    },
+    {
+      "path": "rotation_only/blur_075/cable_1shot_seed1",
+      "record": "d36edddecf6ca819fb9fc1b0ddd05bbe1b518a1a74227cccf7ec2d916f20eb56",
+      "evaluation": "9855ebf63a46ef6aac0821894297afd4d84e5f5fde5a3197f2fba27c06efc84f"
+    },
+    {
+      "path": "brightness/blur_075/cable_1shot_seed1",
+      "record": "aa1edda067d6e1bd2c9a80f8a46e4478d589458203675deedfb7d8161dcd318c",
+      "evaluation": "790188919b022864ca773bbc9dc64a254ca472d60b6f3a6d126f94481f5dd83e"
+    },
+    {
+      "path": "blur/blur_075/cable_1shot_seed1",
+      "record": "15d3b0486376e070f0bc3f1babeac256beede80a412d53773d2212424b839385",
+      "evaluation": "7a854b40eafa0fb3287b67061027663e1e330f2bca42b316688d96c9c000551d"
+    },
+    {
+      "path": "combined/blur_075/cable_1shot_seed1",
+      "record": "63238535843a922ec6578b8e8df54be9b5a676a67b1b647f8e8329b110b1baca",
+      "evaluation": "fec4a025c0f73049b1b7b2765990427f19890af31695446b3dd2d6c3d7d24c74"
+    },
+    {
+      "path": "rotation_only/blur_075/cable_1shot_seed2",
+      "record": "7afc507c5c84c4d5a891addc94f6685d28ff20d16f5a9dbb666494594bde628e",
+      "evaluation": "be5950e0732a3be73aa85a35f1b1f1d896dd2042fa478f7dfa548d8efe95b1e8"
+    },
+    {
+      "path": "brightness/blur_075/cable_1shot_seed2",
+      "record": "11c18dcea0526226893f6f327e92759746e0fff50456d391407d5f73532b4682",
+      "evaluation": "474a5ab46a121465ceb395f72329643353ff397ba812603f960ad1e207d65a04"
+    },
+    {
+      "path": "blur/blur_075/cable_1shot_seed2",
+      "record": "81893841b900c691bacf549ec0a3d3bd156035711835d9100e14f1ed348a59e1",
+      "evaluation": "203ff4fa6d8aa0d6c9f3a39520a947ceb28e079752ecc3641d7d6a2209f2b34e"
+    },
+    {
+      "path": "combined/blur_075/cable_1shot_seed2",
+      "record": "38443ff82dda80ab445612fa6564fc51c45d1afc1082dc1b81a84bfb54a23f62",
+      "evaluation": "72b05b1ffbf73d342629808beaff4b5e3d6b4173618a753e244b5578f7fb3f96"
+    },
+    {
+      "path": "rotation_only/blur_150/cable_1shot_seed0",
+      "record": "b75396160da973898c6af9fba43dcfe4b97ae563596c1f02e9869f3d383eb9d5",
+      "evaluation": "b607f3754145763a3e1f80d3f3a2705d0c5bcd63c2872eefa81e9e2dfe6f6eb6"
+    },
+    {
+      "path": "brightness/blur_150/cable_1shot_seed0",
+      "record": "f3e049bf8763642d4cbd3b7df09def272186fef4f3c111481708c34aae0aacc1",
+      "evaluation": "7cd40fc903fe88b264378e9c32fdd313823a8af1e596cda1de5fc2b2cd784b2a"
+    },
+    {
+      "path": "blur/blur_150/cable_1shot_seed0",
+      "record": "f1a5e44a8bb88c715dd54883fce30fc53557ee62df34a5027973c958cf90ba49",
+      "evaluation": "87b29089d7c5d5dc6eeb6bce77b6b32b64568d5c94d0f7fa129893b9ac9ba8ad"
+    },
+    {
+      "path": "combined/blur_150/cable_1shot_seed0",
+      "record": "bb72f3a8c24423d179f18745446f4202218d0a54c304612de146f90118fbf73a",
+      "evaluation": "4870bbd52c069606bf20fa27428d476c1a8cf92e705c6a19022937d026547ba0"
+    },
+    {
+      "path": "rotation_only/blur_150/cable_1shot_seed1",
+      "record": "4c72cc429880c7f049b97539e18d7440ceed2a3b49b0dab10b1126ad07ed927b",
+      "evaluation": "b30020a6f08e02b50d78c552c0620739555c9f5b075c8b1ddbf94eda738354ce"
+    },
+    {
+      "path": "brightness/blur_150/cable_1shot_seed1",
+      "record": "760bd9d8e495989d440cf8b8398f4b70e33c2dc5cba581134f8fcfc81b8192bb",
+      "evaluation": "4eb1fe5c1c7f0ab29e8926805738ad3c817f3bfc1596f535f8211bbf268751d6"
+    },
+    {
+      "path": "blur/blur_150/cable_1shot_seed1",
+      "record": "2ddf37c41ccbe739c57e3ebaa019716f7c66423b8d5c6ec0506df040d60ea4a8",
+      "evaluation": "a2d244040e94ec95d5f2f4b55b315a1c5165e204153c8ec12d83b5b90264621e"
+    },
+    {
+      "path": "combined/blur_150/cable_1shot_seed1",
+      "record": "c2b01f7830cae183aed8296db621d847bd71d434482bd72445faaf42bb28b12e",
+      "evaluation": "c2f98708178aadbd5fe90714c0fbf8888781be1cd5229e739e28831f99c351e5"
+    },
+    {
+      "path": "rotation_only/blur_150/cable_1shot_seed2",
+      "record": "4bf90f2979ad57e6987b35144b8af3d5e94f0ca9107a472912721d76ff8e60a3",
+      "evaluation": "8d0023e331452c13261a6307e8cb79732aa7ec09312e42dcaa754bf79b197452"
+    },
+    {
+      "path": "brightness/blur_150/cable_1shot_seed2",
+      "record": "94be3e22107d59e4fabe42f174922e4ec41fc1abc130c3c5712e1d334232a6e9",
+      "evaluation": "37d05810c48557104e2bf88c7208b8272cbfe7e452e6860a4e84503d4c5f3deb"
+    },
+    {
+      "path": "blur/blur_150/cable_1shot_seed2",
+      "record": "d78008518310b530a7330dd578cd3d45bc2697e8ec8443335226893e0ff64110",
+      "evaluation": "0ca1a1c18bd5ac3a30d2c6cae0b8f5b787d5c3777937919702ff37cfd5e44dfe"
+    },
+    {
+      "path": "combined/blur_150/cable_1shot_seed2",
+      "record": "d0a80a04a2efb27e2f3f37f6452e4c55b168e2f87206c9b5255c70f9695fd0f3",
+      "evaluation": "cedce912d7f416bb166dd834f2e0dbe39a90c954573d85d2e2781545f8990872"
+    },
+    {
+      "path": "rotation_only/original/capsule_1shot_seed0",
+      "record": "1f0be3cf5456e290179e9c9faee4e6e27cd9f08441aff0b843f4ca927b8f4288",
+      "evaluation": "235a5ebb29dabafae545804a6db78d080ac1fc4a107da1fda813c5f63ec65292"
+    },
+    {
+      "path": "brightness/original/capsule_1shot_seed0",
+      "record": "55e428bac436112c7dcf92812c52a82ecd9005cce2d9857872e65f8da08aac35",
+      "evaluation": "3080ceab64e9d5a814799078b9871785698cb7339a11c2f05363624b31e71315"
+    },
+    {
+      "path": "blur/original/capsule_1shot_seed0",
+      "record": "68c9512e95f56a223a7e48a5b5a61303ca92aa2db7f24ad0a92729cfdbb2cc89",
+      "evaluation": "6e0cac5f95412def47def704dc4edf4bb565829b0172cb5d99be6ea0179bb063"
+    },
+    {
+      "path": "combined/original/capsule_1shot_seed0",
+      "record": "ac459e923a99518fc9d66ccdbd1c609b633845a35d5026d87cbc2dc7bc42cda6",
+      "evaluation": "836729fb764a26e9566b5485e3b84128141629f855ca23c35d53ec6e941fa617"
+    },
+    {
+      "path": "rotation_only/original/capsule_1shot_seed1",
+      "record": "7cb3960588a9a7519e972069ff83af8f4e67d846a2da21344347c4bc82a1184a",
+      "evaluation": "4a5a579ad967fc104499f7f4fd3495bbc6b99ffc29fae58540187d3814b1a314"
+    },
+    {
+      "path": "brightness/original/capsule_1shot_seed1",
+      "record": "3f4e61ae34eaabb5088349c4d2cdcd94d9fbbc3af3f3819e71f653224ed7cbdb",
+      "evaluation": "c46ce9285091d400958a09052ca4c9c839249bee21e7636bda867ae5f830052b"
+    },
+    {
+      "path": "blur/original/capsule_1shot_seed1",
+      "record": "8fa28481e7058224ccee4d2627effabca9173f73ed1623ef01d32ab8eb543c0c",
+      "evaluation": "d366eb6e21d5589df1bd6bd22da14777fe3d5e393dcb3e2a7b575ab67031486f"
+    },
+    {
+      "path": "combined/original/capsule_1shot_seed1",
+      "record": "5f6663890009f22248a1df76a50d5c1ebdf5b7e8faf6840c33117d7bd1b16189",
+      "evaluation": "38d359f2e0271edc61d958c2d1e2e8a088d31d0260ddbb42d517e8b1f3e84d62"
+    },
+    {
+      "path": "rotation_only/original/capsule_1shot_seed2",
+      "record": "4d3d821f17019fdcd71f4c97e23e0e9b2c907aee4d9399dd0992929d03babaad",
+      "evaluation": "2c639940f52341b1d570e1b9954b138fb72d88287b004d7d903d7e7b555b6d37"
+    },
+    {
+      "path": "brightness/original/capsule_1shot_seed2",
+      "record": "fb2efe9dd72260b2dfc434e44643d35c5a31794d05e46c0d8317602c10ded749",
+      "evaluation": "6b27391ebfad0f46289c531ddc623aa68aeca34f0cec7d29fd777f5a92873157"
+    },
+    {
+      "path": "blur/original/capsule_1shot_seed2",
+      "record": "ed28f3da2045569da095433e72b1fe7a6a4e063e72b593ab0a8790ee6b09fef6",
+      "evaluation": "2dff1cca6ad0a8fa7b5f058bdff833df6c97c452b6c3382ca3e735dba4419aff"
+    },
+    {
+      "path": "combined/original/capsule_1shot_seed2",
+      "record": "421d5ae26934b6a61aeea32aa8297c8ab37cf0f66bbc20ec78f966f13f630e3d",
+      "evaluation": "7b99b341de1e2ffc0f72586a15acab621ff80635f64fe8c7561d3e0172e7af11"
+    },
+    {
+      "path": "rotation_only/brightness_085/capsule_1shot_seed0",
+      "record": "2234602de7c823fa18f2a3f8933863bb4f794ab2c17dcd45efcfc8e9df43bbe0",
+      "evaluation": "4790b5b69f0eac083e00c7bdfe3d9ed3031cdfe57e7d53bb8e5f95d0242eb4e0"
+    },
+    {
+      "path": "brightness/brightness_085/capsule_1shot_seed0",
+      "record": "257941758f0f32df85028cf74669267193d1c9f20796fa60019e8fbfe8e34a86",
+      "evaluation": "fe19eadf3cb0b087fe17e1149244f1124e559bc1e67332c310ea99f9d3e53c6a"
+    },
+    {
+      "path": "blur/brightness_085/capsule_1shot_seed0",
+      "record": "6a956c344902641dcd8846d1c1cb786f222bc5217d3b19ef12d3eecc4a47d56c",
+      "evaluation": "9ffd55ce9a829872793a72f380efa3835990788eef190bb05a543b22496b7ddc"
+    },
+    {
+      "path": "combined/brightness_085/capsule_1shot_seed0",
+      "record": "2887dbbd725ac89816266a3635b53ebc002e69b8ef560ff3d5785d6fcaab9cfb",
+      "evaluation": "b936a36513cac84300d68336ea586586a5c7d38da60f8e45dee5242755ea0cdc"
+    },
+    {
+      "path": "rotation_only/brightness_085/capsule_1shot_seed1",
+      "record": "cc0f9aa960d0e84e36083c5f14d1b377165fd0144c5b11f9fa40eac0a655af81",
+      "evaluation": "194120404bc8ec1181f915b6eef7b3050da413da906e99d5e2c041f99c5b6579"
+    },
+    {
+      "path": "brightness/brightness_085/capsule_1shot_seed1",
+      "record": "90ea5dd5eaa4a058a3c80f3cec13c3943d67c1fca1a5e21571c146e4d96698a3",
+      "evaluation": "f27fe1bca7f25377a8518ca4e7e35bde7c12010bba5d06de9cbba668dc06fc78"
+    },
+    {
+      "path": "blur/brightness_085/capsule_1shot_seed1",
+      "record": "5ca8d0b56e72abe402cf21aa2ec4bbe92973e2257b042660b7c674009265a057",
+      "evaluation": "f57a4d88966dd390aaf874fdf54467f7b8d700f59710196c97ab9b0252464ba3"
+    },
+    {
+      "path": "combined/brightness_085/capsule_1shot_seed1",
+      "record": "c3af5f61f06dd8538f7fe592e5e9a5db85d6f8a5351d8fa015a0e631a29dcab1",
+      "evaluation": "50c1a570119a1131d14293154d77f7bdc8ff7a46b05ebe6a07c4489a6a96c8c2"
+    },
+    {
+      "path": "rotation_only/brightness_085/capsule_1shot_seed2",
+      "record": "52b39ce646e356133252a9e2e5facf372d7611342090ccf485717d4480fe489d",
+      "evaluation": "96000d0bf67ae3f2b55d2de1b0a7a430c0e649d4c82aa449beb164ac5714c133"
+    },
+    {
+      "path": "brightness/brightness_085/capsule_1shot_seed2",
+      "record": "5058f207d7f8800335186e94e68ff8ef49c78fdf2bc7b36be5357bffaa7fe0d5",
+      "evaluation": "e3b214b5ca200f43778cc27155e8654b58afb938b54936e0680049fd19328254"
+    },
+    {
+      "path": "blur/brightness_085/capsule_1shot_seed2",
+      "record": "f0da57a1114c3b6c3b26dd60aaad8aba0f723bad473089a8f4f131f8dc8acaab",
+      "evaluation": "e3cc79e17cd0fa9fd8bf8837fc19c3ceef0a57d27b2c5a2869662edef4904d98"
+    },
+    {
+      "path": "combined/brightness_085/capsule_1shot_seed2",
+      "record": "b127096ffcaead8bb929004104739447e57a8af86175b9ff487996b238c718ea",
+      "evaluation": "9a758a21cd2650820772d30812073fe12c6d0c86de22dc3c4113b851936b166e"
+    },
+    {
+      "path": "rotation_only/brightness_070/capsule_1shot_seed0",
+      "record": "f3b254cd51eb9f75d71537f63862a2790e1d035f20d0ee10bd8560f4ca358ca2",
+      "evaluation": "11f897261e6341126d0307710bd3fe28b28701b511cb6988ddcfb9056bb566e8"
+    },
+    {
+      "path": "brightness/brightness_070/capsule_1shot_seed0",
+      "record": "c1f69d2fb4dfccaf6e965e29c2cbce640ccea4c00156207f06ea624a609727b7",
+      "evaluation": "b0d69a844f641d3217a2a9b8996e82d33f97f095903df88e0f141b7e09bfe175"
+    },
+    {
+      "path": "blur/brightness_070/capsule_1shot_seed0",
+      "record": "c89b570272f1b45ed7917b2a9f843147fef461d5e33bfc1603d2671f21241bb2",
+      "evaluation": "0248aec316f474fae2d923b526d97c192c6e25838fa342cf6336610aaa5540a9"
+    },
+    {
+      "path": "combined/brightness_070/capsule_1shot_seed0",
+      "record": "d1a3565af4bcefc6aa9184f28192b1a5b0af20c8f8dc44ff3499e3ca5e80bd8c",
+      "evaluation": "5a390d406ccc9f88e6af6b8815153f83cc8dfe10d7a0c47b96b05042a91b4af1"
+    },
+    {
+      "path": "rotation_only/brightness_070/capsule_1shot_seed1",
+      "record": "cdf0b32cfb102c9e97ac965a7f826b8ee50fd93195b12503bafcbbd2459ebde8",
+      "evaluation": "a4b7d64d0555cdc5548c2cd8aeea7c3f29d933786962d7185ac2cac2f5bd087a"
+    },
+    {
+      "path": "brightness/brightness_070/capsule_1shot_seed1",
+      "record": "a728b8bc1a7045414c3f9ce0bafb1c7530f983ebfb37bb94da6246ffbc0bd251",
+      "evaluation": "cde4f3c332917bc98cdf97766d41121cb9f4ed19bd0921e5e8b4e393b8aeaa0a"
+    },
+    {
+      "path": "blur/brightness_070/capsule_1shot_seed1",
+      "record": "50b37997ffed231fe8acb25a3e61640fb2d0a90b1f257394830e79cb9c318f79",
+      "evaluation": "626817a13eabf30df8019f2ee0549cf539982882451e612f08593dba13cefb79"
+    },
+    {
+      "path": "combined/brightness_070/capsule_1shot_seed1",
+      "record": "a836ca30dc9b021246c234f117ebf3de658f243fefa55e6691ef48cb8a7a9396",
+      "evaluation": "d636ca9660b56fbb9dd8bddf2f05e031dc98ae7f189b18cb82a4f5e2cedcc923"
+    },
+    {
+      "path": "rotation_only/brightness_070/capsule_1shot_seed2",
+      "record": "88249eacefb0f351d4195df72acdb3dc4070c01f88960f2fdbf9d12c1ebd9248",
+      "evaluation": "5b020009852db4ca15d5494a4e9666703d40fea4d728b8e0a48861b36daccd77"
+    },
+    {
+      "path": "brightness/brightness_070/capsule_1shot_seed2",
+      "record": "c9dfaef3f3878eafe89128383d7810e2ea47e21b3a7a75f411b78f534c6dec81",
+      "evaluation": "0f6b8a60f27fc071baaf3da800a4b0d477422a208af647aacb1d9f5f06be794a"
+    },
+    {
+      "path": "blur/brightness_070/capsule_1shot_seed2",
+      "record": "1c792e54c4153eb3ce5a5f68a9057dd852e8f25dd0bc7f7cc8b8cf6b58ed8ac5",
+      "evaluation": "f5ba4fe55087889a34523e95e34581372ff8593ebc6bf9be3496a248354f9c9a"
+    },
+    {
+      "path": "combined/brightness_070/capsule_1shot_seed2",
+      "record": "409ce4610979bd5dca1dcc3893e4c85e1511ac6688893bdc4f5996c6dd883ef6",
+      "evaluation": "ca21e668ae938e1b002dc7c86653947627736d289bc1dbe15b4f6e61eb77ed3d"
+    },
+    {
+      "path": "rotation_only/blur_075/capsule_1shot_seed0",
+      "record": "cfe89ba26f548e9cd627ce58855fdc7c59dc22010292f7ba7bebdfa01d2d71c9",
+      "evaluation": "d817f0067cf70dd9df395bc756ea91793bac35305c47e24ab52ea189fc4e3eed"
+    },
+    {
+      "path": "brightness/blur_075/capsule_1shot_seed0",
+      "record": "2ec12715a9b8bc3edfaf3ed1d36daebc87123da1dfa26339ea54bb02ac4e2c8b",
+      "evaluation": "c794c044f1136fe525942b7489b035d1323347946ab939c2db47aa41f9cee799"
+    },
+    {
+      "path": "blur/blur_075/capsule_1shot_seed0",
+      "record": "dbb31608beab9fb7f3549bedba1f07ed056aac126c18d8c045bfdee6524a5909",
+      "evaluation": "2a20de804e5be2ecc38bf4983fc3f6c312a1a3398407b7858d52dce94408e1d0"
+    },
+    {
+      "path": "combined/blur_075/capsule_1shot_seed0",
+      "record": "9254c364acac2d60fe495c58d3948e23a35d7426ec909363cf65724d6bdaf6da",
+      "evaluation": "e3647ae3697e6470860b2d5b11ab451d0920ba1e5a016629ec1d2b69447fdd07"
+    },
+    {
+      "path": "rotation_only/blur_075/capsule_1shot_seed1",
+      "record": "a73cad4ca6edcb4e59cf22465f603f3b363d09ba0ba46ebc0439e08f74801172",
+      "evaluation": "b5bfba81cbfc0dc0102cce8f6ba91a84a9152c8c374777462ce317a260d23762"
+    },
+    {
+      "path": "brightness/blur_075/capsule_1shot_seed1",
+      "record": "7ad8f79470b91083959ca39e2892aaaeead70fd039b551bc21b2118b6881b1bf",
+      "evaluation": "18233a3b9386d83a62aa378359bd23105d0b4bbe2c14491245d643d54ddb8e66"
+    },
+    {
+      "path": "blur/blur_075/capsule_1shot_seed1",
+      "record": "00117b3ca2ccf4edc10d3f95a9a117d760b2ce2ad5d3f2640494e9f69f41cead",
+      "evaluation": "9147c76275701a427e1006f2b2758451a17a187dd973088006ed1e9b78afa0eb"
+    },
+    {
+      "path": "combined/blur_075/capsule_1shot_seed1",
+      "record": "56386d947fc571ec2781ec5017580ef0e7034e5f5e84cc002c1b5e4b15b74910",
+      "evaluation": "b1072704a495baf22cbbe97148c293b584a4356921d4cd46663b1b7a3e296bb3"
+    },
+    {
+      "path": "rotation_only/blur_075/capsule_1shot_seed2",
+      "record": "de92267bd6f894090e49db0cc32b1de8458e324b6128ff674e2f91f578460a0e",
+      "evaluation": "1802a0cbe48fcc4b5b4a9b93c361f40788be8ad5a4d312802bc5f803cc77ad80"
+    },
+    {
+      "path": "brightness/blur_075/capsule_1shot_seed2",
+      "record": "ce8649ec256984bcc9e5f95bcdf1cd10e243d4fc4265be8294efe2c23b6d62bc",
+      "evaluation": "29dd66954e530b27caf354472442650b4cb4177a6179b5d8f7dc3012d099c795"
+    },
+    {
+      "path": "blur/blur_075/capsule_1shot_seed2",
+      "record": "70ed139fd4bc6590ec6ab32a473dbbf8f79ec7cfb4d6d8bbafca9a9db9765f8c",
+      "evaluation": "3246dc1bc2b1afef2fb9ab247f959c423d584d311a179d499ab85122fd8aed82"
+    },
+    {
+      "path": "combined/blur_075/capsule_1shot_seed2",
+      "record": "d2658315de76e3dae0c35e477eabaedc91b3c57c4dafd047bc68d9e33e088f50",
+      "evaluation": "6c335fdbe62e53f0b9f2b6665f127790be4f2cca210d198679ec3bfcc6b049a1"
+    },
+    {
+      "path": "rotation_only/blur_150/capsule_1shot_seed0",
+      "record": "2ffaaaa966fabdab11e896f62991c773d28ab767d8e7b8befb0d4e61378db1fa",
+      "evaluation": "4266583f6f3e81814cb44b4af68b6f897de11c08b8f9846fe4a92e91ed22a6bf"
+    },
+    {
+      "path": "brightness/blur_150/capsule_1shot_seed0",
+      "record": "2b69b8684cd7c54e447efc0263f0a6db924f347bc79f200a91b7bc5c93d70d99",
+      "evaluation": "d85629f81c65d81dbf9dc4c904b6e13e3085153cc6e23eab859274ef70d26ff9"
+    },
+    {
+      "path": "blur/blur_150/capsule_1shot_seed0",
+      "record": "27e1c32980f533a2c5e017635e94721e8657625a8a1242e71084f04259b3f34f",
+      "evaluation": "bbf10b165e0de65c19372d8fad8b8d06279f5b2eb264d4a27dd6644d06e0f5e0"
+    },
+    {
+      "path": "combined/blur_150/capsule_1shot_seed0",
+      "record": "6ecbf49f2d83e041dac45aeed93f51c3c9aef45fb5eac3d309a6711ac0ad8332",
+      "evaluation": "b4188aaadd45211dabf3cf6556b14da0b60383c731231062631861fa955001d2"
+    },
+    {
+      "path": "rotation_only/blur_150/capsule_1shot_seed1",
+      "record": "ae6da86d6b516b504fd2da9cf603080a993bc4b4972af5f01253cec6cc311b72",
+      "evaluation": "602b7ed2e345a409d60333b44549c653072375a1a002d7096e09b12143864529"
+    },
+    {
+      "path": "brightness/blur_150/capsule_1shot_seed1",
+      "record": "035a198a85a3072923c42839711b6c844138f6b78929ab2d8e8017d67a822718",
+      "evaluation": "95b9085fb65bd26a3cb6260a094de7065283a65e2f51f1f0f5b4b4dfb5bf98a3"
+    },
+    {
+      "path": "blur/blur_150/capsule_1shot_seed1",
+      "record": "491867bf5c635ed1c14aa0b967bbb4d58625b03b422dd13a82233336e849f5dc",
+      "evaluation": "4a8f2cbf1686eddbd40bbd5a1a0e3c9440070f9ed373e29dc64f129604d4f235"
+    },
+    {
+      "path": "combined/blur_150/capsule_1shot_seed1",
+      "record": "6f9a226489839d75a7563327169538b40481945e65c79780a1606e6eeb182dff",
+      "evaluation": "2899c781d5a0a32f38bbf6c36808d9acc04271e1bde309c0d596e23cfdca46de"
+    },
+    {
+      "path": "rotation_only/blur_150/capsule_1shot_seed2",
+      "record": "c35c2147422db773c1cdd332f8ea3bbaf750b25b51c346c2ccb2f9b4419389fc",
+      "evaluation": "d6d56e80bd29d611e139756826f46264ba5c8fbd0add32cf8469c4b1df019b2d"
+    },
+    {
+      "path": "brightness/blur_150/capsule_1shot_seed2",
+      "record": "63614a01345e44010d2c7cc6dcd3d3613000d98833739607dc76055aff44c820",
+      "evaluation": "ddcda73bf590add1df0a7262a0cf2f97c7efadf77fbffa537adfbb4f2407c88b"
+    },
+    {
+      "path": "blur/blur_150/capsule_1shot_seed2",
+      "record": "fcf1db870498158835cd2bb2406cc00c4abc86cf53c774c91dc606af1c773896",
+      "evaluation": "e295a7550ffa14efe13870acdf4854b5aade9fe61cee4426d1656230c4ed0080"
+    },
+    {
+      "path": "combined/blur_150/capsule_1shot_seed2",
+      "record": "d77c4c03d9409d85d86721ab38ee9f718512542fc110b264798e85f6f3e00915",
+      "evaluation": "9291862fbae11a81da798e8b0cb6f8c167895edca4c977f8245be35ee250c0b2"
+    },
+    {
+      "path": "rotation_only/original/carpet_1shot_seed0",
+      "record": "4f1abdd0e8f11e1dfefed7218a047edd648f5fa6bc7eb3b1ffbbd33bfc221297",
+      "evaluation": "f6a5c7fb440c06c2a8335af0635682a4a10e0bcd74e3808cd6308420ab63fe32"
+    },
+    {
+      "path": "brightness/original/carpet_1shot_seed0",
+      "record": "037990f355564a84239fef4758e958fc6ccc1f9c784067f212829bad35cf02b9",
+      "evaluation": "24c4eaefb6eadcec558bf37b6b2f4c8d4015590949334cd7a69cbf8a46187f41"
+    },
+    {
+      "path": "blur/original/carpet_1shot_seed0",
+      "record": "647e57ddf04e0e7bfb0026a9973a985df177aebfb4ebb8caa03072f78fc61a29",
+      "evaluation": "4dcd13e8f24d205fd9cef2e573fbd4824dc7cd379add448f2e1eb759d35c096f"
+    },
+    {
+      "path": "combined/original/carpet_1shot_seed0",
+      "record": "f5c26894861aa8142307ec6e9d892435237be5ef1ddcd88e75f0ef2f8db8a8eb",
+      "evaluation": "31a4da3445dc7ff2b4765774b5eac2924bd4909155b332a0e74ec53c306945ef"
+    },
+    {
+      "path": "rotation_only/original/carpet_1shot_seed1",
+      "record": "65c6b46099e75427f702a7ea920ad38708a6d99d8e7d1224b4139d5b52b38b6c",
+      "evaluation": "171aff1084980e48e580f8fee4df545acb63e5619df117df2a7b5d3e47032d10"
+    },
+    {
+      "path": "brightness/original/carpet_1shot_seed1",
+      "record": "8b24e1af74ebf958d237b1b3dcb3d2c5c718811ce0dae2814caba5f72636a79f",
+      "evaluation": "ef72c54b798c344a7714b043b8577548f7deb13c7e4c36ceaab51771074d9eac"
+    },
+    {
+      "path": "blur/original/carpet_1shot_seed1",
+      "record": "d502aba977e2e4fa33e40c15c68269d173c0208ecfc90e4a11cd7e29c9b6c94b",
+      "evaluation": "196487e9dfbdae09c5276d7a9b6e867732eeaf1638d26bb6413e61b30414ffa6"
+    },
+    {
+      "path": "combined/original/carpet_1shot_seed1",
+      "record": "f2eb8c5da66914ec6398631bbd194ad96336dd4a923cfe562bb0dc0ce42f159f",
+      "evaluation": "0f243226595f023d6151fe99c947d03c902883802aedbba03d9034ef14e828d3"
+    },
+    {
+      "path": "rotation_only/original/carpet_1shot_seed2",
+      "record": "eb558ca734c86fd505a75e1955f2649b67fcffff60585f1a4cff2a25315f723a",
+      "evaluation": "00b28fd64d1616e7ae07baf09fabfb595995167802088e01a8d4f58619222e47"
+    },
+    {
+      "path": "brightness/original/carpet_1shot_seed2",
+      "record": "aaeec496f2abc18ccf26d1f7c124cd8fdd1e2109c8fe6806bab26e3721f42824",
+      "evaluation": "707fab3ef40356beabbb8ec421e8007614899315728aa6d40b30e0f1770a4a49"
+    },
+    {
+      "path": "blur/original/carpet_1shot_seed2",
+      "record": "d01c97142a79c00fb0a0f6d45033bdf2b2cea175cf559b8838578648cc53959d",
+      "evaluation": "76aa4c163549de51fdbc20aa4ecd7245f1dbbdc0d032c1aeea89159df1858753"
+    },
+    {
+      "path": "combined/original/carpet_1shot_seed2",
+      "record": "119b24afd7c54b5f9d72ca64246ffdf96ced4fc57345bfaa7ec7546a2beffb1d",
+      "evaluation": "90fd63cbaa3e63743d9ed3029d1c18ed44ed6cdc17cffbb2d27da64c45b21f67"
+    },
+    {
+      "path": "rotation_only/original/grid_1shot_seed0",
+      "record": "5cd5c12dcaa648519b4de0c5aed03c5a40b0ba3a4545f4ed7f8943074a88252f",
+      "evaluation": "6c34c03278772d2d64cf88af262acb1f441202e62f2bdf2606e66974aecbb81c"
+    },
+    {
+      "path": "brightness/original/grid_1shot_seed0",
+      "record": "84537326c61afa948acf81b4e73953b746e434c88e7bce02d6b936e24904b249",
+      "evaluation": "583a6d430586bf05fce362c52423d3c3cd90dcbcc6513076d7b36d7e3818a094"
+    },
+    {
+      "path": "blur/original/grid_1shot_seed0",
+      "record": "6f2f0d1a140ad89a4fef6a426a5d2a72e596eb2d86d27341545a18f026c7f03f",
+      "evaluation": "50afa8243cb6619beeb3fbbd456a63e7fd3c19f34c9201e843aea91aa907d686"
+    },
+    {
+      "path": "combined/original/grid_1shot_seed0",
+      "record": "1312d502ff3466990d6f4493d91e5cb7e4b04b5e8111b5f22949c76fdfa7ec77",
+      "evaluation": "63303025b69082ddbae9e05ebdef65ef1f86491c93c77625e4742f8c8c6f3381"
+    },
+    {
+      "path": "rotation_only/original/grid_1shot_seed1",
+      "record": "4adfa4cc5f4126ff1644fc86082e52f9178dc3082d742c5dc1289241f4b7380b",
+      "evaluation": "302218f37198a8e739f137138f7c9655518234b0d2ac6be7beaaf97f17658421"
+    },
+    {
+      "path": "brightness/original/grid_1shot_seed1",
+      "record": "cf4c27e8a077851de7fc0d35fb4f4f956c54a0d75bad8f13cf9a4c53244d9f23",
+      "evaluation": "c98ea7e8c95f4290cd706cf77276ed7f152aa4965924c760cc7d80cce21ff5d4"
+    },
+    {
+      "path": "blur/original/grid_1shot_seed1",
+      "record": "27f805b7ac74b73925ef78c8fd5e4a2afc336337623b9611fb35a41ad58ad3d9",
+      "evaluation": "f4da1eb463ac90979b27ad2da534d0dd9026f83e6381d9b7686900364c36b461"
+    },
+    {
+      "path": "combined/original/grid_1shot_seed1",
+      "record": "2eb481bed5ec08589ec12fef1e06d13c2e5ea4f048e27738c6adccbbcec9532f",
+      "evaluation": "59328d8790814d5a1833eaa00f7b4e0335e3303ea6971573d33f932afc7c23c3"
+    },
+    {
+      "path": "rotation_only/original/grid_1shot_seed2",
+      "record": "148997fa6a497081ee13258e9669fbb9e70e0cb384c32217bf168ed123823d41",
+      "evaluation": "e51a1cce4d6b27da240856482c2fb07ee92f8e25852e2dc78c381cd20b2e0b81"
+    },
+    {
+      "path": "brightness/original/grid_1shot_seed2",
+      "record": "b429c2b07afe10ee74503882baf6a1d687e2f4db59275cc8a6989beac38aff7a",
+      "evaluation": "7d322e15307767fa7a77fee2c3ddbf00300e21381396e984404d067e4b091b76"
+    },
+    {
+      "path": "blur/original/grid_1shot_seed2",
+      "record": "cb6162953c679e9e3e3cc2f6a2ef2bca9efcdac63aec1faf4938ca59c0cf7b54",
+      "evaluation": "be49c1cd7117882a426f5c77e62b73f473b1b2364e3ebd8994f3831a6642e92c"
+    },
+    {
+      "path": "combined/original/grid_1shot_seed2",
+      "record": "23f4624e09700d0a4140128ba94b0c0cd39c19c52879da09bdfac82e1faba756",
+      "evaluation": "ec72e483cd55dec0a93e466d5b7718981de505e179a7f1be3d75c24baa5e8a5a"
+    },
+    {
+      "path": "rotation_only/original/hazelnut_1shot_seed0",
+      "record": "52e58967eb60779d4e79745ad438173635b5b99ed26cae13f40ed411b5d15f16",
+      "evaluation": "2b850e97a90ad528bc36854e2697f9f88a6d52ea87d343076d21ad8f4ea6c9ea"
+    },
+    {
+      "path": "brightness/original/hazelnut_1shot_seed0",
+      "record": "8f9c83179a91273f609100d1ee041ef8fbe7d0ccab7c46c9621adcc6603e635f",
+      "evaluation": "4e545c1674175bb2474df2afaab5633c5e554cd79606eb71446c62d001cbcaab"
+    },
+    {
+      "path": "blur/original/hazelnut_1shot_seed0",
+      "record": "8b95a47bdadcdeb595c20d98ea6ff3380fedf50b00755b3cedeab7dd8df910c4",
+      "evaluation": "801dc56f77016fc3ea6eeeb81d5a9741d9af0702f5fffc5a90f42e2730e6d406"
+    },
+    {
+      "path": "combined/original/hazelnut_1shot_seed0",
+      "record": "4da186d7a2281c0dcbe3b4ae76e0b7275ae45f1d654339cb563a970986ddc814",
+      "evaluation": "88c4ecb6ca90c740baf1aa0a4a8d947f91407726c5255ea40fb1fe8bae3d38e4"
+    },
+    {
+      "path": "rotation_only/original/hazelnut_1shot_seed1",
+      "record": "38843faf5c455ce3374098b6a382840d2305bfb09454a10256ed1c75e0659a35",
+      "evaluation": "29871b57c710e0294e7d2c899a26aac2182ca75296637cdd6a358a07dbdb3b6b"
+    },
+    {
+      "path": "brightness/original/hazelnut_1shot_seed1",
+      "record": "6526635cabc34efa2fb71e6f2d31aad408155f5f3f82ebc28212168008657cae",
+      "evaluation": "2aba88e303f271c3a14e3e53b78dee40ab4226ada0d514cc00008b82a0d33d2b"
+    },
+    {
+      "path": "blur/original/hazelnut_1shot_seed1",
+      "record": "c31077635653c2ab378cd0f0ce9096f3480001b99290598cd0dfa2b71fb3fa18",
+      "evaluation": "91e8945a43ea0343eba7c07fbaeb562aaafd17e1b26eebbe9041a2eb38e751d7"
+    },
+    {
+      "path": "combined/original/hazelnut_1shot_seed1",
+      "record": "b130d90cb63d85e088d7639867e20828b9fb21e8e44acf1e34472853c72f3e36",
+      "evaluation": "bb8017807cb1fdde2ac1091ddd44aee2053899e39faef9e2fa839b405b56813c"
+    },
+    {
+      "path": "rotation_only/original/hazelnut_1shot_seed2",
+      "record": "6a88e0808462109fdc1da93d3edd3592622aa44c75f394b5ab373e5124b1f08c",
+      "evaluation": "fe35aa5022c686011975d2bc556c7ae77e2fc69f80c637056d5d39dc40f57314"
+    },
+    {
+      "path": "brightness/original/hazelnut_1shot_seed2",
+      "record": "6d743eda98a3262e98e174326bf98704b277ea42e5bc40a2bd61b15236526adc",
+      "evaluation": "70a5e85ef77062fbe8540fad219cefde5c93d683f6bb403ea4de3e190d460986"
+    },
+    {
+      "path": "blur/original/hazelnut_1shot_seed2",
+      "record": "bb8426c28c8f4b5b78469d720a6177e73a9e0a398f1abfe62755c6c1e00c8ba0",
+      "evaluation": "1bf1a17a657d66855ddd107d1b0ed717a610dca400cbdd60fa2d38137030bf62"
+    },
+    {
+      "path": "combined/original/hazelnut_1shot_seed2",
+      "record": "d975c4b92fed70cbe60a56d284fe7f4b2e88dd5585b6b8a718b144fd59fd5dfd",
+      "evaluation": "6d3e02e9a404b8f028b837ae65a0791b40d7931cb1ed500bbca76f83d0c4868a"
+    },
+    {
+      "path": "rotation_only/brightness_085/hazelnut_1shot_seed0",
+      "record": "399fc7fbc40c3aa2e0203486e230c4ad469e0ef5c704376df68b3ae67e27959e",
+      "evaluation": "d1a3ae4023e6494c0930ab8aa5e164c5b1571cb1d14dde21ab8afa14c9bd9e52"
+    },
+    {
+      "path": "brightness/brightness_085/hazelnut_1shot_seed0",
+      "record": "4b7c9aec27efe7c1592f4fcdc121db62d2759a98bc116f48acb2673c8e69f1bc",
+      "evaluation": "abb8c13b21a213a0d0fa5b16fe9d1272bfa77d83a333013e92b6eb1d8f35efa0"
+    },
+    {
+      "path": "blur/brightness_085/hazelnut_1shot_seed0",
+      "record": "d8f7d3336c5b2a79a10cf2dba7b43a34df696d8119c8c2342bd8ffd294885f32",
+      "evaluation": "b5962c950be2d2906ee19cf5e1a148af0a5982370be2630862188c389f3fc3fb"
+    },
+    {
+      "path": "combined/brightness_085/hazelnut_1shot_seed0",
+      "record": "3621c4c715cec7e583516e423c42e42077326efc200a4cb9694f0026d1fc3e84",
+      "evaluation": "84845b391c8f142fa27f2d9ee4623ec6cfc63e7eecddfb47915342819e4f1858"
+    },
+    {
+      "path": "rotation_only/brightness_085/hazelnut_1shot_seed1",
+      "record": "8a3362cda1f7a08b7f4f81d79d286a155ce5c66b1f44d8b3152b1806533dbcf1",
+      "evaluation": "5e77efceb0e9c955764c2c504a3d3b7aaa793f90e3764346a348353c48cc55cd"
+    },
+    {
+      "path": "brightness/brightness_085/hazelnut_1shot_seed1",
+      "record": "996c9980433818d0ded603f3df488b12641c219117944e28986f12dd8343093b",
+      "evaluation": "99b86899563def777f0cb882895065bc4b63fc003287c6034129b9c2201e6b1f"
+    },
+    {
+      "path": "blur/brightness_085/hazelnut_1shot_seed1",
+      "record": "ae2e19deb12474b1bb1042df9ddbe2e30265f4cb3f0a8e1e966d111dddf66337",
+      "evaluation": "ef2a0246c2f2186b47563fd20e6c86ff76cc0e7693c95f7df82ad3928c15f4c4"
+    },
+    {
+      "path": "combined/brightness_085/hazelnut_1shot_seed1",
+      "record": "2f24f6e38c706cf02b4fc06133dfb21a35a4c553ca7c657b25f273f9dfc9dfc8",
+      "evaluation": "c523a6ec93f9858b903d8b32342506912b437022170ed7a3d7ff75b551355a75"
+    },
+    {
+      "path": "rotation_only/brightness_085/hazelnut_1shot_seed2",
+      "record": "8da8b47dcfcb4f29794f50fb4cafb8cc6c2a91009e3379304603e2542ec76308",
+      "evaluation": "24fbd12a4d483c426786f06a22995b3f227e7cd9c38a48a224dceb1c3c3fcba4"
+    },
+    {
+      "path": "brightness/brightness_085/hazelnut_1shot_seed2",
+      "record": "54770bffaebf288f54d9f8e2e5ef48a0373042947fa03cfb80ec299cc68ef8d9",
+      "evaluation": "608716204c8a309ae6e7395fee0311bc3ebabbed0e84a4f206ba202fcf8bc92f"
+    },
+    {
+      "path": "blur/brightness_085/hazelnut_1shot_seed2",
+      "record": "fdc95b6a64f9c4f12c3077442032f92d1a0888fc8c45fe303c227fec517b88bb",
+      "evaluation": "989c4a8c5782ebcb279cd79f367c0fbd2d7374981110653a3bd6a7bee3e2f296"
+    },
+    {
+      "path": "combined/brightness_085/hazelnut_1shot_seed2",
+      "record": "5dbcee8e12eeb732407ed7d6d75f4e4535fc7fffc67d8feaa597164425260798",
+      "evaluation": "09b900c49202b336dd9c96c4cf3d110ae094bcfb6886f9601bd23a88bb81b952"
+    },
+    {
+      "path": "rotation_only/brightness_070/hazelnut_1shot_seed0",
+      "record": "647b0120e1c000793ab79776136a6f7a7f0903d1be8cad519580677f1d1c8397",
+      "evaluation": "235b92735c21b7ae9c3e771c8add0a558918a2e892465002d4c2d79a65a41b63"
+    },
+    {
+      "path": "brightness/brightness_070/hazelnut_1shot_seed0",
+      "record": "2269ac1b4bbdddc625963933abc05f957876170cbce1d9b2616f66f7cf35ff34",
+      "evaluation": "197dfb19107d3144b7dd96879b3b88b3e0a87828cf67e57e07fbe7245b063756"
+    },
+    {
+      "path": "blur/brightness_070/hazelnut_1shot_seed0",
+      "record": "8fe3e89b0424daf03cc5876098ffdaff2566427da95c5875193eeea78b42fbea",
+      "evaluation": "69c5e4389577a3dbfb8f7d81ae95a3bfe949dd70ad761b747fb47d224a2d6398"
+    },
+    {
+      "path": "combined/brightness_070/hazelnut_1shot_seed0",
+      "record": "37780fa70b4ef61f2d79b49ac5adc2ff2c497330479415cc026a2ef5a2e59680",
+      "evaluation": "ce0a354f8b70b7d8e45cac2d55b755b267d6525f8b5f1c658f29ebc9d63d554d"
+    },
+    {
+      "path": "rotation_only/brightness_070/hazelnut_1shot_seed1",
+      "record": "bbb81643506b99afce704e87ac687c3f2edcc1c35526d76b37ab11c2f6ba878c",
+      "evaluation": "e8121e921a83311a6da258f53638c93acf9157b3c77c5756b6ecb98c406d7867"
+    },
+    {
+      "path": "brightness/brightness_070/hazelnut_1shot_seed1",
+      "record": "f6a73feebcd65ae0afb359b331c6a599423f5547403fcb057444277eed079389",
+      "evaluation": "17a96d61dce9aa685ba94690fb20b8dd19882f86a2dabde2b6bac915e11e6825"
+    },
+    {
+      "path": "blur/brightness_070/hazelnut_1shot_seed1",
+      "record": "cf8352b84dabb48bfb77e46fa34bb0cbd942267bda19e7bd2306e65bbe9cef78",
+      "evaluation": "fd86094eccd7399dfd140bbe4612386a93ce4c6fb827e9fafc22fb0a67127228"
+    },
+    {
+      "path": "combined/brightness_070/hazelnut_1shot_seed1",
+      "record": "80d83ec9152117474cf49d0e2aa62b732e069840c4e3dbf045a003acb96192ef",
+      "evaluation": "05349341595bab3c3aef85c7edf02662b79f631e3f79964a1364cbbb8eea7c9f"
+    },
+    {
+      "path": "rotation_only/brightness_070/hazelnut_1shot_seed2",
+      "record": "14549a163580da59b2cd9a099102c0de5f0db4d2df54daa280cc89484c809141",
+      "evaluation": "6a54997a3cf86ee7f06b181535e39ad8b67bb586f58a8a2b3da36e5f43b5aa17"
+    },
+    {
+      "path": "brightness/brightness_070/hazelnut_1shot_seed2",
+      "record": "fe51f1d978e998debdf9cfdb8da544d522b9805944d4a03cd206afd069757072",
+      "evaluation": "638ba813a713e49bfd9e7c1b83fa6acac8f3c42b6c9bb5941ad2194e6595e0a0"
+    },
+    {
+      "path": "blur/brightness_070/hazelnut_1shot_seed2",
+      "record": "d7708dd947e2cfc9d31bb62b805cb825fcd3eef189698d7d9a3807cc470513e5",
+      "evaluation": "9a2a5544b9c1540ab5d070f115478b2234081037afe27526eac95bdf7c6094cc"
+    },
+    {
+      "path": "combined/brightness_070/hazelnut_1shot_seed2",
+      "record": "f4cdfab0de3539c6419186473badd7082f76c36fce85ca081a7c3b526a795fc9",
+      "evaluation": "4638388ab254697f43235aef9317e557e2f2dc18e09b972c159c688d538d9f65"
+    },
+    {
+      "path": "rotation_only/blur_075/hazelnut_1shot_seed0",
+      "record": "ba3ea54a949c9ce90551f712c7429b5083ff2a4eed13e4f905e3d96f069d86a1",
+      "evaluation": "3c4341a57989cd2fbcb1c83d8e6322cf2856337adb82298eb91664ad8de241da"
+    },
+    {
+      "path": "brightness/blur_075/hazelnut_1shot_seed0",
+      "record": "c6d070a241426839a69a05f0647241303c03c322520fd04d6611c4429fc0b685",
+      "evaluation": "005ef3c82a6e7365d028ba63d755ecd6535d3c822fb548ea9a2b2a9c8bfcfd13"
+    },
+    {
+      "path": "blur/blur_075/hazelnut_1shot_seed0",
+      "record": "427b162c5b2471302bc29492a7ddd0ba612b3955ef0334fb321f42a67befe3fd",
+      "evaluation": "517fd3ce8a95cda0d4ad4edda357f68a585c4f1600d1b9b93e082e802a96a217"
+    },
+    {
+      "path": "combined/blur_075/hazelnut_1shot_seed0",
+      "record": "30ef382de69905ab6399efe04702f7a21172d6cc065900dd7bf200ff2cd7c357",
+      "evaluation": "d74769bb3248c9966f7332e0e5f62ef25928397bc05a09152cba19fc17d56916"
+    },
+    {
+      "path": "rotation_only/blur_075/hazelnut_1shot_seed1",
+      "record": "49a64f915dad3778b7750744f053d1d003daf4577cd88bfde5adfac7f7118d54",
+      "evaluation": "d716fc6dd8b930043becc80e6c278138d056b6d3063ea2a2b2705d8315b26489"
+    },
+    {
+      "path": "brightness/blur_075/hazelnut_1shot_seed1",
+      "record": "047a169bbac4b251b4ec4cca479632bf3b850c38f5ae37b7f68bfe1f194b1993",
+      "evaluation": "6ef8813dc1446242e720da6127640bc816b722df58d65ce8b966bdc6907ff760"
+    },
+    {
+      "path": "blur/blur_075/hazelnut_1shot_seed1",
+      "record": "2523f788b7f41f64b2656e5fff3d42dfe8fe8139d7ad92f55a8dac5015ebff9b",
+      "evaluation": "ee3530b55b29ab5588009395086f00ca416a9cdb5b51919314b1285a9e6a58d9"
+    },
+    {
+      "path": "combined/blur_075/hazelnut_1shot_seed1",
+      "record": "c07cfa97f473387b80b5d809a7cc1df3dcc057e0b2c880b6291bf26dd2b58f18",
+      "evaluation": "28acd4029fa7a6f419454d06d47888364639bb6e51a7db9c42a0113f9da3f720"
+    },
+    {
+      "path": "rotation_only/blur_075/hazelnut_1shot_seed2",
+      "record": "44f6a773e54e6abd17640b62238bce957edc1cad90f29a01688f73e6533888a6",
+      "evaluation": "0d17030a5d7a5d0c92340021fcc268d22c622ca41cf101034aed21c4b84421e5"
+    },
+    {
+      "path": "brightness/blur_075/hazelnut_1shot_seed2",
+      "record": "437c9630c578f077c76bbf73c153dc1a4b4e7452922f1148be3b0fc6dc7559ab",
+      "evaluation": "5447f2de208f4822977ac5d291e6b727960e93139178f5fac06174054871d523"
+    },
+    {
+      "path": "blur/blur_075/hazelnut_1shot_seed2",
+      "record": "1e0cc0e9c10fd2ef68e6f4bdbcf86852059fc84851c969d46d1332d1f9184001",
+      "evaluation": "ceccb7f3e08d5f0c862125b911b905ff76197d6584eb495eb0dff655f8494520"
+    },
+    {
+      "path": "combined/blur_075/hazelnut_1shot_seed2",
+      "record": "e412dc9647f459387d25e8474f3433b976e190c432efa430d4e425a8c8900397",
+      "evaluation": "67cbf4bdfb269bae9bf9be53c8570c342ca2f8646eb4a7f6b0fdbb903eb4e21b"
+    },
+    {
+      "path": "rotation_only/blur_150/hazelnut_1shot_seed0",
+      "record": "45cf7de229d24478f3820ebae00b6e2066161a302c3447117ed1cd0e4605f68d",
+      "evaluation": "2200f82226733d9fd062deed05710ec686232af803b9206eda68fc76696192e2"
+    },
+    {
+      "path": "brightness/blur_150/hazelnut_1shot_seed0",
+      "record": "8a18c6ab13e4b28428259e989db7a430d7f33347c69b90323cf529add887f562",
+      "evaluation": "539eab34278486bfa21837097e46dddcac7bec29a030c1236d7456a09fbb631e"
+    },
+    {
+      "path": "blur/blur_150/hazelnut_1shot_seed0",
+      "record": "32042947580a5502f6e9f16e107da321ce7b829da47fd16839cbfc5af84ad8b9",
+      "evaluation": "1d2ab68883651846bceac350d49605b6f20aa813d8ab3627cf4b73dd38696f64"
+    },
+    {
+      "path": "combined/blur_150/hazelnut_1shot_seed0",
+      "record": "29548b6cff82c7637620052dc8a7a87d3d31173aa6fa51ae8654e0f175aa062a",
+      "evaluation": "a7649a9565976e561dec1ed09dc783e66c797c21ae5f80d6a9e0bbaaa974ff16"
+    },
+    {
+      "path": "rotation_only/blur_150/hazelnut_1shot_seed1",
+      "record": "09804cca5a8b041057c2be8891dd0a49885e5b2dc2fd55708d1f6d248ef2075e",
+      "evaluation": "fd4dee0cc61e10caf18846ae182254b871d6a5c69dcb85d7f208d20f77341563"
+    },
+    {
+      "path": "brightness/blur_150/hazelnut_1shot_seed1",
+      "record": "dca690e932682732891fc9ea9566ab079ab5a6ecd0adfe062314462c086377ee",
+      "evaluation": "30068e2542baacfebf5f2cf03aee77cdae03c881657528a7933f3834ee9eff74"
+    },
+    {
+      "path": "blur/blur_150/hazelnut_1shot_seed1",
+      "record": "4345f92efc090a1313c9e0221b3220d2712720148d1f1185bea44c339a95da7c",
+      "evaluation": "0038a70c0bc00ecc28db910adc2b995b4deaa728966e0bab68498c1a1054ad3f"
+    },
+    {
+      "path": "combined/blur_150/hazelnut_1shot_seed1",
+      "record": "b73692af7819cf096befe60b226bb8383ef66d39243edf6eb2294d865c3c5067",
+      "evaluation": "924569442b0bae44d2ac8849e3907c9276b15162b7daed26e152e74871b56efd"
+    },
+    {
+      "path": "rotation_only/blur_150/hazelnut_1shot_seed2",
+      "record": "31471141d4b5fd4209b133b1d7aa7b066170ac051d078ed870b9ab6fd1611d76",
+      "evaluation": "2ea4c24e427fd106758c528943ad5859ea48e0d6b8d724316382b1b3f701bbaf"
+    },
+    {
+      "path": "brightness/blur_150/hazelnut_1shot_seed2",
+      "record": "fe9b093e4a6ca7fc1b7b197322cfce3f7a98286cee0f59071abc78e025f70ffa",
+      "evaluation": "f0fc5f3cbbc244b5617b2f52585fbd544b3eebb6a9619ceee6f1048dfc444f0c"
+    },
+    {
+      "path": "blur/blur_150/hazelnut_1shot_seed2",
+      "record": "8a9d586ee5fbbc719b71abd3e0f28d968b624d892b39c0f0d93170655ed43284",
+      "evaluation": "b02a3217f061457f23e986e26896d1006c8226fa74726cc8e603a88eae1c833a"
+    },
+    {
+      "path": "combined/blur_150/hazelnut_1shot_seed2",
+      "record": "07db4021750f59dbc3f914382d913955f3c3977905ff494e0549f87fe19c6920",
+      "evaluation": "473ae3af903d41d195e731b6715adf75c15471ce6a666a52ef3135add29a692f"
+    },
+    {
+      "path": "rotation_only/original/leather_1shot_seed0",
+      "record": "9fffd9cf1492c52bd3ad5320fdf33930865caf17bf443f7f797aba0a7d6c8c12",
+      "evaluation": "0687eab4452a9d8731da42f9cb3c896f4f7a962e07cab9230b39a2be767d4dc4"
+    },
+    {
+      "path": "brightness/original/leather_1shot_seed0",
+      "record": "ea803c8778f406f0d24a59dae54da07500c5245a53e13e92e9bd8fab06522303",
+      "evaluation": "be0f339962ae01d3d146ba36153958282e1fe0a727707d599639999d1c292735"
+    },
+    {
+      "path": "blur/original/leather_1shot_seed0",
+      "record": "8b068dbc53295d7a4c5ffbb457acfd4a787f59e0a1f179064f5ec9f878443225",
+      "evaluation": "ceead0a0320646e902a478f20ca57733918dbe5838cf7dc8ea48cda498770e31"
+    },
+    {
+      "path": "combined/original/leather_1shot_seed0",
+      "record": "61682c4bf315b936cf4e365229aca8f159058c83ba576e82f5035e7153a3d502",
+      "evaluation": "70846751b9cf6375e47bc97fe5e95d7a47490dc960d7133909a920e1ab251158"
+    },
+    {
+      "path": "rotation_only/original/leather_1shot_seed1",
+      "record": "ccef15084445fc6fe6a6d235bb795ce214ebf11f2e76d135e5829072399c8e04",
+      "evaluation": "2872d1224527261712c4eaec6175c96890bd1240706cc60e04986ec68f3c5832"
+    },
+    {
+      "path": "brightness/original/leather_1shot_seed1",
+      "record": "290790475e64c17349238a626b5b0946ead07780779d02fdd72fed2fe729ef42",
+      "evaluation": "2203b25d9eeb15b213d8b2544b54657e385b709ae360045e697b2d01fb46575e"
+    },
+    {
+      "path": "blur/original/leather_1shot_seed1",
+      "record": "7bcc7e6ac7ea2ca5cdd35ec44b098e3e5e4b2df6c1786589bdd95f55b3d74e3e",
+      "evaluation": "c7a000445c87ab0ee2177a1a2fdeb98d11a12037fd242fc991518f579d2b1e0a"
+    },
+    {
+      "path": "combined/original/leather_1shot_seed1",
+      "record": "daac158255b9620bf7d4c2b41a241261bb19cb9de05fea067b5b69fb290ef637",
+      "evaluation": "c4d416143563fb8547c04432c293ce98569eb2f773f29568e17ec49b1af76f3e"
+    },
+    {
+      "path": "rotation_only/original/leather_1shot_seed2",
+      "record": "5f2248f4ba12a54ac198972156d564079495bcf0fc32ecb56d5ba935a4eae4a4",
+      "evaluation": "3a48e343523521bdad0af89849d867bbd4b6e0d1f3c7b10f838b108845ef3eb8"
+    },
+    {
+      "path": "brightness/original/leather_1shot_seed2",
+      "record": "5b719cb597ffca5ce9dfc548cf7619a4427f8cab686c03618ed3f01784426b8e",
+      "evaluation": "a41cb351f28c40cd3e6f2bcea9cf286db654836f72978fbe70bbf1f8f21f1ddb"
+    },
+    {
+      "path": "blur/original/leather_1shot_seed2",
+      "record": "fddfac0fa59820dfb41877c746819aaee60de8c7056775228864b2906855c050",
+      "evaluation": "5266570dce4ebc6db7170a8a0087446de1f30807ce21f372cb756876135df6ab"
+    },
+    {
+      "path": "combined/original/leather_1shot_seed2",
+      "record": "c325556748d44b59ed40e99ea7d9a52463f5c52e6964efd173aaf56f4a482719",
+      "evaluation": "501ffd1511f82815042b398db97fdd95d78e58ac7cc15bf2f0c62f1afcbc1aa5"
+    },
+    {
+      "path": "rotation_only/brightness_085/leather_1shot_seed0",
+      "record": "b724dbd6003e94014437aeaf068e605a7517a81ec31eb6c098ef273f0e9ff458",
+      "evaluation": "3d60f199b4f58ed6f988f2641d054aaadb1d26f50ef9a7a55897ddeb0220db59"
+    },
+    {
+      "path": "brightness/brightness_085/leather_1shot_seed0",
+      "record": "186e8128ebc18454f0028a1280f325f03dac7d89f56240d6964df47449a762db",
+      "evaluation": "8a96959acce6dc768ded557e693907c25835cbc0d419e44b65376dc928daf051"
+    },
+    {
+      "path": "blur/brightness_085/leather_1shot_seed0",
+      "record": "2eabf2c002c2a2fb41a6bf2d3d495d5c9a375512d88f87ea662597f64e4b56dd",
+      "evaluation": "1407bfc8e5c63fe50b3991e0ebdf991b82a13624075ac34cf36775a7030a5ab4"
+    },
+    {
+      "path": "combined/brightness_085/leather_1shot_seed0",
+      "record": "9d457e7170cd2689732e4cedf77f97f84be6a6533ddf832a1eea6967983bbf73",
+      "evaluation": "1286933dcfa97a0dad1a551852b44e63146cb4538ebd873d2e7d169f680f229e"
+    },
+    {
+      "path": "rotation_only/brightness_085/leather_1shot_seed1",
+      "record": "c93ed67db985aa3cd1d86b243502ccec428d6f1f30bff501ed1292e36e766539",
+      "evaluation": "ecea67c855c1a058c1cb902ade64cb50c5d9703f23933e1046e40b19a433ddce"
+    },
+    {
+      "path": "brightness/brightness_085/leather_1shot_seed1",
+      "record": "3907667635943c3b6c2763e691b128ed0e974276905923c3bc7ddcf787c02341",
+      "evaluation": "d340964cb0bed2aa0467733b9560fb3105a6a12b93f23980c1bd8b8f9ec5c304"
+    },
+    {
+      "path": "blur/brightness_085/leather_1shot_seed1",
+      "record": "609ea92b3397c9f2bf2beeddd74855ccb3f6883d42dd610c620d13067a859148",
+      "evaluation": "a9a3e9a43740f5985e5be335afcc7dec10df97031dab3e778ba7159937cc786c"
+    },
+    {
+      "path": "combined/brightness_085/leather_1shot_seed1",
+      "record": "97f5bde1b17fa151fe6b38ab531ca11810fdce62ff77965fe12b07e493a84d59",
+      "evaluation": "d267493e970ef4786cd6c596f344ab589206423bcd628deed2f6f826cf2a7da0"
+    },
+    {
+      "path": "rotation_only/brightness_085/leather_1shot_seed2",
+      "record": "ef3572bb60329468846e2246372b88b09ae4d7ff87d11baa06a9c3482e84b073",
+      "evaluation": "e3ca133cc5effacd2da6c72646d1b8ff2de76deb36ba88a5763cc69fcd20e2bb"
+    },
+    {
+      "path": "brightness/brightness_085/leather_1shot_seed2",
+      "record": "0e90f4239842fd8f5196a5cdec4b946730bfaa732e196bdb9479e66201542195",
+      "evaluation": "e2c35354c5fa5d03888742d1a09d82ffb7f0bf93a158661c46c66f8a0b6fcd4c"
+    },
+    {
+      "path": "blur/brightness_085/leather_1shot_seed2",
+      "record": "1fe4cc248aea0f8b2a63f7237465a8b5398264c68e07cb83e7bffc64b9ceddfa",
+      "evaluation": "5b17c992d99320505e97e91f110197711bb737a3f2d7afb12ef6f00f60c293a7"
+    },
+    {
+      "path": "combined/brightness_085/leather_1shot_seed2",
+      "record": "66c49813775d678745b76a0f8d5421c027f9e26876c98dd19491f32f786cd432",
+      "evaluation": "717a53831f7a2d5aaba0009573773d0da26eed641dd068b927fc56b73d99893d"
+    },
+    {
+      "path": "rotation_only/brightness_070/leather_1shot_seed0",
+      "record": "8870d523a4435085045474934757c9dc3acb58819dee5d9c9620019fc439863a",
+      "evaluation": "bca492c8e672f9b70b1909aeb8f09bf1fda1b067627c229dfa3a5cde631c098a"
+    },
+    {
+      "path": "brightness/brightness_070/leather_1shot_seed0",
+      "record": "65ef85a2c540eacdf25ded052898a4741d9985e08849e1c6edc87d43feb9e1ad",
+      "evaluation": "3d2916292900b8ff57e62f0ebae6842dbcae97ca88ad145c1fa0895121f15c58"
+    },
+    {
+      "path": "blur/brightness_070/leather_1shot_seed0",
+      "record": "ad05a25cad7e09087b131f81d30be64b251fbf96e64b8fd978c7f6be985a3e43",
+      "evaluation": "cac514036770df2a5a7bad79db441e03cb935687850bade2fedcf1125001757d"
+    },
+    {
+      "path": "combined/brightness_070/leather_1shot_seed0",
+      "record": "260c15be528a9b3a14c383c6a06eb46bb5771f54f15b9e5500ef18d4d738b6b1",
+      "evaluation": "83f2adfa1b0819200e3bf9e1310a9b9f1ff94c047eb8651bc6e5378f1a31dab0"
+    },
+    {
+      "path": "rotation_only/brightness_070/leather_1shot_seed1",
+      "record": "f3fff1ed468233d411bfc6cc9084412a6fbcd115bc0d77bf58cdb8e19f611867",
+      "evaluation": "0e4990ae04035ff92f914c5506399249ab25ede4351f8d6cf24e1ef5ec6eee58"
+    },
+    {
+      "path": "brightness/brightness_070/leather_1shot_seed1",
+      "record": "1cdaf5d479cced32694c3e78e3f9156964953aac106063013e9dc9c7b477aa96",
+      "evaluation": "0fe118d2d2e640ce8b5ee1409028d3c0e50d194ba57f1cf1948e35d868029e4a"
+    },
+    {
+      "path": "blur/brightness_070/leather_1shot_seed1",
+      "record": "641c449190449a6c36fb8ac00914d98e3360daa43bbc28decff50f2283259d83",
+      "evaluation": "a07ae8d6b5570682d9bbd234eab0724ed7764965d617d8a67c2686ab9b6a3415"
+    },
+    {
+      "path": "combined/brightness_070/leather_1shot_seed1",
+      "record": "9a1551ad437819a1d2ebff1356ab1b21ca1679e9cf2e35b0eb796e2ce4a01b75",
+      "evaluation": "aa9419a55440b2a63eabcad4dbcd54a54cf5d1d2be02e58f3a2291077d80f75b"
+    },
+    {
+      "path": "rotation_only/brightness_070/leather_1shot_seed2",
+      "record": "c6d6768b36cd91bd29acfa481090cd0f27a2bb8e3089ae4edadb22e4dc7203bf",
+      "evaluation": "9604580253c06479343e69420b1479d3b0e30d738622341bae5f5b94c942840e"
+    },
+    {
+      "path": "brightness/brightness_070/leather_1shot_seed2",
+      "record": "2027f9e543a42c0d271c7caf543713fe8ab087f4aaab9202da1a3ec0c8887d0c",
+      "evaluation": "1c81b5912b3c98f50f2c2fb07ea3f2c1c0fd41e73975eba7cb18bbec20ffb86b"
+    },
+    {
+      "path": "blur/brightness_070/leather_1shot_seed2",
+      "record": "a3c2acd8912870f0942929959e21ba6a263eed52b0c9913582220c1c71fa73af",
+      "evaluation": "798e9003af9875b5d64f1adfb7472773fb80f28f76d90e9fe4a020ef179f3899"
+    },
+    {
+      "path": "combined/brightness_070/leather_1shot_seed2",
+      "record": "c802757282903d4515b19395570935d5dbe7c952d07f0e342f38fffeddb83bc1",
+      "evaluation": "6f9fcc9004abaada84615620d49f8209684b8253cf343f3834dc9d5b1e0094bf"
+    },
+    {
+      "path": "rotation_only/blur_075/leather_1shot_seed0",
+      "record": "0e7c46d4aa1f712d692135d7f441215c56913443955040a6ea1047957bd54763",
+      "evaluation": "9403123155bda86ea56c972a049f7a5c3118a2e9500946e9d5fe8c1b0b8bcee1"
+    },
+    {
+      "path": "brightness/blur_075/leather_1shot_seed0",
+      "record": "f2e4a97102a53e8e4b7b9eb2bf0755ad8da9a2629f64194bb935cddb14e4f28a",
+      "evaluation": "6184c7a1978eb3488276d7f19d80bbfe39981160813444eb54def020ce3535ad"
+    },
+    {
+      "path": "blur/blur_075/leather_1shot_seed0",
+      "record": "bc11b48cdb39fd8ead97f097a52dceaa1d941b0b6b55f97ce85f0b3d20a6314d",
+      "evaluation": "669edbc57ac98a73a199df884171693c8aaa4c5d19c6af2c084d0f64aeb4a4fc"
+    },
+    {
+      "path": "combined/blur_075/leather_1shot_seed0",
+      "record": "308c261516e5b1f1661e369dcb590b84e921220835cfa4bca1ef10cb9eabd0d2",
+      "evaluation": "00ae8338330c0e05019dcba1be0651e59327fb8f01466765aa13f0cd4c7a1760"
+    },
+    {
+      "path": "rotation_only/blur_075/leather_1shot_seed1",
+      "record": "c8bb729803a61ba05f1e245a2fb13286bf37ed9ebbf33f296d59d9bb12dd9071",
+      "evaluation": "621fc317456f7455ab3ded96b4af45bc8961a8aca49da7b86f06e1e5d48f3b79"
+    },
+    {
+      "path": "brightness/blur_075/leather_1shot_seed1",
+      "record": "bcd00cd2b385da410c80b30595d9252dd730b598853a562b7f7a53d76732e097",
+      "evaluation": "3062498a1757471dceb4298c61886c42bea584f8c4f9253e60b3a4cf7d0c9fb2"
+    },
+    {
+      "path": "blur/blur_075/leather_1shot_seed1",
+      "record": "3193d60904061f5180f603e94834af792263cee6792f7d00ca3129f74cebdd6a",
+      "evaluation": "089562a4dfb2ed4fedb77886bd4b906d7a6d8e74e7012e6f1713244a2b462a4f"
+    },
+    {
+      "path": "combined/blur_075/leather_1shot_seed1",
+      "record": "bdeaf7faec6705bfdf16bde027cc5d9150be4c96d69907f2c57265caa26f79db",
+      "evaluation": "e4465e2cd10289a3a3293a47ac26db31e67c718ea628d9f504ecfc0a52906015"
+    },
+    {
+      "path": "rotation_only/blur_075/leather_1shot_seed2",
+      "record": "9b70e93e84252092913ae808ba15e222cfa691ce159b9739a0a3bbb7cddab651",
+      "evaluation": "0098845803a0e4a646f7e95200d7b72614e5c092477f37087356ab29a82059c2"
+    },
+    {
+      "path": "brightness/blur_075/leather_1shot_seed2",
+      "record": "80771f35c8fa6fbb4fcfc8468c04337e3ec2f644c0836309d5a499e2c110552a",
+      "evaluation": "72db4b46ee651fab7c63988d87c542e486b046436b296e10019817d54953e646"
+    },
+    {
+      "path": "blur/blur_075/leather_1shot_seed2",
+      "record": "b0fac961befa9334c9b9b2758897fe0875a596c24564d036a159f4e5fc4b34d7",
+      "evaluation": "32e01b5a38d1a2e06cc5ff87e3b5ad777f82c3136c7c922460b3ad77731b569d"
+    },
+    {
+      "path": "combined/blur_075/leather_1shot_seed2",
+      "record": "83e36fa82e73d7724354d8ed78f1a67fb4619e85f19db1f34c141ab4177ce51e",
+      "evaluation": "c2c752894c74296864445505dbb3a6193cb14e664586d6934bbf322954001794"
+    },
+    {
+      "path": "rotation_only/blur_150/leather_1shot_seed0",
+      "record": "82ae6b11c0c0b70f48db80867eac6b691904efad97729002f58fd722f3f0e393",
+      "evaluation": "9dfa105e76c6a8fabbf3cff143cfcb8975ec4b8d2e96d10ba3df53576052b2cf"
+    },
+    {
+      "path": "brightness/blur_150/leather_1shot_seed0",
+      "record": "77cd729026961afcfb9a66680c370345464c01df80aab09345ff3f5d246a146a",
+      "evaluation": "44e75cba09063091278ebdd5e66cda9d728c5c13976129171f3da43e203c4f62"
+    },
+    {
+      "path": "blur/blur_150/leather_1shot_seed0",
+      "record": "383957af97514d7cdcf30a1ee8726fbcd0eea2ca36d94772796480d6f8be40e8",
+      "evaluation": "36ddeb02186137015ecb377774e44a9da89bdc3b7993939c3bac5d6165a075de"
+    },
+    {
+      "path": "combined/blur_150/leather_1shot_seed0",
+      "record": "395b68f2a7c7a72565b81aaeec26f4b29ae7b6bfdf4e0ea05cdceb0008bdc6e3",
+      "evaluation": "a73fffebebf90c51b83b8b0ae4820e91d53c70e008371aebe8975e9235fb8e85"
+    },
+    {
+      "path": "rotation_only/blur_150/leather_1shot_seed1",
+      "record": "1c75ffceba5af9934631a8edce2bf7631d16f4844b4c05b9fe41fdc865dccc2f",
+      "evaluation": "118f568bd17451531469bcbcd3922b5eec505446562902cd4d93c0bb568c8145"
+    },
+    {
+      "path": "brightness/blur_150/leather_1shot_seed1",
+      "record": "7cae6ef70419503718761d68f946ca0e361bd8edcc12a03d23632c0dd185e7ee",
+      "evaluation": "3d3e9c308f5d1e8a9c92e911d32cf6623cae0c780fad1c59ba815da1bfa5d34e"
+    },
+    {
+      "path": "blur/blur_150/leather_1shot_seed1",
+      "record": "cfbbef75950bcee146fa0bee039a45c48f71519812a2a2179e7a4a40a2b7e2bb",
+      "evaluation": "74a5c15e8e500ea54048720227075f011e89f9f54a84ce121aa3dd9576a82b22"
+    },
+    {
+      "path": "combined/blur_150/leather_1shot_seed1",
+      "record": "aa8be211117b674907e7eeee67bb81a200d4929a19370991c8976d363a69f4a7",
+      "evaluation": "7ba6ca2171e8c2627883323f7fc5a281912ff4609af2a386917be384ebe6e545"
+    },
+    {
+      "path": "rotation_only/blur_150/leather_1shot_seed2",
+      "record": "f6e3b3b9ed1b39fafb86b83852c9eab73a1b1cb30175244b69fd678ccb67439b",
+      "evaluation": "1e2cec8a6415adbd91d5082cf53f0b16dc1c7963c98ef85579844e298efd6570"
+    },
+    {
+      "path": "brightness/blur_150/leather_1shot_seed2",
+      "record": "5f3d5ed4d2395c9e2bbc590ec00754f2d0e3cb49f141d6252480bb35243491fb",
+      "evaluation": "8e79ee2203f502dc178cf99b240c38d07a113c70d89f9fa52c0f0f11fca34220"
+    },
+    {
+      "path": "blur/blur_150/leather_1shot_seed2",
+      "record": "c544b87a0721f69a432c499790554a3ce3ce787c75fe842fdd5f24e79696db6b",
+      "evaluation": "921a979aac248a436e07e3f1f2d73c1f4dbe2e7263d6759163683714d9540bd5"
+    },
+    {
+      "path": "combined/blur_150/leather_1shot_seed2",
+      "record": "22930f002b62054a39c89127e6bca00a36de38a3b2c5d488bf59dd1dff83b817",
+      "evaluation": "3f3d067cd1914c7202190b7967cd2c4960e5a24703d9fba55bad9cf57eef0ab6"
+    },
+    {
+      "path": "rotation_only/original/metal_nut_1shot_seed0",
+      "record": "2b4ae2a63cafa2e0971cb017d8c1b8c542a28c789647a149eebf6473fd84da45",
+      "evaluation": "96bf17fc06d5f0be4c37c6080ad5a7eb9e776a6bd8a991a258794925b5234f32"
+    },
+    {
+      "path": "brightness/original/metal_nut_1shot_seed0",
+      "record": "a3a1cf39ecd010c9f672d0e05ccdc321aa9bb379d1ddd9801c6b7948d5a542ed",
+      "evaluation": "007d88f6ffe75e8c1e50823ff9364fc6f64cdfb55301ba481a620ad76a378df0"
+    },
+    {
+      "path": "blur/original/metal_nut_1shot_seed0",
+      "record": "58a3231446d486dac469951e0dd79a809577e988fde6cec64605fd67236649fc",
+      "evaluation": "5faf966a1957faf3ed6e210755b202247312f7298ecda7973556ab2da69233fd"
+    },
+    {
+      "path": "combined/original/metal_nut_1shot_seed0",
+      "record": "43f7a363094765c951c7735b6f97a9ef3252e606e170d2dfa9eb7298002ad671",
+      "evaluation": "37d7f35f8fd42681265bd096429d500b0121277f08663c46ac9e4c3b4b2d8309"
+    },
+    {
+      "path": "rotation_only/original/metal_nut_1shot_seed1",
+      "record": "4b128ede9f7b7cca6b403fe53d6c311c3e83a4d374685af3dff695031e199707",
+      "evaluation": "245f232e3c71bcd961e1de6ea802f47c8a4726847d2b4f05b5922c7222751439"
+    },
+    {
+      "path": "brightness/original/metal_nut_1shot_seed1",
+      "record": "e57e9507b2bfdcb0fe1cc65ee0a696f01923290e0b6902a880b760e6c4f004b8",
+      "evaluation": "d14906ff976650c66081aa5fc85823d23a9e2a3be49e2115c6b9aa5652db9848"
+    },
+    {
+      "path": "blur/original/metal_nut_1shot_seed1",
+      "record": "d9851cd21f2608b9b59d66a1708dde119a6a7225f91afb23c9e58a572150c63b",
+      "evaluation": "7ae58507960f97ac3192ff9894434beb0475cf7cd484c5f5c4b6b556afe22480"
+    },
+    {
+      "path": "combined/original/metal_nut_1shot_seed1",
+      "record": "5a37b289f05c2326ae1e78968b405aa079e1160c39a47078a89f9f3e99a1892d",
+      "evaluation": "f2398c3e4ede65b5b91aad9c43b3da6b644d4f40388371f90608e0cd259e7a7f"
+    },
+    {
+      "path": "rotation_only/original/metal_nut_1shot_seed2",
+      "record": "119a00708b37784b6f5f692d702a9d38df5867442f5ac9a75383af15d9240698",
+      "evaluation": "c63cf60019a2ca21faa0135dd1c240dd47c3fb0dea792272ccf3e1110829c074"
+    },
+    {
+      "path": "brightness/original/metal_nut_1shot_seed2",
+      "record": "a938973725c2b58aba9f1fb156d1d7a5354d2a3dfd3943bb54dff71b2c04c3a4",
+      "evaluation": "d88652133c9ac03556ee47e9b95881ac776f1384c87ac329659c26ef9335dc0a"
+    },
+    {
+      "path": "blur/original/metal_nut_1shot_seed2",
+      "record": "9a7e62a5668a1a0b3b8264d4ccb5bfbed5d3990a7407c1111c34245a04c97a79",
+      "evaluation": "4e87511ae541ecf5abf0221e9f35c90b49b5622ff659b8e1e2b14829ef1a5cf6"
+    },
+    {
+      "path": "combined/original/metal_nut_1shot_seed2",
+      "record": "e915aa35ee2a9f0d4fe181071e5db34565472ad8da1b22b98254c41a30368b98",
+      "evaluation": "4dd956ebcf96fac6d72ad073ffcdc574ebe1ed91bf2009b8d8e874799e727144"
+    },
+    {
+      "path": "rotation_only/brightness_085/metal_nut_1shot_seed0",
+      "record": "1bf5aaf55fde75a7b343ddc76384e3e475b55e0f0d4e3404d2556c9ca3cf80c3",
+      "evaluation": "1bce8abf92b7ac1ecb4bdab3dd5e0bb82dc24a58d92bdc35ed651f3d62ee4c25"
+    },
+    {
+      "path": "brightness/brightness_085/metal_nut_1shot_seed0",
+      "record": "995d50f48e3ffd2d589d2a18db60e6b211407e4d88c14694290965fb07eb8f3e",
+      "evaluation": "2d623ea2ee34fcea9c5633fa6028bf782ac8c7848debf3017df0e54a417d3fad"
+    },
+    {
+      "path": "blur/brightness_085/metal_nut_1shot_seed0",
+      "record": "f26f76011212f015be97a3871057d3b87814bedbc9cecd1e2954420dca727616",
+      "evaluation": "dafce48517634b336b489abca45d67a40a472cfd40590336e015fa973e22d6bd"
+    },
+    {
+      "path": "combined/brightness_085/metal_nut_1shot_seed0",
+      "record": "08e21e7128673ec5c232c3c8af47b87e83169afad41f7e7e1a9723c66fe16581",
+      "evaluation": "38fc5661f3c28e3eaeb3d9bd5892df3c03bdf6940012a16dff97efb229bedab7"
+    },
+    {
+      "path": "rotation_only/brightness_085/metal_nut_1shot_seed1",
+      "record": "ded309c16d8813df1f8cc82dd6b0463e32ca444e56846834b2c58fc1ead1c6b9",
+      "evaluation": "be3b86a65037ba9a6faa136809bef7cd021c8ffc33df5e859d74140b671f6744"
+    },
+    {
+      "path": "brightness/brightness_085/metal_nut_1shot_seed1",
+      "record": "c33e36912f6cc6a861dde86dec1718b0ed6a393f1428337451ed23d7e74862c5",
+      "evaluation": "50ad61136ece1ab0c7ea33dff56de31fc3ab905f09fb16d695bd7e84c3e59728"
+    },
+    {
+      "path": "blur/brightness_085/metal_nut_1shot_seed1",
+      "record": "1efbca3c7562c57feb030562963f1115085b28883d607766eaf7713fb01c3977",
+      "evaluation": "e326371a6314271498870c6ca52d39de26150728e60fbc0ad757676d65e8b1df"
+    },
+    {
+      "path": "combined/brightness_085/metal_nut_1shot_seed1",
+      "record": "4639f8fdb78cb6cfa8e08eee82657cfaf25064bce7ad11fdba2cd80f6a392be0",
+      "evaluation": "86120e8575a3ebbe9decdfc5ce2e016e78d02bd22f52aae4e467133c7289a301"
+    },
+    {
+      "path": "rotation_only/brightness_085/metal_nut_1shot_seed2",
+      "record": "51e9e0d18e0a75eabe682bd0fcaa71698a7a2eac6010f0f751ce04e8c343ce27",
+      "evaluation": "18fa5d233de7bcf5267e83dbcef5295758025524d4dab15395d656037c55dfed"
+    },
+    {
+      "path": "brightness/brightness_085/metal_nut_1shot_seed2",
+      "record": "1a67e2939060671bc26c62a0226ffe58f60c7c400b74cc245c3613c56e0db376",
+      "evaluation": "20582fb3b5b96e7738ca27a3abed82421f3e3d660e528cab1618596a6e9be9af"
+    },
+    {
+      "path": "blur/brightness_085/metal_nut_1shot_seed2",
+      "record": "57fe393914f4da2c226065d97417adc7b93506f6bf60bbb4e6dda015aca607e8",
+      "evaluation": "d9c60488f9c61c3b790990bbdadc3cd3b11ff1b429c7daaa22073a0f0d950d37"
+    },
+    {
+      "path": "combined/brightness_085/metal_nut_1shot_seed2",
+      "record": "b1fff4a1e6a6d9af0212989ce9f83d3c5b38069c6682da49f2bfcb4cca14048b",
+      "evaluation": "c733b3f19729daeff0e95e07ef82141ca7768d1291a6d2fa4ce49ee5bb74c43b"
+    },
+    {
+      "path": "rotation_only/brightness_070/metal_nut_1shot_seed0",
+      "record": "7fc18506d7e40e8f9cc7e925f5d9b8fa2d1968f10bb0e1cd9324ba99496631b6",
+      "evaluation": "079790e0cb7b5282c056bff64629906fb3b49fe357b187fab2d23d882d761902"
+    },
+    {
+      "path": "brightness/brightness_070/metal_nut_1shot_seed0",
+      "record": "4d04ed9f0986b9a8314a83ca834909903805da3c86eb9d62344abfc3e94d2211",
+      "evaluation": "e0c5cd96dfd61a4a452d14e912cd9af4be6018abac458681988965d56173ed1d"
+    },
+    {
+      "path": "blur/brightness_070/metal_nut_1shot_seed0",
+      "record": "b3dcc132aa480964ad1fa8b4cee83b1b599cea9f1e04f2c7e0db72564d96cd78",
+      "evaluation": "475f7340cf2bf64ee8b764dc05b9ad37e7e61b3abb9445639e31c0e7bdabb56d"
+    },
+    {
+      "path": "combined/brightness_070/metal_nut_1shot_seed0",
+      "record": "622a823c9a18e5eed6c6b92abc4938964e9020362c05cbfdb7af94679ea1774d",
+      "evaluation": "c04b285661de4f1022c3a14369570d19b773b04c5321020bceecca385b678e08"
+    },
+    {
+      "path": "rotation_only/brightness_070/metal_nut_1shot_seed1",
+      "record": "68461267d285e881c6857d99ab1fcd9f9ae5208ae70a98062e3168b9b6b78484",
+      "evaluation": "839efec80893238fd1526634cb02c6c1099aef9fd36584a9f9728ec0ccf2d2af"
+    },
+    {
+      "path": "brightness/brightness_070/metal_nut_1shot_seed1",
+      "record": "1e5689e31d9cc02c2aeb4c71c1d05746354c1801d79a67f0ac750893e4247f21",
+      "evaluation": "19e28623354820eb031fe4a08e18c92332e344b5593f3d1f42b47940c5b53813"
+    },
+    {
+      "path": "blur/brightness_070/metal_nut_1shot_seed1",
+      "record": "b0215a66f4b49359188e62d54fcdc72d3ed576b5d576a929c70a7af3b8f742be",
+      "evaluation": "fcc4f3fca5b391f3e85231bc8ceb893c960c2e3aad4e527fe8680e3319dc6654"
+    },
+    {
+      "path": "combined/brightness_070/metal_nut_1shot_seed1",
+      "record": "de70da2fd92ea1891021be78f5ba2db0ca8e59e67479ee3d1a84f35f515bce40",
+      "evaluation": "10194dc0c46a61b73763b199ecbd72b9c685b31b7d5d3a1d4c5c849e12013a41"
+    },
+    {
+      "path": "rotation_only/brightness_070/metal_nut_1shot_seed2",
+      "record": "462ed17909e020a538be9cef4fbc5febd64ea8ba17d31822b420a8a2f67d0878",
+      "evaluation": "b309fd8f1b0c2d6792763702fbfbceb9e44c26c69c075db75a22a028c299b888"
+    },
+    {
+      "path": "brightness/brightness_070/metal_nut_1shot_seed2",
+      "record": "eb74a45b851fdc32d63465cbc885976569b6d6b1c2d820427610202321ebd32d",
+      "evaluation": "0c820bace312b3d1c933aa387c9901454713712debd45c0d3ee568b6ffd0f420"
+    },
+    {
+      "path": "blur/brightness_070/metal_nut_1shot_seed2",
+      "record": "d51cff397d1ddd60104154ba909c10575eabc4cd0ebc5d9b4d20d9d354ca3866",
+      "evaluation": "966c50d3d4534e52008cc90d83cc4433788688329b41608bf143bca2a5aa71f0"
+    },
+    {
+      "path": "combined/brightness_070/metal_nut_1shot_seed2",
+      "record": "d54e825928a1a30047d00aa06c57b0068d1a25cf0f8e2a603fd6b90b9c71a8f2",
+      "evaluation": "9a359c05fa03637f48989e4002aa65582486e8e2fcf56c3219b89099c1e6bc4f"
+    },
+    {
+      "path": "rotation_only/blur_075/metal_nut_1shot_seed0",
+      "record": "5e573569bf5d73d1f4510a58754262edd792cd2b37035b38beb3b6dfbb0ccbb5",
+      "evaluation": "b583f6581cb0d6d977c574217dd87f8e2abc24acd7d4c9a85c3e12f06290e9d6"
+    },
+    {
+      "path": "brightness/blur_075/metal_nut_1shot_seed0",
+      "record": "6ba6e609569199fd0727b4ff86d4f7e6184e87d0f4054ebc0777dbba9c4199b0",
+      "evaluation": "b77ae6c95c5b4c1655899245c1435f1d6f5cdf8e2af12d057b173a19e5dd7875"
+    },
+    {
+      "path": "blur/blur_075/metal_nut_1shot_seed0",
+      "record": "fd74d83bb09fbddc354bd071b0b8f3ce791f28bf71adbba25a637f6463dd759c",
+      "evaluation": "9da26e9d715db33ed4544db798bce482bf7495be8a8ea4550211a0518162754f"
+    },
+    {
+      "path": "combined/blur_075/metal_nut_1shot_seed0",
+      "record": "4c89cc020a36c104b6fd4511770355a40cace1b0394d3705145a2f43756401db",
+      "evaluation": "f0651f12f1b3fa84a9ca2f8602ee33535c263f766a45a157d723e02c5ba260de"
+    },
+    {
+      "path": "rotation_only/blur_075/metal_nut_1shot_seed1",
+      "record": "91eedf7580912e11ae6ab88880c768b8c3cbebd2f28c6698deef85755a5405a5",
+      "evaluation": "b41ca3d16ce567d63306985bd13ea4249dbed6c471d3bfc838dda9626bcaa5f3"
+    },
+    {
+      "path": "brightness/blur_075/metal_nut_1shot_seed1",
+      "record": "82f1e61458350a64eefd6aac0d463b5eabc043ab10a5a6430cfb4291e51d0056",
+      "evaluation": "3eab2e8790e2cd1d4ae439a6bdb758872e0b1189542cac002bd8fe2b09d50210"
+    },
+    {
+      "path": "blur/blur_075/metal_nut_1shot_seed1",
+      "record": "904a9aa8cce23139f131665bfebdb7b46690de85b6b21d1d92355e4886453d79",
+      "evaluation": "880e810a450268141254d7e5896b53f4f9d9ededde7f11a00470022be13e101d"
+    },
+    {
+      "path": "combined/blur_075/metal_nut_1shot_seed1",
+      "record": "9e0f0fbc219f855b4347eee50fda3e163b10e47508742857a3cf21102de4cff6",
+      "evaluation": "c071da9df0000f370eaa9a3c5e0d70d6898e6d794f239cc2256e851e2f2db864"
+    },
+    {
+      "path": "rotation_only/blur_075/metal_nut_1shot_seed2",
+      "record": "b940733b36477322973a62027dd86aaa6f180cfb3b2e3abc5c88e9abdf462255",
+      "evaluation": "2480ccbf27f5b1cf044a6752f9ccd358fbfd9b995e932a1d0a33ad1d3f1c8010"
+    },
+    {
+      "path": "brightness/blur_075/metal_nut_1shot_seed2",
+      "record": "22f50a26bfce1992c1be5693b6020722ccf764b1035fc3c03b5ce9079aea19f2",
+      "evaluation": "eaf7cb61da0bef18129d7807f787739cdfd03149c1db31ad206ec078bd773284"
+    },
+    {
+      "path": "blur/blur_075/metal_nut_1shot_seed2",
+      "record": "2f4779ba1cfffdd54bfc834c3b729e5be72b2ab85b497e554a9a1adb508be0f4",
+      "evaluation": "639268dcebc3201f7e0489f8292bdae5cb26c066b73d55f27f17cad40cc77a3f"
+    },
+    {
+      "path": "combined/blur_075/metal_nut_1shot_seed2",
+      "record": "baf02a8b0213a7adda2096726cdbaa5be0487db5fd055e7ab8d47fef8ca8afed",
+      "evaluation": "4b57d37e0213890fc2cee145d0cfe38569402728368845f262f2e9dab0ccf5c5"
+    },
+    {
+      "path": "rotation_only/blur_150/metal_nut_1shot_seed0",
+      "record": "893256805e0ae9a17d22511293e5ba8f94db293253a1ec4064b82f39746d6f20",
+      "evaluation": "c2e6799ab0c89dba39f72eeaa1afa1ca4428cbe10842256447e9050013149a04"
+    },
+    {
+      "path": "brightness/blur_150/metal_nut_1shot_seed0",
+      "record": "d88eedeb618fc156e2f408bf9ef872960720a90a418421a5a418946347c04ca3",
+      "evaluation": "5879d8f4acf8e79106f73e9c36d0347ffc0913695d190ecfbd3abc170cc86a0c"
+    },
+    {
+      "path": "blur/blur_150/metal_nut_1shot_seed0",
+      "record": "445b261e0f150744bd61efee4babce266d72421a5440d56904bfe14c6ce907f6",
+      "evaluation": "418b5d4fbc3abd02652e133ed7c65b74bd290898ba7ef169d737bed742baef91"
+    },
+    {
+      "path": "combined/blur_150/metal_nut_1shot_seed0",
+      "record": "787049f56faa394a047784636d1d231d18e5720c8b596e77fe30c2fb0967c0c8",
+      "evaluation": "a7c52ad81ca59252232a9550d29d7611c17ff88a5e22b0011f8b6d639b74f00c"
+    },
+    {
+      "path": "rotation_only/blur_150/metal_nut_1shot_seed1",
+      "record": "7bea20238aa503e8ec2d5ac3eb49a5c98fd382a901cd2b8a4a15e2d03d8f6016",
+      "evaluation": "49ac70eda97ecf581a2beb0af94d757cd360824c47f905d6100a07a2b1e72250"
+    },
+    {
+      "path": "brightness/blur_150/metal_nut_1shot_seed1",
+      "record": "10a68efd62a7989aaf7338612586ca26402485f8a3026a5b3044135eddc07bc6",
+      "evaluation": "233f75cceea17f5517ff44adce2d9e4d37546138bf16786467100aa3b1ee0d21"
+    },
+    {
+      "path": "blur/blur_150/metal_nut_1shot_seed1",
+      "record": "4ceeb28f6b7cf8e2a6a487423f150133656c0045752efae659f2f0cf27551b92",
+      "evaluation": "be0f74a88b2a6b6127a9e474b38b3a095553b0332f1e696fe3e522d1a5e383ed"
+    },
+    {
+      "path": "combined/blur_150/metal_nut_1shot_seed1",
+      "record": "2d480af91f7563f1d4a2bb202269fd95a89e0433deeea8a5396db6947ab1ee31",
+      "evaluation": "3e0792094e71c45a98499f896cb38e853c057389c6fc9d500e5bac52b21890cb"
+    },
+    {
+      "path": "rotation_only/blur_150/metal_nut_1shot_seed2",
+      "record": "884be9c11b0e1b20829a1d0515a2b0d4b958b5e08b754a579af90fba63519906",
+      "evaluation": "e55799f093e61b3e08e88013a94698cbc260c4ef20882666404934525b64e6c8"
+    },
+    {
+      "path": "brightness/blur_150/metal_nut_1shot_seed2",
+      "record": "0fd860a3ef880e3b94e0a3ff24bfb270f5e749c35d835805a9b69bf5dc36ba6b",
+      "evaluation": "c0f3bee953162088a534d4408ec0d2f56cac80fdd93dcff99b7657ea4db16620"
+    },
+    {
+      "path": "blur/blur_150/metal_nut_1shot_seed2",
+      "record": "cdb2cca2ef0c11e0f169dd688cd7e827efb192581406d19ccbd1921736cfb9a7",
+      "evaluation": "dbd2b36ada3906ac1c4d22e1f727358c85e2839f6aceed6b5f84f19b331241e3"
+    },
+    {
+      "path": "combined/blur_150/metal_nut_1shot_seed2",
+      "record": "8008d80e9f899b5b52adf542a2579101b509b8375a42de2dd71a300d21132719",
+      "evaluation": "d8b4d1c7f8b5786fb5b19b4cf72c7f3f2427a1d1aa19f06cb4ce239f5b2396af"
+    },
+    {
+      "path": "rotation_only/original/pill_1shot_seed0",
+      "record": "ad688cb88130f2b01023f6d2dcfebc3ad409670d8c22ed4401132312338c1041",
+      "evaluation": "98ddb48b543695493636c93df3071635a6ea3d10a5e9442c1180a4d35c10bdf1"
+    },
+    {
+      "path": "brightness/original/pill_1shot_seed0",
+      "record": "40203a74fd7389c2e76ac1917a094a0a941e717aae688127ce454364f4f6c5a2",
+      "evaluation": "f28211e3c6017a59753ff631db4e95990a7da9a661635b41ed60483fcb3884c0"
+    },
+    {
+      "path": "blur/original/pill_1shot_seed0",
+      "record": "7c5d260a27866772ddfc3218788561d9b8a41ebace84d39a4facbdc28b6f5a85",
+      "evaluation": "7443feb94e7d5b34e65491c9d25f72dc13d1a4d6340709d39d185388413902e2"
+    },
+    {
+      "path": "combined/original/pill_1shot_seed0",
+      "record": "de5a19c6f71afa138b16a0fd35329bad2ac9d6aefc6768924014d6b5c614b7e0",
+      "evaluation": "468615c4129a49ccfbd65ca11225564082b886a9849102e9d99310ddb8165653"
+    },
+    {
+      "path": "rotation_only/original/pill_1shot_seed1",
+      "record": "819fc4114751296820e0351fefa3e17be1ff41616f62ce50d1e5c2768293f64c",
+      "evaluation": "081bb04119f64ba70972d677093e2aa407842cc089e753a59d8696733abf083b"
+    },
+    {
+      "path": "brightness/original/pill_1shot_seed1",
+      "record": "5516b504f14cafedc66929fa1956eeb3fbeef1c966ccd3ea06c6a900eed246fd",
+      "evaluation": "0f74e37343728c0b68e131042719d89a3f327880d02e91cdb0f1b9a6e1b3d6bc"
+    },
+    {
+      "path": "blur/original/pill_1shot_seed1",
+      "record": "6464486e4c406dc1b0fb9eb2980ec87849a4517fb1e4d8fc269013612229a5ba",
+      "evaluation": "fee031f0234bfebfd11a76b72e89fb9ef152448d01d25e1fc5e746e94735d92d"
+    },
+    {
+      "path": "combined/original/pill_1shot_seed1",
+      "record": "c08a44ab8d8a6f06c4cb3023fa3bb3eeae526fa1e91fd4ca0a6c4577946a7c1e",
+      "evaluation": "d5bfe145bbd0859520e71f52876f361f9929239fd429211daf5cbe6c033c4f49"
+    },
+    {
+      "path": "rotation_only/original/pill_1shot_seed2",
+      "record": "6f35164ed098e07723da6d9a4b3169231dc0571c296857592bda864e861165dd",
+      "evaluation": "b832e193de00c5276ef24fb531710d98716cb8910dc0703fcc8e8447919b72f3"
+    },
+    {
+      "path": "brightness/original/pill_1shot_seed2",
+      "record": "12cb485e8f1d09407a947f8266107fc71fd54f829bd90742ad84f13f217b644e",
+      "evaluation": "0e32754a315a34a4f75fe87f7f38101cab8a954dee69c281c9d84446696f0747"
+    },
+    {
+      "path": "blur/original/pill_1shot_seed2",
+      "record": "da08a29ce6d21eccf2c54d96fae3eb387b49de04c9491fb639f02a6f701c43a6",
+      "evaluation": "0063fad976d152d9415e8cd07fed7cefc853e47198377d8a86e7231f8b063e3c"
+    },
+    {
+      "path": "combined/original/pill_1shot_seed2",
+      "record": "d6b3ef78f15350b5752e076eb8725dd6e7eca08cd563981e727365c5eb86e4f8",
+      "evaluation": "a06a9086f85ca937f0845d6c753d748348401c3918337e6ab9c09e42ba9671b6"
+    },
+    {
+      "path": "rotation_only/brightness_085/pill_1shot_seed0",
+      "record": "f4d86bc108189e8afa88fefa40ca92a10fdb35d522f23f7901f84b36c8f956cf",
+      "evaluation": "caf350d017b4ad99dec2b198c1bc37ee6eed2be55f030a11685c7d39aadf6657"
+    },
+    {
+      "path": "brightness/brightness_085/pill_1shot_seed0",
+      "record": "fdab34442001466dcb754d2d7a0022c9b99bb0e3b53bea96311acd513beb9afb",
+      "evaluation": "3cc7ce0503d7a073e75c50948fa0d22909189a862c0a476989415c8f6b6a26d5"
+    },
+    {
+      "path": "blur/brightness_085/pill_1shot_seed0",
+      "record": "d74fa1c8b8f096a3592b5ef843947a988639ec12289d0db8fdec1d00a7226842",
+      "evaluation": "4ef70785507de73d33d8d6585f7ca5f2269be1df175c73b7aa0ff028b69f8d21"
+    },
+    {
+      "path": "combined/brightness_085/pill_1shot_seed0",
+      "record": "dc76805c3f8550f705e0aee104154c435b4aa949496a570ff42c73950bda20b8",
+      "evaluation": "ee3dc4946340ce99ea62e21f778cbe69ddb0b93c71be7f98b58537d9c3a38ee4"
+    },
+    {
+      "path": "rotation_only/brightness_085/pill_1shot_seed1",
+      "record": "ae94c2c7a0295da12f4bd2e46191245ac60ac6bc1c7105eaac53bc3d9144ee6a",
+      "evaluation": "db8f973a74a2672aeafbd13ed7df3dd1367d87d274298600ca99f1026d368700"
+    },
+    {
+      "path": "brightness/brightness_085/pill_1shot_seed1",
+      "record": "46c5eeb0693944472609de5b2a6218da7eb8518ec5dd64c8fd01ad2827ce723b",
+      "evaluation": "d4fb5dcd9d22672194ca12030683c2f08d3fe91683de786294038c0144c7bb15"
+    },
+    {
+      "path": "blur/brightness_085/pill_1shot_seed1",
+      "record": "fad487c1e552e65bd1a710a5ad8164aab6723d1177d033e79e58f2273eddc376",
+      "evaluation": "491711e7ef91a8916506bc33154b062bb32381d7dd7640e51b820fd59f6693e6"
+    },
+    {
+      "path": "combined/brightness_085/pill_1shot_seed1",
+      "record": "2e5618f7c30db579fe1ba599b8b0f9356eb79b54c3f150b895b342c1965fc50b",
+      "evaluation": "647ad9d2d9acd15452c500db2b625c40a28de662e081643b1935b28471b07452"
+    },
+    {
+      "path": "rotation_only/brightness_085/pill_1shot_seed2",
+      "record": "f05ed00214989c3316005ee8180967ae3b98fc4766c8a169f6ef71884cda33d4",
+      "evaluation": "d3879e6b69c1d547fc12f7bed8abb64a21243e1c1b3ece2ad5ca8f8118e31bac"
+    },
+    {
+      "path": "brightness/brightness_085/pill_1shot_seed2",
+      "record": "405e4e8b323c1c73a8b0146e6b346a042a16861e5db9b264e5d52ab5cf4c6b5c",
+      "evaluation": "0595277318f7ca17099b2efeb146b424ac3c0bae0aa268f938a14451b2bf0259"
+    },
+    {
+      "path": "blur/brightness_085/pill_1shot_seed2",
+      "record": "8ec7d6e413a53c96029a25ccaa15b72ed5ba520208c1550a3112f6817b24d1b0",
+      "evaluation": "c29a6df86655c31d34821ffbe41d1964268b9be8bf8c16dcd6ec067b06287524"
+    },
+    {
+      "path": "combined/brightness_085/pill_1shot_seed2",
+      "record": "379767399e9a24eff1e02ba76bc92f52cfa104aead65852c3e0e18bcef05b647",
+      "evaluation": "ab4bdd1895ade0ef4ecd3ff98b107a90ed6146753f51c3471d17c6eb88fb80e4"
+    },
+    {
+      "path": "rotation_only/brightness_070/pill_1shot_seed0",
+      "record": "04ca392578c193d4d2cf60f4c58b14570c4ed723b746b680c2342b475939277a",
+      "evaluation": "9582d12a2f11b9f1d5bccf183abfb4eacb1b91dff9c5a32225da181335ee9f86"
+    },
+    {
+      "path": "brightness/brightness_070/pill_1shot_seed0",
+      "record": "06eaa2faa5378ac998a5e7a690e9eca1cd3789d719925f2e94958349acac5a1f",
+      "evaluation": "7f072c941d88fd0384658db1115fa719db7cff58dee4a7384bb2e86535e00d3b"
+    },
+    {
+      "path": "blur/brightness_070/pill_1shot_seed0",
+      "record": "36fe33b82cb95d9810cd6982093b0447d84c9c44fcb18f8c08354fa5e969435a",
+      "evaluation": "574affe600a3c1782f33b3e665881b48de8722b47e9996536284e29665af8e06"
+    },
+    {
+      "path": "combined/brightness_070/pill_1shot_seed0",
+      "record": "783b168f5edbd73ab20cfd8d663032c4a0e3ae091eb6229d30a798411c6a8840",
+      "evaluation": "dc25408ea7464e9367127e5b6fcf3a2a8d461c5b76b27fb9b3eb9716be2fb4f4"
+    },
+    {
+      "path": "rotation_only/brightness_070/pill_1shot_seed1",
+      "record": "058cbfb8061a3d5f0483036429c7328052f130d24622550dbb929fc8179d9ab5",
+      "evaluation": "4eccb5b95beb0f44e049f88f46e892987c3afae8c1c1e5abbb6f83ee6c06ecd8"
+    },
+    {
+      "path": "brightness/brightness_070/pill_1shot_seed1",
+      "record": "c7f0a16a377c2d7210469a7a4ea03386f0750db77677db46d31596fd061b46a7",
+      "evaluation": "cabcb58e4cc6643d8e45239788668d26f585637061c9a5467c679be49b3bcd81"
+    },
+    {
+      "path": "blur/brightness_070/pill_1shot_seed1",
+      "record": "16ddbc821f9d5f932b12afb8e075d08ca8aed61b050f7c719ac1b88c788c41e1",
+      "evaluation": "cd6463020bfefee008616dc57cc8d8fbf3ad51aee8d5723b65583d62abf97116"
+    },
+    {
+      "path": "combined/brightness_070/pill_1shot_seed1",
+      "record": "82c22d915d785df412004362b09dde6c4f4897f4529c2321c5e682dc096e25e8",
+      "evaluation": "d2fdaaa377a72edea1a7cb17918cdbadb624031bb0d8e93b0c86a0724a4c52a7"
+    },
+    {
+      "path": "rotation_only/brightness_070/pill_1shot_seed2",
+      "record": "512a51941ed471067795b8e2e5b977596c7b6aeb0aecfdad86fa19152fe6b5b7",
+      "evaluation": "452df5a5258637d10334336036903e5691bf766915eb558cbdba66a9a1a416a8"
+    },
+    {
+      "path": "brightness/brightness_070/pill_1shot_seed2",
+      "record": "b5e97c88dded41ab32039a3fca78170252e3b77ad6585b771d4f5d6a59883288",
+      "evaluation": "be963c18d270340ca8a805029e566426ba271dc4a70848cc61fb492eb284227a"
+    },
+    {
+      "path": "blur/brightness_070/pill_1shot_seed2",
+      "record": "e81db5df287a5870541fbc0198244058f5f586983e5de541f4372c1800a4e267",
+      "evaluation": "174264b3d106c8c9eb72896d1f05c885749e2b863e5add78f3eadf062adf450c"
+    },
+    {
+      "path": "combined/brightness_070/pill_1shot_seed2",
+      "record": "f7880196e1baf359ed0e2cd0729b826aed28350e0b66218becb3bb7e00d6a2f6",
+      "evaluation": "ac535be8986ea47131d78b1f395ee2fd15bb6da6af2616bb1e1494f36fef9b8a"
+    },
+    {
+      "path": "rotation_only/blur_075/pill_1shot_seed0",
+      "record": "88b9c5eef77bb44afc12e19280b48cdcea5d39801f0ac733a12b60bd01d1094e",
+      "evaluation": "848c9987f3b90bbb8ee7bb3d3f60d927386a26f3dff57a03e678c053f0af9969"
+    },
+    {
+      "path": "brightness/blur_075/pill_1shot_seed0",
+      "record": "7ba77cd9e625208cd84447eb386e56d21e6319f70a2ad0e6058af806b8f391eb",
+      "evaluation": "a8904fc51ab3787b7f7c966babac7f8046c713d642fbbee1a06c5b777613abec"
+    },
+    {
+      "path": "blur/blur_075/pill_1shot_seed0",
+      "record": "3c75e9127a89ef4a4df84776df7357c18d8785ff7cbf138e4ad6002b66af62a5",
+      "evaluation": "b121a555513700509b212fe9bf665b7d3c21b136e1750ccf8f20286feed907d3"
+    },
+    {
+      "path": "combined/blur_075/pill_1shot_seed0",
+      "record": "486dbe6e95a7f8af613076e1b7bc183c482506399f73c224942c9ae17ee524d5",
+      "evaluation": "58ae85687765686e13a431f9c04e1eab7989909b153e44eac4e8958f55e49fb3"
+    },
+    {
+      "path": "rotation_only/blur_075/pill_1shot_seed1",
+      "record": "28d188e06a6d045d8ddf33666a03cadcb4380d6b057419b8ee7d75a36b15ad9d",
+      "evaluation": "b727a37b252816b334c0896998a94cdced4dc119188a50f3005b878ac4f9c41a"
+    },
+    {
+      "path": "brightness/blur_075/pill_1shot_seed1",
+      "record": "88ecd7a20a543856165ae15325320737145787e996d552295ba7b74b2aca1fa7",
+      "evaluation": "eb729cd95b0d520076a7060b7db98bad25eac097e19c970c34b35404c1bbbfeb"
+    },
+    {
+      "path": "blur/blur_075/pill_1shot_seed1",
+      "record": "9d173bdaa079885461b45e0d74c5942e096bce0119a5248579a9c4c8443e43f9",
+      "evaluation": "53ce1069b0c2841d3e39381c3024f8bf13e0ce6d8068313bc6a3dbc29303165f"
+    },
+    {
+      "path": "combined/blur_075/pill_1shot_seed1",
+      "record": "3b1ee439df7cb8b64e6952eedf0c43483397a394e20451f8f97a1e82264fdb57",
+      "evaluation": "26c17a76c7e09d6fd4083f630833a6f9780bc4a0c1676a425c42df1496ed1eaf"
+    },
+    {
+      "path": "rotation_only/blur_075/pill_1shot_seed2",
+      "record": "0e072544481666a0966b00d587096403b1c5ec25b95225b069b157595ae99b38",
+      "evaluation": "cf76cabd3b5cdb28aa95efb22cc1aae0dc4a3a10e7164c65721084268282cdaa"
+    },
+    {
+      "path": "brightness/blur_075/pill_1shot_seed2",
+      "record": "efe6fad4516edcda1311d61d5c3b2dc1eae36e73d600ea17b8c4fad444cac0ef",
+      "evaluation": "80de12188c12c5ca1b41a9b594a6d1a8c2998d559ccaefc4ec4b21431d719d39"
+    },
+    {
+      "path": "blur/blur_075/pill_1shot_seed2",
+      "record": "3e7e52b3055f35ba8820178e420dd7c42c26b49ac07a06be0a4da81026b1e7b4",
+      "evaluation": "44fc29516b1540a920a1e301f7b23a484ac02403539c95fac0fdca07f11644df"
+    },
+    {
+      "path": "combined/blur_075/pill_1shot_seed2",
+      "record": "fda829af8c6e77e27ad958f21665ee06ccf5c023d30fd3de1356606898aa120a",
+      "evaluation": "bded979394db92888d6c540796f5c530ff593088de1f044fe7effa3ba56b5920"
+    },
+    {
+      "path": "rotation_only/blur_150/pill_1shot_seed0",
+      "record": "445f93875a1c9ce05497ac39195971dac6e38c0727ac063217f4a813be3cbc05",
+      "evaluation": "fd4f5d53f041805bc878165ec902d17e4f72a2df51b4992a57d0ab7e34118526"
+    },
+    {
+      "path": "brightness/blur_150/pill_1shot_seed0",
+      "record": "f0359662dfd7d8ba47fa92b228b7135b4b07cd9179d1e420665e786feecb7d1b",
+      "evaluation": "1f1c45d865d216c27f1233c745307107085e08da171ae98edc5b5f0ae717a047"
+    },
+    {
+      "path": "blur/blur_150/pill_1shot_seed0",
+      "record": "db1ade2cddb2980d1113ff1655093de39aa4213a546d38ac01f3ed0b0ebdc527",
+      "evaluation": "a042b0280b17dd3d67825a711cacc988319e140d4ead1d7ba54f23a9db2010ea"
+    },
+    {
+      "path": "combined/blur_150/pill_1shot_seed0",
+      "record": "884357b2dc0916588c90ea4f3df2ee87848193e9db1c9b3cd5a9955f9721753c",
+      "evaluation": "0ee9d384a8808c4f878f7e540386f60e70c2898098fb26454a012d99418af74b"
+    },
+    {
+      "path": "rotation_only/blur_150/pill_1shot_seed1",
+      "record": "f91cb654c853c8d2011d4734319f82039169d862206903fe3758a77d6750349e",
+      "evaluation": "c7c847162356246cc877ada1f651d15487de48cbeee7c22bc3a0818c04ac7e7f"
+    },
+    {
+      "path": "brightness/blur_150/pill_1shot_seed1",
+      "record": "618a207e00311b734a29f9fa3d913b7534738a12f4628332b1dc90d6fddcf838",
+      "evaluation": "d91fd45a0ae4fb131f0b212fece5652f1d289e374583e80f034d7d99d7a80c62"
+    },
+    {
+      "path": "blur/blur_150/pill_1shot_seed1",
+      "record": "7f0e0a0a4cd72224064b9358c7c47253258926b3bd5b34c9e1a44103d5860f51",
+      "evaluation": "24220aa833abe4928f810b9337d884b4d832fc216e65dcf3084696a51ceaf5d1"
+    },
+    {
+      "path": "combined/blur_150/pill_1shot_seed1",
+      "record": "245941252ac7b52575bdf28bcddea5ecdde2b1fcd543a00b1d1e379c354fa1e9",
+      "evaluation": "7836b357caf97d07637c829c7ab7d275db7a1b13d02f73c26f22bb88c2fbd17d"
+    },
+    {
+      "path": "rotation_only/blur_150/pill_1shot_seed2",
+      "record": "94252a58cbf06316bf152720b88963a960efa5522e6f74fff4dda4ab2b214191",
+      "evaluation": "cd087b9b63786b700a14e724fdf48ad52bc5a2d42cce56fe5f7d593a44fbc377"
+    },
+    {
+      "path": "brightness/blur_150/pill_1shot_seed2",
+      "record": "6d5aa429ce572ced2df38fddaacd93986426e188e2c93edc3e162df9fc8eca9a",
+      "evaluation": "23966a1bbc0dec7d8a3fe7c32b9ac5db5787970b81fa2f10c6c2999663b1844b"
+    },
+    {
+      "path": "blur/blur_150/pill_1shot_seed2",
+      "record": "041898b28e5a5b10e8d89c7c32bf8db8f5ec3fe7c3101370c6c3be0bf97671fb",
+      "evaluation": "961b456a09f25020c9de815e1b9305cdf5488cdb3fe121ba85f18d616b1b90c0"
+    },
+    {
+      "path": "combined/blur_150/pill_1shot_seed2",
+      "record": "7a8d3d56ba4b0c2d0ab246aeb31156ae3e47f0459e726375f5eec987981bd79f",
+      "evaluation": "29cc012e5304c5b80d41903e8b95eddb36e1ee8a86f1a0fa3b8500517e7d19c6"
+    },
+    {
+      "path": "rotation_only/original/screw_1shot_seed0",
+      "record": "af24f24f364ef4366e5d56f3757f52d329f15874d3a63fd9caf2114867f86f1c",
+      "evaluation": "6c902e74988a677e5f069b6b661384510beeee093186a19d7514a59f670e12a2"
+    },
+    {
+      "path": "brightness/original/screw_1shot_seed0",
+      "record": "4a56e401acdb5f9a2ab3be6579fd90dc1ba3818b578753eae5e19493e26f8b9d",
+      "evaluation": "21855351667d1c35b8099f5e1b140bb1629215b4f384c33719f213c355794765"
+    },
+    {
+      "path": "blur/original/screw_1shot_seed0",
+      "record": "6122af6dd6f1b906d56dc1f54106cab13634347893eded62131f3f98589c4787",
+      "evaluation": "09d5e697aa94d9c2ce1cefd2166292519c30b4b85b9c4a817a236e1fe0d967cc"
+    },
+    {
+      "path": "combined/original/screw_1shot_seed0",
+      "record": "e6c127d0d095896ee796e861d755b639af1f8c8ed84311b54c6c7b9988865be3",
+      "evaluation": "b1d7d5d3c1f1ab44030ccc3ae247c3f97b12729fefc84031029d9af82f796285"
+    },
+    {
+      "path": "rotation_only/original/screw_1shot_seed1",
+      "record": "52725d6292592d2a9f46563c1572f44c50e5d73ecdf28d392a19a621e7d2c496",
+      "evaluation": "6c4fc0df2c040f27c66d23089125404473c13d7c782e43178735542608b81a47"
+    },
+    {
+      "path": "brightness/original/screw_1shot_seed1",
+      "record": "119f935fb22d414082716de8af24b22af948e2e0c8c0dc44a3e2593d9e8edc39",
+      "evaluation": "59b93dfa17ca61fa79314765e3aaf0bade88a5a85513b2c4aed2b94ffbdc191b"
+    },
+    {
+      "path": "blur/original/screw_1shot_seed1",
+      "record": "fde59a36bed34c4a6bc702182dd3a016d7460b87c36d52ed27b830d5aad8c770",
+      "evaluation": "942ad68d25a7a9683e53abb0e6dc5ea8e4c6d979f08d10f25e44d503b172b3e7"
+    },
+    {
+      "path": "combined/original/screw_1shot_seed1",
+      "record": "84ec506e3cddc84686b60fae0c5ea1667f121c1242851334bedee0693ba665d7",
+      "evaluation": "a4706f976a7446e077cfae826d926d06c0759117f2a0caca8ce83117ea3c59b5"
+    },
+    {
+      "path": "rotation_only/original/screw_1shot_seed2",
+      "record": "ed45b4cef0765265cba26ed17565d040f7b8f315f92d0d5bf7443cbd93b58e4a",
+      "evaluation": "18f20737edb716cab0552098dc597b501f0f9948919cc77a84493e9737ca7a01"
+    },
+    {
+      "path": "brightness/original/screw_1shot_seed2",
+      "record": "5cb5b0b6a76a2b7c691ba6d4a120c38d090a67887b32b8f259f6c996dadbd1c6",
+      "evaluation": "9b5618c517cb895d39e1aaad987f4c44c0f5927c38507a36667c1d2479ec54c0"
+    },
+    {
+      "path": "blur/original/screw_1shot_seed2",
+      "record": "631de84cb340ed9c2ff380b917691876dd7e2884dbe9be3fc7546859daa534f9",
+      "evaluation": "b7c9f6089a3b01b799248ac2b6716bd2084948739916752942fc77bc7f892fd0"
+    },
+    {
+      "path": "combined/original/screw_1shot_seed2",
+      "record": "186d1628178ba2e470001277cf9655b0701358c9526cc6ba93c6e4d79c6e770a",
+      "evaluation": "cfbdb0fdefe5f080ed1b83964c8a30c6264b6b3220a2961f6557def6302e0815"
+    },
+    {
+      "path": "rotation_only/brightness_085/screw_1shot_seed0",
+      "record": "121a9b0a0323b6d333d7625dffef6a1683ce397c802e3e3dec9c3beb6c10665a",
+      "evaluation": "30530ca15182999f0da932e3bda226efd62436c608c1378c4575b2e931047885"
+    },
+    {
+      "path": "brightness/brightness_085/screw_1shot_seed0",
+      "record": "9296159e6e609b7e497491e5ab790ca80442b38dc70baa49d13b7cd5cd4c653c",
+      "evaluation": "2d1ee03e96a620d6213b832e374b5c30458c28672ab46993ad652a2e494ab33a"
+    },
+    {
+      "path": "blur/brightness_085/screw_1shot_seed0",
+      "record": "e39488d9f2d14a616a9ed77349dd720e4759f4b5aa1d63c989072aeef9422e09",
+      "evaluation": "14d1cb99c3feddb180632280ba2d5e8769999e94463b564fd23374b778176738"
+    },
+    {
+      "path": "combined/brightness_085/screw_1shot_seed0",
+      "record": "08d0338d9875b76d0aba5316c804dc630b5fad862f8ae4913f00d3b962bb617d",
+      "evaluation": "135466e1c514843b44d3f3d0b6e1e87c17aebd3186efca67d2dfd215ca02c714"
+    },
+    {
+      "path": "rotation_only/brightness_085/screw_1shot_seed1",
+      "record": "955d9204a6db4486558dfb7360b729327af225399aea54934a8a4ea7cac3656c",
+      "evaluation": "1aba04249982e09db7def127528e490472f7a97505d2fa4e125b93f60f6f87d2"
+    },
+    {
+      "path": "brightness/brightness_085/screw_1shot_seed1",
+      "record": "2c2a278e573aa278c5a812b24e968de74a2868a06da650e55520c3d10f9394de",
+      "evaluation": "bc56df9ff186e26ecbebd7d4ecbc4e13b3c794a50b51b799a9c561574e298c53"
+    },
+    {
+      "path": "blur/brightness_085/screw_1shot_seed1",
+      "record": "901ef5f4b903b3791edfec3cd336210f374b42fc040274174f3e3103fb057c1d",
+      "evaluation": "6f031fcf20b473dc90a422c7707b3b196a60dde2adab9d7151149146f4435cad"
+    },
+    {
+      "path": "combined/brightness_085/screw_1shot_seed1",
+      "record": "b303f7480c0df67ec2a8aefb995a43e4f517baac4f781d17f84358101007bacb",
+      "evaluation": "565f295a007d5b944b66d03ceeacbdf7dba9ba7d77cb322aef7c1afde2939de4"
+    },
+    {
+      "path": "rotation_only/brightness_085/screw_1shot_seed2",
+      "record": "f429fe3f103806c2a2d8d9fa60dd9b6f9965dd463c02366643bff18e828b2859",
+      "evaluation": "048832a5e36332a272901188fe590467f8d38a5873345aa042e60ee8585ff0b4"
+    },
+    {
+      "path": "brightness/brightness_085/screw_1shot_seed2",
+      "record": "b15fa510dccd54079402db5caf2cc943d2075f18e7326b53ba17c771f1024d6c",
+      "evaluation": "e946ecb68da6656d50f99d79238722a43d1c9d32d132d7f509e9327196c5a993"
+    },
+    {
+      "path": "blur/brightness_085/screw_1shot_seed2",
+      "record": "043344d5e683fb94d34109560a62531ef6f5704d4bfd8ed7818a9447c3802553",
+      "evaluation": "6715c9e59a9b6fde1010bc5ec61832122bd8ba0df83e72a35319c37202ddfe6f"
+    },
+    {
+      "path": "combined/brightness_085/screw_1shot_seed2",
+      "record": "fdbaa24396ac518e23cf7f32d9f07e1e69333fa0c360ea962bec9111fc13972b",
+      "evaluation": "2af219030401228e92b4f664fa2b73c1c1a7b6b19c632560159aa6c8b9862993"
+    },
+    {
+      "path": "rotation_only/brightness_070/screw_1shot_seed0",
+      "record": "29137a12af9e1cb7e7d64b2ef158213f8d9ffd921fa726e67d3d34c8f78d787d",
+      "evaluation": "9233a4e3335597c6254ed254016c6f10db0707055a5b740e7aa24ccc8127a315"
+    },
+    {
+      "path": "brightness/brightness_070/screw_1shot_seed0",
+      "record": "58eccd10e4180507e2fd0508b0a89796361761f0e38f8db90bc01d886707e796",
+      "evaluation": "54d905beb61c7d478dbd4edb23a154c74c3df171370de9977821628fb54e5e87"
+    },
+    {
+      "path": "blur/brightness_070/screw_1shot_seed0",
+      "record": "a8096947fb28f8da09bc7046987923d85b94d343d47f5634989565a0c30f5b41",
+      "evaluation": "f9b4ef64bb9c12ee052b90cb9e6751182398145aa8210c456a2c043d5068729b"
+    },
+    {
+      "path": "combined/brightness_070/screw_1shot_seed0",
+      "record": "34c31a245e2f331fdaf1a7380df9c95888dbdc82d115a2ac05f18cbde13b67e5",
+      "evaluation": "d0615e1d82c160fa61e40cdb50d07313cdb60654fd8afc4359c621eb780251b2"
+    },
+    {
+      "path": "rotation_only/brightness_070/screw_1shot_seed1",
+      "record": "0ca6af394fcc91318f4d138ed2edd78daf7665939ef60ba6f5d77345e3e9fa28",
+      "evaluation": "81a49ef1f55920254c67bfb8917dbabeada3c03e95d28829303035ffddba10e5"
+    },
+    {
+      "path": "brightness/brightness_070/screw_1shot_seed1",
+      "record": "3b0408fbaac27fba9946a909687b3254b3dd7c78ddd9fc92991b36637a4dafb1",
+      "evaluation": "033386a60accfd8ad7455afd302d9f0fa2be932c7b59d7ad1e69f0efb0411663"
+    },
+    {
+      "path": "blur/brightness_070/screw_1shot_seed1",
+      "record": "2db5bc400a5ac6804b84f78293e20076e24a9f375fd761c1b87f315cde648271",
+      "evaluation": "579199e2632467a657d3f4d515e4368dfb07c2d15994a6506c5509ad6475d35e"
+    },
+    {
+      "path": "combined/brightness_070/screw_1shot_seed1",
+      "record": "233a35031f85d58af5e179796d0781bbc1ffbfc24f4ca606fe0a7c8a07cf439e",
+      "evaluation": "9ab9083715baf28318909ff27139f45c1eb88f26714b1009b1c64b85bb4cd5c0"
+    },
+    {
+      "path": "rotation_only/brightness_070/screw_1shot_seed2",
+      "record": "9fe34494d27338dd240721098a9e945752387a87c0daf91b344f36c535046ccf",
+      "evaluation": "ff64872ed9cafd0eb55058a9ee962e20ef8520e9c94e5f5ce6184e33c3775808"
+    },
+    {
+      "path": "brightness/brightness_070/screw_1shot_seed2",
+      "record": "9fe4ad95c8214fd48cec6f4f5db7c76ffdd4ce3b8f79ef7706fda30f3c5f97b1",
+      "evaluation": "6618ab4a97dc67d3aac80392f332a443a85725eea850c23ac3050a89d3fb2c0c"
+    },
+    {
+      "path": "blur/brightness_070/screw_1shot_seed2",
+      "record": "0d6d2112b3b68c74cdc3c6ddd6f1164d93ecf881771c5dbfcb9c112cf27bff7a",
+      "evaluation": "829c54bbca4f545a4df965d7fa0f9bafb3a5efe0449c91675f9c4270cb5a963d"
+    },
+    {
+      "path": "combined/brightness_070/screw_1shot_seed2",
+      "record": "eb03b35a36589e221e92f22b5e1f8d6af5dbd465a68b99a357933c7c9e220a51",
+      "evaluation": "6c81e90b924071386708cefb8bc717949f4453680ac93995c349bc9dc3afaf79"
+    },
+    {
+      "path": "rotation_only/blur_075/screw_1shot_seed0",
+      "record": "567bb179c4b8af01dc501388a2cc3524e6b0b55b6c8ad239752a3c5a8620dd88",
+      "evaluation": "1c481391ab230251a7553ff844688de2ecd8cb8ceb5404145a4adca09445be4e"
+    },
+    {
+      "path": "brightness/blur_075/screw_1shot_seed0",
+      "record": "1c13727286984cb7511155b51e98b538c09747470fbff3226148af9d800e2f01",
+      "evaluation": "19d4d2188531dc4e0ca2b33f78a188229fb64e9a2963c10f2f14202f287b4306"
+    },
+    {
+      "path": "blur/blur_075/screw_1shot_seed0",
+      "record": "8c384dcaf5c427f5a2ccf854244d0ce567f5c8e740607d61f1a92b895a887da2",
+      "evaluation": "cfecc222b9ae8b7a8fa45e54bee69e3650e3c3de6000a0ceb202212497301bf5"
+    },
+    {
+      "path": "combined/blur_075/screw_1shot_seed0",
+      "record": "a09778ebd51336c1fd2bdb7f971a137bee0ffd8a3158bb289127f68642c66fef",
+      "evaluation": "59e89331a2af0c42aee88dcb2836f62804068a708c5a44cfa42f3b5818fc1605"
+    },
+    {
+      "path": "rotation_only/blur_075/screw_1shot_seed1",
+      "record": "1aa6b44484a16a3fdf847d34dc540e45f6a96537cf8550fed80d92f19ca648cc",
+      "evaluation": "0a6e77a2b54cfa946ce6e9d3d1cb5429dfd68bee45cb803ae965f63ae0ed116b"
+    },
+    {
+      "path": "brightness/blur_075/screw_1shot_seed1",
+      "record": "fc249721d90f1833861c3db82fe06dcb1846d862c66b251c19958e33cc2e008b",
+      "evaluation": "48494e14b5af0e8fe21243686608e7b38d4eb05ffd1be53108339d1881b5977d"
+    },
+    {
+      "path": "blur/blur_075/screw_1shot_seed1",
+      "record": "7e177bd620091919ecfdc02c4dca9bc10b56834e794b7f7bcae9003b06af0c4c",
+      "evaluation": "5c8bcb9d575f745deaf5c5394420bb098338ff7d83f886c68d2f7b4289c9bdd4"
+    },
+    {
+      "path": "combined/blur_075/screw_1shot_seed1",
+      "record": "35df05b206bf7feb89349b13048995bd6f6168098c75dd26c50534b931644fba",
+      "evaluation": "b51274312ca2eaa9e84936fc7915f198948cb00474ad3fb7f22666aa2c2cdb7d"
+    },
+    {
+      "path": "rotation_only/blur_075/screw_1shot_seed2",
+      "record": "f6c4626e2bea335a2a8d6362efc38a0a35198d18e97be9d7efadb51cfc35f77e",
+      "evaluation": "9777a420c142a13fee2eb7d8d1d5589b6509c2d5eb9b15b3199997ef521e2992"
+    },
+    {
+      "path": "brightness/blur_075/screw_1shot_seed2",
+      "record": "110c9c596473ba8171c238964e60fb837f3ca013cae057a494e7f97e30db54fc",
+      "evaluation": "ee73b7089420580f027c707cc4bd7d18ded028a5108c8f27c3ff62530606069b"
+    },
+    {
+      "path": "blur/blur_075/screw_1shot_seed2",
+      "record": "1ca59198ad7d401436b96bbe77418e5100952b6e1fe0b883ea10154a13cbf8f2",
+      "evaluation": "55bb1ada4092f86f1ae8c0afd880be35e4da9cc4d7855bb8f6ccc6ccff473010"
+    },
+    {
+      "path": "combined/blur_075/screw_1shot_seed2",
+      "record": "4aac50f0d3407dd4b338a4ba7461487675b7fa4d188aab4cb776303bd080d423",
+      "evaluation": "10a7c8970348fc9d538c130f313d70ae6c6c670712ea05d1368e2d32b92aff9b"
+    },
+    {
+      "path": "rotation_only/blur_150/screw_1shot_seed0",
+      "record": "5794ba6befb34d7bb64dc8a6b3a3a43dfbed9455cbb085d5b9d23b166a9eed4b",
+      "evaluation": "bc2ea5ceec1d8a0329e376f852366e9853f83896055fbecb8209301ca901c9c0"
+    },
+    {
+      "path": "brightness/blur_150/screw_1shot_seed0",
+      "record": "c8a21d5349d75ea98e3a99e00c0f566d2c50c90c660326a69854a26b7c371c67",
+      "evaluation": "948c33ba943cb380c290ede80f2d95012c7983b3dbabaa607912426ac9b5c544"
+    },
+    {
+      "path": "blur/blur_150/screw_1shot_seed0",
+      "record": "0775fe7c126e54e1eb3ec364a60921b86bd1682eecc856d460fa50da2e5a931f",
+      "evaluation": "658cc48d9d9e7897c1f859b81a8de287cca761945c3253b0c2693cc2030a5e5a"
+    },
+    {
+      "path": "combined/blur_150/screw_1shot_seed0",
+      "record": "03e3cbe920d9d24141fd1661f042c150c0d5587b92d1338509cfa73270c9220f",
+      "evaluation": "aca9d22e6b8af976161fa5744b564cb0aa0fa73ad6027e1ce59f7b2f0037cfbc"
+    },
+    {
+      "path": "rotation_only/blur_150/screw_1shot_seed1",
+      "record": "42b9fad270d77cb40cd9dbd3f002fe6af236e199b84cb2885f9a2f3212ff9879",
+      "evaluation": "890568751dc87b61e7d19525b24993da736120ce3117973bd7c729a282988ef7"
+    },
+    {
+      "path": "brightness/blur_150/screw_1shot_seed1",
+      "record": "bbba23ec472d5ca76831fafe36e86d767e37929f9ffd13c12f291588af1f749e",
+      "evaluation": "0ae6a0b8823554c761591432bc712625602bc5f37f072144bfbd9ccb655a8538"
+    },
+    {
+      "path": "blur/blur_150/screw_1shot_seed1",
+      "record": "816b4fee7b09ace6409ddbd54c27c1847eca920ddcf1252cfc01faee82bdbd7e",
+      "evaluation": "8d2b71d3792aec1e37339d7e08dae9ea8cbdff0eab1aa139a538483b287af9fb"
+    },
+    {
+      "path": "combined/blur_150/screw_1shot_seed1",
+      "record": "4e6ba1706544790f5790544c25ea8b9340a300f71a68bb46a48a334db0e40c32",
+      "evaluation": "0e713529e6d992864d307e17bc8413adaed8b6bcb299438df4465f57fec4dd84"
+    },
+    {
+      "path": "rotation_only/blur_150/screw_1shot_seed2",
+      "record": "4f09071189e1034ae591308a027c229fd8402d4d060b94cca3ceecb30e51cdd3",
+      "evaluation": "ed4415ca9a43f0734198e8c12c385f79486625d709cc71ad07740b3fe5fb49ce"
+    },
+    {
+      "path": "brightness/blur_150/screw_1shot_seed2",
+      "record": "2f8608c0944be3e47d0daf821236103455d624b778b877ee140181cfe8c6a63f",
+      "evaluation": "64ab9459a7ed1d202177dc759967ae7bade35e2e27f01ffe02429f9510ec00e8"
+    },
+    {
+      "path": "blur/blur_150/screw_1shot_seed2",
+      "record": "81f63320615a6c9b648a5b5f3840b6e5142f0866c26a57414df82cd41f50e456",
+      "evaluation": "a0725552670ec7b8f1902222576c39de226ffe326685c20c567a6c72f438b33d"
+    },
+    {
+      "path": "combined/blur_150/screw_1shot_seed2",
+      "record": "cf2794a3922136883d32b1c1e2e928436b41fe6b31f5ddc7f55577bd1b4b0039",
+      "evaluation": "55fdc35443017522bce963e76407e86ac41be5bad5b825a3c7246e8f71cdebd9"
+    }
+  ],
+  "pending_groups": [
+    [
+      "bottle",
+      "original"
+    ],
+    [
+      "bottle",
+      "brightness_085"
+    ],
+    [
+      "bottle",
+      "brightness_070"
+    ],
+    [
+      "bottle",
+      "blur_075"
+    ],
+    [
+      "bottle",
+      "blur_150"
+    ],
+    [
+      "carpet",
+      "brightness_085"
+    ],
+    [
+      "carpet",
+      "brightness_070"
+    ],
+    [
+      "carpet",
+      "blur_075"
+    ],
+    [
+      "carpet",
+      "blur_150"
+    ],
+    [
+      "grid",
+      "brightness_085"
+    ],
+    [
+      "grid",
+      "brightness_070"
+    ],
+    [
+      "grid",
+      "blur_075"
+    ],
+    [
+      "grid",
+      "blur_150"
+    ],
+    [
+      "tile",
+      "original"
+    ],
+    [
+      "tile",
+      "brightness_085"
+    ],
+    [
+      "tile",
+      "brightness_070"
+    ],
+    [
+      "tile",
+      "blur_075"
+    ],
+    [
+      "tile",
+      "blur_150"
+    ],
+    [
+      "toothbrush",
+      "original"
+    ],
+    [
+      "toothbrush",
+      "brightness_085"
+    ],
+    [
+      "toothbrush",
+      "brightness_070"
+    ],
+    [
+      "toothbrush",
+      "blur_075"
+    ],
+    [
+      "toothbrush",
+      "blur_150"
+    ],
+    [
+      "transistor",
+      "original"
+    ],
+    [
+      "transistor",
+      "brightness_085"
+    ],
+    [
+      "transistor",
+      "brightness_070"
+    ],
+    [
+      "transistor",
+      "blur_075"
+    ],
+    [
+      "transistor",
+      "blur_150"
+    ],
+    [
+      "wood",
+      "original"
+    ],
+    [
+      "wood",
+      "brightness_085"
+    ],
+    [
+      "wood",
+      "brightness_070"
+    ],
+    [
+      "wood",
+      "blur_075"
+    ],
+    [
+      "wood",
+      "blur_150"
+    ],
+    [
+      "zipper",
+      "original"
+    ],
+    [
+      "zipper",
+      "brightness_085"
+    ],
+    [
+      "zipper",
+      "brightness_070"
+    ],
+    [
+      "zipper",
+      "blur_075"
+    ],
+    [
+      "zipper",
+      "blur_150"
+    ]
+  ],
+  "calibration_reused": [
+    {
+      "path": "bottle/ref0.json",
+      "sha256": "c88065cbb575167ca863d86ea57dfc527ddbc915c48058193d87e9b4cea5282d"
+    },
+    {
+      "path": "bottle/ref1.json",
+      "sha256": "be7f7b6f58eaeec7c466f0bda925b7a7e3c8ee3ac5cfde4cbc4aa638de67c6ae"
+    },
+    {
+      "path": "bottle/ref2.json",
+      "sha256": "0b4b775c8e8353d153c2738c731bb7d7618dc2963f28c0f2509c113e2ffe4c05"
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+> Historical planning note. Completed experimental results are now in the final reports; this record is retained for provenance.
+
 # Thesis writing plan (draft)
 
 1. Introduction: industrial visual inspection, limited defect labels, research questions.

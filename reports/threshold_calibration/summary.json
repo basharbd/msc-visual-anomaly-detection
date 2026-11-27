@@ -1,0 +1,55 @@
+{
+  "protocol": "ADINO-CAL-P01",
+  "calibration_images_per_category": 40,
+  "rank": 39,
+  "manifest_sha256": "63031dc7731d1c14a70c74c4f5d23fa34c3097b7d0c761d3d45b5ab686c1fc47",
+  "runs": 225,
+  "macro": [
+    {
+      "condition": "original",
+      "fpr": 0.08321145910106885,
+      "fnr": 0.17028041125799945,
+      "tpr": 0.8297195887420006,
+      "fpr_change_pp": 0.0,
+      "fnr_change_pp": 0.0,
+      "tpr_change_pp": 0.0
+    },
+    {
+      "condition": "brightness_085",
+      "fpr": 0.08463765166856577,
+      "fnr": 0.17106603572098436,
+      "tpr": 0.8289339642790157,
+      "fpr_change_pp": 0.14261925674969173,
+      "fnr_change_pp": 0.0785624462984913,
+      "tpr_change_pp": -0.0785624462984913
+    },
+    {
+      "condition": "brightness_070",
+      "fpr": 0.08481679820640796,
+      "fnr": 0.17200174038304777,
+      "tpr": 0.8279982596169522,
+      "fpr_change_pp": 0.16053391053391097,
+      "fnr_change_pp": 0.17213291250483265,
+      "tpr_change_pp": -0.17213291250484097
+    },
+    {
+      "condition": "blur_075",
+      "fpr": 0.09839320193723544,
+      "fnr": 0.17922934149048134,
+      "tpr": 0.8207706585095187,
+      "fpr_change_pp": 1.5181742836166592,
+      "fnr_change_pp": 0.8948930232481889,
+      "tpr_change_pp": -0.8948930232481889
+    },
+    {
+      "condition": "blur_150",
+      "fpr": 0.203386735455624,
+      "fnr": 0.16376728881949476,
+      "tpr": 0.8362327111805052,
+      "fpr_change_pp": 12.017527635455515,
+      "fnr_change_pp": -0.6513122438504687,
+      "tpr_change_pp": 0.6513122438504659
+    }
+  ],
+  "completed_utc": "2026-11-26T23:17:13.937099+00:00"
+}

@@ -120,7 +120,7 @@ def run_category(model, manifest, upstream_commit, category, seeds, conditions, 
                 if (final / "run_complete.json").is_file():
                     record = json.loads((final / "run_complete.json").read_text())
                     assert record["variant"] == variant and record["reference_sha256"] == references[seed]["sha256"]
-                    assert record["runner_sha256"] in {sha256(Path(__file__)), "5c9eb15bcbb1dceb44755ef53d52e90def0c32d07f618b1e02f22c1b26d00d1f"}
+                    assert record["runner_sha256"] in {sha256(Path(__file__)), "5c9eb15bcbb1dceb44755ef53d52e90def0c32d07f618b1e02f22c1b26d00d1f", "55fb45bd4dd1ab33db906f863253366f02983f6fc0d77fe9fa79a2295d06b37f"}
                     continue
                 assert not final.exists(), f"Partial final output: {final}"
                 temp = final.with_name(final.name + ".partial")
@@ -190,7 +190,7 @@ def run_category(model, manifest, upstream_commit, category, seeds, conditions, 
                 reference=references[seed]["path"], reference_sha256=references[seed]["sha256"],
                 checkpoint_sha256=CHECKPOINT_SHA, dinov2_source_fingerprint=SOURCE_SHA,
                 upstream_commit=upstream_commit, thesis_commit=commit, runner_sha256=sha256(Path(__file__)),
-                transform_sha256=sha256(ROOT/"scripts/lighting_blur.py"),
+                transform_sha256=sha256(ROOT/"implementation/lighting_blur.py"),
                 python_version=sys.version.split()[0], torch_version=torch.__version__,
                 gpu=torch.cuda.get_device_name(0), hostname=socket.gethostname(), lsf_job_id=os.environ.get("LSB_JOBID"),
                 completed_utc=datetime.now(timezone.utc).isoformat(), test_images=len(paths),

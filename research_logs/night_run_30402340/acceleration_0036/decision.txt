@@ -1,0 +1,1 @@
+12 high-index pending batches moved to a second array. Same evaluator, same task mapping, same output path; new tasks wait for original indices to end, then skip already-completed records. Summary still requires 900 evaluations.

@@ -54,13 +54,13 @@ def main():
         folder = DATA / condition / f"{base.category}_1shot_seed{base.seed}"
         common = ["--category", base.category, "--seed", str(base.seed), "--condition", condition]
         if args.stage == "infer" and not (folder / "run_complete.json").exists():
-            subprocess.run([sys.executable, ROOT / "scripts/run_baseline.py", *common], check=True)
+            subprocess.run([sys.executable, ROOT / "implementation/run_baseline.py", *common], check=True)
         verify_inference(folder, base, condition)
         if args.stage == "infer":
             return
         metrics_file = folder / "evaluation_metrics.json"
         if args.stage == "evaluate" and not metrics_file.exists():
-            subprocess.run([sys.executable, ROOT / "scripts/evaluate_baseline_category.py", *common], check=True)
+            subprocess.run([sys.executable, ROOT / "implementation/evaluate_baseline_category.py", *common], check=True)
         result = read_record(metrics_file)
         digest = hashlib.sha256((folder / "run_complete.json").read_bytes()).hexdigest()
         assert result["inference_record_sha256"] == digest and result["pro_fpr_limit"] == 0.3

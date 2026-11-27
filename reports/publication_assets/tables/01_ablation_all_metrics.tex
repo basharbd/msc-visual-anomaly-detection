@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\caption{Macro-averaged ablation scores (percent). Equal weight per category; three fixed reference choices.}
+\label{tab:ablation_all_metrics}
+\begin{tabular}{llrrrrrr}
+\toprule
+Condition & Bank & Image AUROC & Image AP & Image F1-max & Pixel AUROC & Pixel F1-max & Pixel AUPRO \\
+\midrule
+Original & Rotation only & 96.52 & 98.14 & 95.96 & 96.26 & 57.94 & 91.72 \\
+Original & Brightness & 96.45 & 98.12 & 95.81 & 96.17 & 57.81 & 91.63 \\
+Original & Blur & 96.60 & 98.21 & 96.03 & 96.15 & 57.88 & 91.62 \\
+Original & Combined & 96.52 & 98.12 & 96.00 & 96.14 & 57.84 & 91.60 \\
+Brightness 0.85 & Rotation only & 96.62 & 98.23 & 96.04 & 96.27 & 57.98 & 91.72 \\
+Brightness 0.85 & Brightness & 96.54 & 98.20 & 95.89 & 96.18 & 57.84 & 91.64 \\
+Brightness 0.85 & Blur & 96.69 & 98.30 & 96.00 & 96.16 & 57.90 & 91.63 \\
+Brightness 0.85 & Combined & 96.59 & 98.20 & 96.09 & 96.15 & 57.88 & 91.60 \\
+Brightness 0.70 & Rotation only & 96.46 & 98.12 & 95.88 & 96.24 & 57.88 & 91.60 \\
+Brightness 0.70 & Brightness & 96.40 & 98.10 & 95.66 & 96.15 & 57.75 & 91.52 \\
+Brightness 0.70 & Blur & 96.51 & 98.18 & 95.82 & 96.13 & 57.81 & 91.50 \\
+Brightness 0.70 & Combined & 96.43 & 98.12 & 95.80 & 96.12 & 57.79 & 91.48 \\
+Blur 0.75 & Rotation only & 95.86 & 97.73 & 95.47 & 96.08 & 57.29 & 91.24 \\
+Blur 0.75 & Brightness & 95.83 & 97.73 & 95.46 & 95.98 & 57.16 & 91.14 \\
+Blur 0.75 & Blur & 96.18 & 97.97 & 95.88 & 96.02 & 57.36 & 91.20 \\
+Blur 0.75 & Combined & 96.03 & 97.85 & 95.78 & 96.00 & 57.29 & 91.18 \\
+Blur 1.50 & Rotation only & 93.44 & 96.17 & 93.68 & 95.47 & 55.79 & 90.19 \\
+Blur 1.50 & Brightness & 93.26 & 96.10 & 93.71 & 95.36 & 55.64 & 90.07 \\
+Blur 1.50 & Blur & 94.98 & 97.17 & 95.15 & 95.52 & 56.27 & 90.35 \\
+Blur 1.50 & Combined & 94.88 & 97.04 & 94.89 & 95.47 & 56.13 & 90.30 \\
+\bottomrule
+\end{tabular}
+\end{table}

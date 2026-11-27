@@ -1,0 +1,4 @@
+# Preserve exact generated report and audit bytes on all platforms.
+reports/** -text
+research_logs/night_run_30402340/** -text
+*.csv whitespace=cr-at-eol

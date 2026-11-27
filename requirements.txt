@@ -1,0 +1,8 @@
+# CPU-only analysis; historical GPU environment is recorded in configs/hpc-py311-freeze.txt.
+numpy==1.26.0
+pandas==2.2.3
+matplotlib==3.9.2
+scikit-learn==1.5.2
+pillow==12.3.0
+Jinja2==3.1.6
+jupyter>=1.0,<2

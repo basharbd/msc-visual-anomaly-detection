@@ -18,4 +18,4 @@
 - [Selected paired score examples](selected_blur_cases.csv)
 - [Original bottle pilot](bottle_seed0_pilot.csv) (historical validation)
 
-Selected cases are extreme examples, not a representative sample. Anomaly scores are not calibrated probabilities; no decision threshold is inferred here. Synthetic darkening and blur are controlled stress tests, not evidence of deployment performance.
+Selected cases are extreme examples, not a representative sample. Anomaly scores are not calibrated probabilities; no decision threshold is inferred from these particular examples. The separate [normal-only calibration study](../threshold_calibration/summary.json) reports fixed-threshold results. Synthetic darkening and blur are controlled stress tests, not evidence of deployment performance.
