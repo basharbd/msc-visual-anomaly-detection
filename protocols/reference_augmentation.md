@@ -1,0 +1,17 @@
+# Proposed improvement — protocol draft (25 November 2026)
+
+## Research question
+Does a fixed-size reference bank containing photometrically perturbed views of the same single normal reference improve robustness relative to a rotation-only reference bank?
+
+## Fixed candidate and factorial ablation
+All 15 MVTec AD categories, the three reference selections from ADINO-MVTEC-P01, frozen DINOv2-S/14, short edge 448, upstream rotation policy, 1-NN normalized L2/2, CPU FAISS, upstream image aggregation and pixel evaluation. Use the existing four test perturbations and original images. No synthetic defects or additional normal reference images. The proposed training-side views are fixed at brightness 0.85 and Gaussian blur radius 0.75, separately applied after the reference rotation and bicubic resize. These levels are already defined in the robustness protocol; do not tune them on comparative test outcomes.
+
+Four banks: rotation-only (all patches), brightness (rotation + brightness), blur (rotation + blur), combined (rotation + separate brightness and blur views, no composed transform). For each rotation, select the same number of patches as its unmodified view, uniformly without replacement from that variant's candidate pool, with a fixed recorded RNG seed. This controls total bank cardinality exactly, but changes patch composition; effects concern this specific fixed-budget augmentation policy, not augmentation at unlimited capacity. A size-matched control does not establish novelty.
+
+Extract each test image once per condition and reuse its features and mask for all seeds and variants. The upstream PCA mask uses randomized PCA; set a deterministic per-image seed, shared across variants and independent of reference seed. Run a same-pipeline rotation-only comparator for all pairs. Compare its scores/maps with archived baseline outputs and document drift (especially for masked classes); do not silently equate the new comparator with archived results. Verify exact clean/perturbed Bottle parity within 1e-6 before full experiments. Use a masked-class smoke check to quantify drift and ensure valid maps. No post-hoc hyperparameter changes based on test results.
+
+Primary endpoints image AUROC and pixel AUPRO (FPR <= 0.30). Secondary image AP, image F1-max, pixel AUROC and pixel F1-max. Pair by category, reference and condition; average seeds within category then weight categories equally. Report clean performance, perturbation-specific differences, robustness gap relative to clean, category-level error patterns, bank size and runtime. F1-max is optimized per condition. The three seeds share test images. Report all failures and missing results. This is an exploratory study on the same benchmark already used to characterize robustness; do not claim independent confirmatory validation or generalization to real camera exposure.
+
+## Execution gate
+Draft implementation must pass deterministic synthetic checks, GPU identity/smoke tests, and evaluator compatibility before the full matrix is launched. The full matrix has 4 x 15 x 3 x 5 = 900 model-condition-reference evaluations, with shared test feature extraction; only 675 are new augmented combinations. The original robustness job chain and outputs must remain untouched. All candidate output goes to a separate WORK3 directory. Do not mark this phase complete until metrics, completeness checks and analysis are verified.
+

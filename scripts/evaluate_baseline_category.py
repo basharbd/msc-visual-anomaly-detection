@@ -48,7 +48,7 @@ def main():
         evaluate(args, WORK_ROOT)
 
 
-def evaluate(args, work_root):
+def evaluate(args, work_root, output_override=None):
 
     assert args.seed in (0, 1, 2)
 
@@ -61,6 +61,8 @@ def evaluate(args, work_root):
     )
     if args.condition:
         output = ROOT / "results/lighting_blur" / args.condition / output.name
+    if output_override is not None:
+        output = Path(output_override)
     source = (
         output / "anomaly_maps"
         / f"seed={seed}" / category / "test"
@@ -77,7 +79,11 @@ def evaluate(args, work_root):
 
     inference = json.loads(inference_path.read_text())
 
-    if args.condition:
+    if output_override is not None:
+        assert inference["experiment"] == "reference_augmentation"
+        assert inference["condition"] == args.condition
+        assert inference["variant"] == args.variant
+    elif args.condition:
         assert inference["experiment"] == "lighting_blur" and inference["condition"] == args.condition
     else:
         assert inference["experiment"] in {"baseline_reproduction", "EXP-003"}
@@ -228,7 +234,10 @@ def evaluate(args, work_root):
         "peak_python_rss_mib": peak_rss_mib,
     }
 
-    if args.condition:
+    if output_override is not None:
+        record.update(experiment="reference_augmentation", variant=args.variant,
+                      condition=args.condition, inference_record_sha256=sha256(inference_path))
+    elif args.condition:
         record.update(experiment="lighting_blur", condition=args.condition,
                       inference_record_sha256=sha256(inference_path))
 
