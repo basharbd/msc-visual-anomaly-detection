@@ -1,0 +1,31 @@
+{
+  "original": {
+    "predictions.csv": {
+      "path": "EXP-003/bottle_1shot_seed0/predictions.csv",
+      "sha256": "ce3bc239592a8fb8c8905cefeff0e3a00bcebf1b6eefbf247f78a31baecc424d"
+    },
+    "run_complete.json": {
+      "path": "EXP-003/bottle_1shot_seed0/run_complete.json",
+      "sha256": "9f9542592b49721633e463429bc011a4d6e297b6a94280c6a7407ffa5a102b10"
+    },
+    "evaluation_metrics.json": {
+      "path": "EXP-003/bottle_1shot_seed0/evaluation_metrics.json",
+      "sha256": "e3b23ca004d92f29c4d492919b3e1c2dfbf04f43df2643fd523f7d317aeedcba"
+    }
+  },
+  "blur_150": {
+    "predictions.csv": {
+      "path": "lighting_blur/blur_150/bottle_1shot_seed0/predictions.csv",
+      "sha256": "923064b0d53385c11cbe3793daf74c29082c79d5349336c706e2a9e00ee72123"
+    },
+    "run_complete.json": {
+      "path": "lighting_blur/blur_150/bottle_1shot_seed0/run_complete.json",
+      "sha256": "fa226ffd9e346a79d411b0e93c27451901b98f52ca0c4ea7f5be408ceb430b8c"
+    },
+    "evaluation_metrics.json": {
+      "path": "lighting_blur/blur_150/bottle_1shot_seed0/evaluation_metrics.json",
+      "sha256": "38f19f675c686e5b37f541b05ce0602dd45f9e95c5b1cec3a03d09a878dd278d"
+    }
+  },
+  "paired_scores_sha256": "77c4ff48a52370123a668e8b89d32b1187a22829eaa8722518f0664722021e72"
+}

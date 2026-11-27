@@ -121,7 +121,7 @@ third_party/    Pinned upstream AnomalyDINO implementation
 |---|---|
 | [run_experiment.py](scripts/run_experiment.py) | Dispatch baseline, robustness, ablation and calibration inference |
 | [evaluate.py](scripts/evaluate.py) | Dispatch evaluation and report aggregation |
-| [visualize.py](scripts/visualize.py) | Generate eight publication figures and five LaTeX/CSV tables from published data |
+| [visualize.py](scripts/visualize.py) | Generate eight standard publication figures and five LaTeX/CSV tables; provide two additional archive-backed error-analysis figures |
 
 The `results/` directory retains the original Bottle smoke-test evidence used by the baseline notebook; `reports/` contains the verified study summaries, per-run metrics and publication assets. Historical jobs and logs are provenance records, not launch instructions for the current checkout.
 
@@ -143,7 +143,7 @@ jupyter notebook
 
 The visualization command writes to a new directory, without overwriting the checked-in reports. Notebooks 02–05 call the shared plotting functions to generate their study figures; the checked-in PDF and PNG exports are the notebook-generated publication assets. See the [figure provenance and thesis mapping](reports/publication_assets/README.md). Choose another unused output directory for subsequent runs.
 
-The dataset notebook requires a separately obtained official MVTec AD dataset (set `MVTEC_ROOT`); the other four notebooks read the checked-in CSV and JSON results. The numbered notebooks 02–05 were also re-executed successfully in a separate Python 3.11 CPU environment on 27 November 2026 after the documentation and validation-check updates. Notebook 01 was schema-validated but not re-executed in that environment because the official dataset was unavailable; its archived HPC outputs are retained. All five notebooks were executed and validated on DTU HPC after restructuring. The generated numerical tables matched the verified originals byte for byte. The reorganized evaluation CLI also rebuilt all 900 ablation and 225 threshold comparisons from archived HPC records, matching every numerical table within 1e-12.
+The dataset notebook requires a separately obtained official MVTec AD dataset (set `MVTEC_ROOT`). Notebooks 02–05 read the checked-in results; the selected-case reconstruction in Notebook 05 additionally requires `MVTEC_ROOT` and `VAD_RESULTS_ROOT` for the original archive. The numbered notebooks 02–05 were also re-executed successfully in a separate Python 3.11 CPU environment on 27 November 2026 after the documentation and validation-check updates. Notebook 01 was schema-validated but not re-executed in that environment because the official dataset was unavailable; its archived HPC outputs are retained. All five notebooks were executed and validated on DTU HPC after restructuring. The generated numerical tables matched the verified originals byte for byte. The reorganized evaluation CLI also rebuilt all 900 ablation and 225 threshold comparisons from archived HPC records, matching every numerical table within 1e-12.
 
 ### Replay the experiments (GPU/HPC)
 
@@ -155,7 +155,7 @@ For exact historical execution, see the [reproduction guide](REPRODUCIBILITY.md)
 - Oquab et al., *DINOv2: Learning Robust Visual Features without Supervision*. [Paper](https://arxiv.org/abs/2304.07193)
 - Bergmann et al., *MVTec AD — A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection*, CVPR 2019. [Official dataset and terms](https://www.mvtec.com/research-teaching/datasets/mvtec-ad)
 
-MVTec AD data is licensed CC BY-NC-SA 4.0; the benchmark results are academic research and do not establish commercial dataset-use rights. The repository graphics use original schematics and numerical results rather than redistributing dataset images. Upstream code and weights retain their own licenses.
+MVTec AD data is licensed CC BY-NC-SA 4.0; the benchmark results are academic research and do not establish commercial dataset-use rights. The selected-case panel (Figure 9.1) contains attributed MVTec AD image/mask derivatives shared for non-commercial research under CC BY-NC-SA 4.0; the raw dataset and raw anomaly-map files are not included. Other publication figures use numerical results. Upstream code and weights retain their own licenses.
 
 ---
 

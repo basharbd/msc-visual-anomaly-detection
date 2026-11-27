@@ -1,0 +1,250 @@
+{
+  "upstream_commit": "b9d1c2648e3a5247437d4d953d907a8f3d994457",
+  "reconstruction_source_sha256": "8762ee1e6333f07720766381c064e0235440001e9b1889bd8d399984948b729b",
+  "selected_cases_sha256": "a8e73d0476c2acb78dc63963882e2a95aeb5591b989ffa73bd2513d0068c242d",
+  "cases": [
+    {
+      "category": "transistor",
+      "reference_index": 2,
+      "test_image": "good/046.png",
+      "inputs": {
+        "test_image": {
+          "path": "transistor/test/good/046.png",
+          "root": "dataset",
+          "sha256": "827e69244c8e213841ef917481a5b75e0e540eae0ff2a63d18e7d0691a9610e5"
+        },
+        "reference_image": {
+          "path": "transistor/train/good/002.png",
+          "root": "dataset",
+          "sha256": "7e29cfe96f5183455a3f0298f4b29fd1879908887224cb79a2aab7bb102db828"
+        },
+        "original_map": {
+          "path": "EXP-003/transistor_1shot_seed2/anomaly_maps/seed=2/transistor/test/good/046.npy",
+          "root": "results",
+          "sha256": "399ece2d458a4a084c126efa71517a16d3a487c230778b6f6ec9f01d93925afb"
+        },
+        "original_predictions": {
+          "path": "EXP-003/transistor_1shot_seed2/predictions.csv",
+          "root": "results",
+          "sha256": "fb22af2d35e940e228282ce4f85540d5c8f1ef415fac145d3c2f6d7fbd41c373"
+        },
+        "original_inference": {
+          "path": "EXP-003/transistor_1shot_seed2/run_complete.json",
+          "root": "results",
+          "sha256": "9abe18eb66b8d62fb64c99e3910a1ada9cbadc9bb00f16cd82eb2b197ad35857"
+        },
+        "original_evaluation": {
+          "path": "EXP-003/transistor_1shot_seed2/evaluation_metrics.json",
+          "root": "results",
+          "sha256": "65d59c1df16412128c451b2fa2f0180f5f06bf8b3d83de419d081c23e9c675b8"
+        },
+        "blur_150_map": {
+          "path": "lighting_blur/blur_150/transistor_1shot_seed2/anomaly_maps/seed=2/transistor/test/good/046.npy",
+          "root": "results",
+          "sha256": "6ca056fe430489f13594c3c2bab02a885f736d9f0ed9bea3cc157c2e54964587"
+        },
+        "blur_150_predictions": {
+          "path": "lighting_blur/blur_150/transistor_1shot_seed2/predictions.csv",
+          "root": "results",
+          "sha256": "143717ed1ca85da49e305e28d5359503bc3506acb3b1ebcd4579b78c96c515eb"
+        },
+        "blur_150_inference": {
+          "path": "lighting_blur/blur_150/transistor_1shot_seed2/run_complete.json",
+          "root": "results",
+          "sha256": "48e94b74f603112132948eb367b93fb6d873345ce188c065fd3efd772e92ad8b"
+        },
+        "blur_150_evaluation": {
+          "path": "lighting_blur/blur_150/transistor_1shot_seed2/evaluation_metrics.json",
+          "root": "results",
+          "sha256": "6e6d1c8e570cbff800ddd84f4095af1b8ff460d7286db3266c81b76b3e04ba23"
+        }
+      }
+    },
+    {
+      "category": "transistor",
+      "reference_index": 0,
+      "test_image": "misplaced/000.png",
+      "inputs": {
+        "test_image": {
+          "path": "transistor/test/misplaced/000.png",
+          "root": "dataset",
+          "sha256": "9ff15394285b7c54e7c7c05f668bdf5ba63a8f60fa2703b3234a918114527d10"
+        },
+        "reference_image": {
+          "path": "transistor/train/good/000.png",
+          "root": "dataset",
+          "sha256": "d755cd3f9334acc338db228fbccfe531397add1794181c09dafafa35c9014741"
+        },
+        "ground_truth": {
+          "path": "transistor/ground_truth/misplaced/000_mask.png",
+          "root": "dataset",
+          "sha256": "8c9e4bfbe4b9636f5280c9c0f369061d835aa4081c75cdd6cb5efeee9538408d"
+        },
+        "original_map": {
+          "path": "EXP-003/transistor_1shot_seed0/anomaly_maps/seed=0/transistor/test/misplaced/000.npy",
+          "root": "results",
+          "sha256": "07b4f54a75bb247805bf13a28387693fd535de2e7c4797181afe6cd941540fed"
+        },
+        "original_predictions": {
+          "path": "EXP-003/transistor_1shot_seed0/predictions.csv",
+          "root": "results",
+          "sha256": "0513ebd1f7715257bce3d7b868f0b2203212373f19c558a57cca2f9773da52a4"
+        },
+        "original_inference": {
+          "path": "EXP-003/transistor_1shot_seed0/run_complete.json",
+          "root": "results",
+          "sha256": "78e934e1d55fd10d4adc59a28f69f46732dceb4b185044c0f9ad35f359bf25b1"
+        },
+        "original_evaluation": {
+          "path": "EXP-003/transistor_1shot_seed0/evaluation_metrics.json",
+          "root": "results",
+          "sha256": "da00114004c6b8d5f900a09f395e00cf17adc876c1a463dc396bdcca74b69f7c"
+        },
+        "blur_150_map": {
+          "path": "lighting_blur/blur_150/transistor_1shot_seed0/anomaly_maps/seed=0/transistor/test/misplaced/000.npy",
+          "root": "results",
+          "sha256": "db78a32756440a5e70c2f89bc824fcdb01851e652c520c18c236bb9994ea60c8"
+        },
+        "blur_150_predictions": {
+          "path": "lighting_blur/blur_150/transistor_1shot_seed0/predictions.csv",
+          "root": "results",
+          "sha256": "ae313e828c5b3832f2c412b0158f9e4709851d095d0de5354a8c2dd031aa312e"
+        },
+        "blur_150_inference": {
+          "path": "lighting_blur/blur_150/transistor_1shot_seed0/run_complete.json",
+          "root": "results",
+          "sha256": "e1b6c26f4fb14da50e843d9c392ed1c85486983c10e8ac10da321c16d943a074"
+        },
+        "blur_150_evaluation": {
+          "path": "lighting_blur/blur_150/transistor_1shot_seed0/evaluation_metrics.json",
+          "root": "results",
+          "sha256": "4f79709d0cc56816006884766d3f963ca04028183923c6b696a4d149f3cc7370"
+        }
+      }
+    },
+    {
+      "category": "screw",
+      "reference_index": 2,
+      "test_image": "thread_side/022.png",
+      "inputs": {
+        "test_image": {
+          "path": "screw/test/thread_side/022.png",
+          "root": "dataset",
+          "sha256": "aac85a5f71ee56a49f1d345814ae6918e7b00597ca187b0a77fb770bf96c32a9"
+        },
+        "reference_image": {
+          "path": "screw/train/good/002.png",
+          "root": "dataset",
+          "sha256": "b51b65c5aa7ff9b21ef8ee7104dc19289525cf9e0b62fec2e591cee1d04619bc"
+        },
+        "ground_truth": {
+          "path": "screw/ground_truth/thread_side/022_mask.png",
+          "root": "dataset",
+          "sha256": "23c267878f4a72dbd50324d1047c0f833cd682af38e40099859a4249d506f0be"
+        },
+        "original_map": {
+          "path": "EXP-003/screw_1shot_seed2/anomaly_maps/seed=2/screw/test/thread_side/022.npy",
+          "root": "results",
+          "sha256": "f7883805b4c39af3a6903c3c9b31739f6f00e7f1f625d9718aa3cef57a80b501"
+        },
+        "original_predictions": {
+          "path": "EXP-003/screw_1shot_seed2/predictions.csv",
+          "root": "results",
+          "sha256": "207b0eded0f7421865e7911eca0dc05601fc905ea1d31c3c8e5420f0a76734ae"
+        },
+        "original_inference": {
+          "path": "EXP-003/screw_1shot_seed2/run_complete.json",
+          "root": "results",
+          "sha256": "334ec3b80c0f7165bd4d259d1a0212aa6fcf573b05306495f76d195d2c7890aa"
+        },
+        "original_evaluation": {
+          "path": "EXP-003/screw_1shot_seed2/evaluation_metrics.json",
+          "root": "results",
+          "sha256": "2d0905d3e4d4f5610b4c1f7e927810ff696c7879688a93c59cbe7a690df9f97b"
+        },
+        "blur_150_map": {
+          "path": "lighting_blur/blur_150/screw_1shot_seed2/anomaly_maps/seed=2/screw/test/thread_side/022.npy",
+          "root": "results",
+          "sha256": "cf4c99b901910a08920a20d70d2e2411761faa37b4dcce4c3a11cdf48766e67b"
+        },
+        "blur_150_predictions": {
+          "path": "lighting_blur/blur_150/screw_1shot_seed2/predictions.csv",
+          "root": "results",
+          "sha256": "a3fa92206f7a9041040d4b2e685fc016b9e2cc92b14cd3445d66c818bac8e5a5"
+        },
+        "blur_150_inference": {
+          "path": "lighting_blur/blur_150/screw_1shot_seed2/run_complete.json",
+          "root": "results",
+          "sha256": "edfe8cb7bd7f773464288b6c373c36d7e102c8a78386e36654d61979348a4de4"
+        },
+        "blur_150_evaluation": {
+          "path": "lighting_blur/blur_150/screw_1shot_seed2/evaluation_metrics.json",
+          "root": "results",
+          "sha256": "f132cc2a3e96fdd33e603be8ff2b9cc7adfe08e7d28eb3c5fb7173f6ebc4d376"
+        }
+      }
+    },
+    {
+      "category": "cable",
+      "reference_index": 2,
+      "test_image": "poke_insulation/003.png",
+      "inputs": {
+        "test_image": {
+          "path": "cable/test/poke_insulation/003.png",
+          "root": "dataset",
+          "sha256": "570d81dee47e05bd6e30beaac95616c934c5369a5f74917e8e37da9b691d19de"
+        },
+        "reference_image": {
+          "path": "cable/train/good/002.png",
+          "root": "dataset",
+          "sha256": "1402284830cf1992d9be60b38c0dda29859670062ce1e1c91aa02dd1808d2d00"
+        },
+        "ground_truth": {
+          "path": "cable/ground_truth/poke_insulation/003_mask.png",
+          "root": "dataset",
+          "sha256": "1b8da212f0d995afa137f846efa69c9867c491c5057bfcc0025c2b0b48736324"
+        },
+        "original_map": {
+          "path": "EXP-003/cable_1shot_seed2/anomaly_maps/seed=2/cable/test/poke_insulation/003.npy",
+          "root": "results",
+          "sha256": "56ca075d6157c11d818f9cf021cbb4a98ba75c8c5c12b8e8a3bfc9e5d8dc8a3b"
+        },
+        "original_predictions": {
+          "path": "EXP-003/cable_1shot_seed2/predictions.csv",
+          "root": "results",
+          "sha256": "d19d0e4c4fdd3613b561361e98cfd7a894e2df706f2e50a21ad0eab9ffb6874d"
+        },
+        "original_inference": {
+          "path": "EXP-003/cable_1shot_seed2/run_complete.json",
+          "root": "results",
+          "sha256": "ebddc600ac657fcf788a4b1fa58316cfff6d173c5d824178d4829b407b2427cc"
+        },
+        "original_evaluation": {
+          "path": "EXP-003/cable_1shot_seed2/evaluation_metrics.json",
+          "root": "results",
+          "sha256": "655a5d3780678632a5eec6772441871c87e899e720151739e411bf744a0e2f30"
+        },
+        "blur_150_map": {
+          "path": "lighting_blur/blur_150/cable_1shot_seed2/anomaly_maps/seed=2/cable/test/poke_insulation/003.npy",
+          "root": "results",
+          "sha256": "92682d0ef6fba031bf8ea740d33c595489153a018a4b146757de40e3a0024bcc"
+        },
+        "blur_150_predictions": {
+          "path": "lighting_blur/blur_150/cable_1shot_seed2/predictions.csv",
+          "root": "results",
+          "sha256": "d2fa96a2fde13c4e6368ade888b88224777eb4ecd6ee3a8d63ab3af0865d1511"
+        },
+        "blur_150_inference": {
+          "path": "lighting_blur/blur_150/cable_1shot_seed2/run_complete.json",
+          "root": "results",
+          "sha256": "908289129341a508a4183bc5fd6f40e25e12493458ba3388a3cc8b5a3a872683"
+        },
+        "blur_150_evaluation": {
+          "path": "lighting_blur/blur_150/cable_1shot_seed2/evaluation_metrics.json",
+          "root": "results",
+          "sha256": "c401374c90005c2a3119a95486e7d65004c03cec5473c7f96ae443d40b0e0fbe"
+        }
+      }
+    }
+  ]
+}

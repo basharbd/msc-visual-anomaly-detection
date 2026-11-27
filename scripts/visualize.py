@@ -162,6 +162,266 @@ def _generate_publication_assets(output_dir, study):
 
 
 
+
+def generate_error_case_panel(dataset_root, results_root, output_dir):
+    """Reconstruct selected cases from the original dataset and archived patch maps.
+
+    No model inference is performed. Output files are new, and no archived
+    predictions or dataset files are modified. Requires the pinned upstream
+    submodule and the optional CPU map-analysis dependencies.
+    """
+    import hashlib
+    import importlib.util
+    import subprocess
+    from PIL import Image, ImageFilter
+
+    dataset_root = Path(dataset_root).expanduser().resolve()
+    results_root = Path(results_root).expanduser().resolve()
+    output_dir = Path(output_dir).expanduser().resolve()
+    for path in (dataset_root, results_root, ROOT / "reports",
+                 ROOT / "results", ROOT / "research_logs"):
+        path = path.resolve()
+        if output_dir == path or path in output_dir.parents or output_dir in path.parents:
+            raise ValueError(f"Output overlaps protected inputs: {output_dir}")
+    if output_dir.exists():
+        raise FileExistsError(output_dir)
+
+    def digest(path):
+        with path.open("rb") as stream:
+            return hashlib.file_digest(stream, "sha256").hexdigest()
+
+    manifest = json.loads((ROOT / "protocols/adino_mvtec_1shot_448_references.json").read_text())
+    upstream = ROOT / "third_party/AnomalyDINO"
+    utils = upstream / "src/utils.py"
+    if not utils.is_file():
+        raise FileNotFoundError("Initialize the pinned AnomalyDINO submodule first.")
+    commit = subprocess.check_output(
+        ["git", "-C", str(upstream), "rev-parse", "HEAD"], text=True
+    ).strip()
+    if commit != manifest["upstream_commit"]:
+        raise ValueError("AnomalyDINO submodule does not match the reference manifest.")
+    if subprocess.check_output(
+        ["git", "-C", str(upstream), "status", "--porcelain", "--", "src/utils.py"],
+        text=True,
+    ).strip():
+        raise ValueError("The pinned map reconstruction source has local changes.")
+    spec = importlib.util.spec_from_file_location("pinned_anomalydino_utils", utils)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    dists2map = module.dists2map
+
+    candidates = [results_root / name for name in ("EXP-003", "baseline_reproduction")
+                  if (results_root / name).is_dir()]
+    if not candidates:
+        raise FileNotFoundError("Archived clean baseline not found in VAD_RESULTS_ROOT.")
+    if len(candidates) == 2 and not candidates[0].samefile(candidates[1]):
+        raise ValueError("Ambiguous clean baseline archives; choose a root with one archive.")
+    clean = candidates[0]
+    cases_path = ROOT / "reports/lighting_blur/selected_blur_cases.csv"
+    cases = pd.read_csv(cases_path)
+    baseline = pd.read_csv(ROOT / "reports/baseline_reproduction/per_run.csv")
+    if len(cases) != 4 or cases.duplicated(["category", "reference_index", "test_image"]).any():
+        raise ValueError("Unexpected selected-case list.")
+    panels, provenance, measurements = [], [], []
+
+    for case in cases.itertuples(index=False):
+        category, seed, rel = case.category, int(case.reference_index), Path(case.test_image)
+        if rel.is_absolute() or len(rel.parts) != 2 or ".." in rel.parts or rel.suffix != ".png":
+            raise ValueError(f"Invalid test image path: {rel}")
+        reference = manifest["references"][category][str(seed)]
+        reference_path = dataset_root / reference["path"]
+        if digest(reference_path) != reference["sha256"]:
+            raise ValueError(f"Reference hash mismatch: {reference_path}")
+        image_path = dataset_root / category / "test" / rel
+        with Image.open(image_path) as source:
+            original = source.convert("RGB")
+        width, height = original.size
+        # Matches the pinned torchvision Resize(int, BICUBIC) on PIL input.
+        size = (448, int(448 * height / width)) if width <= height else (int(448 * width / height), 448)
+        resized = original.resize(size, Image.Resampling.BICUBIC)
+        blurred = resized.filter(ImageFilter.GaussianBlur(radius=1.50))
+        normal = rel.parent.name == "good"
+        mask_path = None if normal else (
+            dataset_root / category / "ground_truth" / rel.parent / (rel.stem + "_mask.png")
+        )
+        if normal:
+            mask = np.zeros((height, width), dtype=bool)
+        else:
+            with Image.open(mask_path) as source:
+                mask = np.asarray(source.convert("L")) > 0
+            if mask.shape != (height, width) or not mask.any():
+                raise ValueError(f"Invalid ground-truth mask: {mask_path}")
+
+        base_row = baseline[(baseline.category == category) & (baseline.seed == seed)]
+        if len(base_row) != 1:
+            raise ValueError("Missing or duplicate archived clean run.")
+        base_row = base_row.iloc[0]
+        run_name = f"{category}_1shot_seed{seed}"
+        maps, scores = [], []
+        input_files = {"test_image": image_path, "reference_image": reference_path}
+        if mask_path is not None:
+            input_files["ground_truth"] = mask_path
+        for condition, archive, expected_score in (
+            ("original", clean, case.original_score),
+            ("blur_150", results_root / "lighting_blur" / "blur_150", case.blur_150_score),
+        ):
+            folder = archive / run_name
+            record_path = folder / "run_complete.json"
+            evaluation_path = folder / "evaluation_metrics.json"
+            predictions_path = folder / "predictions.csv"
+            record = json.loads(record_path.read_text())
+            evaluation = json.loads(evaluation_path.read_text())
+            expected = {"category": category, "seed": seed, "protocol": manifest["protocol_id"],
+                        "status": "INFERENCE_COMPLETED", "reference": reference["path"],
+                        "reference_sha256": reference["sha256"], "upstream_commit": commit,
+                        "resolution": 448, "shots": 1}
+            if any(record.get(k) != v for k, v in expected.items()):
+                raise ValueError(f"Archived run metadata mismatch: {folder}")
+            if condition == "original":
+                if digest(record_path) != base_row.inference_record_sha256 or digest(evaluation_path) != base_row.evaluation_record_sha256:
+                    raise ValueError(f"Clean archive hash mismatch: {folder}")
+            else:
+                if record.get("experiment") != "lighting_blur" or record.get("condition") != condition:
+                    raise ValueError(f"Wrong perturbation archive: {folder}")
+                if evaluation.get("inference_record_sha256") != digest(record_path):
+                    raise ValueError(f"Perturbed evaluation provenance mismatch: {folder}")
+            predictions = pd.read_csv(predictions_path)
+            match = predictions[predictions.image == rel.as_posix()]
+            if len(match) != 1 or int(match.iloc[0].label) != int(not normal):
+                raise ValueError(f"Prediction pairing failed: {folder}/{rel}")
+            score = float(match.iloc[0].anomaly_score)
+            if not np.isclose(score, expected_score, atol=1e-12, rtol=0):
+                raise ValueError(f"Selected-case score differs from verified CSV: {folder}/{rel}")
+            raw_path = folder / "anomaly_maps" / f"seed={seed}" / category / "test" / rel.with_suffix(".npy")
+            raw = np.load(raw_path, allow_pickle=False)
+            if raw.ndim != 2 or not raw.size or not np.isfinite(raw).all():
+                raise ValueError(f"Invalid raw anomaly map: {raw_path}")
+            # Upstream image score: mean of the largest floor(1%) patch scores, minimum one.
+            flat = raw.ravel()
+            k = max(1, int(flat.size * .01))
+            if not np.isclose(np.mean(sorted(flat, reverse=True)[:k]), score, atol=1e-12, rtol=0):
+                raise ValueError(f"Raw map does not reproduce the archived image score: {raw_path}")
+            reconstructed = dists2map(raw, (height, width))
+            if reconstructed.shape != (height, width) or not np.isfinite(reconstructed).all():
+                raise ValueError(f"Invalid reconstructed map: {raw_path}")
+            maps.append(reconstructed)
+            scores.append(score)
+            input_files.update({f"{condition}_map": raw_path, f"{condition}_predictions": predictions_path,
+                                f"{condition}_inference": record_path, f"{condition}_evaluation": evaluation_path})
+        if not np.isclose(scores[1] - scores[0], case.change, atol=1e-12, rtol=0):
+            raise ValueError(f"Paired change mismatch: {category}/{rel}")
+        # A shared full-range scale avoids concealing the effect of blur.
+        vmax = max(float(np.max(maps[0])), float(np.max(maps[1])), np.finfo(float).eps)
+        panels.append(dict(category=category, rel=rel.as_posix(), seed=seed, original=resized,
+                           blurred=blurred, mask=mask, maps=maps, scores=scores, vmax=vmax))
+        measurements.append(dict(category=category, reference_index=seed, test_image=rel.as_posix(),
+                                 original_score=scores[0], blur_150_score=scores[1], change=scores[1]-scores[0],
+                                 original_inside_mask=float(maps[0][mask].mean()) if mask.any() else None,
+                                 blurred_inside_mask=float(maps[1][mask].mean()) if mask.any() else None,
+                                 original_outside_mask=float(maps[0][~mask].mean()) if (~mask).any() else None,
+                                 blurred_outside_mask=float(maps[1][~mask].mean()) if (~mask).any() else None))
+        provenance.append({"category": category, "reference_index": seed, "test_image": rel.as_posix(),
+                           "inputs": {name: {"path": str(path.relative_to(dataset_root) if path.is_relative_to(dataset_root)
+                                                         else path.relative_to(results_root)),
+                                             "root": "dataset" if path.is_relative_to(dataset_root) else "results",
+                                             "sha256": digest(path)} for name, path in input_files.items()}})
+
+    # Complete validation before creating any output files.
+    output_dir.mkdir(parents=True, exist_ok=False)
+    with matplotlib.rc_context(rc=matplotlib.rcParamsDefault):
+        _render_error_case_panel(panels, output_dir)
+    pd.DataFrame(measurements).to_csv(output_dir / "selected_error_case_measurements.csv", index=False)
+    (output_dir / "selected_error_case_provenance.json").write_text(
+        json.dumps({"upstream_commit": commit, "reconstruction_source_sha256": digest(utils),
+                    "selected_cases_sha256": digest(cases_path), "cases": provenance}, indent=2) + "\n"
+    )
+    return output_dir
+
+
+def _render_error_case_panel(panels, output_dir):
+    """Render validated inputs, maintaining a common color scale within each row."""
+    from matplotlib.colors import Normalize
+    plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 8, "pdf.fonttype": 42})
+    fig = plt.figure(figsize=(7.1, 7.7))
+    grid = fig.add_gridspec(len(panels), 6, width_ratios=[1, 1, 1, 1, 1, .075],
+                            left=.015, right=.95, bottom=.055, top=.93, hspace=.42, wspace=.06)
+    headers = ("Original input", "Blur 1.50 px", "Ground truth", "Original map", "Blurred map")
+    for row, case in enumerate(panels):
+        axes = [fig.add_subplot(grid[row, j]) for j in range(5)]
+        for ax in axes:
+            ax.set_axis_off()
+        axes[0].imshow(case["original"], interpolation="none")
+        axes[1].imshow(case["blurred"], interpolation="none")
+        mask = case["mask"]
+        axes[2].imshow(mask, cmap="gray", vmin=0, vmax=1, interpolation="nearest")
+        # The map is reconstructed at original resolution exactly as in evaluation.
+        # All image/map panels retain aspect ratio; contours are in the same coordinates.
+        for ax, values in zip(axes[3:], case["maps"]):
+            im = ax.imshow(values, cmap="magma", norm=Normalize(0, case["vmax"]), interpolation="nearest")
+            if mask.any() and not mask.all():
+                ax.contour(mask, levels=[.5], colors=["cyan"], linewidths=.6)
+        cax = fig.add_subplot(grid[row, 5])
+        bar = fig.colorbar(im, cax=cax, ticks=[0, case["vmax"]])
+        bar.ax.set_yticklabels(["0", f'{case["vmax"]:.2f}'])
+        bar.ax.tick_params(labelsize=7, length=2)
+        for ax, score in zip(axes[3:], case["scores"]):
+            ax.text(.5, -.06, f"Score {score:.3f}", ha="center", va="top", transform=ax.transAxes)
+        if row == 0:
+            for ax, header in zip(axes, headers):
+                ax.text(.5, 1.27, header, ha="center", va="bottom", transform=ax.transAxes)
+        fig.text(.015, axes[0].get_subplotspec().get_position(fig).y1 + .014,
+                 f'{case["category"].capitalize()}  {case["rel"]}  |  Ref. {case["seed"]}  |  '
+                 f'Delta {case["scores"][1]-case["scores"][0]:+.3f}', weight="semibold")
+    fig.text(.015, .011, "Image and mask source: MVTec AD (MVTec Software GmbH), CC BY-NC-SA 4.0; resized/blurred.", fontsize=6.6)
+    fig.savefig(output_dir / "09_selected_blur_cases.pdf", metadata={"CreationDate": None, "ModDate": None})
+    fig.savefig(output_dir / "09_selected_blur_cases.png", dpi=220)
+    plt.close(fig)
+
+
+
+def generate_bottle_paired_scatter(output_dir):
+    """Plot all 83 measured paired Bottle scores from the verified archive export."""
+    import hashlib
+    from sklearn.metrics import roc_auc_score
+    output_dir = Path(output_dir).expanduser().resolve()
+    for path in (ROOT / "reports", ROOT / "results", ROOT / "research_logs"):
+        path = path.resolve()
+        if output_dir == path or path in output_dir.parents or output_dir in path.parents:
+            raise ValueError(f"Output overlaps protected inputs: {output_dir}")
+    if output_dir.exists():
+        raise FileExistsError(output_dir)
+    source = ROOT / "reports/lighting_blur/bottle_paired_scores.csv"
+    provenance = json.loads(source.with_name("bottle_paired_scores_provenance.json").read_text())
+    if hashlib.sha256(source.read_bytes()).hexdigest() != provenance["paired_scores_sha256"]:
+        raise ValueError("Paired-score export hash mismatch.")
+    d = pd.read_csv(source, float_precision="round_trip")
+    assert len(d) == 83 and d.image.is_unique and d.label.value_counts().to_dict() == {1: 63, 0: 20}
+    assert d.category.eq("bottle").all() and d.reference_index.eq(0).all()
+    assert np.allclose(d.blur_150_score-d.original_score, d.change, rtol=0, atol=1e-12)
+    base = pd.read_csv(ROOT / "reports/baseline_reproduction/per_run.csv").query("category == 'bottle' and seed == 0").iloc[0]
+    blur = pd.read_csv(ROOT / "reports/lighting_blur/per_run.csv").query("category == 'bottle' and seed == 0 and condition == 'blur_150'").iloc[0]
+    assert np.isclose(roc_auc_score(d.label,d.original_score),base.image_auroc,rtol=0,atol=1e-12)
+    assert np.isclose(roc_auc_score(d.label,d.blur_150_score),blur.image_auroc,rtol=0,atol=1e-12)
+    output_dir.mkdir(parents=True, exist_ok=False)
+    with matplotlib.rc_context(rc=matplotlib.rcParamsDefault):
+        plt.rcParams.update({"font.family":"DejaVu Sans","font.size":10,"pdf.fonttype":42})
+        fig, ax = plt.subplots(figsize=(6.1,5.1))
+        fig.subplots_adjust(left=.16,right=.97,bottom=.22,top=.96)
+        ax.plot([.1,.8],[.1,.8],ls="--",lw=1,color="#777777",label="No change",zorder=1)
+        for label,name,color in [(0,"Normal (n=20)","#183c5b"),(1,"Anomalous (n=63)","#c83b40")]:
+            x=d[d.label==label]
+            ax.scatter(x.original_score,x.blur_150_score,s=27,alpha=.72,color=color,label=name,edgecolors="none",zorder=3)
+        ax.set(xlim=(.1,.8),ylim=(.1,.8),xlabel="Original image anomaly score",ylabel="Blurred image anomaly score")
+        ax.set_xticks(np.arange(.1,.81,.1));ax.set_yticks(np.arange(.1,.81,.1))
+        ax.set_aspect("equal",adjustable="box");ax.grid(alpha=.18)
+        handles,labels=ax.get_legend_handles_labels()
+        ax.legend([handles[i] for i in [1,2,0]],[labels[i] for i in [1,2,0]],loc="upper center",bbox_to_anchor=(.5,-.17),ncol=3,frameon=False,fontsize=8)
+        fig.savefig(output_dir/"10_bottle_paired_scores.pdf",metadata={"CreationDate":None,"ModDate":None})
+        fig.savefig(output_dir/"10_bottle_paired_scores.png",dpi=220)
+        plt.close(fig)
+    return output_dir
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT,
