@@ -27,16 +27,65 @@ def t(x,y,s,size=18,color='#e8f0fa',weight=400,anchor='start'):
  return f'<text x="{x}" y="{y}" font-size="{size}" fill="{color}" font-weight="{weight}" text-anchor="{anchor}">{html.escape(str(s))}</text>'
 def rect(x,y,w,h,fill,rx=8):return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}"/>'
 def line(x,y,x2,y2,c='#566d88',sw=1):return f'<line x1="{x}" y1="{y}" x2="{x2}" y2="{y2}" stroke="{c}" stroke-width="{sw}"/>'
-b=t(36,38,'DTU MSc THESIS  /  COMPUTER VISION & APPLIED AI',15,'#7fcbd6',700)
-b+=t(36,91,'Visual anomaly detection',39,weight=700)+t(36,135,'for industrial inspection',36,weight=700)+t(36,173,'Vision foundation models • One-shot learning • Robustness',17,'#b4c6dc')
-for i,(v,l) in enumerate([(f"{b0['image_auroc']:.2f}%",'IMAGE AUROC'),(f"{b0['pixel_aupro']:.2f}%",'PIXEL AUPRO'),('15','MVTec AD CATEGORIES')]):
- x=36+i*205;b+=rect(x,204,192,87,'#1b3148')+t(x+13,242,v,28,'#7ee2c0',700)+t(x+13,269,l,11,'#b8cce1',700)
-b+=line(678,24,678,306,'#2b415a')
-for i,(l,sub) in enumerate([('01  NORMAL REFERENCE','DINOv2 patch embeddings'),('02  TEST IMAGE','Nearest-neighbor distance'),('03  ANOMALY MAP','Image score + localization')]):
- y=35+i*91;b+=rect(708,y,360,68,'#1b3148')+t(728,y+25,l,15,'#7fcbd6',700)+t(728,y+48,sub,16)
- if i<2:b+=line(888,y+68,888,y+89,'#7fcbd6',2)
-b+=t(36,324,'Measured clean-baseline macro averages • one reference per run • research prototype',13,'#a5bad1')
-svg('project_banner.svg',1104,346,b)
+# The portfolio banner is a conceptual illustration, not an experimental plot.
+# Its design deliberately omits performance values; measured metrics live in the README.
+def banner():
+ w,h=1440,570
+ b=['<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="570" viewBox="0 0 1440 570" role="img" aria-labelledby="title desc">',
+    '<title id="title">Visual anomaly detection for industrial inspection</title>',
+    '<desc id="desc">Conceptual schematic showing a normal reference and test image, frozen DINOv2, patch matching, and anomaly localization. Not measured results.</desc>',
+    '<defs><linearGradient id="header" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102b43"/><stop offset="1" stop-color="#215b79"/></linearGradient><linearGradient id="bottle" x1="0" x2="1"><stop stop-color="#809aa7"/><stop offset=".45" stop-color="#e8f4f8"/><stop offset="1" stop-color="#8ba7b5"/></linearGradient><radialGradient id="hot"><stop stop-color="#fff5a8"/><stop offset=".2" stop-color="#f8be45"/><stop offset=".44" stop-color="#e75a55"/><stop offset=".72" stop-color="#934a9b"/><stop offset="1" stop-color="#423174" stop-opacity="0"/></radialGradient></defs>',
+    '<rect width="1440" height="570" rx="22" fill="#f3f7fa"/>',
+    '<path d="M22 0H1418Q1440 0 1440 22V190Q1170 154 930 178T0 183V22Q0 0 22 0Z" fill="url(#header)"/>',
+    '<g font-family="Arial, Helvetica, sans-serif">']
+ b += [t(44,40,'DTU COMPUTE  /  MSc THESIS',18,'#8bd2d5',700),t(44,98,'Visual anomaly detection',53,'#ffffff',700),t(44,151,'for industrial inspection',43,'#e1f3fc',700),
+       t(1392,55,'VISION FOUNDATION MODELS',17,'#b7dbe9',700,'end'),t(1392,85,'One-shot learning',25,'#ffffff',700,'end'),
+       t(1392,119,'Robustness & reference augmentation',18,'#c7e4f0',400,'end')]
+ def add(x):b.append(x)
+ def bottle(cx,cy,defective=False,heat=False):
+  # All shapes are illustrative; no experimental image is synthesized or implied.
+  add(f'<g transform="translate({cx},{cy})"><rect x="-17" y="-62" width="34" height="18" rx="4" fill="{"#603c95" if heat else "#9cb4bf"}"/><path d="M-19 -45H19L29 -30Q35 -24 35 -15V45Q35 55 25 55H-25Q-35 55 -35 45V-15Q-35 -24 -29 -30Z" fill="{"#43377b" if heat else "url(#bottle)"}" stroke="{"#7963b5" if heat else "#a7bdc8"}" stroke-width="2"/>')
+  if defective: add('<path d="M-8 9L4 -1 1 11 14 2" fill="none" stroke="#ad5262" stroke-width="3" stroke-linecap="round"/>')
+  if heat:add('<ellipse cx="5" cy="8" rx="28" ry="33" transform="rotate(32 5 8)" fill="url(#hot)"/>')
+  add('</g>')
+ xs=[38,390,742,1094]
+ labels=['Normal reference &amp; test','Frozen DINOv2','Patch matching','Anomaly localization']
+ sub=['Single normal reference','Visual feature extraction','Nearest normal features','Image score and pixel map']
+ for i,x in enumerate(xs):
+  add(f'<rect x="{x}" y="218" width="308" height="260" rx="16" fill="white" stroke="#cfdee7" stroke-width="2"/>')
+  add(t(x+154,444,html.unescape(labels[i]),22,'#173653',700,'middle'))
+  add(t(x+154,465,sub[i],15,'#526a7d',400,'middle'))
+  if i<3:
+   add(f'<path d="M{x+318} 330h22m-8 -8 8 8 -8 8" fill="none" stroke="#007e80" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>')
+ # Image inputs
+ for cx,label,defect in [(120,'Normal',False),(264,'Test',True)]:
+  add(rect(cx-61,239,122,170,'#18394f',12))
+  bottle(cx,319,defective=defect)
+  add(t(cx,394,label,16,'#e1f3fc',700,'middle'))
+ # Frozen feature extractor: stacked translucent feature planes
+ for j in range(3):
+  x=454+j*42;y=253+j*15
+  add(f'<path d="M{x} {y+21}l76 -26v100l-76 26Z" fill="#8bbecb" fill-opacity=".72" stroke="#3b7c96" stroke-width="2"/>')
+  for k in range(1,4):
+   add(f'<path d="M{x+k*19} {y+21-k*6.5}v100 M{x} {y+21+k*25}l76 -26" stroke="#eff9fb" stroke-opacity=".62" stroke-width="1.5"/>')
+ # Matching illustration: patch grids and comparison symbol
+ for j,gx in enumerate([766,938]):
+  for r in range(5):
+   for c in range(5):
+    color=['#c0dce2','#76afba','#417e91','#21566c'][(r*3+c*5+j)%4]
+    if j and r==2 and c in (2,3):color='#e5a060'
+    add(rect(gx+c*19,275+r*19,17,17,color,2))
+ add(t(894,333,'↔',31,'#007e80',700,'middle'))
+ # Localization
+ add(rect(1151,239,194,170,'#171c3a',12))
+ bottle(1248,323,heat=True)
+ add(t(1248,397,'Illustrative heatmap',15,'#e1f3fc',400,'middle'))
+ add(line(44,506,1396,506,'#c7d7e1',1.5))
+ add(t(44,544,'INDUSTRIAL INSPECTION   •   FROZEN VISUAL FEATURES   •   REFERENCE AUGMENTATION',18,'#215b79',700))
+ add(t(1396,544,'Conceptual illustration · not measured output',15,'#526a7d',400,'end'))
+ add('</g></svg>')
+ (A/'project_banner.svg').write_text(''.join(b)+'\n')
+banner()
 b=t(28,36,'How the inspection pipeline works',25,weight=700)+t(28,61,'Method schematic — frozen DINOv2, patch-level nearest-neighbor search',15,'#b4c6dc')
 for y,first,second,third in [(93,'Normal reference','Rotated views + ViT','Reference patch bank'),(200,'Test image','Frozen DINOv2','Test patch embeddings')]:
  for x,label in [(28,first),(252,second),(476,third)]:b+=rect(x,y,192,64,'#1b3148')+t(x+96,y+37,label,15,anchor='middle',weight=700)
