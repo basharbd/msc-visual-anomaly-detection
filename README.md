@@ -111,11 +111,11 @@ third_party/    Pinned upstream AnomalyDINO implementation
 
 | Notebook | What you will find |
 |---|---|
-| [Dataset exploration](notebooks/dataset_exploration.ipynb) | Official data splits, defect masks and reference checks |
-| [Baseline reproduction](notebooks/baseline_reproduction.ipynb) | Setup, historical smoke test, 45 clean runs and paper comparison |
-| [Robustness analysis](notebooks/robustness_analysis.ipynb) | All 180 perturbed evaluations |
-| [Proposed improvement](notebooks/proposed_improvement.ipynb) | 900 matched fixed-budget ablation evaluations |
-| [Final results](notebooks/final_results.ipynb) | Calibration, error analysis, limitations and synthesis |
+| [Dataset exploration](notebooks/01_dataset_exploration.ipynb) | Official data splits, defect masks and reference checks |
+| [Baseline reproduction](notebooks/02_baseline_reproduction.ipynb) | Setup, historical smoke test, 45 clean runs and paper comparison |
+| [Robustness analysis](notebooks/03_robustness_analysis.ipynb) | All 180 perturbed evaluations |
+| [Proposed improvement](notebooks/04_proposed_improvement.ipynb) | 900 matched fixed-budget ablation evaluations |
+| [Final results](notebooks/05_final_results.ipynb) | Calibration, error analysis, limitations and synthesis |
 
 | Public script | Purpose |
 |---|---|
@@ -141,7 +141,7 @@ python scripts/visualize.py
 jupyter notebook
 ```
 
-The dataset notebook requires a separately obtained official MVTec AD dataset (set `MVTEC_ROOT`); the other four notebooks read the checked-in CSV and JSON results. All five notebooks were executed and validated on DTU HPC after restructuring. The generated numerical tables matched the verified originals byte for byte. The reorganized evaluation CLI also rebuilt all 900 ablation and 225 threshold comparisons from archived HPC records, matching every numerical table within 1e-12.
+The dataset notebook requires a separately obtained official MVTec AD dataset (set `MVTEC_ROOT`); the other four notebooks read the checked-in CSV and JSON results. The numbered notebooks 02–05 were also re-executed successfully in a separate Python 3.11 CPU environment on 27 November 2026 after the documentation and validation-check updates. Notebook 01 was schema-validated but not re-executed in that environment because the official dataset was unavailable; its archived HPC outputs are retained. All five notebooks were executed and validated on DTU HPC after restructuring. The generated numerical tables matched the verified originals byte for byte. The reorganized evaluation CLI also rebuilt all 900 ablation and 225 threshold comparisons from archived HPC records, matching every numerical table within 1e-12.
 
 ### Replay the experiments (GPU/HPC)
 
