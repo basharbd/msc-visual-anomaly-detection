@@ -28,7 +28,7 @@ def t(x,y,s,size=18,color='#e8f0fa',weight=400,anchor='start'):
 def rect(x,y,w,h,fill,rx=8):return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}"/>'
 def line(x,y,x2,y2,c='#566d88',sw=1):return f'<line x1="{x}" y1="{y}" x2="{x2}" y2="{y2}" stroke="{c}" stroke-width="{sw}"/>'
 b=t(36,38,'DTU MSc THESIS  /  COMPUTER VISION & APPLIED AI',15,'#7fcbd6',700)
-b+=t(36,91,'Visual anomaly detection',39,weight=700)+t(36,135,'for industrial inspection',36,weight=700)+t(36,173,'Vision foundation models • Few-shot learning • Robustness',17,'#b4c6dc')
+b+=t(36,91,'Visual anomaly detection',39,weight=700)+t(36,135,'for industrial inspection',36,weight=700)+t(36,173,'Vision foundation models • One-shot learning • Robustness',17,'#b4c6dc')
 for i,(v,l) in enumerate([(f"{b0['image_auroc']:.2f}%",'IMAGE AUROC'),(f"{b0['pixel_aupro']:.2f}%",'PIXEL AUPRO'),('15','MVTec AD CATEGORIES')]):
  x=36+i*205;b+=rect(x,204,192,87,'#1b3148')+t(x+13,242,v,28,'#7ee2c0',700)+t(x+13,269,l,11,'#b8cce1',700)
 b+=line(678,24,678,306,'#2b415a')
