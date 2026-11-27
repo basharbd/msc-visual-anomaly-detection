@@ -1,0 +1,2918 @@
+{
+  "table_checks": {
+    "tab:baseline_macro": {
+      "verified": 30,
+      "mismatches": 0
+    },
+    "tab:baseline_categories": {
+      "verified": 96,
+      "mismatches": 0
+    },
+    "tab:baseline_paper_comparison": {
+      "verified": 18,
+      "mismatches": 0
+    },
+    "tab:dataset_counts": {
+      "verified": 64,
+      "mismatches": 0
+    },
+    "tab:experimental_matrix": {
+      "verified": 20,
+      "mismatches": 0
+    },
+    "tab:augmentation_budget_example": {
+      "verified": 12,
+      "mismatches": 0
+    },
+    "tab:robust_subset": {
+      "verified": 30,
+      "mismatches": 0
+    },
+    "tab:bottle_robust": {
+      "verified": 20,
+      "mismatches": 0
+    },
+    "tab:robust_category_delta": {
+      "verified": 120,
+      "mismatches": 0
+    },
+    "tab:robust_score_shifts": {
+      "verified": 16,
+      "mismatches": 0
+    },
+    "tab:calibration_results": {
+      "verified": 25,
+      "mismatches": 0
+    },
+    "tab:augmentation_image": {
+      "verified": 20,
+      "mismatches": 0
+    },
+    "tab:augmentation_pixel": {
+      "verified": 20,
+      "mismatches": 0
+    },
+    "tab:ablation_all_metrics": {
+      "verified": 120,
+      "mismatches": 0
+    },
+    "tab:bottle_score_examples": {
+      "verified": 12,
+      "mismatches": 0
+    }
+  },
+  "table_cells_checked": 623,
+  "mismatches": [],
+  "claim_checks": {
+    "baseline_img": {
+      "reported": 96.52,
+      "computed": 96.51921988152378,
+      "matches": true
+    },
+    "baseline_aupro": {
+      "reported": 91.72,
+      "computed": 91.72033899353708,
+      "matches": true
+    },
+    "capsule_range": {
+      "reported": 12.13,
+      "computed": 12.126047068209004,
+      "matches": true
+    },
+    "capsule_sd": {
+      "reported": 6.97,
+      "computed": 6.966689183180837,
+      "matches": true
+    },
+    "capsule_ref1_image": {
+      "reported": 81.97,
+      "computed": 81.97048264858397,
+      "matches": true
+    },
+    "capsule_ref1_aupro": {
+      "reported": 96.06,
+      "computed": 96.05822442862151,
+      "matches": true
+    },
+    "tile_brightness_070_aupro": {
+      "reported": -1.31,
+      "computed": -1.3083631128774087,
+      "matches": true
+    },
+    "strong_blur_image_auroc": {
+      "reported": -3.08,
+      "computed": -3.077291243241357,
+      "matches": true
+    },
+    "strong_blur_pixel_aupro": {
+      "reported": -1.53,
+      "computed": -1.5282683416554363,
+      "matches": true
+    },
+    "gain_blur_150_image_auroc": {
+      "reported": 1.54,
+      "computed": 1.5400915730275955,
+      "matches": true
+    },
+    "gain_blur_150_pixel_aupro": {
+      "reported": 0.16,
+      "computed": 0.15714063570027292,
+      "matches": true
+    },
+    "gain_blur_075_image_auroc": {
+      "reported": 0.32,
+      "computed": 0.321059258583972,
+      "matches": true
+    },
+    "gain_blur_075_pixel_aupro": {
+      "reported": -0.04,
+      "computed": -0.03568648005121133,
+      "matches": true
+    },
+    "gain_original_image_auroc": {
+      "reported": 0.08,
+      "computed": 0.07786344008827939,
+      "matches": true
+    },
+    "gain_original_pixel_aupro": {
+      "reported": -0.1,
+      "computed": -0.10394609247323672,
+      "matches": true
+    },
+    "interaction_image_auroc": {
+      "reported": 0.073,
+      "computed": 0.07292603923531704,
+      "matches": true
+    },
+    "interaction_pixel_aupro": {
+      "reported": 0.074,
+      "computed": 0.07390316947310256,
+      "matches": true
+    },
+    "transistor_gain": {
+      "reported": 14.04,
+      "computed": 14.041666666666666,
+      "matches": true
+    },
+    "gain_without_transistor": {
+      "reported": 0.65,
+      "computed": 0.6471219234819385,
+      "matches": true
+    },
+    "median_gain": {
+      "reported": 0.27,
+      "computed": 0.26592208482914725,
+      "matches": true
+    },
+    "gain_ref_0": {
+      "reported": 1.7,
+      "computed": 1.7040159605740888,
+      "matches": true
+    },
+    "gain_ref_1": {
+      "reported": 1.62,
+      "computed": 1.6156435464580832,
+      "matches": true
+    },
+    "gain_ref_2": {
+      "reported": 1.3,
+      "computed": 1.3006152120505894,
+      "matches": true
+    },
+    "zipper_aupro": {
+      "reported": -1.91,
+      "computed": -1.9087370228121348,
+      "matches": true
+    },
+    "gap_reduction_pct": {
+      "reported": 47.5,
+      "computed": 47.51672875132634,
+      "matches": true
+    },
+    "gap_rotation_only_image_auroc": {
+      "reported": -3.08,
+      "computed": -3.077291243241362,
+      "matches": true
+    },
+    "gap_rotation_only_pixel_aupro": {
+      "reported": -1.53,
+      "computed": -1.5282332716728746,
+      "matches": true
+    },
+    "gap_blur_image_auroc": {
+      "reported": -1.62,
+      "computed": -1.6150631103020459,
+      "matches": true
+    },
+    "gap_blur_pixel_aupro": {
+      "reported": -1.27,
+      "computed": -1.267146543499365,
+      "matches": true
+    }
+  },
+  "baseline_record_hash_pairs_verified": 45,
+  "date": "2026-11-27",
+  "repository_revision_checked": "2044e26f55f58359ceb2dba03f32f2f6d504b2b9",
+  "source_papers": {
+    "AnomalyDINO_WACV_2025": {
+      "sha256": "ff46a3cfa5cdc3bb684ac37d72fe546f3c6edd7b02f3dcfe12de30a5b7d89977",
+      "table": "Table 2, one-shot AnomalyDINO-S (448)",
+      "published_means_image_auroc_ap_f1_pixel_auroc_f1_pro": [
+        96.5,
+        98.1,
+        96.0,
+        96.3,
+        57.9,
+        91.7
+      ]
+    },
+    "WinCLIP_CVPR_2023": {
+      "sha256": "f94753b3df24318aadd7b189e15ec28a27c21977cd3de463ab4c752fd08d9511",
+      "tables": "Tables 1 and 4",
+      "zero_shot_image_pixel_auroc_pro": [
+        91.8,
+        85.1,
+        64.6
+      ],
+      "one_shot_image_pixel_auroc_pro": [
+        93.1,
+        95.2,
+        87.1
+      ]
+    }
+  },
+  "archive_verification": {
+    "dataset": {
+      "bottle": [
+        209,
+        20,
+        63,
+        83
+      ],
+      "cable": [
+        224,
+        58,
+        92,
+        150
+      ],
+      "capsule": [
+        219,
+        23,
+        109,
+        132
+      ],
+      "carpet": [
+        280,
+        28,
+        89,
+        117
+      ],
+      "grid": [
+        264,
+        21,
+        57,
+        78
+      ],
+      "hazelnut": [
+        391,
+        40,
+        70,
+        110
+      ],
+      "leather": [
+        245,
+        32,
+        92,
+        124
+      ],
+      "metal_nut": [
+        220,
+        22,
+        93,
+        115
+      ],
+      "pill": [
+        267,
+        26,
+        141,
+        167
+      ],
+      "screw": [
+        320,
+        41,
+        119,
+        160
+      ],
+      "tile": [
+        230,
+        33,
+        84,
+        117
+      ],
+      "toothbrush": [
+        60,
+        12,
+        30,
+        42
+      ],
+      "transistor": [
+        213,
+        60,
+        40,
+        100
+      ],
+      "wood": [
+        247,
+        19,
+        60,
+        79
+      ],
+      "zipper": [
+        240,
+        32,
+        119,
+        151
+      ]
+    },
+    "baseline": {
+      "gpu_counts": {
+        "NVIDIA A100-PCIE-40GB": 34,
+        "NVIDIA A100 80GB PCIe": 11
+      },
+      "median_memory_bank_seconds": 0.6813435554504395,
+      "min": 0.4401106834411621,
+      "max": 6.358798265457153,
+      "records": [
+        {
+          "category": "bottle",
+          "seed": 0,
+          "inference_sha256": "9f9542592b49721633e463429bc011a4d6e297b6a94280c6a7407ffa5a102b10",
+          "predictions_sha256": "ce3bc239592a8fb8c8905cefeff0e3a00bcebf1b6eefbf247f78a31baecc424d",
+          "evaluation_sha256": "e3b23ca004d92f29c4d492919b3e1c2dfbf04f43df2643fd523f7d317aeedcba",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 6.358798265457153
+        },
+        {
+          "category": "bottle",
+          "seed": 1,
+          "inference_sha256": "0d7d093ce760686712dc21554d5b152d90583525aaa34e0a5e6ed55b7d659f8e",
+          "predictions_sha256": "5ad43997cfe4860084e04d9e95b8e63d3674a6710ed89efb8ffad7c26a9e69f5",
+          "evaluation_sha256": "786db35ada1adec54e4eddf0be00b3b1155f43f5e6208ad35c898ef931680398",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 0.4401106834411621
+        },
+        {
+          "category": "bottle",
+          "seed": 2,
+          "inference_sha256": "c70a50038d2bbfade0d1290220242af6b7e2510271337e2580b23d59359a576a",
+          "predictions_sha256": "9f58fb25cb65a10a82fe5c41a82bc251ba8326c826af1ad797ff2f15cf825a92",
+          "evaluation_sha256": "ef6c9615675caec88fb7e483215de144359c5932f2684b00804b2612ea6a0196",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 0.44626402854919434
+        },
+        {
+          "category": "cable",
+          "seed": 0,
+          "inference_sha256": "c5d74d1b7bf5a4b59ffa8422522405db9f04ea1c88b4cc0c00075b0166f434d8",
+          "predictions_sha256": "bea309f2f287fd223f61458226896c465127376ade8510455f59f1f26b65622f",
+          "evaluation_sha256": "2dd7f3c1cbea0aa984b6e7da8e0e0ec0d299cf8fbbb49455cba0681573457230",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7027833461761475
+        },
+        {
+          "category": "cable",
+          "seed": 1,
+          "inference_sha256": "17aed5f5e9d499e77eecdef9925dfc951f8e6a48a4a586775a2710da3b3b6201",
+          "predictions_sha256": "656ec428d8ed11be1934d047aba31cb5c31109605420657ab0dded049a9d6a8f",
+          "evaluation_sha256": "9fff7bf920ba838dc6466e8a69ffffbd28a1316e2d1d19b936fc5ad837edcfb9",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6677181720733643
+        },
+        {
+          "category": "cable",
+          "seed": 2,
+          "inference_sha256": "ebddc600ac657fcf788a4b1fa58316cfff6d173c5d824178d4829b407b2427cc",
+          "predictions_sha256": "d19d0e4c4fdd3613b561361e98cfd7a894e2df706f2e50a21ad0eab9ffb6874d",
+          "evaluation_sha256": "655a5d3780678632a5eec6772441871c87e899e720151739e411bf744a0e2f30",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6954798698425293
+        },
+        {
+          "category": "capsule",
+          "seed": 0,
+          "inference_sha256": "146ffec0eee4980275c2bd244918be010d483913c26d5ba8612b90f71e156ebb",
+          "predictions_sha256": "7a54b4d16992b186bad918e4f63d7835cb06f976b0800cfa818c6e1af4a1f71d",
+          "evaluation_sha256": "b957951b6d175f9684b981ca4c972d8340e4dc5526ecc535b70657adf7af272b",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.695624828338623
+        },
+        {
+          "category": "capsule",
+          "seed": 1,
+          "inference_sha256": "1acde2419d267d31deaa6315bbc1a7012053b4e7a43b2dbf0e8887de13f9abfa",
+          "predictions_sha256": "f2b0ecadf38681967a7dfdf297b2e7e28702918c65861cbf448fe5d6b32c5aa0",
+          "evaluation_sha256": "a120e0c0cd69854ea11ca1619dd95b72b028342236acadaf13e5bbfa1d46c428",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6982021331787109
+        },
+        {
+          "category": "capsule",
+          "seed": 2,
+          "inference_sha256": "ee58a10ecfb8bb3e8e1685a75317c05d2cdb9883ab38af8fda60b9036682f373",
+          "predictions_sha256": "b22cc41be69a57f7ee2c7d0a9f1842c49db133cb6c6303aa908ceb33cd8969cf",
+          "evaluation_sha256": "dac1423b6de7eb2edc347bb4ca72e646ee1e205226efd236e4074bf13d82c910",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7087924480438232
+        },
+        {
+          "category": "carpet",
+          "seed": 0,
+          "inference_sha256": "73f86f3a7dd8d6d61e7415c2b6af090dc0ebd7a866c0d4cd10109133ddd04fa2",
+          "predictions_sha256": "0ce746b562fe10f2b537b55575f2809f10d117c6169da31f4b76d2934fda372c",
+          "evaluation_sha256": "6a6633a49ebfe579796e22d869dfdd74a18fae45ee814f0f89a638fb22a0d97a",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6821374893188477
+        },
+        {
+          "category": "carpet",
+          "seed": 1,
+          "inference_sha256": "64b87b90b5063baba2753ff6681c612b59bc005de6a80dc434db50ef8d5507bc",
+          "predictions_sha256": "565a8c66e58fb774555797b2d710ae093813f0088a6b90fccb6c64942ec399f6",
+          "evaluation_sha256": "86dba471aaf972bd2b136cc2fd7b608bdc3202ec9b4a79a714b1bda82222e053",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6992835998535156
+        },
+        {
+          "category": "carpet",
+          "seed": 2,
+          "inference_sha256": "cef54e280abcef1004737483d767b85e1063b71b43ec7e2bd04f2e9144fdee9e",
+          "predictions_sha256": "66be742554f02ff753c5f8b1827b9e56e456fb2cd19ea5ddafb0a770e4fd7fd6",
+          "evaluation_sha256": "57592589a5ac353fe9c9f35c9f961e2cb7d3bb31a1f2ae90864e8b5b60e16918",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.706773042678833
+        },
+        {
+          "category": "grid",
+          "seed": 0,
+          "inference_sha256": "6cbf20d7f54585118742415e858f65b3a0a18512b6d05088197fa2c465897b80",
+          "predictions_sha256": "8c2806dd5db4f8c248203d9d46b5fe9fe21f94481a713cdce388a3ab2d2f76f4",
+          "evaluation_sha256": "9d7c59e2c05f08100c732723eee8632cc2782ec769f3288da97f84ca22783164",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6660377979278564
+        },
+        {
+          "category": "grid",
+          "seed": 1,
+          "inference_sha256": "12c830e30a2344f200ccdda910c863dc42105ff2dda88e8da4d58d32fec56656",
+          "predictions_sha256": "2510635570f8b22632b116f96b30b619f1550f9f1ec5ac7add810d248aea970b",
+          "evaluation_sha256": "079ebfe57ed10d93c15c85867362af9426517cd6a2fc72a171810b1c18c47b38",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6813435554504395
+        },
+        {
+          "category": "grid",
+          "seed": 2,
+          "inference_sha256": "057052ab101afa6c2696e958b096c98bbc6ad4d83aa760febe29a32edf743b5a",
+          "predictions_sha256": "efb0ceab35d78faf4836be7a63438eaad8db71594475829a0775e3123e2fee4f",
+          "evaluation_sha256": "46ea77e5e02fa5f2891c5d8e72b30d28d76483084d412f9e19eba4dc6939bf33",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6720101833343506
+        },
+        {
+          "category": "hazelnut",
+          "seed": 0,
+          "inference_sha256": "b25ff076f565308d36898d52e4bc8ba2c5292943bf59821237fb23e2f19c4ddc",
+          "predictions_sha256": "88462ce95d6bf026395c13d02326f3418e3058cd1c70a74b4e99d53e8cb8cfa7",
+          "evaluation_sha256": "6cff952e6c1e8f63bdf6feb059017e2e346e68f23d3815182770accb1849829d",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7097289562225342
+        },
+        {
+          "category": "hazelnut",
+          "seed": 1,
+          "inference_sha256": "74b4ea597dd2b74487547572ec5ddadbdff7a0e6dc8d6f889d0152654f0abadf",
+          "predictions_sha256": "75d28af8773a1f6b89465bce7bbc0f2c20ecc0026114a4b279753ba0d0ab10bf",
+          "evaluation_sha256": "c58df305520069eee58e6fa8748964c4bb25d25f0e4958d092ee0107d7eb648b",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6957268714904785
+        },
+        {
+          "category": "hazelnut",
+          "seed": 2,
+          "inference_sha256": "2ab5f9472460e983adae255fa468f634c28429d14da1236aef687193854e496b",
+          "predictions_sha256": "5446debef84b76665b2cffc499c5674110a6b24f95230cdaa14437d350d7e58c",
+          "evaluation_sha256": "72374c19674428ec4653810868fc91dd8fa85518d787c4ba4f72701c32abadff",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7143185138702393
+        },
+        {
+          "category": "leather",
+          "seed": 0,
+          "inference_sha256": "5c19c879603907000bc7f260506b9c2533ded6a692c7fc32cc90b7ae60e54ace",
+          "predictions_sha256": "31213d2e489b2446c426ea89fcf6cd622c5d05b1afa53809417622b710980ac5",
+          "evaluation_sha256": "f96ebf997d76d449fbb25aa7369b6e7d61c48bd848cfe59522a09377dde51cc5",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7120449542999268
+        },
+        {
+          "category": "leather",
+          "seed": 1,
+          "inference_sha256": "8f12d935aaebc51ba44449949bd4ee708abca247bb9c0c038b25d708499fdf61",
+          "predictions_sha256": "c67ef457f56838f9b56f63b8380f4e03806c8bce53a6b8a5bcdb259acf485a16",
+          "evaluation_sha256": "7e66e431f21c859b5ec6ce4616fe45527dcacf043962b87fbf3e20d2e51ec3e3",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6743876934051514
+        },
+        {
+          "category": "leather",
+          "seed": 2,
+          "inference_sha256": "db6b38aa80d21c29b57b87f1c3539bf241465602086b29ab09e4aa37be9d954b",
+          "predictions_sha256": "875d7cac255ba43604b2f6211a8b965ba8c0c2ef11d64a73cc6823288f173974",
+          "evaluation_sha256": "cd38388440ca6f7cd46f1e387a7c2100dd018d02ec83557f7a30b27c2cce522b",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7028403282165527
+        },
+        {
+          "category": "metal_nut",
+          "seed": 0,
+          "inference_sha256": "248e429082de6c16a1eb6c9bfaafafe14bf532eb6722769c045084c042fecf7a",
+          "predictions_sha256": "e3515489dab8cbddbf46fab82f77511f35c44f4846f377586dc49f927086b5e9",
+          "evaluation_sha256": "67c20db8de7895a5da965fbe16390d1cba17e451b4aa08de48ea46d91fb3957b",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.603205680847168
+        },
+        {
+          "category": "metal_nut",
+          "seed": 1,
+          "inference_sha256": "e3a5b11f04889be431a6f5c1bd3e329b85fd2c9630478b7c32e9de07b8e4b777",
+          "predictions_sha256": "ac9edf32c587d713ce735c93a986e1e10c49acd8cd9498f76bd49801a2a020db",
+          "evaluation_sha256": "554219b6c20d6a58fc9a6c505811c668fcc20bb5891bfe51e788ba49f97cd31e",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.5775487422943115
+        },
+        {
+          "category": "metal_nut",
+          "seed": 2,
+          "inference_sha256": "b5c9fa44b33d32c375e6c850a4a051d2ec85ed51bd2093afea37e291e3213dd1",
+          "predictions_sha256": "2f48867df72c42e44cc66a3bf8379d0a7cee1c477047ec3e8f10b341d2c7ab6a",
+          "evaluation_sha256": "1db1035809614262a85d7bd51d98fea272af0f77c5417895c066125f68a4f0ef",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6041226387023926
+        },
+        {
+          "category": "pill",
+          "seed": 0,
+          "inference_sha256": "7d25b527bc3c7b489b928efc0dbde3c0a06b5d4841acf3b903b371b59192a63c",
+          "predictions_sha256": "27146a256c1f955c8a940f9678dd1eb1767a9ec9f25aaf7b201911508bd85c6d",
+          "evaluation_sha256": "ad6acbdb28c0292759c44329cf0f99a6bebb1cce39fe20e8b3c29e6f978fedae",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 0.46648645401000977
+        },
+        {
+          "category": "pill",
+          "seed": 1,
+          "inference_sha256": "b6140837a49e8c983ffd9533920f0c746f18ae427221ee9dfbb0310d80a79608",
+          "predictions_sha256": "90f0ed9c9a36b0d367bb1e5eed991096476aee306e7566171fff144b1c725735",
+          "evaluation_sha256": "dc1a68db32941112f1a7d0aa1ecaccf81d6ed686b8f1b5d6168f0cee145b90c0",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6444840431213379
+        },
+        {
+          "category": "pill",
+          "seed": 2,
+          "inference_sha256": "c37cf8d59a9c8aadb4e0da8115d9aad421ca06fd3dd0c2efb126be830d3e03b4",
+          "predictions_sha256": "fc7c485ee2c77300345bb44cd7ebd49e8e8e0b599e2d98c33fc5f579d5605e81",
+          "evaluation_sha256": "a42534842b531068b8e17380916a26322570e9f0489839d7010fc8d34d7236da",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 0.46813058853149414
+        },
+        {
+          "category": "screw",
+          "seed": 0,
+          "inference_sha256": "7b50de8fb9d2c3037f58388ee735c51e1b744931112ab73bda8134a60310827b",
+          "predictions_sha256": "dfd01cbe1257fd743c3526fa7e9f43aa70708dcefa448fdb25359314dc4a0d93",
+          "evaluation_sha256": "a5e39d7c05af9bf923ac84dc634d4019c6b8503d45589f35c9396559a92a4b7f",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 1.390270709991455
+        },
+        {
+          "category": "screw",
+          "seed": 1,
+          "inference_sha256": "9889d82c060bd8c7875f95aed439aa31731a1702c2ad4242b14f6a7ee774528d",
+          "predictions_sha256": "1759cb9996fa77d1cfdc382da397a1b29353bfb41ba3701bef525d153958fd9c",
+          "evaluation_sha256": "75357e8fb64844e0167f02cccf186b25ffe40281011eea2d51f17ce0debff335",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6850996017456055
+        },
+        {
+          "category": "screw",
+          "seed": 2,
+          "inference_sha256": "334ec3b80c0f7165bd4d259d1a0212aa6fcf573b05306495f76d195d2c7890aa",
+          "predictions_sha256": "207b0eded0f7421865e7911eca0dc05601fc905ea1d31c3c8e5420f0a76734ae",
+          "evaluation_sha256": "2d0905d3e4d4f5610b4c1f7e927810ff696c7879688a93c59cbe7a690df9f97b",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6800975799560547
+        },
+        {
+          "category": "tile",
+          "seed": 0,
+          "inference_sha256": "ebe30f6e2630745775b8e03718c7e1d87e753af41f5a1ddf6f607a82180da4ef",
+          "predictions_sha256": "0a274d4640aa6e86df9496ab7a5ce2cf47e45a2adf6a9d3b334683445affd677",
+          "evaluation_sha256": "c13486e6335c97ca2514d9cc2389240623166fd48543059274e508a8c0a64b19",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 0.5058319568634033
+        },
+        {
+          "category": "tile",
+          "seed": 1,
+          "inference_sha256": "7677483c4f9cb05d194394ed9f5dcf2be28c758a00eefb3e7571a1c24f7cd24a",
+          "predictions_sha256": "2590557f7c1fba584e7352be167bc5a8027445781ea30d957357155ed80e872b",
+          "evaluation_sha256": "d5d50f65b893b97c357f1c08039219605c77c11a52ece935f6a092842a597b29",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6578307151794434
+        },
+        {
+          "category": "tile",
+          "seed": 2,
+          "inference_sha256": "28f1e45a3bb2f2b9e2797ca8c4c0b81a7de680dc90e5d3144f9ae992f644a439",
+          "predictions_sha256": "ac44aa4caf190e0fc83ea21fa2eaadb7b44c275a97e3005ed5bd3dbb10f03fc9",
+          "evaluation_sha256": "9fc505255d0689d4d637e11a03d0e0a76e58a096a5059a112acbde5a4fd2c461",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 0.536003828048706
+        },
+        {
+          "category": "toothbrush",
+          "seed": 0,
+          "inference_sha256": "162c20980fec2ce9e1a381c90d3f57d1014c2e3056a2f9795bd553644e8ced5a",
+          "predictions_sha256": "855fe35581837aa4da83f3e5700d3f56192ccfcb5480785f5e3fa92fd955d930",
+          "evaluation_sha256": "9a232a309374644ec98735a4175ca91567b5d2eca80b74bfffd6cf57336b5612",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7094902992248535
+        },
+        {
+          "category": "toothbrush",
+          "seed": 1,
+          "inference_sha256": "2f5f7b1afbec57ba6a6e50726659895285c134d2cce2c3e6b3ea7fa90007107e",
+          "predictions_sha256": "323a707e155a9d198934059d554bf6ff3dcc8be98f926ccec23ecd6fa96e65d4",
+          "evaluation_sha256": "710351afddc7e7e0bbc329abe7d3edb7ec2453b65e58bec785e94ba8b838a299",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7051982879638672
+        },
+        {
+          "category": "toothbrush",
+          "seed": 2,
+          "inference_sha256": "4aa26a33609909dbc2795bc8cbe124b2ffe43e751968568f89e645dd7e724253",
+          "predictions_sha256": "613b51cb535aa84519125c239022c77e381ea520d989e811f6d5aef91dc7f717",
+          "evaluation_sha256": "b99f397a112b41d2a7017b6ba25c15fba4820dbe191cb3679aa2f2e344f47711",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 0.5340676307678223
+        },
+        {
+          "category": "transistor",
+          "seed": 0,
+          "inference_sha256": "78e934e1d55fd10d4adc59a28f69f46732dceb4b185044c0f9ad35f359bf25b1",
+          "predictions_sha256": "0513ebd1f7715257bce3d7b868f0b2203212373f19c558a57cca2f9773da52a4",
+          "evaluation_sha256": "da00114004c6b8d5f900a09f395e00cf17adc876c1a463dc396bdcca74b69f7c",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7003917694091797
+        },
+        {
+          "category": "transistor",
+          "seed": 1,
+          "inference_sha256": "893db0c014b7334a4d398d678103b81f2545334423ac18ff4f8fd52395ecaf90",
+          "predictions_sha256": "fea663ef4c92033a88bdc86380b9a441662d423435fe719f272d1843ca83b357",
+          "evaluation_sha256": "4605002f59c7017ac216e45cdf6446eceb35508ff379de1054239c922c3fd87b",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 0.47065234184265137
+        },
+        {
+          "category": "transistor",
+          "seed": 2,
+          "inference_sha256": "9abe18eb66b8d62fb64c99e3910a1ada9cbadc9bb00f16cd82eb2b197ad35857",
+          "predictions_sha256": "fb22af2d35e940e228282ce4f85540d5c8f1ef415fac145d3c2f6d7fbd41c373",
+          "evaluation_sha256": "65d59c1df16412128c451b2fa2f0180f5f06bf8b3d83de419d081c23e9c675b8",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7058463096618652
+        },
+        {
+          "category": "wood",
+          "seed": 0,
+          "inference_sha256": "14897e8ad81c0a05cf80d8c091af0945349c79ae40535f80fbd8e3fa87f8e5f9",
+          "predictions_sha256": "5dfd4bce66b4442e3b671c78ef7f49d588bb66263a9e155bc4a4ad6d03e8332e",
+          "evaluation_sha256": "b60deacb806d8d475b03fea37cd4201e9522d2faeb1a2faa8945c5001490e4e2",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6950860023498535
+        },
+        {
+          "category": "wood",
+          "seed": 1,
+          "inference_sha256": "d34cb814c755125d371b37d345e0af3f62471cae23d0edd6b90862b62f54b92f",
+          "predictions_sha256": "6b712add21cbdaa1ff6e91977ea2b7d7f843041e6b795796685d0f2a7583f13e",
+          "evaluation_sha256": "2ccdb88eb904b069879f306e5d0bad6771861bfe970f665bfe2b530d511e052c",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 0.47387146949768066
+        },
+        {
+          "category": "wood",
+          "seed": 2,
+          "inference_sha256": "142e320e70da768f4c2c75068a5171b4059a4d472857d7080451ad4fe0779d32",
+          "predictions_sha256": "86e61a62167e89db7378e88bf278c8e8ea66aab55a12fc2d02d5195b7ff2fdb1",
+          "evaluation_sha256": "1120ae457e982825e27b9bf3e41c7cd6091bbb7968c769e53d7110e99e829962",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.7106521129608154
+        },
+        {
+          "category": "zipper",
+          "seed": 0,
+          "inference_sha256": "051637a075ee87e303f90321544cfd55be9e0d9c76dd92c6d2b9d0f186e70e63",
+          "predictions_sha256": "d10a992b95777e0870ea52bc4e671ab19abaa94324f3fc4c51a4e548baa45871",
+          "evaluation_sha256": "2ddabe88313e42597742f4941d01224d9b70b848ace35e0042fe378a3b46068f",
+          "gpu": "NVIDIA A100 80GB PCIe",
+          "memory_bank_seconds": 0.4554884433746338
+        },
+        {
+          "category": "zipper",
+          "seed": 1,
+          "inference_sha256": "86ddec8ac99381f5a4cc288c90e3d327aef354a5d89ed557ab15c2a9de6055c1",
+          "predictions_sha256": "10cd72c63e26442ef3ccdbd64ec530762f6556ba1800cac3a9bd41c63d4c1924",
+          "evaluation_sha256": "7f3d662eb24d84b7e1f8ce2f3fa4e0ad40c71479b5fdd9311ee39c7276c6d72a",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6512298583984375
+        },
+        {
+          "category": "zipper",
+          "seed": 2,
+          "inference_sha256": "4c98d36b619ded1a46894ee373047deb33d970b9d074c13bbd52d671d0739d85",
+          "predictions_sha256": "2b1376d19c404cce0eecc81ef99e56ab08312f44090bc6688993f41c0ffb78c1",
+          "evaluation_sha256": "152533e9f83b2e3e5285c79fb144fb62f117dc3bc103503c3b10cddf4c1ae855",
+          "gpu": "NVIDIA A100-PCIE-40GB",
+          "memory_bank_seconds": 0.6598808765411377
+        }
+      ]
+    },
+    "paired_shifts": {
+      "brightness_085": {
+        "runs": [
+          {
+            "category": "bottle",
+            "seed": 0,
+            "normal_mean": 0.00014613464474677734,
+            "normal_abs_mean": 0.0021654723584651992,
+            "anomalous_mean": 0.0002967737023792546,
+            "anomalous_abs_mean": 0.002815400229560001,
+            "clean_predictions_sha256": "ce3bc239592a8fb8c8905cefeff0e3a00bcebf1b6eefbf247f78a31baecc424d",
+            "perturbed_predictions_sha256": "37d6242a4b6f9f0381f6d5b5727af56d2a1657ebb53850840637ddf930f07c5a"
+          },
+          {
+            "category": "bottle",
+            "seed": 1,
+            "normal_mean": 4.3800920248032725e-05,
+            "normal_abs_mean": 0.0020408980548381776,
+            "anomalous_mean": 0.00020801959529755264,
+            "anomalous_abs_mean": 0.0024962859021292784,
+            "clean_predictions_sha256": "5ad43997cfe4860084e04d9e95b8e63d3674a6710ed89efb8ffad7c26a9e69f5",
+            "perturbed_predictions_sha256": "4bc2357150b411c784f7ae6b6fd81a9193799294e34c83c9d92215c1df84dd98"
+          },
+          {
+            "category": "bottle",
+            "seed": 2,
+            "normal_mean": 0.00020395517349243165,
+            "normal_abs_mean": 0.0018307057023048412,
+            "anomalous_mean": -8.117537649852494e-06,
+            "anomalous_abs_mean": 0.0026309289156444494,
+            "clean_predictions_sha256": "9f58fb25cb65a10a82fe5c41a82bc251ba8326c826af1ad797ff2f15cf825a92",
+            "perturbed_predictions_sha256": "3fa10b207ad82bb4f65cbf885aad82b12e68331768d4fa0547f8c1290b77fba6"
+          },
+          {
+            "category": "cable",
+            "seed": 0,
+            "normal_mean": -0.0003555110816297852,
+            "normal_abs_mean": 0.0017450705684464612,
+            "anomalous_mean": -0.0004512933933216566,
+            "anomalous_abs_mean": 0.003398697790892231,
+            "clean_predictions_sha256": "bea309f2f287fd223f61458226896c465127376ade8510455f59f1f26b65622f",
+            "perturbed_predictions_sha256": "15a1d1d4900e04cfbf2d72e3450f3b5e93d5a5880f51393b3f318f636beaaf5b"
+          },
+          {
+            "category": "cable",
+            "seed": 1,
+            "normal_mean": 4.613461165592646e-05,
+            "normal_abs_mean": 0.002286221138362224,
+            "anomalous_mean": 0.00018370763763137077,
+            "anomalous_abs_mean": 0.0033195876880832294,
+            "clean_predictions_sha256": "656ec428d8ed11be1934d047aba31cb5c31109605420657ab0dded049a9d6a8f",
+            "perturbed_predictions_sha256": "789b9233fa6eceb0f8a1804a7b87488b34ce9c1d2d19d90ff09ca142dbdfa04a"
+          },
+          {
+            "category": "cable",
+            "seed": 2,
+            "normal_mean": -0.0008519031364342251,
+            "normal_abs_mean": 0.002371190591105101,
+            "anomalous_mean": -0.0002891774410786833,
+            "anomalous_abs_mean": 0.002911566521810452,
+            "clean_predictions_sha256": "d19d0e4c4fdd3613b561361e98cfd7a894e2df706f2e50a21ad0eab9ffb6874d",
+            "perturbed_predictions_sha256": "eef53a010a8dfac45cc1c6e4984a4a0050b60413c80df6f9bd41afaf6a6cbe6d"
+          },
+          {
+            "category": "capsule",
+            "seed": 0,
+            "normal_mean": -0.0027509383533311877,
+            "normal_abs_mean": 0.006558358928431632,
+            "anomalous_mean": -0.0016874230782920093,
+            "anomalous_abs_mean": 0.004537643642600523,
+            "clean_predictions_sha256": "7a54b4d16992b186bad918e4f63d7835cb06f976b0800cfa818c6e1af4a1f71d",
+            "perturbed_predictions_sha256": "331537bb9e76f065224b1c7ede1bf8e21bf542dc5e9b487511db51177cf41434"
+          },
+          {
+            "category": "capsule",
+            "seed": 1,
+            "normal_mean": -0.005156608249830152,
+            "normal_abs_mean": 0.006817714027736494,
+            "anomalous_mean": -0.004113043967736972,
+            "anomalous_abs_mean": 0.005248620723365647,
+            "clean_predictions_sha256": "f2b0ecadf38681967a7dfdf297b2e7e28702918c65861cbf448fe5d6b32c5aa0",
+            "perturbed_predictions_sha256": "d00e32f92a6bf3a49254fc988ed7b4361a5913a588957c5e9ea086cf79356223"
+          },
+          {
+            "category": "capsule",
+            "seed": 2,
+            "normal_mean": -0.004508434300837309,
+            "normal_abs_mean": 0.005765001799749292,
+            "anomalous_mean": -0.002899323034723963,
+            "anomalous_abs_mean": 0.0051272900826340425,
+            "clean_predictions_sha256": "b22cc41be69a57f7ee2c7d0a9f1842c49db133cb6c6303aa908ceb33cd8969cf",
+            "perturbed_predictions_sha256": "b69a4308697c3d39d00d16849c3ecf63d2b104d0bbbca2273bcaa8dc9097023e"
+          },
+          {
+            "category": "carpet",
+            "seed": 0,
+            "normal_mean": -0.001270462891885216,
+            "normal_abs_mean": 0.0019017354718276456,
+            "anomalous_mean": -0.0008009708329532951,
+            "anomalous_abs_mean": 0.0036791073472312304,
+            "clean_predictions_sha256": "0ce746b562fe10f2b537b55575f2809f10d117c6169da31f4b76d2934fda372c",
+            "perturbed_predictions_sha256": "be2709f14eee279f721cd605bf862a8d70a995ca21ecd73c7d6644a99112ba9b"
+          },
+          {
+            "category": "carpet",
+            "seed": 1,
+            "normal_mean": -0.000763894617557528,
+            "normal_abs_mean": 0.001693518034049443,
+            "anomalous_mean": -0.00044703168815441585,
+            "anomalous_abs_mean": 0.00331982936751977,
+            "clean_predictions_sha256": "565a8c66e58fb774555797b2d710ae093813f0088a6b90fccb6c64942ec399f6",
+            "perturbed_predictions_sha256": "c71d8c651cc7555a432be30b941606886841a86c6270ca7351f669029f4d9041"
+          },
+          {
+            "category": "carpet",
+            "seed": 2,
+            "normal_mean": -0.0005402232919420503,
+            "normal_abs_mean": 0.0013374115739549902,
+            "anomalous_mean": -0.0004748113369673823,
+            "anomalous_abs_mean": 0.0035436341601811096,
+            "clean_predictions_sha256": "66be742554f02ff753c5f8b1827b9e56e456fb2cd19ea5ddafb0a770e4fd7fd6",
+            "perturbed_predictions_sha256": "d8cbe60090a7c7a2a7b707a4577c23e48c761fd7da0e90791effb1af22fc98ed"
+          },
+          {
+            "category": "grid",
+            "seed": 0,
+            "normal_mean": 0.0037222561382112074,
+            "normal_abs_mean": 0.006681368180683688,
+            "anomalous_mean": 0.0008581155747698091,
+            "anomalous_abs_mean": 0.003403658668200175,
+            "clean_predictions_sha256": "8c2806dd5db4f8c248203d9d46b5fe9fe21f94481a713cdce388a3ab2d2f76f4",
+            "perturbed_predictions_sha256": "bb1a24fc891c5bdd36416ec3246758725cde7c187196db3510a31f5b1208b2c9"
+          },
+          {
+            "category": "grid",
+            "seed": 1,
+            "normal_mean": 0.0031924525896708154,
+            "normal_abs_mean": 0.00476278407233102,
+            "anomalous_mean": 0.0008645009576228602,
+            "anomalous_abs_mean": 0.0037300352464642427,
+            "clean_predictions_sha256": "2510635570f8b22632b116f96b30b619f1550f9f1ec5ac7add810d248aea970b",
+            "perturbed_predictions_sha256": "0a9a3042dd9eed290f201cb1ee7872dde377a7b018fcd247d1e01918dcb727cd"
+          },
+          {
+            "category": "grid",
+            "seed": 2,
+            "normal_mean": 0.0026968943221228414,
+            "normal_abs_mean": 0.003816672024272729,
+            "anomalous_mean": 0.0015362134105280855,
+            "anomalous_abs_mean": 0.0035344449051639562,
+            "clean_predictions_sha256": "efb0ceab35d78faf4836be7a63438eaad8db71594475829a0775e3123e2fee4f",
+            "perturbed_predictions_sha256": "59cfaf23374560120c2debbe65d2d1bdf716bfe0e2b2223e8d09fcda3ac7c8b0"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 0,
+            "normal_mean": 0.0001332917064428306,
+            "normal_abs_mean": 0.0025146854668855667,
+            "anomalous_mean": 0.0005530226230621398,
+            "anomalous_abs_mean": 0.0033734075512204848,
+            "clean_predictions_sha256": "88462ce95d6bf026395c13d02326f3418e3058cd1c70a74b4e99d53e8cb8cfa7",
+            "perturbed_predictions_sha256": "085df857ac35ee047786a65acd898139860bc2690aa9a3c5026f2c6b76e8f1a8"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 1,
+            "normal_mean": -0.001415175274014472,
+            "normal_abs_mean": 0.002429253831505774,
+            "anomalous_mean": -0.0011578265683991468,
+            "anomalous_abs_mean": 0.0026713142650467915,
+            "clean_predictions_sha256": "75d28af8773a1f6b89465bce7bbc0f2c20ecc0026114a4b279753ba0d0ab10bf",
+            "perturbed_predictions_sha256": "402a94d0f9e6674cbd0b160722cd6e981e15dab8d98d95d650e87b3c9996f9be"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 2,
+            "normal_mean": -3.145568072796118e-05,
+            "normal_abs_mean": 0.0017996714264154432,
+            "anomalous_mean": -0.0001381943907056506,
+            "anomalous_abs_mean": 0.0035169039453778923,
+            "clean_predictions_sha256": "5446debef84b76665b2cffc499c5674110a6b24f95230cdaa14437d350d7e58c",
+            "perturbed_predictions_sha256": "61243d1a966974c12dbee969d96af357a80a6e610037835479174d8d4439c478"
+          },
+          {
+            "category": "leather",
+            "seed": 0,
+            "normal_mean": -0.0017167309299111365,
+            "normal_abs_mean": 0.0036232613027095796,
+            "anomalous_mean": -0.001159648273302161,
+            "anomalous_abs_mean": 0.002737433171790575,
+            "clean_predictions_sha256": "31213d2e489b2446c426ea89fcf6cd622c5d05b1afa53809417622b710980ac5",
+            "perturbed_predictions_sha256": "9bbd70fff6cc8f60c86176801e9de4b9a0fdcfd2553b97c41cd0a259ce610cfc"
+          },
+          {
+            "category": "leather",
+            "seed": 1,
+            "normal_mean": -0.0020971645601093767,
+            "normal_abs_mean": 0.003363403212279079,
+            "anomalous_mean": -0.0017609341313009656,
+            "anomalous_abs_mean": 0.0031961035793242236,
+            "clean_predictions_sha256": "c67ef457f56838f9b56f63b8380f4e03806c8bce53a6b8a5bcdb259acf485a16",
+            "perturbed_predictions_sha256": "efc11e58c2f5079471d43ab84ea3a7445bc7b9468de5a778cc356c94d5b712b5"
+          },
+          {
+            "category": "leather",
+            "seed": 2,
+            "normal_mean": 9.882310405373443e-05,
+            "normal_abs_mean": 0.002378709893673655,
+            "anomalous_mean": -0.001331826137459792,
+            "anomalous_abs_mean": 0.003006306744140126,
+            "clean_predictions_sha256": "875d7cac255ba43604b2f6211a8b965ba8c0c2ef11d64a73cc6823288f173974",
+            "perturbed_predictions_sha256": "8dec0ddf487f63ee1f1a9ddc0acb4f59561ea0ed79fe3fba2a73e62236991aa9"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 0,
+            "normal_mean": -0.00042750848965211497,
+            "normal_abs_mean": 0.0023922696709632874,
+            "anomalous_mean": 0.0006250950597947673,
+            "anomalous_abs_mean": 0.002873575495135399,
+            "clean_predictions_sha256": "e3515489dab8cbddbf46fab82f77511f35c44f4846f377586dc49f927086b5e9",
+            "perturbed_predictions_sha256": "db96b446518c0dd3b74e88e08ed9c2812e120d942f452ff58850ed50d2066fd9"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 1,
+            "normal_mean": -0.0013289660215377826,
+            "normal_abs_mean": 0.0024279876188798353,
+            "anomalous_mean": 0.0010001224535767734,
+            "anomalous_abs_mean": 0.0029914663363528474,
+            "clean_predictions_sha256": "ac9edf32c587d713ce735c93a986e1e10c49acd8cd9498f76bd49801a2a020db",
+            "perturbed_predictions_sha256": "2fcbb5df7d16f03ac8fd1889e3751b9d5b503309f935c32be4f1a6c6ce27305d"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 2,
+            "normal_mean": -0.00037943612445484734,
+            "normal_abs_mean": 0.0015237469564784634,
+            "anomalous_mean": 0.000564755771749761,
+            "anomalous_abs_mean": 0.003039359693886127,
+            "clean_predictions_sha256": "2f48867df72c42e44cc66a3bf8379d0a7cee1c477047ec3e8f10b341d2c7ab6a",
+            "perturbed_predictions_sha256": "97bf4186eb53cfab1ee6fe6bec2d759992b26ac8a784ca68ebfbf16aa56ac167"
+          },
+          {
+            "category": "pill",
+            "seed": 0,
+            "normal_mean": 0.0014765308453486515,
+            "normal_abs_mean": 0.0043402302723664484,
+            "anomalous_mean": 0.0010060695468956684,
+            "anomalous_abs_mean": 0.0038393170698314714,
+            "clean_predictions_sha256": "27146a256c1f955c8a940f9678dd1eb1767a9ec9f25aaf7b201911508bd85c6d",
+            "perturbed_predictions_sha256": "0aa462f84c72faab3e90bc2dc1ce35dbe60c5612c10ac0a60422f0b12b11574f"
+          },
+          {
+            "category": "pill",
+            "seed": 1,
+            "normal_mean": 0.0009574298675243622,
+            "normal_abs_mean": 0.0026898271762407747,
+            "anomalous_mean": 0.001193948734736611,
+            "anomalous_abs_mean": 0.0036489182541556407,
+            "clean_predictions_sha256": "90f0ed9c9a36b0d367bb1e5eed991096476aee306e7566171fff144b1c725735",
+            "perturbed_predictions_sha256": "cd35c41af0d8259b640c3c03edb5cbe19f7599447a5937fec23d54c1749e1f9a"
+          },
+          {
+            "category": "pill",
+            "seed": 2,
+            "normal_mean": -0.0001635039081940282,
+            "normal_abs_mean": 0.0029292871172611487,
+            "anomalous_mean": 0.0012296251582761214,
+            "anomalous_abs_mean": 0.003934596806553233,
+            "clean_predictions_sha256": "fc7c485ee2c77300345bb44cd7ebd49e8e8e0b599e2d98c33fc5f579d5605e81",
+            "perturbed_predictions_sha256": "e9afb30bdd22a332cd6ef283b81809d42e0227d3771d5f9bbba8bc07a91be60a"
+          },
+          {
+            "category": "screw",
+            "seed": 0,
+            "normal_mean": -0.0004903764259524478,
+            "normal_abs_mean": 0.0036121688238004365,
+            "anomalous_mean": -0.0005686977079936445,
+            "anomalous_abs_mean": 0.003593827020220396,
+            "clean_predictions_sha256": "dfd01cbe1257fd743c3526fa7e9f43aa70708dcefa448fdb25359314dc4a0d93",
+            "perturbed_predictions_sha256": "b8ea03f06f7c4f74a988a3b7e89988657c0b47608a4125b88fc45a1e999b50ba"
+          },
+          {
+            "category": "screw",
+            "seed": 1,
+            "normal_mean": 0.0001602305144798466,
+            "normal_abs_mean": 0.002692242075757285,
+            "anomalous_mean": 5.506635213098144e-05,
+            "anomalous_abs_mean": 0.002927729287067381,
+            "clean_predictions_sha256": "1759cb9996fa77d1cfdc382da397a1b29353bfb41ba3701bef525d153958fd9c",
+            "perturbed_predictions_sha256": "13a7226d1aec2fd235fc17d49392be78cfd54fb1077b9423b82a6c5043240eba"
+          },
+          {
+            "category": "screw",
+            "seed": 2,
+            "normal_mean": 0.0012513527056065977,
+            "normal_abs_mean": 0.0033143620665480457,
+            "anomalous_mean": -0.00023495802859298406,
+            "anomalous_abs_mean": 0.0034908957090698384,
+            "clean_predictions_sha256": "207b0eded0f7421865e7911eca0dc05601fc905ea1d31c3c8e5420f0a76734ae",
+            "perturbed_predictions_sha256": "87b6bedfd3aaa76cb1fe728f013570c961381115250279fe880cca124937d150"
+          },
+          {
+            "category": "tile",
+            "seed": 0,
+            "normal_mean": -0.0012455843614809436,
+            "normal_abs_mean": 0.0023244524543935595,
+            "anomalous_mean": -0.0009349022947606617,
+            "anomalous_abs_mean": 0.0038968640069166846,
+            "clean_predictions_sha256": "0a274d4640aa6e86df9496ab7a5ce2cf47e45a2adf6a9d3b334683445affd677",
+            "perturbed_predictions_sha256": "2b9709cb2f977a071a770f08542d050f790d9266a3d671343d5b518b724b1d0c"
+          },
+          {
+            "category": "tile",
+            "seed": 1,
+            "normal_mean": -0.0024750313975594245,
+            "normal_abs_mean": 0.0034630013234687542,
+            "anomalous_mean": -0.0012134964267412856,
+            "anomalous_abs_mean": 0.0042039308519590465,
+            "clean_predictions_sha256": "2590557f7c1fba584e7352be167bc5a8027445781ea30d957357155ed80e872b",
+            "perturbed_predictions_sha256": "89ba9d169ddcf4fc548553e2827c23d4c4cc46a0bc6b13e3f1e75c5aaa244bd3"
+          },
+          {
+            "category": "tile",
+            "seed": 2,
+            "normal_mean": -0.0017317214698502497,
+            "normal_abs_mean": 0.002718318502108254,
+            "anomalous_mean": -0.0009622715768359943,
+            "anomalous_abs_mean": 0.004093464428470246,
+            "clean_predictions_sha256": "ac44aa4caf190e0fc83ea21fa2eaadb7b44c275a97e3005ed5bd3dbb10f03fc9",
+            "perturbed_predictions_sha256": "49c5777ffd2edb54af386025e9bce160203e9b4c87fe16c04e9870f91d180356"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 0,
+            "normal_mean": 9.796271721522013e-06,
+            "normal_abs_mean": 0.001770900438229241,
+            "anomalous_mean": -0.00029462556044260364,
+            "anomalous_abs_mean": 0.0026878662904103604,
+            "clean_predictions_sha256": "855fe35581837aa4da83f3e5700d3f56192ccfcb5480785f5e3fa92fd955d930",
+            "perturbed_predictions_sha256": "3fd83b65dc08ea97735b90e78de2810ae80464a4326564299908daf5567e91b6"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 1,
+            "normal_mean": -0.0007003736992677081,
+            "normal_abs_mean": 0.001708335926135382,
+            "anomalous_mean": -0.0009395622213681583,
+            "anomalous_abs_mean": 0.002392668426036837,
+            "clean_predictions_sha256": "323a707e155a9d198934059d554bf6ff3dcc8be98f926ccec23ecd6fa96e65d4",
+            "perturbed_predictions_sha256": "3b319370bc04fae0af25479642d4953b5c8bdc96f237877123789748e448600b"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 2,
+            "normal_mean": 0.0007205218076705896,
+            "normal_abs_mean": 0.0025111272931098902,
+            "anomalous_mean": -0.0007276054223378533,
+            "anomalous_abs_mean": 0.002456553379694624,
+            "clean_predictions_sha256": "613b51cb535aa84519125c239022c77e381ea520d989e811f6d5aef91dc7f717",
+            "perturbed_predictions_sha256": "b7c12411fd7068b9ed54dbd22ff4a98772d372767e8e3ff3c50f385a5b918e82"
+          },
+          {
+            "category": "transistor",
+            "seed": 0,
+            "normal_mean": 3.583118319510914e-05,
+            "normal_abs_mean": 0.0031244692703088143,
+            "anomalous_mean": 7.229283452033774e-05,
+            "anomalous_abs_mean": 0.0029121145606040956,
+            "clean_predictions_sha256": "0513ebd1f7715257bce3d7b868f0b2203212373f19c558a57cca2f9773da52a4",
+            "perturbed_predictions_sha256": "4e003ed75487b379415c23d9247ecf91f8d273350e44aab7d01b7bf53f6f0210"
+          },
+          {
+            "category": "transistor",
+            "seed": 1,
+            "normal_mean": -0.0011875467499097186,
+            "normal_abs_mean": 0.003363883395989737,
+            "anomalous_mean": 6.363734602928342e-05,
+            "anomalous_abs_mean": 0.0027359907329082478,
+            "clean_predictions_sha256": "fea663ef4c92033a88bdc86380b9a441662d423435fe719f272d1843ca83b357",
+            "perturbed_predictions_sha256": "088adbccf44b91fecf14adcffaa00a36f7020e951df22ad076ed8ac24189539d"
+          },
+          {
+            "category": "transistor",
+            "seed": 2,
+            "normal_mean": -0.0020662060876687344,
+            "normal_abs_mean": 0.003966471105813981,
+            "anomalous_mean": -4.0057078003886275e-05,
+            "anomalous_abs_mean": 0.003407998010516162,
+            "clean_predictions_sha256": "fb22af2d35e940e228282ce4f85540d5c8f1ef415fac145d3c2f6d7fbd41c373",
+            "perturbed_predictions_sha256": "338ff66bf3c6e64fb26c2ce7dbe94ce30c41b8823823256ffb13af446405ef0c"
+          },
+          {
+            "category": "wood",
+            "seed": 0,
+            "normal_mean": -0.0004337880172227503,
+            "normal_abs_mean": 0.0033351758593007084,
+            "anomalous_mean": -0.0015009835859139834,
+            "anomalous_abs_mean": 0.002975093871355062,
+            "clean_predictions_sha256": "5dfd4bce66b4442e3b671c78ef7f49d588bb66263a9e155bc4a4ad6d03e8332e",
+            "perturbed_predictions_sha256": "caaee857761663e0f74c0d1cd161865e09941ce5a63726877a10d86edbd24416"
+          },
+          {
+            "category": "wood",
+            "seed": 1,
+            "normal_mean": -0.0005800987544812622,
+            "normal_abs_mean": 0.003148907109310757,
+            "anomalous_mean": -0.0016818278034528057,
+            "anomalous_abs_mean": 0.0030650182565053296,
+            "clean_predictions_sha256": "6b712add21cbdaa1ff6e91977ea2b7d7f843041e6b795796685d0f2a7583f13e",
+            "perturbed_predictions_sha256": "45a4b45ce89ed7f09f5b7d990d3425c3b0ff57f722e9e218d403de7cff14d62b"
+          },
+          {
+            "category": "wood",
+            "seed": 2,
+            "normal_mean": -0.0003753751516342134,
+            "normal_abs_mean": 0.003346950600021761,
+            "anomalous_mean": -0.0014067268868287381,
+            "anomalous_abs_mean": 0.002908379783233009,
+            "clean_predictions_sha256": "86e61a62167e89db7378e88bf278c8e8ea66aab55a12fc2d02d5195b7ff2fdb1",
+            "perturbed_predictions_sha256": "a2a58030a96abd9de62a173ff01860270f3648d6e65f04959bf61800bdd78a84"
+          },
+          {
+            "category": "zipper",
+            "seed": 0,
+            "normal_mean": 0.0008830862119793897,
+            "normal_abs_mean": 0.003714704141020776,
+            "anomalous_mean": -1.901220373746863e-05,
+            "anomalous_abs_mean": 0.0026630307195567317,
+            "clean_predictions_sha256": "d10a992b95777e0870ea52bc4e671ab19abaa94324f3fc4c51a4e548baa45871",
+            "perturbed_predictions_sha256": "5a41aed5fd426e1127297637b6a343aa8dba9b4e52fbf2e3dfdadf9d2fead375"
+          },
+          {
+            "category": "zipper",
+            "seed": 1,
+            "normal_mean": 0.001242924109101299,
+            "normal_abs_mean": 0.002828602865338327,
+            "anomalous_mean": 0.0010442907319349402,
+            "anomalous_abs_mean": 0.0032147218950656256,
+            "clean_predictions_sha256": "10cd72c63e26442ef3ccdbd64ec530762f6556ba1800cac3a9bd41c63d4c1924",
+            "perturbed_predictions_sha256": "dc699eafda2b2699c0c75762ad8f4641ca46da9aae912e1e93c99a6fd81163c7"
+          },
+          {
+            "category": "zipper",
+            "seed": 2,
+            "normal_mean": 0.0001500121317803871,
+            "normal_abs_mean": 0.002633802127093078,
+            "anomalous_mean": -3.3060267191970716e-05,
+            "anomalous_abs_mean": 0.002787840541671307,
+            "clean_predictions_sha256": "2b1376d19c404cce0eecc81ef99e56ab08312f44090bc6688993f41c0ffb78c1",
+            "perturbed_predictions_sha256": "461279657c6a1ee8ff875aeddd710a33c853e5e8cd19f099d40cf348dcf13373"
+          }
+        ],
+        "macro": {
+          "normal_mean": -0.00039716800373387274,
+          "normal_abs_mean": 0.0030614295966659285,
+          "anomalous_mean": -0.00035382558634025927,
+          "anomalous_abs_mean": 0.003309764930567914
+        }
+      },
+      "brightness_070": {
+        "runs": [
+          {
+            "category": "bottle",
+            "seed": 0,
+            "normal_mean": 0.0009199774265289285,
+            "normal_abs_mean": 0.002966918349266054,
+            "anomalous_mean": -0.0004838548955463276,
+            "anomalous_abs_mean": 0.005098084892545426,
+            "clean_predictions_sha256": "ce3bc239592a8fb8c8905cefeff0e3a00bcebf1b6eefbf247f78a31baecc424d",
+            "perturbed_predictions_sha256": "be7f23978a6f6131ec54ecd8f832263abada40be3b931abaa3962e3ccd89486d"
+          },
+          {
+            "category": "bottle",
+            "seed": 1,
+            "normal_mean": -0.00012154892086982394,
+            "normal_abs_mean": 0.0035760964453220357,
+            "anomalous_mean": -0.0007522987940954803,
+            "anomalous_abs_mean": 0.0048382696651277065,
+            "clean_predictions_sha256": "5ad43997cfe4860084e04d9e95b8e63d3674a6710ed89efb8ffad7c26a9e69f5",
+            "perturbed_predictions_sha256": "cfb2c424348dd775f0a37432434000ae20406721276ea0d6b077eba5625b112b"
+          },
+          {
+            "category": "bottle",
+            "seed": 2,
+            "normal_mean": 0.002275499850511549,
+            "normal_abs_mean": 0.0043572865426540364,
+            "anomalous_mean": -0.001297164956728621,
+            "anomalous_abs_mean": 0.005322830686493525,
+            "clean_predictions_sha256": "9f58fb25cb65a10a82fe5c41a82bc251ba8326c826af1ad797ff2f15cf825a92",
+            "perturbed_predictions_sha256": "4cdbe944e6659ce3717b2b4568841ebc00c0a56937aac2ec7a19ab2a6dc90967"
+          },
+          {
+            "category": "cable",
+            "seed": 0,
+            "normal_mean": -0.00014367591718147894,
+            "normal_abs_mean": 0.003223567122015461,
+            "anomalous_mean": -0.0004483330184998741,
+            "anomalous_abs_mean": 0.00484822719641354,
+            "clean_predictions_sha256": "bea309f2f287fd223f61458226896c465127376ade8510455f59f1f26b65622f",
+            "perturbed_predictions_sha256": "517176fb09b94fd8e1018bd11f42faf5b1c01b2b229937034502dac844966b18"
+          },
+          {
+            "category": "cable",
+            "seed": 1,
+            "normal_mean": 0.00014719665050506533,
+            "normal_abs_mean": 0.0036068964621116394,
+            "anomalous_mean": 0.0002828247197296277,
+            "anomalous_abs_mean": 0.004767435756714447,
+            "clean_predictions_sha256": "656ec428d8ed11be1934d047aba31cb5c31109605420657ab0dded049a9d6a8f",
+            "perturbed_predictions_sha256": "87567d3be61cba6d00f5c9888eb752f9d1d81415e15e5a5cc8d11c1db6445412"
+          },
+          {
+            "category": "cable",
+            "seed": 2,
+            "normal_mean": -0.0013684870867893594,
+            "normal_abs_mean": 0.003583392706410632,
+            "anomalous_mean": -0.0005202503955882558,
+            "anomalous_abs_mean": 0.004145719953205273,
+            "clean_predictions_sha256": "d19d0e4c4fdd3613b561361e98cfd7a894e2df706f2e50a21ad0eab9ffb6874d",
+            "perturbed_predictions_sha256": "65b1cea0e4c95a59fc5e73bd251c6f7ddb4256b4ba50bc80a430118a7f65efda"
+          },
+          {
+            "category": "capsule",
+            "seed": 0,
+            "normal_mean": 0.0003987960193468184,
+            "normal_abs_mean": 0.009932681788568909,
+            "anomalous_mean": -0.004613806676427159,
+            "anomalous_abs_mean": 0.007052857285245846,
+            "clean_predictions_sha256": "7a54b4d16992b186bad918e4f63d7835cb06f976b0800cfa818c6e1af4a1f71d",
+            "perturbed_predictions_sha256": "d66165361022c5462bab76e98d303f259fb3be59a2316b2cba95084d6032eb46"
+          },
+          {
+            "category": "capsule",
+            "seed": 1,
+            "normal_mean": -0.006518333761588378,
+            "normal_abs_mean": 0.013514237170634056,
+            "anomalous_mean": -0.006285157307572319,
+            "anomalous_abs_mean": 0.00805661845097848,
+            "clean_predictions_sha256": "f2b0ecadf38681967a7dfdf297b2e7e28702918c65861cbf448fe5d6b32c5aa0",
+            "perturbed_predictions_sha256": "fb81b4058daae09c18566fca4bdeb84deafcd1fb79202101a930ae8748849dff"
+          },
+          {
+            "category": "capsule",
+            "seed": 2,
+            "normal_mean": -0.0028638587049815978,
+            "normal_abs_mean": 0.00901869781639265,
+            "anomalous_mean": -0.0048359627570580994,
+            "anomalous_abs_mean": 0.007169700325082202,
+            "clean_predictions_sha256": "b22cc41be69a57f7ee2c7d0a9f1842c49db133cb6c6303aa908ceb33cd8969cf",
+            "perturbed_predictions_sha256": "b65b96bbce18f2e929f068b11c4a6678e0e693601d46398d6bc65f5067d5729d"
+          },
+          {
+            "category": "carpet",
+            "seed": 0,
+            "normal_mean": -0.0024878857391221207,
+            "normal_abs_mean": 0.004616761846201763,
+            "anomalous_mean": -0.0022029270281952395,
+            "anomalous_abs_mean": 0.00841751945822426,
+            "clean_predictions_sha256": "0ce746b562fe10f2b537b55575f2809f10d117c6169da31f4b76d2934fda372c",
+            "perturbed_predictions_sha256": "bc4381a1ae9498c4d0815ae14c8850790f74f90a657f970c6cecbd1aeb2167b4"
+          },
+          {
+            "category": "carpet",
+            "seed": 1,
+            "normal_mean": -0.001415092498064043,
+            "normal_abs_mean": 0.004292239568063189,
+            "anomalous_mean": -0.0015988545136505282,
+            "anomalous_abs_mean": 0.007960373263680532,
+            "clean_predictions_sha256": "565a8c66e58fb774555797b2d710ae093813f0088a6b90fccb6c64942ec399f6",
+            "perturbed_predictions_sha256": "6215b846efb44e19e5e34ebde34e79abe172949afcb2ea5ca781a1e281778b35"
+          },
+          {
+            "category": "carpet",
+            "seed": 2,
+            "normal_mean": -0.0012540981173515323,
+            "normal_abs_mean": 0.0037735196096556553,
+            "anomalous_mean": -0.001735217886024646,
+            "anomalous_abs_mean": 0.00860411869675926,
+            "clean_predictions_sha256": "66be742554f02ff753c5f8b1827b9e56e456fb2cd19ea5ddafb0a770e4fd7fd6",
+            "perturbed_predictions_sha256": "7cd805f5fb2264d25f99070d5293c0a52e61d540be1847619aacaf9f4b053543"
+          },
+          {
+            "category": "grid",
+            "seed": 0,
+            "normal_mean": 0.011762014740989321,
+            "normal_abs_mean": 0.014258725302559993,
+            "anomalous_mean": 0.001257287567121948,
+            "anomalous_abs_mean": 0.0076333637300290535,
+            "clean_predictions_sha256": "8c2806dd5db4f8c248203d9d46b5fe9fe21f94481a713cdce388a3ab2d2f76f4",
+            "perturbed_predictions_sha256": "342100962dbc7876459b1cf9659a996653f3d82cecd7f1a47b3559cafe461f9d"
+          },
+          {
+            "category": "grid",
+            "seed": 1,
+            "normal_mean": 0.010646593712625049,
+            "normal_abs_mean": 0.011229177174114046,
+            "anomalous_mean": 0.0013187498899928272,
+            "anomalous_abs_mean": 0.008735490524977973,
+            "clean_predictions_sha256": "2510635570f8b22632b116f96b30b619f1550f9f1ec5ac7add810d248aea970b",
+            "perturbed_predictions_sha256": "758f615ae41b095394e37b2a3c6ab342eddc8490306ffe49836a1f40e3410c60"
+          },
+          {
+            "category": "grid",
+            "seed": 2,
+            "normal_mean": 0.009402293818337574,
+            "normal_abs_mean": 0.010800623042242866,
+            "anomalous_mean": 0.0029141735612300337,
+            "anomalous_abs_mean": 0.00779915326520017,
+            "clean_predictions_sha256": "efb0ceab35d78faf4836be7a63438eaad8db71594475829a0775e3123e2fee4f",
+            "perturbed_predictions_sha256": "5b6f51269f11c570b341eda6a983c019049fb7a81e58fed798f08e100fa8710e"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 0,
+            "normal_mean": -0.001365163251757623,
+            "normal_abs_mean": 0.0032152538746595336,
+            "anomalous_mean": 0.0005499296954699949,
+            "anomalous_abs_mean": 0.005881467419011252,
+            "clean_predictions_sha256": "88462ce95d6bf026395c13d02326f3418e3058cd1c70a74b4e99d53e8cb8cfa7",
+            "perturbed_predictions_sha256": "953fb86b0666b66fc7f0413a8a63d0f49c5ff876c1fae4e4a880fe36dcd86e25"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 1,
+            "normal_mean": -0.0034540846943855305,
+            "normal_abs_mean": 0.004810584783554076,
+            "anomalous_mean": -0.002253350572926653,
+            "anomalous_abs_mean": 0.004640836162226537,
+            "clean_predictions_sha256": "75d28af8773a1f6b89465bce7bbc0f2c20ecc0026114a4b279753ba0d0ab10bf",
+            "perturbed_predictions_sha256": "0974865ea263e83a271b790986ba11a277f3550c07cf5250e1ccfa2816fab242"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 2,
+            "normal_mean": -0.0020144598931074176,
+            "normal_abs_mean": 0.004031604602932934,
+            "anomalous_mean": -0.0010160538128444157,
+            "anomalous_abs_mean": 0.005834412063871114,
+            "clean_predictions_sha256": "5446debef84b76665b2cffc499c5674110a6b24f95230cdaa14437d350d7e58c",
+            "perturbed_predictions_sha256": "01d66a19fade227228a77bbdcd31e596894b208f28c4a2ec06afa187f6da1e74"
+          },
+          {
+            "category": "leather",
+            "seed": 0,
+            "normal_mean": -0.002753541618585586,
+            "normal_abs_mean": 0.005858828686177729,
+            "anomalous_mean": -0.0034817764940469143,
+            "anomalous_abs_mean": 0.005636741674464682,
+            "clean_predictions_sha256": "31213d2e489b2446c426ea89fcf6cd622c5d05b1afa53809417622b710980ac5",
+            "perturbed_predictions_sha256": "d5fff5e2b0ecb52d6d58ec0c8e1423905ced10b1142859ff7183ca12fa6005fe"
+          },
+          {
+            "category": "leather",
+            "seed": 1,
+            "normal_mean": -0.003447805065661668,
+            "normal_abs_mean": 0.006625296454876661,
+            "anomalous_mean": -0.0046870505680208655,
+            "anomalous_abs_mean": 0.006932950408562371,
+            "clean_predictions_sha256": "c67ef457f56838f9b56f63b8380f4e03806c8bce53a6b8a5bcdb259acf485a16",
+            "perturbed_predictions_sha256": "7896f7a1fcbc5b79b54c007292e56807cdf6560a59ede37365d620b8c49ae55f"
+          },
+          {
+            "category": "leather",
+            "seed": 2,
+            "normal_mean": 0.0006022937595844256,
+            "normal_abs_mean": 0.005657211132347581,
+            "anomalous_mean": -0.003995425124531209,
+            "anomalous_abs_mean": 0.006888344333223673,
+            "clean_predictions_sha256": "875d7cac255ba43604b2f6211a8b965ba8c0c2ef11d64a73cc6823288f173974",
+            "perturbed_predictions_sha256": "2969b59a0d21a0980af4b4c6a069ab46c86e8d2170c64221b30e18c1b2841850"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 0,
+            "normal_mean": -0.0012377140196886986,
+            "normal_abs_mean": 0.003757240826433354,
+            "anomalous_mean": 0.0006733417510986331,
+            "anomalous_abs_mean": 0.005401460970601724,
+            "clean_predictions_sha256": "e3515489dab8cbddbf46fab82f77511f35c44f4846f377586dc49f927086b5e9",
+            "perturbed_predictions_sha256": "b45019545e9fb77dc53aec87b513c92b5338714d90aebb4c4b92f7d1e0f57f39"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 1,
+            "normal_mean": -0.0015201862562786465,
+            "normal_abs_mean": 0.003745147179473531,
+            "anomalous_mean": 0.0011223719325116858,
+            "anomalous_abs_mean": 0.0055618618765184945,
+            "clean_predictions_sha256": "ac9edf32c587d713ce735c93a986e1e10c49acd8cd9498f76bd49801a2a020db",
+            "perturbed_predictions_sha256": "323df70b7277d8809e12ba4c1966be0d0f365aa1ac490e4bdc0e3345b59a04ad"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 2,
+            "normal_mean": -0.0003253622488542057,
+            "normal_abs_mean": 0.002822549234737048,
+            "anomalous_mean": 3.896611993030931e-05,
+            "anomalous_abs_mean": 0.005362356029531004,
+            "clean_predictions_sha256": "2f48867df72c42e44cc66a3bf8379d0a7cee1c477047ec3e8f10b341d2c7ab6a",
+            "perturbed_predictions_sha256": "88a27813562f93d745599e798a283ef4d2790b2bcaaeb9559eafa34e8cdd6108"
+          },
+          {
+            "category": "pill",
+            "seed": 0,
+            "normal_mean": 0.004816033060734094,
+            "normal_abs_mean": 0.00897839298615089,
+            "anomalous_mean": 0.00030270523213325355,
+            "anomalous_abs_mean": 0.006636709778021414,
+            "clean_predictions_sha256": "27146a256c1f955c8a940f9678dd1eb1767a9ec9f25aaf7b201911508bd85c6d",
+            "perturbed_predictions_sha256": "9f9c7cea4b618ac7622cc239635cbb385e276cb6c68a8dd5addaeaf4da0768fd"
+          },
+          {
+            "category": "pill",
+            "seed": 1,
+            "normal_mean": 0.0011750875757290712,
+            "normal_abs_mean": 0.003922354601896726,
+            "anomalous_mean": 0.0004873694257533306,
+            "anomalous_abs_mean": 0.0064265708128611225,
+            "clean_predictions_sha256": "90f0ed9c9a36b0d367bb1e5eed991096476aee306e7566171fff144b1c725735",
+            "perturbed_predictions_sha256": "7260ca6a2100bc6b9300bee98caa1b827d3afab95f3b547eebbc634ad8e5c374"
+          },
+          {
+            "category": "pill",
+            "seed": 2,
+            "normal_mean": 0.000521969222105469,
+            "normal_abs_mean": 0.004781093849585606,
+            "anomalous_mean": 0.00145085468782601,
+            "anomalous_abs_mean": 0.007422779489916268,
+            "clean_predictions_sha256": "fc7c485ee2c77300345bb44cd7ebd49e8e8e0b599e2d98c33fc5f579d5605e81",
+            "perturbed_predictions_sha256": "c0a88fcb3becf94dfc1e6ca51ce7d4027bff484176b06d3b74b315edee978c51"
+          },
+          {
+            "category": "screw",
+            "seed": 0,
+            "normal_mean": 0.0005686684352595633,
+            "normal_abs_mean": 0.004719030275577452,
+            "anomalous_mean": -0.0014580243525384856,
+            "anomalous_abs_mean": 0.005320321937569048,
+            "clean_predictions_sha256": "dfd01cbe1257fd743c3526fa7e9f43aa70708dcefa448fdb25359314dc4a0d93",
+            "perturbed_predictions_sha256": "ed41b08d43423d62bca614073688f7e2c2fe790303b0f2812ef598492e30c9c4"
+          },
+          {
+            "category": "screw",
+            "seed": 1,
+            "normal_mean": 0.00031453029411594827,
+            "normal_abs_mean": 0.0034561849948836557,
+            "anomalous_mean": 0.00034760269297271125,
+            "anomalous_abs_mean": 0.004258186100911693,
+            "clean_predictions_sha256": "1759cb9996fa77d1cfdc382da397a1b29353bfb41ba3701bef525d153958fd9c",
+            "perturbed_predictions_sha256": "558127936d3fcb942e7149d1bffc848ca8ccf510c3bca422c2213f157a0ac3a3"
+          },
+          {
+            "category": "screw",
+            "seed": 2,
+            "normal_mean": -0.0005069430281476295,
+            "normal_abs_mean": 0.003811875494515024,
+            "anomalous_mean": -0.0011099486791787039,
+            "anomalous_abs_mean": 0.005082178616724098,
+            "clean_predictions_sha256": "207b0eded0f7421865e7911eca0dc05601fc905ea1d31c3c8e5420f0a76734ae",
+            "perturbed_predictions_sha256": "e482541698239dbcf023903437363f73170710995b39a8e051d1e1c2498d5555"
+          },
+          {
+            "category": "tile",
+            "seed": 0,
+            "normal_mean": -0.0013454201546582302,
+            "normal_abs_mean": 0.0050498105359799905,
+            "anomalous_mean": -0.0043894818141346935,
+            "anomalous_abs_mean": 0.011144380058561052,
+            "clean_predictions_sha256": "0a274d4640aa6e86df9496ab7a5ce2cf47e45a2adf6a9d3b334683445affd677",
+            "perturbed_predictions_sha256": "6e52cc3886866cc7665e272017cfa8724fc67cd66319e343d95d591b02f77d56"
+          },
+          {
+            "category": "tile",
+            "seed": 1,
+            "normal_mean": -0.005249837131211253,
+            "normal_abs_mean": 0.007300759084296949,
+            "anomalous_mean": -0.005139386973210746,
+            "anomalous_abs_mean": 0.011239732624519442,
+            "clean_predictions_sha256": "2590557f7c1fba584e7352be167bc5a8027445781ea30d957357155ed80e872b",
+            "perturbed_predictions_sha256": "085d7e1cfaf1db0f29a97cdea2e0b62e65aa65443c3f2618d7c7289fed005fd2"
+          },
+          {
+            "category": "tile",
+            "seed": 2,
+            "normal_mean": -0.004326908696781506,
+            "normal_abs_mean": 0.005931264162063595,
+            "anomalous_mean": -0.0036954567545936226,
+            "anomalous_abs_mean": 0.010844526475384114,
+            "clean_predictions_sha256": "ac44aa4caf190e0fc83ea21fa2eaadb7b44c275a97e3005ed5bd3dbb10f03fc9",
+            "perturbed_predictions_sha256": "61cd6fe6be22fcde6fd4869952654416e7b5c01ad48b20fb0f49d44d4758c571"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 0,
+            "normal_mean": -4.899501800527395e-06,
+            "normal_abs_mean": 0.003265897432963051,
+            "anomalous_mean": -0.003665814399719236,
+            "anomalous_abs_mean": 0.005228315989176432,
+            "clean_predictions_sha256": "855fe35581837aa4da83f3e5700d3f56192ccfcb5480785f5e3fa92fd955d930",
+            "perturbed_predictions_sha256": "26cd14b6128f665dfa86ec1f99e7d51d9d21c12d1315551ed945bd166516681a"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 1,
+            "normal_mean": 0.0007050295670827192,
+            "normal_abs_mean": 0.0034550329049428305,
+            "anomalous_mean": -0.005356194178263352,
+            "anomalous_abs_mean": 0.005710097948710128,
+            "clean_predictions_sha256": "323a707e155a9d198934059d554bf6ff3dcc8be98f926ccec23ecd6fa96e65d4",
+            "perturbed_predictions_sha256": "03d7b67bd0d012ad67c2451f52ccc9bd017ca613a6204aaed08cc11151c862eb"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 2,
+            "normal_mean": 0.0002711604038874253,
+            "normal_abs_mean": 0.003998549282550806,
+            "anomalous_mean": -0.004176702698071807,
+            "anomalous_abs_mean": 0.005788651506106065,
+            "clean_predictions_sha256": "613b51cb535aa84519125c239022c77e381ea520d989e811f6d5aef91dc7f717",
+            "perturbed_predictions_sha256": "464af38d37300f2975effdea7acb02775a677a9ec251ab1efd4fb2de57a4b107"
+          },
+          {
+            "category": "transistor",
+            "seed": 0,
+            "normal_mean": 0.0006585946679115278,
+            "normal_abs_mean": 0.004150565067927042,
+            "anomalous_mean": -0.0012753015756607118,
+            "anomalous_abs_mean": 0.005062919855117804,
+            "clean_predictions_sha256": "0513ebd1f7715257bce3d7b868f0b2203212373f19c558a57cca2f9773da52a4",
+            "perturbed_predictions_sha256": "83cc8c0920d0b142942bca03461c1e9626ec2158e9b45c52525adee75bcdd355"
+          },
+          {
+            "category": "transistor",
+            "seed": 1,
+            "normal_mean": 3.3520609140393993e-05,
+            "normal_abs_mean": 0.004291733056306839,
+            "anomalous_mean": -0.000593882352113722,
+            "anomalous_abs_mean": 0.004572544544935232,
+            "clean_predictions_sha256": "fea663ef4c92033a88bdc86380b9a441662d423435fe719f272d1843ca83b357",
+            "perturbed_predictions_sha256": "09c7cde7b7f33ad63066eef622ffad2882df1d9f90ecd408ba64496ed4796f0e"
+          },
+          {
+            "category": "transistor",
+            "seed": 2,
+            "normal_mean": -0.0007783062756061507,
+            "normal_abs_mean": 0.0037831282118956254,
+            "anomalous_mean": -0.001939294636249541,
+            "anomalous_abs_mean": 0.005740820169448848,
+            "clean_predictions_sha256": "fb22af2d35e940e228282ce4f85540d5c8f1ef415fac145d3c2f6d7fbd41c373",
+            "perturbed_predictions_sha256": "181db255f1e5b3fbfac6e7446aeb3e6b5344258d93672b86b0a5d3c39b4e7679"
+          },
+          {
+            "category": "wood",
+            "seed": 0,
+            "normal_mean": -0.0003027832821795759,
+            "normal_abs_mean": 0.0038344522840098347,
+            "anomalous_mean": -0.0029353356361389166,
+            "anomalous_abs_mean": 0.005391075611114507,
+            "clean_predictions_sha256": "5dfd4bce66b4442e3b671c78ef7f49d588bb66263a9e155bc4a4ad6d03e8332e",
+            "perturbed_predictions_sha256": "eb24884fe3005b1165d736466b52f418fbe4f1ea8cb66f0dd1f7371aedf7063d"
+          },
+          {
+            "category": "wood",
+            "seed": 1,
+            "normal_mean": -0.0019670704477711687,
+            "normal_abs_mean": 0.004066837618225499,
+            "anomalous_mean": -0.0034050563474496134,
+            "anomalous_abs_mean": 0.005534524470567698,
+            "clean_predictions_sha256": "6b712add21cbdaa1ff6e91977ea2b7d7f843041e6b795796685d0f2a7583f13e",
+            "perturbed_predictions_sha256": "652454569bf2efa6642fdf855b163c56f066ecb18a057cfb6682325da93ae7bf"
+          },
+          {
+            "category": "wood",
+            "seed": 2,
+            "normal_mean": -0.002881856968528344,
+            "normal_abs_mean": 0.003722859997498364,
+            "anomalous_mean": -0.0028697038690249097,
+            "anomalous_abs_mean": 0.005036010046799979,
+            "clean_predictions_sha256": "86e61a62167e89db7378e88bf278c8e8ea66aab55a12fc2d02d5195b7ff2fdb1",
+            "perturbed_predictions_sha256": "d91bd29ff12a515f15ab062e86266d3de54b21966be3442f009ca6ddae792883"
+          },
+          {
+            "category": "zipper",
+            "seed": 0,
+            "normal_mean": 0.0033237852156162264,
+            "normal_abs_mean": 0.006421692669391635,
+            "anomalous_mean": -0.0011410895766330346,
+            "anomalous_abs_mean": 0.005454150393229574,
+            "clean_predictions_sha256": "d10a992b95777e0870ea52bc4e671ab19abaa94324f3fc4c51a4e548baa45871",
+            "perturbed_predictions_sha256": "04abee7cbeedd32a8fe18ff3b6cc2ebe12828aacabbd93697404f25bd3e6c841"
+          },
+          {
+            "category": "zipper",
+            "seed": 1,
+            "normal_mean": 0.0038328112103045023,
+            "normal_abs_mean": 0.005507659446448089,
+            "anomalous_mean": 0.00027571473301959504,
+            "anomalous_abs_mean": 0.006365857129337403,
+            "clean_predictions_sha256": "10cd72c63e26442ef3ccdbd64ec530762f6556ba1800cac3a9bd41c63d4c1924",
+            "perturbed_predictions_sha256": "54a10b8f369f50ab1838e3b7e79202256ae6f23f69eb0eb1fdddfc9fd06be979"
+          },
+          {
+            "category": "zipper",
+            "seed": 2,
+            "normal_mean": 0.0006862973794341076,
+            "normal_abs_mean": 0.004781606979668139,
+            "anomalous_mean": -0.0012353479361333734,
+            "anomalous_abs_mean": 0.00540675550949674,
+            "clean_predictions_sha256": "2b1376d19c404cce0eecc81ef99e56ab08312f44090bc6688993f41c0ffb78c1",
+            "perturbed_predictions_sha256": "7b748cf0588040db4f482f8679d1b894476775a9978d35bcbabaf1b5fbf7c984"
+          }
+        ],
+        "macro": {
+          "normal_mean": 7.570734086217076e-05,
+          "normal_abs_mean": 0.005389007081292957,
+          "anomalous_mean": -0.0016349247682684693,
+          "anomalous_abs_mean": 0.0063612734034932715
+        }
+      },
+      "blur_075": {
+        "runs": [
+          {
+            "category": "bottle",
+            "seed": 0,
+            "normal_mean": -0.0038603322207927697,
+            "normal_abs_mean": 0.007572273164987567,
+            "anomalous_mean": -0.0010819608256930453,
+            "anomalous_abs_mean": 0.00980032209366087,
+            "clean_predictions_sha256": "ce3bc239592a8fb8c8905cefeff0e3a00bcebf1b6eefbf247f78a31baecc424d",
+            "perturbed_predictions_sha256": "29721bf827f0a7834d650193cebf531c130664d99be31ecb37e64c372bd4915f"
+          },
+          {
+            "category": "bottle",
+            "seed": 1,
+            "normal_mean": 0.0015638275444507632,
+            "normal_abs_mean": 0.008540086597204214,
+            "anomalous_mean": -0.0012982366103974647,
+            "anomalous_abs_mean": 0.009214565630943056,
+            "clean_predictions_sha256": "5ad43997cfe4860084e04d9e95b8e63d3674a6710ed89efb8ffad7c26a9e69f5",
+            "perturbed_predictions_sha256": "1ee6eb1b8e4633a94deffcd3b6c97419ca4900dfebd6565767034d1db13ac3cb"
+          },
+          {
+            "category": "bottle",
+            "seed": 2,
+            "normal_mean": 0.004971895664930341,
+            "normal_abs_mean": 0.015213500708341597,
+            "anomalous_mean": -0.0007434966545256357,
+            "anomalous_abs_mean": 0.010373710214145597,
+            "clean_predictions_sha256": "9f58fb25cb65a10a82fe5c41a82bc251ba8326c826af1ad797ff2f15cf825a92",
+            "perturbed_predictions_sha256": "dc119b850e5caf93a808e3e866d6f29981293a6bfa1e15365ea2bda7f1be33c0"
+          },
+          {
+            "category": "cable",
+            "seed": 0,
+            "normal_mean": 0.004575276940033352,
+            "normal_abs_mean": 0.011279352728662819,
+            "anomalous_mean": 0.0026863827977491464,
+            "anomalous_abs_mean": 0.010786615214917973,
+            "clean_predictions_sha256": "bea309f2f287fd223f61458226896c465127376ade8510455f59f1f26b65622f",
+            "perturbed_predictions_sha256": "25da20c95e8e8c98e9baeed2ac83b3d6b61cc4c47fe94fe4bca06ddfb2c5047d"
+          },
+          {
+            "category": "cable",
+            "seed": 1,
+            "normal_mean": 0.004600454404436309,
+            "normal_abs_mean": 0.009546115994453435,
+            "anomalous_mean": 0.0033559436383454647,
+            "anomalous_abs_mean": 0.011927664733451342,
+            "clean_predictions_sha256": "656ec428d8ed11be1934d047aba31cb5c31109605420657ab0dded049a9d6a8f",
+            "perturbed_predictions_sha256": "a3da75016af2b2a12af681df9c941f2b5a0a65330e1a1a72f2a568af2d5e0ae2"
+          },
+          {
+            "category": "cable",
+            "seed": 2,
+            "normal_mean": 0.001253496727039077,
+            "normal_abs_mean": 0.010462966098867614,
+            "anomalous_mean": 0.002599289948525634,
+            "anomalous_abs_mean": 0.010469808915387024,
+            "clean_predictions_sha256": "d19d0e4c4fdd3613b561361e98cfd7a894e2df706f2e50a21ad0eab9ffb6874d",
+            "perturbed_predictions_sha256": "44b114bba64f5aaf1d9dd8b7cfd9ec0a683b4b34fe77f94e992dbec72e00b276"
+          },
+          {
+            "category": "capsule",
+            "seed": 0,
+            "normal_mean": 0.0050158877735552625,
+            "normal_abs_mean": 0.012491037405055503,
+            "anomalous_mean": -0.003791572249263799,
+            "anomalous_abs_mean": 0.00904799852896174,
+            "clean_predictions_sha256": "7a54b4d16992b186bad918e4f63d7835cb06f976b0800cfa818c6e1af4a1f71d",
+            "perturbed_predictions_sha256": "50b86045e26eb8e0a5e24c06e6689e522e24e5cf024bdc895bd069a23a51c266"
+          },
+          {
+            "category": "capsule",
+            "seed": 1,
+            "normal_mean": 0.0012542193350584638,
+            "normal_abs_mean": 0.008196072215619288,
+            "anomalous_mean": -0.0017234024378137858,
+            "anomalous_abs_mean": 0.01141470498448118,
+            "clean_predictions_sha256": "f2b0ecadf38681967a7dfdf297b2e7e28702918c65861cbf448fe5d6b32c5aa0",
+            "perturbed_predictions_sha256": "67cde8c759544ad9c40b6f708a6427a845521f9af1f55d4344752d8a0a67d803"
+          },
+          {
+            "category": "capsule",
+            "seed": 2,
+            "normal_mean": 0.007053446769714355,
+            "normal_abs_mean": 0.014019083458444348,
+            "anomalous_mean": -0.006072132111689366,
+            "anomalous_abs_mean": 0.011976972386377668,
+            "clean_predictions_sha256": "b22cc41be69a57f7ee2c7d0a9f1842c49db133cb6c6303aa908ceb33cd8969cf",
+            "perturbed_predictions_sha256": "15c26f90fcafd92a58fdb123cbae8fea684da77fc1d76325389a64a49ba08bcb"
+          },
+          {
+            "category": "carpet",
+            "seed": 0,
+            "normal_mean": 0.005997425104890549,
+            "normal_abs_mean": 0.01073379133428846,
+            "anomalous_mean": 0.008663005540879922,
+            "anomalous_abs_mean": 0.019562116667125998,
+            "clean_predictions_sha256": "0ce746b562fe10f2b537b55575f2809f10d117c6169da31f4b76d2934fda372c",
+            "perturbed_predictions_sha256": "348af2b054f9c7a80062fb4b04403aaceffd2a2a624d748e8dab8e69f4296c41"
+          },
+          {
+            "category": "carpet",
+            "seed": 1,
+            "normal_mean": 0.00754045716353825,
+            "normal_abs_mean": 0.011435625169958387,
+            "anomalous_mean": 0.00790109641096565,
+            "anomalous_abs_mean": 0.019486357455842946,
+            "clean_predictions_sha256": "565a8c66e58fb774555797b2d710ae093813f0088a6b90fccb6c64942ec399f6",
+            "perturbed_predictions_sha256": "4b0b296e7c60b5e8ed894535b9a623b18dd6a4cde7ed44aea5bfdc606a0956de"
+          },
+          {
+            "category": "carpet",
+            "seed": 2,
+            "normal_mean": 0.004724452857460295,
+            "normal_abs_mean": 0.010043720794575554,
+            "anomalous_mean": 0.00935466473691919,
+            "anomalous_abs_mean": 0.022286390555038886,
+            "clean_predictions_sha256": "66be742554f02ff753c5f8b1827b9e56e456fb2cd19ea5ddafb0a770e4fd7fd6",
+            "perturbed_predictions_sha256": "26f411fe8f3d3ed5e6c73f5d80e2a434210a7a0fc09dbd3af6f89b353cd64647"
+          },
+          {
+            "category": "grid",
+            "seed": 0,
+            "normal_mean": 0.010160998787198752,
+            "normal_abs_mean": 0.01685161391894023,
+            "anomalous_mean": -0.013072526245786425,
+            "anomalous_abs_mean": 0.018708018252724085,
+            "clean_predictions_sha256": "8c2806dd5db4f8c248203d9d46b5fe9fe21f94481a713cdce388a3ab2d2f76f4",
+            "perturbed_predictions_sha256": "8075dbb378956da0a76e5bd9c0989dcde0e4c9db22d062b6d89ba115c66cb510"
+          },
+          {
+            "category": "grid",
+            "seed": 1,
+            "normal_mean": 0.006980779908952255,
+            "normal_abs_mean": 0.013792463995161515,
+            "anomalous_mean": -0.013252793278610505,
+            "anomalous_abs_mean": 0.01944005928541485,
+            "clean_predictions_sha256": "2510635570f8b22632b116f96b30b619f1550f9f1ec5ac7add810d248aea970b",
+            "perturbed_predictions_sha256": "3b27c3c4d51384e9dc601b6aa056886af8e4146357211b0898fcc09c80316899"
+          },
+          {
+            "category": "grid",
+            "seed": 2,
+            "normal_mean": 0.007929945133981252,
+            "normal_abs_mean": 0.010684601323945182,
+            "anomalous_mean": -0.00856712601686779,
+            "anomalous_abs_mean": 0.016371660117517436,
+            "clean_predictions_sha256": "efb0ceab35d78faf4836be7a63438eaad8db71594475829a0775e3123e2fee4f",
+            "perturbed_predictions_sha256": "5e61eff03ee3a101f64c2740bd899762426743ebc97b1945cf7953ec99ae51da"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 0,
+            "normal_mean": -0.002841631099581722,
+            "normal_abs_mean": 0.007561097368597984,
+            "anomalous_mean": -0.0018590728725705798,
+            "anomalous_abs_mean": 0.00942245747361864,
+            "clean_predictions_sha256": "88462ce95d6bf026395c13d02326f3418e3058cd1c70a74b4e99d53e8cb8cfa7",
+            "perturbed_predictions_sha256": "b33a00eb885574fabf4b825ed0fc49fa94441383e5faa924c910538f8e9ff884"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 1,
+            "normal_mean": -0.006424310803413389,
+            "normal_abs_mean": 0.008520538657903667,
+            "anomalous_mean": -0.0017291338954653012,
+            "anomalous_abs_mean": 0.009805132746696473,
+            "clean_predictions_sha256": "75d28af8773a1f6b89465bce7bbc0f2c20ecc0026114a4b279753ba0d0ab10bf",
+            "perturbed_predictions_sha256": "e28ac21cd3a561ddc52d475f5e40db1289052e21a2d7bdf47ba18c6dcf4e271b"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 2,
+            "normal_mean": -0.006501612812280653,
+            "normal_abs_mean": 0.008544383049011228,
+            "anomalous_mean": -0.0034231054782867467,
+            "anomalous_abs_mean": 0.010563076053346913,
+            "clean_predictions_sha256": "5446debef84b76665b2cffc499c5674110a6b24f95230cdaa14437d350d7e58c",
+            "perturbed_predictions_sha256": "9954d55c18694f46fe6e228aff84e3d4fd229c9e9d7d79e1e1c15ac80ff71ad0"
+          },
+          {
+            "category": "leather",
+            "seed": 0,
+            "normal_mean": 0.022571438737213612,
+            "normal_abs_mean": 0.02280656844377518,
+            "anomalous_mean": -0.0012660893409148475,
+            "anomalous_abs_mean": 0.008590077187703998,
+            "clean_predictions_sha256": "31213d2e489b2446c426ea89fcf6cd622c5d05b1afa53809417622b710980ac5",
+            "perturbed_predictions_sha256": "a8b9dbb6dc5d961f1c47d2aee0aa6365551880c1d4ec79416bdbbf0f1e878313"
+          },
+          {
+            "category": "leather",
+            "seed": 1,
+            "normal_mean": 0.013732829317450523,
+            "normal_abs_mean": 0.015330525115132328,
+            "anomalous_mean": -0.0047002276000769295,
+            "anomalous_abs_mean": 0.010211735315944836,
+            "clean_predictions_sha256": "c67ef457f56838f9b56f63b8380f4e03806c8bce53a6b8a5bcdb259acf485a16",
+            "perturbed_predictions_sha256": "512a8fa60ba93efdad9d5a56502b2682955f6a9bca0c2e112d19872f44465899"
+          },
+          {
+            "category": "leather",
+            "seed": 2,
+            "normal_mean": 0.020279895514249798,
+            "normal_abs_mean": 0.020279895514249798,
+            "anomalous_mean": -0.0020297886884730744,
+            "anomalous_abs_mean": 0.009069578414377954,
+            "clean_predictions_sha256": "875d7cac255ba43604b2f6211a8b965ba8c0c2ef11d64a73cc6823288f173974",
+            "perturbed_predictions_sha256": "4df5d8e2da0f4d30f9f3a581390e666992c1a98bd39bde98348972ba0b45aa16"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 0,
+            "normal_mean": 0.0005889326333999603,
+            "normal_abs_mean": 0.006448477777567776,
+            "anomalous_mean": -0.0003272339861880031,
+            "anomalous_abs_mean": 0.009725200745367235,
+            "clean_predictions_sha256": "e3515489dab8cbddbf46fab82f77511f35c44f4846f377586dc49f927086b5e9",
+            "perturbed_predictions_sha256": "29df13d1180d4f6794c3f57f0e24a57b610fff819c5901ccf9d86517cb088ae1"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 1,
+            "normal_mean": -0.0015555629676038583,
+            "normal_abs_mean": 0.006556220894510093,
+            "anomalous_mean": -0.0016651228230486642,
+            "anomalous_abs_mean": 0.009672461818623287,
+            "clean_predictions_sha256": "ac9edf32c587d713ce735c93a986e1e10c49acd8cd9498f76bd49801a2a020db",
+            "perturbed_predictions_sha256": "1267f79f94647d91e2c5e6929dcf10158e449beac953c7b67dfdda5efb58fcfb"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 2,
+            "normal_mean": 0.001395763863216746,
+            "normal_abs_mean": 0.0045308912342244935,
+            "anomalous_mean": -6.1015864854216005e-05,
+            "anomalous_abs_mean": 0.010420094895106488,
+            "clean_predictions_sha256": "2f48867df72c42e44cc66a3bf8379d0a7cee1c477047ec3e8f10b341d2c7ab6a",
+            "perturbed_predictions_sha256": "b6b7d3db6cf5c075547758f423210772fb649d231fa343745503b3966e9b44e4"
+          },
+          {
+            "category": "pill",
+            "seed": 0,
+            "normal_mean": -0.003846993240026323,
+            "normal_abs_mean": 0.008560389853440792,
+            "anomalous_mean": -0.00159739820247001,
+            "anomalous_abs_mean": 0.007933949853511566,
+            "clean_predictions_sha256": "27146a256c1f955c8a940f9678dd1eb1767a9ec9f25aaf7b201911508bd85c6d",
+            "perturbed_predictions_sha256": "f283c97a8c36e8ccf39a331780646bf923e429e3311a632d3cab795a8b978500"
+          },
+          {
+            "category": "pill",
+            "seed": 1,
+            "normal_mean": 0.0010152776653950001,
+            "normal_abs_mean": 0.005696818805657904,
+            "anomalous_mean": 0.0004454296742770675,
+            "anomalous_abs_mean": 0.007502499645483411,
+            "clean_predictions_sha256": "90f0ed9c9a36b0d367bb1e5eed991096476aee306e7566171fff144b1c725735",
+            "perturbed_predictions_sha256": "1727f4b6de2f7cf3e5a7cc617bbab7f314d121a732d3c3cfd3f44c01105e9c19"
+          },
+          {
+            "category": "pill",
+            "seed": 2,
+            "normal_mean": -0.0010049244532218328,
+            "normal_abs_mean": 0.009266470487301169,
+            "anomalous_mean": -0.004680516343590212,
+            "anomalous_abs_mean": 0.008721953017491823,
+            "clean_predictions_sha256": "fc7c485ee2c77300345bb44cd7ebd49e8e8e0b599e2d98c33fc5f579d5605e81",
+            "perturbed_predictions_sha256": "c2c1a4332e9e79c4f5b021f2712296a7a8b393111c5f144682863ecb087d6a8b"
+          },
+          {
+            "category": "screw",
+            "seed": 0,
+            "normal_mean": 0.005469318352094513,
+            "normal_abs_mean": 0.011830224714628083,
+            "anomalous_mean": -0.012249294549477202,
+            "anomalous_abs_mean": 0.01802380415571838,
+            "clean_predictions_sha256": "dfd01cbe1257fd743c3526fa7e9f43aa70708dcefa448fdb25359314dc4a0d93",
+            "perturbed_predictions_sha256": "98d78e0b72f5f3c62784e7c20d058bada7d78d9ab8aff4ca0e2ff57da620d106"
+          },
+          {
+            "category": "screw",
+            "seed": 1,
+            "normal_mean": -0.004271485311229056,
+            "normal_abs_mean": 0.010373232858936958,
+            "anomalous_mean": -0.0172277700500328,
+            "anomalous_abs_mean": 0.019823556136684257,
+            "clean_predictions_sha256": "1759cb9996fa77d1cfdc382da397a1b29353bfb41ba3701bef525d153958fd9c",
+            "perturbed_predictions_sha256": "08c6c984581b4035573406bcb2e9a562ef9c20da67396668626e7c3f6ae1afc1"
+          },
+          {
+            "category": "screw",
+            "seed": 2,
+            "normal_mean": 0.0005184759454029334,
+            "normal_abs_mean": 0.008941707233103311,
+            "anomalous_mean": -0.015773504521666457,
+            "anomalous_abs_mean": 0.01917555908195111,
+            "clean_predictions_sha256": "207b0eded0f7421865e7911eca0dc05601fc905ea1d31c3c8e5420f0a76734ae",
+            "perturbed_predictions_sha256": "53f81be67a6c571499e6d45c0b9eb3f6d70676da51331e8b03288cb216b14e67"
+          },
+          {
+            "category": "tile",
+            "seed": 0,
+            "normal_mean": -0.00680481105139761,
+            "normal_abs_mean": 0.010991890863938767,
+            "anomalous_mean": -0.0057920521568684425,
+            "anomalous_abs_mean": 0.01031439208558628,
+            "clean_predictions_sha256": "0a274d4640aa6e86df9496ab7a5ce2cf47e45a2adf6a9d3b334683445affd677",
+            "perturbed_predictions_sha256": "57d7012e4e45705fb39165529cf997542fa6cdb961746a0b53469eb37344db73"
+          },
+          {
+            "category": "tile",
+            "seed": 1,
+            "normal_mean": -0.00444398441097953,
+            "normal_abs_mean": 0.009498910199512134,
+            "anomalous_mean": -0.006573188837085449,
+            "anomalous_abs_mean": 0.011393380271536958,
+            "clean_predictions_sha256": "2590557f7c1fba584e7352be167bc5a8027445781ea30d957357155ed80e872b",
+            "perturbed_predictions_sha256": "6396fe26298a5810df1ccf17ef7f8ea6e5572d0fd8fe1e7239f396a212129641"
+          },
+          {
+            "category": "tile",
+            "seed": 2,
+            "normal_mean": -0.0027315751169667093,
+            "normal_abs_mean": 0.007060066046136797,
+            "anomalous_mean": -0.005765075413953687,
+            "anomalous_abs_mean": 0.010614466241427829,
+            "clean_predictions_sha256": "ac44aa4caf190e0fc83ea21fa2eaadb7b44c275a97e3005ed5bd3dbb10f03fc9",
+            "perturbed_predictions_sha256": "10fb07bf0741afa2dd607c7266105aeb84bba8637baa6932e60a40bc657fc25c"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 0,
+            "normal_mean": 0.005974928538004559,
+            "normal_abs_mean": 0.009697816769282027,
+            "anomalous_mean": -0.006545787056287129,
+            "anomalous_abs_mean": 0.010193920135498047,
+            "clean_predictions_sha256": "855fe35581837aa4da83f3e5700d3f56192ccfcb5480785f5e3fa92fd955d930",
+            "perturbed_predictions_sha256": "bd0438656bd16420a193497537cd3e102a5d271379ca782dad5405ca9f1cf64e"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 1,
+            "normal_mean": 0.0021284364163875655,
+            "normal_abs_mean": 0.007337802400191625,
+            "anomalous_mean": -0.00882822990417481,
+            "anomalous_abs_mean": 0.010673552751541136,
+            "clean_predictions_sha256": "323a707e155a9d198934059d554bf6ff3dcc8be98f926ccec23ecd6fa96e65d4",
+            "perturbed_predictions_sha256": "a2a47c9d4b373cf6b162dacde71fcb285177d8270f0e7a52d94df1eabdc4e3c8"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 2,
+            "normal_mean": -0.00028569077452023545,
+            "normal_abs_mean": 0.007363883405923847,
+            "anomalous_mean": -0.006374636590480807,
+            "anomalous_abs_mean": 0.009939614236354827,
+            "clean_predictions_sha256": "613b51cb535aa84519125c239022c77e381ea520d989e811f6d5aef91dc7f717",
+            "perturbed_predictions_sha256": "c0ccc4b83b3f6c326d3c9336052d0f8ceef6768374c7003ed09eed7019f1a23f"
+          },
+          {
+            "category": "transistor",
+            "seed": 0,
+            "normal_mean": 0.008775090922911958,
+            "normal_abs_mean": 0.010074000706275302,
+            "anomalous_mean": 0.006811981350183486,
+            "anomalous_abs_mean": 0.012752197086811067,
+            "clean_predictions_sha256": "0513ebd1f7715257bce3d7b868f0b2203212373f19c558a57cca2f9773da52a4",
+            "perturbed_predictions_sha256": "0a0669b4009caec3a22a45e8d11fdb56c4b47bfc46f859a99cf61892c3474994"
+          },
+          {
+            "category": "transistor",
+            "seed": 1,
+            "normal_mean": 0.005820198704799017,
+            "normal_abs_mean": 0.010796932031710942,
+            "anomalous_mean": 0.007154527828097342,
+            "anomalous_abs_mean": 0.012986613437533379,
+            "clean_predictions_sha256": "fea663ef4c92033a88bdc86380b9a441662d423435fe719f272d1843ca83b357",
+            "perturbed_predictions_sha256": "c25e6aef00aa21012e334ef0d83a9941f03dd0900f6fdcc49426dc98037c904a"
+          },
+          {
+            "category": "transistor",
+            "seed": 2,
+            "normal_mean": 0.02326063921054205,
+            "normal_abs_mean": 0.02371794442335765,
+            "anomalous_mean": 0.01489751197397709,
+            "anomalous_abs_mean": 0.01848098538815976,
+            "clean_predictions_sha256": "fb22af2d35e940e228282ce4f85540d5c8f1ef415fac145d3c2f6d7fbd41c373",
+            "perturbed_predictions_sha256": "5ee339778d30482456f9c463225e6d12975c003ef7e6d8c46d4c09f73a6c5daa"
+          },
+          {
+            "category": "wood",
+            "seed": 0,
+            "normal_mean": 0.012886237784435881,
+            "normal_abs_mean": 0.015098160505294807,
+            "anomalous_mean": -0.003197134335835781,
+            "anomalous_abs_mean": 0.01378322134415309,
+            "clean_predictions_sha256": "5dfd4bce66b4442e3b671c78ef7f49d588bb66263a9e155bc4a4ad6d03e8332e",
+            "perturbed_predictions_sha256": "e334afa3d4ee599ffed4ae8f2334ddaa023505be4e319282824615d476d3d8e9"
+          },
+          {
+            "category": "wood",
+            "seed": 1,
+            "normal_mean": 0.019932934798692407,
+            "normal_abs_mean": 0.02276695213819805,
+            "anomalous_mean": -0.002112520734469092,
+            "anomalous_abs_mean": 0.013039183318614965,
+            "clean_predictions_sha256": "6b712add21cbdaa1ff6e91977ea2b7d7f843041e6b795796685d0f2a7583f13e",
+            "perturbed_predictions_sha256": "04eadb08945bdac1fd17252cc5e27bded43253238a5d891b7c728d08eea6857b"
+          },
+          {
+            "category": "wood",
+            "seed": 2,
+            "normal_mean": 0.019406946866135855,
+            "normal_abs_mean": 0.02205174894709337,
+            "anomalous_mean": -0.00018523633480071005,
+            "anomalous_abs_mean": 0.012704981962839762,
+            "clean_predictions_sha256": "86e61a62167e89db7378e88bf278c8e8ea66aab55a12fc2d02d5195b7ff2fdb1",
+            "perturbed_predictions_sha256": "25a9e594a9082b7fbc42782fe632e9b758cf270699106aef761e7367d2f986c4"
+          },
+          {
+            "category": "zipper",
+            "seed": 0,
+            "normal_mean": 0.006744942069053652,
+            "normal_abs_mean": 0.012154168263077737,
+            "anomalous_mean": 0.0012004797448631117,
+            "anomalous_abs_mean": 0.013966661666621681,
+            "clean_predictions_sha256": "d10a992b95777e0870ea52bc4e671ab19abaa94324f3fc4c51a4e548baa45871",
+            "perturbed_predictions_sha256": "442b92670d72a38fd8adff764ae36d910e65413124a0f39bd26e3422895b5095"
+          },
+          {
+            "category": "zipper",
+            "seed": 1,
+            "normal_mean": 0.00772775206714869,
+            "normal_abs_mean": 0.010714738443493846,
+            "anomalous_mean": -0.0009644756297103493,
+            "anomalous_abs_mean": 0.017479750989865855,
+            "clean_predictions_sha256": "10cd72c63e26442ef3ccdbd64ec530762f6556ba1800cac3a9bd41c63d4c1924",
+            "perturbed_predictions_sha256": "c7aaa413be1c24635d8c247106e3f370bf846b9a3a66a7be2ec451c2d30d0124"
+          },
+          {
+            "category": "zipper",
+            "seed": 2,
+            "normal_mean": 0.0022919505834579474,
+            "normal_abs_mean": 0.0069904068484902375,
+            "anomalous_mean": -0.002325463645598465,
+            "anomalous_abs_mean": 0.01488731197950219,
+            "clean_predictions_sha256": "2b1376d19c404cce0eecc81ef99e56ab08312f44090bc6688993f41c0ffb78c1",
+            "perturbed_predictions_sha256": "9c264991c0d119051f69245f69d7c1e2a295ca220d17f8db63582532629d5b32"
+          }
+        ],
+        "macro": {
+          "normal_mean": 0.0046571475520715165,
+          "normal_abs_mean": 0.011387225975744968,
+          "anomalous_mean": -0.0022619112809387663,
+          "anomalous_abs_mean": 0.012727518543859197
+        }
+      },
+      "blur_150": {
+        "runs": [
+          {
+            "category": "bottle",
+            "seed": 0,
+            "normal_mean": 0.013204090446233748,
+            "normal_abs_mean": 0.019029661566019065,
+            "anomalous_mean": -0.006376207111373785,
+            "anomalous_abs_mean": 0.02228860982826779,
+            "clean_predictions_sha256": "ce3bc239592a8fb8c8905cefeff0e3a00bcebf1b6eefbf247f78a31baecc424d",
+            "perturbed_predictions_sha256": "923064b0d53385c11cbe3793daf74c29082c79d5349336c706e2a9e00ee72123"
+          },
+          {
+            "category": "bottle",
+            "seed": 1,
+            "normal_mean": 0.008283703327178957,
+            "normal_abs_mean": 0.012861440777778626,
+            "anomalous_mean": -0.0041799790329403366,
+            "anomalous_abs_mean": 0.02250707177888779,
+            "clean_predictions_sha256": "5ad43997cfe4860084e04d9e95b8e63d3674a6710ed89efb8ffad7c26a9e69f5",
+            "perturbed_predictions_sha256": "7fd6e042092091fc4da1263ec9a7fcf851a45d9008f043f380baa2b008c058d3"
+          },
+          {
+            "category": "bottle",
+            "seed": 2,
+            "normal_mean": 0.018459860533475876,
+            "normal_abs_mean": 0.02560094401240349,
+            "anomalous_mean": -0.0055790739873098965,
+            "anomalous_abs_mean": 0.023278079856009715,
+            "clean_predictions_sha256": "9f58fb25cb65a10a82fe5c41a82bc251ba8326c826af1ad797ff2f15cf825a92",
+            "perturbed_predictions_sha256": "7e4820560615a4314bc048f33b1100d2d4837754c84067a6d8e9da175f713332"
+          },
+          {
+            "category": "cable",
+            "seed": 0,
+            "normal_mean": 0.027430669809209884,
+            "normal_abs_mean": 0.033113138634583046,
+            "anomalous_mean": 0.008901593996130901,
+            "anomalous_abs_mean": 0.023218149918576944,
+            "clean_predictions_sha256": "bea309f2f287fd223f61458226896c465127376ade8510455f59f1f26b65622f",
+            "perturbed_predictions_sha256": "c196b7e26c49f764bbf6800a0eb07f123ffa361dc7b4bf3038dfc0394ae24451"
+          },
+          {
+            "category": "cable",
+            "seed": 1,
+            "normal_mean": 0.034323500713397716,
+            "normal_abs_mean": 0.0366774565700827,
+            "anomalous_mean": 0.012427414500195045,
+            "anomalous_abs_mean": 0.027193333402923917,
+            "clean_predictions_sha256": "656ec428d8ed11be1934d047aba31cb5c31109605420657ab0dded049a9d6a8f",
+            "perturbed_predictions_sha256": "93bc30fe304ca7a7b5c2dd37bf2de46ca7c73ed4dfb4faae370b6d218fb2a5bd"
+          },
+          {
+            "category": "cable",
+            "seed": 2,
+            "normal_mean": 0.015006069684850762,
+            "normal_abs_mean": 0.025662297524254897,
+            "anomalous_mean": 0.008343718038952872,
+            "anomalous_abs_mean": 0.02277429686940234,
+            "clean_predictions_sha256": "d19d0e4c4fdd3613b561361e98cfd7a894e2df706f2e50a21ad0eab9ffb6874d",
+            "perturbed_predictions_sha256": "d2fa96a2fde13c4e6368ade888b88224777eb4ecd6ee3a8d63ab3af0865d1511"
+          },
+          {
+            "category": "capsule",
+            "seed": 0,
+            "normal_mean": 0.015271982939346982,
+            "normal_abs_mean": 0.022674744284671283,
+            "anomalous_mean": -0.01117955153688378,
+            "anomalous_abs_mean": 0.018524061840608577,
+            "clean_predictions_sha256": "7a54b4d16992b186bad918e4f63d7835cb06f976b0800cfa818c6e1af4a1f71d",
+            "perturbed_predictions_sha256": "fa50eb8e124696277cad5d9d8f66c788f8f8c650e095db6bf7ee6e141f5010bc"
+          },
+          {
+            "category": "capsule",
+            "seed": 1,
+            "normal_mean": 0.005065253636111392,
+            "normal_abs_mean": 0.017725533894870592,
+            "anomalous_mean": -0.01850878459597946,
+            "anomalous_abs_mean": 0.027821638496643906,
+            "clean_predictions_sha256": "f2b0ecadf38681967a7dfdf297b2e7e28702918c65861cbf448fe5d6b32c5aa0",
+            "perturbed_predictions_sha256": "0c829996cde0b656751ead1779e289d7facd823e9574deaf841e79d168fde096"
+          },
+          {
+            "category": "capsule",
+            "seed": 2,
+            "normal_mean": 0.010363689194554866,
+            "normal_abs_mean": 0.025295344902121503,
+            "anomalous_mean": -0.01997174199568022,
+            "anomalous_abs_mean": 0.028458740295620143,
+            "clean_predictions_sha256": "b22cc41be69a57f7ee2c7d0a9f1842c49db133cb6c6303aa908ceb33cd8969cf",
+            "perturbed_predictions_sha256": "91bc081f89f97763070b19752520a9321b2cb450eb2ba749d9c574d9b118f2c1"
+          },
+          {
+            "category": "carpet",
+            "seed": 0,
+            "normal_mean": 0.056747584470680776,
+            "normal_abs_mean": 0.0630154726760728,
+            "anomalous_mean": 0.01263974697402354,
+            "anomalous_abs_mean": 0.04533684595247333,
+            "clean_predictions_sha256": "0ce746b562fe10f2b537b55575f2809f10d117c6169da31f4b76d2934fda372c",
+            "perturbed_predictions_sha256": "83f7a7383bed844d5716dfe4bba84822f3637c24b14af31173705560667c7773"
+          },
+          {
+            "category": "carpet",
+            "seed": 1,
+            "normal_mean": 0.059083221533468795,
+            "normal_abs_mean": 0.0638230701642377,
+            "anomalous_mean": 0.00931074977590796,
+            "anomalous_abs_mean": 0.044701622610681516,
+            "clean_predictions_sha256": "565a8c66e58fb774555797b2d710ae093813f0088a6b90fccb6c64942ec399f6",
+            "perturbed_predictions_sha256": "24441ea39163e3aea7836dad547cb282cee5eb3c97b77a90e8e810c92baf8d51"
+          },
+          {
+            "category": "carpet",
+            "seed": 2,
+            "normal_mean": 0.04753260953085763,
+            "normal_abs_mean": 0.05123606941529683,
+            "anomalous_mean": 0.012124927927938742,
+            "anomalous_abs_mean": 0.04883061131734528,
+            "clean_predictions_sha256": "66be742554f02ff753c5f8b1827b9e56e456fb2cd19ea5ddafb0a770e4fd7fd6",
+            "perturbed_predictions_sha256": "12f54e18f3bc385e7680285a1826a20d2694644f0aac887f384dec1fc729752f"
+          },
+          {
+            "category": "grid",
+            "seed": 0,
+            "normal_mean": 0.07382468822456542,
+            "normal_abs_mean": 0.07662624021371206,
+            "anomalous_mean": -0.016672708956818827,
+            "anomalous_abs_mean": 0.031082407058331003,
+            "clean_predictions_sha256": "8c2806dd5db4f8c248203d9d46b5fe9fe21f94481a713cdce388a3ab2d2f76f4",
+            "perturbed_predictions_sha256": "7e1a65c2f867933b0242062734d550501259a7c65c55f608b04c48cdbf086298"
+          },
+          {
+            "category": "grid",
+            "seed": 1,
+            "normal_mean": 0.05561962156068711,
+            "normal_abs_mean": 0.063631990977696,
+            "anomalous_mean": -0.023870845112884263,
+            "anomalous_abs_mean": 0.03369132144409314,
+            "clean_predictions_sha256": "2510635570f8b22632b116f96b30b619f1550f9f1ec5ac7add810d248aea970b",
+            "perturbed_predictions_sha256": "7feca40fef58b2ca16b3b1eb42b657d456a055bb8e8498a9accd8284af9b7c46"
+          },
+          {
+            "category": "grid",
+            "seed": 2,
+            "normal_mean": 0.06460876649334317,
+            "normal_abs_mean": 0.06711596832388923,
+            "anomalous_mean": -0.01589967122203425,
+            "anomalous_abs_mean": 0.030115863262561327,
+            "clean_predictions_sha256": "efb0ceab35d78faf4836be7a63438eaad8db71594475829a0775e3123e2fee4f",
+            "perturbed_predictions_sha256": "4ff9c4a4e26c3230b62ef349444018e5f6cb01dff1ef2c6e0847efd980002894"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 0,
+            "normal_mean": 0.01009255155920982,
+            "normal_abs_mean": 0.017950543016195298,
+            "anomalous_mean": 0.012460252770355769,
+            "anomalous_abs_mean": 0.022724121425833025,
+            "clean_predictions_sha256": "88462ce95d6bf026395c13d02326f3418e3058cd1c70a74b4e99d53e8cb8cfa7",
+            "perturbed_predictions_sha256": "6e0fe8dc5b5e9e567a63ec3054da807810e33658a11f61c49a067fcf69bab24f"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 1,
+            "normal_mean": -0.004038972482085226,
+            "normal_abs_mean": 0.015381218269467353,
+            "anomalous_mean": 0.009297218407903405,
+            "anomalous_abs_mean": 0.021835200360843115,
+            "clean_predictions_sha256": "75d28af8773a1f6b89465bce7bbc0f2c20ecc0026114a4b279753ba0d0ab10bf",
+            "perturbed_predictions_sha256": "8797fa6c08b6c27b6e82913a07574475724869a47e4302c8653cfa7495766518"
+          },
+          {
+            "category": "hazelnut",
+            "seed": 2,
+            "normal_mean": -0.0014698603749275208,
+            "normal_abs_mean": 0.01478076696395874,
+            "anomalous_mean": 0.00880913917507444,
+            "anomalous_abs_mean": 0.024738288479191916,
+            "clean_predictions_sha256": "5446debef84b76665b2cffc499c5674110a6b24f95230cdaa14437d350d7e58c",
+            "perturbed_predictions_sha256": "4db0c5f8379c9774f6cb49951805051835a53664dbd076c7403048c6d5c716ab"
+          },
+          {
+            "category": "leather",
+            "seed": 0,
+            "normal_mean": 0.0651833507232368,
+            "normal_abs_mean": 0.0651833507232368,
+            "anomalous_mean": 0.013209026663199718,
+            "anomalous_abs_mean": 0.020255135453265644,
+            "clean_predictions_sha256": "31213d2e489b2446c426ea89fcf6cd622c5d05b1afa53809417622b710980ac5",
+            "perturbed_predictions_sha256": "03ea6ccceabdce4b71cd1203b5d6230d6a5be50f5b2d8b69795b0b835cdc16c5"
+          },
+          {
+            "category": "leather",
+            "seed": 1,
+            "normal_mean": 0.04820371810346842,
+            "normal_abs_mean": 0.04820371810346842,
+            "anomalous_mean": 0.012242025169341458,
+            "anomalous_abs_mean": 0.023957861992328064,
+            "clean_predictions_sha256": "c67ef457f56838f9b56f63b8380f4e03806c8bce53a6b8a5bcdb259acf485a16",
+            "perturbed_predictions_sha256": "ef85cefc77e56824c78eb2e6d56799f6a4d401bf7b8266edd0a7bd93ee5826d5"
+          },
+          {
+            "category": "leather",
+            "seed": 2,
+            "normal_mean": 0.055068031698465345,
+            "normal_abs_mean": 0.055068031698465345,
+            "anomalous_mean": 0.011111245369133745,
+            "anomalous_abs_mean": 0.019910779562981235,
+            "clean_predictions_sha256": "875d7cac255ba43604b2f6211a8b965ba8c0c2ef11d64a73cc6823288f173974",
+            "perturbed_predictions_sha256": "3d2cd1b946e1115c1d9e8f3f60a3b28f34863a2940bc57652503a255d3acd358"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 0,
+            "normal_mean": 0.04218080233443867,
+            "normal_abs_mean": 0.04795988120815971,
+            "anomalous_mean": -0.0013762077657125283,
+            "anomalous_abs_mean": 0.02050669401563624,
+            "clean_predictions_sha256": "e3515489dab8cbddbf46fab82f77511f35c44f4846f377586dc49f927086b5e9",
+            "perturbed_predictions_sha256": "35f7cdcb1c6e17f4d1fafdd037d493e3d8ca2a1a90ce166e891bce06b1f063e7"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 1,
+            "normal_mean": 0.02370776222510771,
+            "normal_abs_mean": 0.031467604772611096,
+            "anomalous_mean": -0.0027150181672906367,
+            "anomalous_abs_mean": 0.021371512323297478,
+            "clean_predictions_sha256": "ac9edf32c587d713ce735c93a986e1e10c49acd8cd9498f76bd49801a2a020db",
+            "perturbed_predictions_sha256": "48107f116f12cc3754beab1e9ba283a839d30866eeac311ccf4f66db837c496d"
+          },
+          {
+            "category": "metal_nut",
+            "seed": 2,
+            "normal_mean": 0.020408419316465202,
+            "normal_abs_mean": 0.02448593540625139,
+            "anomalous_mean": -0.0021883326832966145,
+            "anomalous_abs_mean": 0.022311541918785337,
+            "clean_predictions_sha256": "2f48867df72c42e44cc66a3bf8379d0a7cee1c477047ec3e8f10b341d2c7ab6a",
+            "perturbed_predictions_sha256": "7583871ce43035d115795347a3c2a3ff532d33d0e8611b170adddd59c7278553"
+          },
+          {
+            "category": "pill",
+            "seed": 0,
+            "normal_mean": -0.004061604692385743,
+            "normal_abs_mean": 0.02068636486163506,
+            "anomalous_mean": -0.0007755500205019713,
+            "anomalous_abs_mean": 0.019127515867246803,
+            "clean_predictions_sha256": "27146a256c1f955c8a940f9678dd1eb1767a9ec9f25aaf7b201911508bd85c6d",
+            "perturbed_predictions_sha256": "0b165fedff2b2f2c9e6d759822be063f6df4075990c3e28167857e5d743ff84a"
+          },
+          {
+            "category": "pill",
+            "seed": 1,
+            "normal_mean": 0.004889898919142204,
+            "normal_abs_mean": 0.012285607938583078,
+            "anomalous_mean": 0.005635765363984075,
+            "anomalous_abs_mean": 0.0182086410886007,
+            "clean_predictions_sha256": "90f0ed9c9a36b0d367bb1e5eed991096476aee306e7566171fff144b1c725735",
+            "perturbed_predictions_sha256": "80488966adb4a942ea7f44aa3167fc62270825122dc3f72955502ed6b167a8d2"
+          },
+          {
+            "category": "pill",
+            "seed": 2,
+            "normal_mean": 0.011772386958965892,
+            "normal_abs_mean": 0.026761678205086632,
+            "anomalous_mean": -0.0014436195928154247,
+            "anomalous_abs_mean": 0.02095003157642716,
+            "clean_predictions_sha256": "fc7c485ee2c77300345bb44cd7ebd49e8e8e0b599e2d98c33fc5f579d5605e81",
+            "perturbed_predictions_sha256": "32c00d4bebc307baff8007e358ae530e9a56c9b6028738322d3ca2a563bd6471"
+          },
+          {
+            "category": "screw",
+            "seed": 0,
+            "normal_mean": 0.017784039058336396,
+            "normal_abs_mean": 0.021884684228315587,
+            "anomalous_mean": -0.013088216851739323,
+            "anomalous_abs_mean": 0.02820182557867355,
+            "clean_predictions_sha256": "dfd01cbe1257fd743c3526fa7e9f43aa70708dcefa448fdb25359314dc4a0d93",
+            "perturbed_predictions_sha256": "588fc9cd4801685785688e74e2b517893c39f8fd79aed74f409c85dd335f0564"
+          },
+          {
+            "category": "screw",
+            "seed": 1,
+            "normal_mean": 0.0020174970714057364,
+            "normal_abs_mean": 0.01658290559198798,
+            "anomalous_mean": -0.018248877079546953,
+            "anomalous_abs_mean": 0.028567520535292747,
+            "clean_predictions_sha256": "1759cb9996fa77d1cfdc382da397a1b29353bfb41ba3701bef525d153958fd9c",
+            "perturbed_predictions_sha256": "3b81cca7fd11f443105ce70496c9eef6a451138142f6950538cf290ccd9df883"
+          },
+          {
+            "category": "screw",
+            "seed": 2,
+            "normal_mean": 0.0032287753209835116,
+            "normal_abs_mean": 0.01203749804961972,
+            "anomalous_mean": -0.023603084558198432,
+            "anomalous_abs_mean": 0.03126512425286429,
+            "clean_predictions_sha256": "207b0eded0f7421865e7911eca0dc05601fc905ea1d31c3c8e5420f0a76734ae",
+            "perturbed_predictions_sha256": "a3fa92206f7a9041040d4b2e685fc016b9e2cc92b14cd3445d66c818bac8e5a5"
+          },
+          {
+            "category": "tile",
+            "seed": 0,
+            "normal_mean": 0.0027321442510142495,
+            "normal_abs_mean": 0.024832431746251653,
+            "anomalous_mean": 0.0007493136539345673,
+            "anomalous_abs_mean": 0.022064212638707385,
+            "clean_predictions_sha256": "0a274d4640aa6e86df9496ab7a5ce2cf47e45a2adf6a9d3b334683445affd677",
+            "perturbed_predictions_sha256": "15cf2c63b08687b317ffdf8d0245fa7ed9baa3869ee254cb6e5d00b1211912fe"
+          },
+          {
+            "category": "tile",
+            "seed": 1,
+            "normal_mean": 0.02090376913547516,
+            "normal_abs_mean": 0.025796432296435037,
+            "anomalous_mean": 0.0023991099425724575,
+            "anomalous_abs_mean": 0.022128337834562573,
+            "clean_predictions_sha256": "2590557f7c1fba584e7352be167bc5a8027445781ea30d957357155ed80e872b",
+            "perturbed_predictions_sha256": "6b5be126b530726f8a4b744e58ac00693ead47df7df1ac0b7ed1272c39ad1f92"
+          },
+          {
+            "category": "tile",
+            "seed": 2,
+            "normal_mean": 0.018839414011348376,
+            "normal_abs_mean": 0.02496441060846502,
+            "anomalous_mean": 0.0013539458669367367,
+            "anomalous_abs_mean": 0.022739714561473747,
+            "clean_predictions_sha256": "ac44aa4caf190e0fc83ea21fa2eaadb7b44c275a97e3005ed5bd3dbb10f03fc9",
+            "perturbed_predictions_sha256": "20dd60e4eab5723413b517c74b0b420422ba8abac91e48a60acec9dd570058fb"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 0,
+            "normal_mean": 0.028516649703184765,
+            "normal_abs_mean": 0.028516649703184765,
+            "anomalous_mean": -0.003785435855388641,
+            "anomalous_abs_mean": 0.01674892157316208,
+            "clean_predictions_sha256": "855fe35581837aa4da83f3e5700d3f56192ccfcb5480785f5e3fa92fd955d930",
+            "perturbed_predictions_sha256": "dace613df1ef1755619c0d454a4ef0520e58fbc2e59a530eeec00e4e32646ec4"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 1,
+            "normal_mean": 0.01021670252084733,
+            "normal_abs_mean": 0.025862163305282595,
+            "anomalous_mean": -0.022221489151318868,
+            "anomalous_abs_mean": 0.026284863551457722,
+            "clean_predictions_sha256": "323a707e155a9d198934059d554bf6ff3dcc8be98f926ccec23ecd6fa96e65d4",
+            "perturbed_predictions_sha256": "a9a610f6137a6df0edd4f82b0be3aa19c41f72f17cd02e1b71d112acc6744474"
+          },
+          {
+            "category": "toothbrush",
+            "seed": 2,
+            "normal_mean": 0.026290493706862123,
+            "normal_abs_mean": 0.027450796961784357,
+            "anomalous_mean": -0.003855316539605467,
+            "anomalous_abs_mean": 0.014087344110012051,
+            "clean_predictions_sha256": "613b51cb535aa84519125c239022c77e381ea520d989e811f6d5aef91dc7f717",
+            "perturbed_predictions_sha256": "3f08a801978bbb6cb107d261f2161ce38f3b7cf32d9f9b475715042d7a38a542"
+          },
+          {
+            "category": "transistor",
+            "seed": 0,
+            "normal_mean": 0.055083307673533755,
+            "normal_abs_mean": 0.055083307673533755,
+            "anomalous_mean": 0.012898886427283287,
+            "anomalous_abs_mean": 0.025246894583106035,
+            "clean_predictions_sha256": "0513ebd1f7715257bce3d7b868f0b2203212373f19c558a57cca2f9773da52a4",
+            "perturbed_predictions_sha256": "ae313e828c5b3832f2c412b0158f9e4709851d095d0de5354a8c2dd031aa312e"
+          },
+          {
+            "category": "transistor",
+            "seed": 1,
+            "normal_mean": 0.05620371709267298,
+            "normal_abs_mean": 0.05665280659993489,
+            "anomalous_mean": 0.016796631515026087,
+            "anomalous_abs_mean": 0.027990165799856182,
+            "clean_predictions_sha256": "fea663ef4c92033a88bdc86380b9a441662d423435fe719f272d1843ca83b357",
+            "perturbed_predictions_sha256": "04f859453c34e1644a2597799a8b13437aa8cdf3570dd9034365fd466ab495b6"
+          },
+          {
+            "category": "transistor",
+            "seed": 2,
+            "normal_mean": 0.12286123166481654,
+            "normal_abs_mean": 0.12286123166481654,
+            "anomalous_mean": 0.053121764436364176,
+            "anomalous_abs_mean": 0.05754088751971721,
+            "clean_predictions_sha256": "fb22af2d35e940e228282ce4f85540d5c8f1ef415fac145d3c2f6d7fbd41c373",
+            "perturbed_predictions_sha256": "143717ed1ca85da49e305e28d5359503bc3506acb3b1ebcd4579b78c96c515eb"
+          },
+          {
+            "category": "wood",
+            "seed": 0,
+            "normal_mean": 0.03577182183140203,
+            "normal_abs_mean": 0.03577182183140203,
+            "anomalous_mean": -0.003065853565931324,
+            "anomalous_abs_mean": 0.023542642444372177,
+            "clean_predictions_sha256": "5dfd4bce66b4442e3b671c78ef7f49d588bb66263a9e155bc4a4ad6d03e8332e",
+            "perturbed_predictions_sha256": "edfad84390114e3ee02188de4171faeed876d0cca46ce08aa1bc4cfca88a5933"
+          },
+          {
+            "category": "wood",
+            "seed": 1,
+            "normal_mean": 0.04455785782713639,
+            "normal_abs_mean": 0.04756468158019216,
+            "anomalous_mean": -0.0030320636431376115,
+            "anomalous_abs_mean": 0.023962300121784203,
+            "clean_predictions_sha256": "6b712add21cbdaa1ff6e91977ea2b7d7f843041e6b795796685d0f2a7583f13e",
+            "perturbed_predictions_sha256": "22cb15d24fc02d00b1fe4917e1313f83f6f95a17e12c4ff38e61d6b5c54a26de"
+          },
+          {
+            "category": "wood",
+            "seed": 2,
+            "normal_mean": 0.03953204280451725,
+            "normal_abs_mean": 0.04168032031310232,
+            "anomalous_mean": 0.001340336302916211,
+            "anomalous_abs_mean": 0.02315187533696493,
+            "clean_predictions_sha256": "86e61a62167e89db7378e88bf278c8e8ea66aab55a12fc2d02d5195b7ff2fdb1",
+            "perturbed_predictions_sha256": "87cb0a8a02e9d9db58823a6ed7a7ea7f58c26a9acbb6ccc5b649b0c338da8a37"
+          },
+          {
+            "category": "zipper",
+            "seed": 0,
+            "normal_mean": 0.014227254036813975,
+            "normal_abs_mean": 0.019856661651283504,
+            "anomalous_mean": -0.0077064310302253506,
+            "anomalous_abs_mean": 0.028869576113564624,
+            "clean_predictions_sha256": "d10a992b95777e0870ea52bc4e671ab19abaa94324f3fc4c51a4e548baa45871",
+            "perturbed_predictions_sha256": "0db1b680c004d9e41ba32b6c45bc9e0c6e56e4d9495852d0f23ab61d9fc012ca"
+          },
+          {
+            "category": "zipper",
+            "seed": 1,
+            "normal_mean": 0.02099211374297738,
+            "normal_abs_mean": 0.022685220371931793,
+            "anomalous_mean": -0.009433983529315272,
+            "anomalous_abs_mean": 0.031592666276362764,
+            "clean_predictions_sha256": "10cd72c63e26442ef3ccdbd64ec530762f6556ba1800cac3a9bd41c63d4c1924",
+            "perturbed_predictions_sha256": "03345b4812217e17422a5a70fe51ec868cbdc334f1846a40d795d66a78edd1d0"
+          },
+          {
+            "category": "zipper",
+            "seed": 2,
+            "normal_mean": 0.01485426602885127,
+            "normal_abs_mean": 0.020022069942206143,
+            "anomalous_mean": -0.014324077262597922,
+            "anomalous_abs_mean": 0.030084600343423733,
+            "clean_predictions_sha256": "2b1376d19c404cce0eecc81ef99e56ab08312f44090bc6688993f41c0ffb78c1",
+            "perturbed_predictions_sha256": "e3d846faaf6343f785a5df37d901e39031cb0858e1da335fd7af909c347a5cfb"
+          }
+        ],
+        "macro": {
+          "normal_mean": 0.02914166430820542,
+          "normal_abs_mean": 0.03587578153832308,
+          "anomalous_mean": -0.0006206513015855992,
+          "anomalous_abs_mean": 0.02643976558160492
+        }
+      }
+    },
+    "extremes": {
+      "bottle/1": [
+        -0.12416638433933264,
+        0,
+        "broken_small/009.png",
+        0.5134912610054017,
+        0.389324876666069
+      ],
+      "bottle/0": [
+        0.07452446818351746,
+        2,
+        "good/011.png",
+        0.1721346288919449,
+        0.24665909707546235
+      ],
+      "cable/1": [
+        -0.15705755949020384,
+        2,
+        "poke_insulation/003.png",
+        0.6017708003520965,
+        0.4447132408618927
+      ],
+      "cable/0": [
+        0.1059593468904495,
+        0,
+        "good/051.png",
+        0.27648450434207916,
+        0.38244385123252866
+      ],
+      "capsule/1": [
+        -0.12814900279045105,
+        1,
+        "scratch/007.png",
+        0.5317584484815597,
+        0.4036094456911087
+      ],
+      "capsule/0": [
+        0.0761663794517517,
+        2,
+        "good/012.png",
+        0.3158564388751984,
+        0.3920228183269501
+      ],
+      "carpet/1": [
+        -0.1424191504716873,
+        2,
+        "metal_contamination/011.png",
+        0.5717054426670074,
+        0.4292862921953201
+      ],
+      "carpet/0": [
+        0.1072018802165985,
+        1,
+        "good/011.png",
+        0.1030785471200943,
+        0.2102804273366928
+      ],
+      "grid/1": [
+        -0.10018059909343724,
+        1,
+        "thread/002.png",
+        0.5124831438064575,
+        0.4123025447130203
+      ],
+      "grid/0": [
+        0.16754855513572695,
+        2,
+        "good/002.png",
+        0.18306673169136048,
+        0.3506152868270874
+      ],
+      "hazelnut/1": [
+        -0.07454846799373627,
+        2,
+        "print/007.png",
+        0.5051864445209503,
+        0.43063797652721403
+      ],
+      "hazelnut/0": [
+        0.05885496139526364,
+        0,
+        "good/007.png",
+        0.21799707114696504,
+        0.2768520325422287
+      ],
+      "leather/1": [
+        -0.06520531475543967,
+        1,
+        "cut/012.png",
+        0.5795163929462432,
+        0.5143110781908036
+      ],
+      "leather/0": [
+        0.11453043222427367,
+        0,
+        "good/027.png",
+        0.22280528843402864,
+        0.3373357206583023
+      ],
+      "metal_nut/1": [
+        -0.12762683928012852,
+        0,
+        "scratch/022.png",
+        0.47543988525867464,
+        0.3478130459785461
+      ],
+      "metal_nut/0": [
+        0.20960782766342162,
+        0,
+        "good/001.png",
+        0.14770786762237548,
+        0.3573156952857971
+      ],
+      "pill/1": [
+        -0.0743561565876007,
+        2,
+        "crack/019.png",
+        0.44524256587028505,
+        0.37088640928268435
+      ],
+      "pill/0": [
+        0.0923716634511948,
+        2,
+        "good/025.png",
+        0.16821046471595763,
+        0.2605821281671524
+      ],
+      "screw/0": [
+        0.0597318559885025,
+        0,
+        "good/007.png",
+        0.1346131145954132,
+        0.1943449705839157
+      ],
+      "screw/1": [
+        -0.1323530852794647,
+        2,
+        "thread_side/022.png",
+        0.3517759144306183,
+        0.21942282915115358
+      ],
+      "tile/1": [
+        -0.08294533491134642,
+        2,
+        "rough/011.png",
+        0.5384787917137146,
+        0.4555334568023682
+      ],
+      "tile/0": [
+        0.11010122001171113,
+        1,
+        "good/022.png",
+        0.14161130785942078,
+        0.2517125278711319
+      ],
+      "toothbrush/1": [
+        -0.08198710978031154,
+        1,
+        "defective/006.png",
+        0.4428888916969299,
+        0.36090178191661837
+      ],
+      "toothbrush/0": [
+        0.06851185262203213,
+        2,
+        "good/009.png",
+        0.2877239525318146,
+        0.35623580515384673
+      ],
+      "transistor/1": [
+        -0.08382984399795529,
+        0,
+        "misplaced/000.png",
+        0.41652574241161344,
+        0.33269589841365815
+      ],
+      "transistor/0": [
+        0.2268026292324066,
+        2,
+        "good/046.png",
+        0.21956307590007781,
+        0.4463657051324844
+      ],
+      "wood/1": [
+        -0.170315831899643,
+        1,
+        "liquid/006.png",
+        0.5669716477394104,
+        0.39665581583976744
+      ],
+      "wood/0": [
+        0.09048410654067995,
+        2,
+        "good/001.png",
+        0.2569078952074051,
+        0.34739200174808504
+      ],
+      "zipper/1": [
+        -0.15614667534828186,
+        2,
+        "fabric_interior/001.png",
+        0.5298787444829941,
+        0.37373206913471224
+      ],
+      "zipper/0": [
+        0.07390192449092867,
+        2,
+        "good/026.png",
+        0.19205469787120819,
+        0.26595662236213685
+      ]
+    },
+    "identity": {
+      "experiment": "lighting_blur",
+      "protocol": "ADINO-MVTEC-P01",
+      "status": "INFERENCE_COMPLETED",
+      "category": "bottle",
+      "seed": 0,
+      "shots": 1,
+      "resolution": 448,
+      "model": "dinov2_vits14",
+      "preprocessing": "agnostic",
+      "rotation": true,
+      "masking": false,
+      "mask_ref_images": false,
+      "knn_metric": "L2_normalized",
+      "knn_neighbors": 1,
+      "faiss_on_cpu": true,
+      "reference": "bottle/train/good/000.png",
+      "reference_sha256": "8a25eb07475a5102f4823fefd82662dd65f8f2a0a333bf958124ceeee38f0e38",
+      "checkpoint_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+      "dinov2_source_fingerprint": "fabaa1cb43240673152198284e8cf911268e7d3a0b2214ede94527774e15f5dc",
+      "upstream_commit": "b9d1c2648e3a5247437d4d953d907a8f3d994457",
+      "thesis_commit": "0e6d2749a0de617ba0685f987ce2a5c0546dfa79",
+      "runner_sha256": "acf7fcdfcdd4c215dc66befb6ad937b26bc51edd8382c88fc74cfc91b31154b5",
+      "python_version": "3.11.13",
+      "torch_version": "2.5.1+cu121",
+      "gpu": "NVIDIA A100-PCIE-40GB",
+      "hostname": "n-62-12-19",
+      "lsf_job_id": "30356597",
+      "completed_utc": "2026-11-24T15:28:53.434984+00:00",
+      "test_images": 83,
+      "normal_images": 20,
+      "anomalous_images": 63,
+      "npy_maps": 83,
+      "tiff_maps": 0,
+      "image_auroc": 0.9984126984126984,
+      "memory_bank_seconds": 9.96776008605957,
+      "pixel_metrics": "PENDING_CPU_EVALUATION",
+      "condition": "original",
+      "transform_sha256": "97eb472f95471dccb005f80095969b1f914d99d570caefed3226ff37b38e8e34",
+      "identity_check": "passed",
+      "max_score_error": 0.0,
+      "maps_compared": 83,
+      "baseline_record_sha256": "9f9542592b49721633e463429bc011a4d6e297b6a94280c6a7407ffa5a102b10"
+    }
+  },
+  "overleaf_source_and_figure_hashes": {
+    "Backmatter/Appendix.tex": "5b9910df6a5942c50b7f8830fc93fb3f8cecc46b70d50feceac25067f63f031f",
+    "Backmatter/unified_10_bottle_paired_scores.pdf": "4f5d04e784f1973a8ee44584b13efb423e3dd308b273d28dac6de4296d0ca515",
+    "Backmatter/unified_09_selected_blur_cases.pdf": "ca9be16e83a74d992d64eeb9b0e9889ea795339c9954b6e0339517a5432162f1",
+    "Backmatter/unified_08_robustness_macro_change.pdf": "9ba5f79f979fd9b4803bb18a63c7dcb172c202ed387f1967c5c03c9c104ddec8",
+    "Backmatter/unified_07_baseline_category_comparison.pdf": "baca7d0e77b0ac128927460b781458ac403335f6c3d0acbca8cfa61870007c61",
+    "Backmatter/unified_05_threshold_calibration.pdf": "97ded20fb336fcbf06240d01bb3aed6cd74755a57732127c52848598bd2668bc",
+    "Backmatter/unified_04_strong_blur_category_pixel.pdf": "e8d6c3f1af643126d9ff20c227ff388f6ee6ddb4599ec6224f6c293e2d0e0286",
+    "Backmatter/unified_03_strong_blur_category_image.pdf": "918655c929365678889b817114c94a4ef2fc6814854ba70f63568d0226dbdaab",
+    "Backmatter/unified_02_ablation_pixel_aupro.pdf": "fe103d7d9dbf1c94a6385a7ba26abb628f29b192ca5388651f410b30c18aa0cb",
+    "Backmatter/unified_01_ablation_image_auroc.pdf": "a1bef1b714877e267a34e2ef94f69587d04f0fe6582f0febe80453c9cdd84be2",
+    "main.tex": "5ba5f626d8e6e5c10eddf36e6d248fd013dc8285f44ddf324c358b20003332e3",
+    "bibliography.bib": "4a2d7932e8353d8290b1fe25dc2fbbb2afadd3d80bb23d28ca1615fbdcb1a514",
+    "Setup/Statics.tex": "18ee13c32b2f837a75b130c643b96683bca153dbcda759cdf50b9ee725342014",
+    "Setup/Settings.tex": "f646f71878ce7dc55d42267918fac134fe35a8f29a7ee0d35e8f1d2eed15e7d6",
+    "Setup/Preamble.tex": "1822eee9fd1a3750f6dd3d74b1dca528fbf02bce141340127ddf7fe068be7f90",
+    "Frontmatter/Frontpage.tex": "27da18a0f077c9be40f8804a03106d9d362715c2120ca38960ac47c061fa8d7b",
+    "Frontmatter/Copyright.tex": "2afb2a515768d11269d54f7174d4a2d80b38cc442ca801ee9074988e146b028c",
+    "Frontmatter/Approval.tex": "eeeb30218add5f13d5ae4aca06b4d21481ef67828f66115d84e6c369ab460f07",
+    "Frontmatter/Acknowledgements.tex": "73742f6b0b78d9d1484099b95d9f45212ea9ceade7c9a441773a3847816c5176",
+    "Frontmatter/Abstract.tex": "31174317409ad498b913925a66a45db8c7b64bc4ad7d370c7c851f369d3cf888",
+    "Chapters/10_Conclusion.tex": "d9bfe644e7454a8f4020f2d9fa256ef27518961719b7e8f8bf100c067a0455d5",
+    "Chapters/09_Results_and_Discussion.tex": "f28fa85503bea1ecbad1409754772308f83cf326e6e6b0f79c96dd04233b7c16",
+    "Chapters/08_Proposed_Improvement.tex": "e2e931838801ad41420d7e9d389c615365d1446f02f701be84ac0b3f62dc20d6",
+    "Chapters/07_Robustness_Analysis.tex": "b3150330fc340f975c65f6cd3ba5a20755c1a384a7004c79e8209f51300b8057",
+    "Chapters/06_Baseline_Reproduction.tex": "64972347e9327b47c5cbff8cea553c2db259c6dacdba62e56237c1ccc0747bc2",
+    "Chapters/05_Experimental_Setup.tex": "148a975bd315bea57f90f4187ecca04cf3302532135c6a2ca8582eaa5dfd8fd1",
+    "Chapters/04_Methodology.tex": "2bf4cc72d4f5da95d5a52c20def68da37480240a305f84e543cf948f00f17c7c",
+    "Chapters/03_Related_Work.tex": "06e5d85728b65bcc1eea653278da75bc3392860fe90531b2e289a5e921b8d373",
+    "Chapters/02_Theoretical_Background.tex": "4ce6166d2dfd73e1a2dc7a5755d3f18138d28eb580858c35ae78d84d99f5dfc4",
+    "Chapters/01_Introduction.tex": "75d54cab9b812ba8a33b2a2d7e6e0119acdddbefabaefee7f8ca42ea00676507",
+    "Backmatter/Backpage.tex": "12f7f1fcb77ddf940567a43cb368d4463bfe6d300b6c1ed2230bdac5c7478940"
+  },
+  "overleaf_compile": {
+    "compile": "Recompile",
+    "pages": 53,
+    "logs": [
+      "All logs17",
+      "Errors0",
+      "Warnings0",
+      "Info17"
+    ]
+  },
+  "revised_source_files": [
+    "Chapters/01_Introduction.tex",
+    "Chapters/02_Theoretical_Background.tex",
+    "Chapters/03_Related_Work.tex",
+    "Chapters/09_Results_and_Discussion.tex",
+    "Backmatter/Appendix.tex"
+  ],
+  "revision_scope": "Clarify retrospective frozen-threshold calibration, actual finite-F1 and AUPRO integration conventions, published PRO terminology, category-specific extreme-case selection, and verified reproducibility scope. All measured table rows, equations, figure references, labels and citations unchanged.",
+  "method_checks": [
+    "Pinned upstream encoder preprocessing and masking policy",
+    "Normalized squared L2 divided by two",
+    "Top-1% patch score with floor/minimum one",
+    "Original-resolution bilinear and sigma-4 Gaussian map reconstruction",
+    "Pillow GaussianBlur and NumPy ties-to-even brightness rounding",
+    "Fixed-size per-rotation sampling and matched test features",
+    "39th-of-40 frozen normal threshold and strict greater-than test decision",
+    "Sklearn image AP and AUROC; finite F1 maximization; trapezoidal normalized AUPRO"
+  ],
+  "limitations": [
+    "Read-only archive verification; no new model inference or full GPU replay",
+    "The literature numerical comparison was checked against the two uploaded original papers; other literature references were not independently revalidated in this audit",
+    "Full visual and bibliographic final review remains separate"
+  ]
+}
