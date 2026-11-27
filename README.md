@@ -32,11 +32,11 @@ Each reference-selection run uses one original normal training image per categor
 
 **Evaluation:** MVTec AD, all 15 categories, 3 deterministic reference choices per category, 45 clean runs. Each run uses one normal reference, frozen DINOv2 ViT-S/14 and 448-pixel short-edge resizing. Metrics are averaged across the three reference choices and then across the 15 categories with equal weight. Pixel AUPRO is evaluated up to a pixel false-positive rate of 0.30. F1-max uses the best threshold for the evaluated scores; it is not a calibrated operating-point metric.
 
-[Baseline metrics](reports/baseline_reproduction/summary.json) · [Category-level image AUROC](reports/baseline_reproduction/figures/image_auroc.svg) · [Pixel F1-max](reports/baseline_reproduction/figures/pixel_f1max.svg) · [Provenance](reports/baseline_reproduction/provenance.json)
+[Baseline metrics](reports/baseline_reproduction/summary.json) · [Unified baseline category figure](reports/publication_assets/figures/07_baseline_category_comparison.pdf) · [Category-level image AUROC](reports/baseline_reproduction/figures/image_auroc.svg) · [Pixel F1-max](reports/baseline_reproduction/figures/pixel_f1max.svg) · [Provenance](reports/baseline_reproduction/provenance.json)
 
 ### Robustness under lighting changes and blur
 
-![Measured changes in image AUROC and pixel AUPRO](assets/robustness_results.svg)
+![Measured changes in image AUROC and pixel AUPRO](reports/publication_assets/figures/08_robustness_macro_change.png)
 
 All 180 perturbed evaluations were completed with the same test images and reference identities as the clean baseline. The strongest blur (Pillow radius 1.50 pixels at the resized input scale) decreased image AUROC by **3.08 percentage points** and pixel AUPRO by **1.53 percentage points**. The tested brightness reductions produced much smaller aggregate changes. These are controlled synthetic perturbations, not a validation on factory production lines.
 
