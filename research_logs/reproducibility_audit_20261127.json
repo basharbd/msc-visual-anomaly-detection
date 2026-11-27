@@ -1,0 +1,138 @@
+{
+  "checked_revision": "8510524afb8d52c0933d36c6c31cda26efaa3951",
+  "python": "3.11.14",
+  "platform": "macOS-15.8.3-x86_64-i386-64bit",
+  "environment": {
+    "numpy": "1.26.0",
+    "pandas": "2.2.3",
+    "matplotlib": "3.9.2",
+    "scikit-learn": "1.5.2",
+    "pillow": "12.3.0",
+    "Jinja2": "3.1.6",
+    "jupyter": "1.1.1",
+    "scipy": "1.14.1",
+    "opencv-python-headless": "4.11.0.86",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.4.0"
+  },
+  "checksums_verified": 58,
+  "notebooks": {
+    "02": {
+      "executed_code_cells": 6,
+      "expected_figures": [
+        "07_baseline_category_comparison.png"
+      ],
+      "matching_png_previews": [
+        "07_baseline_category_comparison.png"
+      ],
+      "archive_panel_skipped": false
+    },
+    "03": {
+      "executed_code_cells": 3,
+      "expected_figures": [
+        "08_robustness_macro_change.png"
+      ],
+      "matching_png_previews": [
+        "08_robustness_macro_change.png"
+      ],
+      "archive_panel_skipped": false
+    },
+    "04": {
+      "executed_code_cells": 4,
+      "expected_figures": [
+        "01_ablation_image_auroc.png",
+        "02_ablation_pixel_aupro.png",
+        "03_strong_blur_category_image.png",
+        "04_strong_blur_category_pixel.png",
+        "06_reference_sensitivity.png"
+      ],
+      "matching_png_previews": [
+        "01_ablation_image_auroc.png",
+        "02_ablation_pixel_aupro.png",
+        "03_strong_blur_category_image.png",
+        "04_strong_blur_category_pixel.png",
+        "06_reference_sensitivity.png"
+      ],
+      "archive_panel_skipped": false
+    },
+    "05_no_archive": {
+      "executed_code_cells": 7,
+      "expected_figures": [
+        "05_threshold_calibration.png",
+        "06_reference_sensitivity.png",
+        "10_bottle_paired_scores.png"
+      ],
+      "matching_png_previews": [
+        "05_threshold_calibration.png",
+        "06_reference_sensitivity.png",
+        "10_bottle_paired_scores.png"
+      ],
+      "archive_panel_skipped": true
+    },
+    "05_with_archive": {
+      "executed_code_cells": 7,
+      "expected_figures": [
+        "05_threshold_calibration.png",
+        "06_reference_sensitivity.png",
+        "10_bottle_paired_scores.png",
+        "09_selected_blur_cases.png"
+      ],
+      "matching_png_previews": [
+        "05_threshold_calibration.png",
+        "06_reference_sensitivity.png",
+        "09_selected_blur_cases.png",
+        "10_bottle_paired_scores.png"
+      ],
+      "archive_panel_skipped": false
+    }
+  },
+  "standard_cli_csv_byte_identical": 5,
+  "standard_cli_tex_byte_identical": 5,
+  "standard_cli_figures": 8,
+  "standard_cli_pdf_hash_matches": 8,
+  "standard_cli_png_hash_matches": 8,
+  "archive_measurements_and_provenance_byte_identical": true,
+  "notebook_01": "Schema checked; full official dataset is not present in the independent local CPU clone.",
+  "previous_live_overleaf_hashes_verified_against_clone": 9,
+  "public_cli_dry_runs_passed": 10,
+  "historical_commits_verified": [
+    "561c1674bd1f75be5a78f988b6b4dc63223a8df6",
+    "a9f4320704946256c66a3d640c52f48236f8f650",
+    "f11d108c7446969bfab3407a49d09e55e1fafd7f",
+    "68a9961f54d31500fce93b16fce737a898299ceb",
+    "05d2c08243bf059698238e6df12a1cb80a918802",
+    "cd056cb32ca8d75a671592852ef2987cc84a3c39",
+    "d66cb70c39100cdb7f921d7cc76aaeac711ca360",
+    "5215309058593a05327eb0685db151656c0b555c"
+  ],
+  "historical_baseline_source_hashes": {
+    "protocols/adino_mvtec_1shot_448_references.json": {
+      "commit": "561c1674bd1f75be5a78f988b6b4dc63223a8df6",
+      "sha256": "f96909d3797b6578f55d55f426f28fa54d41189f9fd3d64c1dfb501d048cc382"
+    },
+    "protocols/exp003_remaining_runs.tsv": {
+      "commit": "561c1674bd1f75be5a78f988b6b4dc63223a8df6",
+      "sha256": "93afb6a11935f93ea0d7d84aa3ddea08c8a4411160127b7b2a922d4147a428db"
+    },
+    "scripts/exp003_full_baseline.py": {
+      "commit": "561c1674bd1f75be5a78f988b6b4dc63223a8df6",
+      "sha256": "edbda029f55f44984f3fe2c0a10a1f325f25c18f41fdcd32acd55b6bdea82ef2"
+    },
+    "scripts/exp003_eval_category.py": {
+      "commit": "561c1674bd1f75be5a78f988b6b4dc63223a8df6",
+      "sha256": "451120634b3659652cf1aabb9ff3ced2321bf34c5a6f2194e57c265d4910548d"
+    },
+    "jobs/exp003_gpu_array.lsf": {
+      "commit": "561c1674bd1f75be5a78f988b6b4dc63223a8df6",
+      "sha256": "8599217905de3801e291ddfe66452e2a56043026bab3e36ae12582228fe3c939"
+    },
+    "jobs/exp003_cpu_array.lsf": {
+      "commit": "68a9961f54d31500fce93b16fce737a898299ceb",
+      "sha256": "775b73471e3836882e7f98bb63c209c6ec961b630d07ab55ba5cc0c5a1a9b286"
+    }
+  },
+  "upstream_commit": "b9d1c2648e3a5247437d4d953d907a8f3d994457",
+  "new_gpu_inference_runs": 0,
+  "scope": "Fresh GitHub checkout, existing verified CPU analysis environment; selective archived inputs retrieved earlier; no new GPU inference or independent full-data replay."
+}
