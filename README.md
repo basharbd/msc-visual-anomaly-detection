@@ -96,11 +96,13 @@ Blur can raise a normal image's anomaly score and lower scores for real defects.
 Five executed notebooks follow the research workflow, and three public Python scripts provide the entry points for experiments, evaluation and visualization. The retained implementation modules and historical commits preserve the original execution record.
 
 ```text
+assets/         README graphics and their generator
 notebooks/      Research workflow and analysis
 scripts/        Three public Python entry points
 implementation/ Retained experiment modules
 protocols/      Experimental settings and reference manifests
-reports/        Numerical results and publication assets
+reports/        Verified numerical results and publication assets
+results/        Archived Bottle smoke-test outputs
 research_logs/  Historical execution and provenance
 configs/        Environment records
 jobs/           HPC job definitions
@@ -120,6 +122,8 @@ third_party/    Pinned upstream AnomalyDINO implementation
 | [run_experiment.py](scripts/run_experiment.py) | Dispatch baseline, robustness, ablation and calibration inference |
 | [evaluate.py](scripts/evaluate.py) | Dispatch evaluation and report aggregation |
 | [visualize.py](scripts/visualize.py) | Regenerate six publication figures and five LaTeX/CSV tables from published data |
+
+The `results/` directory retains the original Bottle smoke-test evidence used by the baseline notebook; `reports/` contains the verified study summaries, per-run metrics and publication assets. Historical jobs and logs are provenance records, not launch instructions for the current checkout.
 
 Supporting folders: [implementation](implementation/), [protocols](protocols/), [HPC jobs](jobs/), [reports](reports/), [research logs](research_logs/), [environment](configs/), and the pinned [AnomalyDINO submodule](third_party/AnomalyDINO).
 
