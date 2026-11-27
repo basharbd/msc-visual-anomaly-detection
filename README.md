@@ -14,6 +14,12 @@ How well can an industrial inspection system detect and localize defects using a
 
 > **Research status (27 November 2026):** The recorded experimental study comprises 45 clean runs, 180 perturbed evaluations, 900 fixed-budget ablation evaluations and 225 frozen-threshold comparisons. The empirical scope is one-shot detection; zero-shot methods are discussed as related work, not evaluated experimentally. The system is a research prototype, not a validated production inspection system.
 
+## Defense presentation
+
+[Open the final 16:9 defense slides (PDF)](presentation/Defense_Presentation.pdf) · [Editable LaTeX Beamer source](presentation/Defense_Presentation.tex)
+
+The deck includes 18 main slides and five backup slides for questions. It uses the same nine experimental figure PDFs as the thesis; the source can be compiled independently from the repository root with `pdflatex presentation/Defense_Presentation.tex`. The presentation is also available in the Overleaf thesis project.
+
 ## Research questions
 
 | Research question | Experimental study |

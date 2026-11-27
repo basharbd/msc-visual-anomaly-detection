@@ -1,0 +1,23 @@
+{
+  "slides": 23,
+  "main_slides": 18,
+  "backup_slides": 5,
+  "aspect_ratio": "16:9",
+  "files": {
+    "Defense_Presentation.tex": "43fe0ebeeb93165133a8933497afbefb18efdba6ddd9c012f491e2016b1acf35",
+    "Defense_Presentation.pdf": "0a15e9cbd1bf6638d7efd3608a5b0483dc6f16d1109dd0e54e6773614aeb8469"
+  },
+  "figure_sha256": {
+    "07_baseline_category_comparison": "baca7d0e77b0ac128927460b781458ac403335f6c3d0acbca8cfa61870007c61",
+    "08_robustness_macro_change": "9ba5f79f979fd9b4803bb18a63c7dcb172c202ed387f1967c5c03c9c104ddec8",
+    "05_threshold_calibration": "97ded20fb336fcbf06240d01bb3aed6cd74755a57732127c52848598bd2668bc",
+    "01_ablation_image_auroc": "a1bef1b714877e267a34e2ef94f69587d04f0fe6582f0febe80453c9cdd84be2",
+    "02_ablation_pixel_aupro": "fe103d7d9dbf1c94a6385a7ba26abb628f29b192ca5388651f410b30c18aa0cb",
+    "03_strong_blur_category_image": "918655c929365678889b817114c94a4ef2fc6814854ba70f63568d0226dbdaab",
+    "04_strong_blur_category_pixel": "e8d6c3f1af643126d9ff20c227ff388f6ee6ddb4599ec6224f6c293e2d0e0286",
+    "09_selected_blur_cases": "ca9be16e83a74d992d64eeb9b0e9889ea795339c9954b6e0339517a5432162f1",
+    "10_bottle_paired_scores": "4f5d04e784f1973a8ee44584b13efb423e3dd308b273d28dac6de4296d0ca515"
+  },
+  "compile": "pdfLaTeX, two successful passes, no overfull boxes or LaTeX warnings",
+  "scope": "Same measured results as final thesis; no new experiments. Original plots embedded without redrawing. MVTec AD image and mask derivatives retain CC BY-NC-SA 4.0 attribution."
+}
