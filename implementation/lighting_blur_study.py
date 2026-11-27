@@ -35,7 +35,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("stage", choices=("infer", "evaluate", "summarize"))
     parser.add_argument("index", type=int, nargs="?")
+    parser.add_argument("--dest", type=Path, help="New directory for summary CSVs")
     args = parser.parse_args()
+    if args.stage == "summarize":
+        if args.dest is None:
+            parser.error("Summarize requires --dest.")
+        if args.dest.exists():
+            parser.error("Choose a new summary directory; destination already exists.")
     baseline = pd.read_csv(CLEAN).sort_values(["category", "seed"])
     manifest = read_record(ROOT / "protocols/adino_mvtec_1shot_448_references.json")
     assert set(zip(baseline.category, baseline.seed)) == {
@@ -74,8 +80,8 @@ def main():
         rows.append(row)
 
     if args.stage == "summarize":
-        dest = ROOT / "reports/lighting_blur"
-        dest.mkdir(exist_ok=True, parents=True)
+        dest = args.dest.resolve()
+        dest.mkdir(exist_ok=False, parents=True)
         runs = pd.DataFrame(rows)
         columns = [m + "_change_pp" for m in METRICS]
         category = runs.groupby(["category", "condition"])[columns].mean()

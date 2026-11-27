@@ -1,6 +1,6 @@
 # Final scientific figures and tables
 
-Verified result package, 27 November 2026. Data source: HPC night run 30402340; final summary job 30404718. All 900 ablation evaluations and 225 threshold comparisons are included. Figures are vector PDF and preview PNG. Tables are generated as CSV and LaTeX (booktabs required). Regenerate with Python, pandas, numpy and matplotlib: python scripts/visualize.py (from the repository root).
+Verified result package, 27 November 2026. Data source: HPC night run 30402340; final summary job 30404718. All 900 ablation evaluations and 225 threshold comparisons are included. Figures are vector PDF and preview PNG. Tables are generated as CSV and LaTeX (booktabs required). Regenerate with Python, pandas, NumPy and Matplotlib: python scripts/visualize.py --output outputs/publication_assets (from the repository root). Use an unused destination; the verified files here remain unchanged.
 
 Ablation uses one true normal reference per run, 15 categories, 3 fixed reference choices, 4 banks, 5 image conditions. Each bank contains 8192 patch embeddings. A paired gain compares against rotation-only at the same condition; a robustness gap compares against the same variant on clean images. FPR and FNR use the baseline only and a frozen normal-only threshold. F1-max is threshold-optimized separately, not fixed-threshold performance.
 

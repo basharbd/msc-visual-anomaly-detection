@@ -76,7 +76,7 @@ def summarize(output,dest,smoke=False):
     # Factorial interaction: combined - brightness - blur + rotation-only (percentage points).
     pivot=cat.pivot(index=["category","condition"],columns="variant",values=METRICS)
     interaction=pd.DataFrame({m:100*(pivot[m]["combined"]-pivot[m]["brightness"]-pivot[m]["blur"]+pivot[m]["rotation_only"]) for m in METRICS})
-    dest.mkdir(parents=True,exist_ok=True)
+    dest.mkdir(parents=True,exist_ok=False)
     runs.to_csv(dest/"per_run.csv",index=False)
     cat.to_csv(dest/"per_category.csv",index=False)
     macro.to_csv(dest/"macro.csv",index=False)

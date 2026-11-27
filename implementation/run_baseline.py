@@ -19,7 +19,7 @@ import torch
 from sklearn.metrics import roc_auc_score
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = Path("/work3/s183356/datasets/mvtec_official")
+DATA = Path(os.environ.get("MVTEC_ROOT", "/work3/s183356/datasets/mvtec_official")).expanduser().resolve()
 MANIFEST = ROOT / "protocols/adino_mvtec_1shot_448_references.json"
 UPSTREAM = ROOT / "third_party/AnomalyDINO"
 

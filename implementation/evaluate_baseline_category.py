@@ -1,6 +1,7 @@
 import argparse
 import hashlib
 import json
+import os
 import resource
 import sys
 from tempfile import TemporaryDirectory
@@ -13,8 +14,8 @@ import tifffile
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = Path("/work3/s183356/datasets/mvtec_official")
-WORK_ROOT = Path("/work3/s183356/exp003_eval_workspaces")
+DATA = Path(os.environ.get("MVTEC_ROOT", "/work3/s183356/datasets/mvtec_official")).expanduser().resolve()
+WORK_ROOT = Path(os.environ.get("VAD_EVAL_WORK_ROOT", "/work3/s183356/exp003_eval_workspaces")).expanduser().resolve()
 UPSTREAM = ROOT / "third_party/AnomalyDINO"
 
 sys.path.insert(0, str(UPSTREAM))

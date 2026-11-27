@@ -137,15 +137,17 @@ The checked-in results allow readers to inspect the analysis and regenerate the 
 git clone https://github.com/basharbd/msc-visual-anomaly-detection.git
 cd msc-visual-anomaly-detection
 python -m pip install -r requirements.txt
-python scripts/visualize.py
+python scripts/visualize.py --output outputs/publication_assets
 jupyter notebook
 ```
+
+The visualization command writes to a new directory, without overwriting the checked-in reports. Choose another unused output directory for subsequent runs.
 
 The dataset notebook requires a separately obtained official MVTec AD dataset (set `MVTEC_ROOT`); the other four notebooks read the checked-in CSV and JSON results. The numbered notebooks 02–05 were also re-executed successfully in a separate Python 3.11 CPU environment on 27 November 2026 after the documentation and validation-check updates. Notebook 01 was schema-validated but not re-executed in that environment because the official dataset was unavailable; its archived HPC outputs are retained. All five notebooks were executed and validated on DTU HPC after restructuring. The generated numerical tables matched the verified originals byte for byte. The reorganized evaluation CLI also rebuilt all 900 ablation and 225 threshold comparisons from archived HPC records, matching every numerical table within 1e-12.
 
 ### Replay the experiments (GPU/HPC)
 
-For exact historical execution, see the [reproduction guide](REPRODUCIBILITY.md), the [pinned experiment commits](research_logs/night_run_30402340/README.md), the [900-row inference/evaluation hash manifest](research_logs/night_run_30402340/evaluation_manifest.csv), and the [original experiment protocols](protocols/). The full inference workflow uses DTU-specific dataset, CUDA, cache and storage paths. Raw maps and full dataset files remain on HPC. The reorganized entry points have not been independently GPU-replayed; original experimental commits remain authoritative for byte-level provenance.
+For exact historical execution, see the [reproduction guide](REPRODUCIBILITY.md), the [pinned experiment commits](research_logs/night_run_30402340/README.md), the [900-row inference/evaluation hash manifest](research_logs/night_run_30402340/evaluation_manifest.csv), and the [original experiment protocols](protocols/). The full inference workflow uses the recorded DTU CUDA, cache and archive layout. The current public scripts accept an optional dataset root; the recorded DTU path remains the default. Raw maps and full dataset files remain on HPC. The reorganized entry points have not been independently GPU-replayed; original experimental commits remain authoritative for byte-level provenance.
 
 ## References and data use
 
