@@ -20,9 +20,9 @@ This research reproduces **AnomalyDINO** using frozen **DINOv2** features on all
 
 | Research question | Main finding |
 | --- | --- |
-| **RQ1 — Baseline** | 96.52% image AUROC and 91.72% pixel AUPRO on original images. |
-| **RQ2 — Robustness** | Strong blur reduces image AUROC by 3.08 percentage points; baseline false-positive rate rises from 8.32% to 20.34% at frozen thresholds. |
-| **RQ3 — Improvement** | Blur-aware references raise strong-blur image AUROC from 93.44% to **94.98%** at the same 8,192-patch budget. |
+| **RQ1: Baseline** | 96.52% image AUROC and 91.72% pixel AUPRO on original images. |
+| **RQ2: Robustness** | Strong blur reduces image AUROC by 3.08 percentage points; baseline false-positive rate rises from 8.32% to 20.34% at frozen thresholds. |
+| **RQ3: Improvement** | Blur-aware references raise strong-blur image AUROC from 93.44% to **94.98%** at the same 8,192-patch budget. |
 
 <p align="center">
   <img src="reports/publication_assets/figures/01_ablation_image_auroc.png" width="720" alt="Measured image AUROC across the four reference banks and five imaging conditions">
@@ -60,7 +60,7 @@ python scripts/visualize.py --output outputs/publication_assets
 jupyter notebook
 ```
 
-Notebooks 02–05 analyze recorded results on CPU. Dataset exploration and selected anomaly-map reconstruction require external data and archived inputs. Use a fresh output directory for each run. Analysis and archive-backed reconstruction have been verified; the reorganized inference workflow has not been independently replayed on GPU.
+Notebooks 02 to 05 analyze recorded results on CPU. Dataset exploration and selected anomaly-map reconstruction require external data and archived inputs. Use a fresh output directory for each run. Analysis and archive-backed reconstruction have been verified; the reorganized inference workflow has not been independently replayed on GPU.
 
 [Full instructions and verification record](REPRODUCIBILITY.md)
 
