@@ -2,15 +2,27 @@
 
 # Vision Foundation Models for Visual Anomaly Detection
 
-**MSc thesis · Human-Centered Artificial Intelligence · Technical University of Denmark (DTU)**
+*Zero- and Few-Shot Learning for Industrial Inspection*
 
-Can an industrial inspection system recognize defects from only one defect-free reference image? This research investigates pretrained vision features for image-level detection and pixel-level localization, and measures how performance changes under controlled lighting and blur.
+**MSc thesis | Human-Centered Artificial Intelligence | Technical University of Denmark (DTU)**
+
+How well can an industrial inspection system detect and localize defects using a single normal reference image? This thesis reproduces AnomalyDINO with frozen DINOv2 features on MVTec AD, evaluates its sensitivity to digital darkening and Gaussian blur, and tests whether reference augmentation can improve robustness without increasing the number of stored patch embeddings.
 
 **Python · PyTorch · DINOv2 · FAISS · OpenCV · NumPy · DTU HPC / LSF**
 
 [Results](#measured-results) · [Method](#method) · [Failure analysis](#failure-analysis) · [Explore the code](#explore-the-project) · [Reproducibility](#reproducibility)
 
-> **Research status — 27 November 2026:** All planned one-shot experiments are complete and verified: 45 clean runs, 180 perturbed evaluations, 900 fixed-budget ablation evaluations, and 225 frozen-threshold comparisons. The empirical focus is one-shot learning; the proposed narrower thesis scope awaits supervisor approval. No zero-shot result is claimed. This is an exploratory research prototype, not a validated production inspection system.
+> **Research status (27 November 2026):** The recorded experimental study comprises 45 clean runs, 180 perturbed evaluations, 900 fixed-budget ablation evaluations and 225 frozen-threshold comparisons. The empirical scope is one-shot detection; zero-shot methods are discussed as related work, not evaluated experimentally. The system is a research prototype, not a validated production inspection system.
+
+## Research questions
+
+| Research question | Experimental study |
+|---|---|
+| **RQ1.** How effectively does AnomalyDINO detect and localize industrial anomalies in a one-shot setting? | Baseline reproduction |
+| **RQ2.** How do controlled brightness changes and Gaussian blur affect detection, localization and false-alarm rates? | Robustness analysis and normal-only threshold calibration |
+| **RQ3.** Can augmenting the normal reference improve robustness at a fixed patch budget? | Reference augmentation and ablation study |
+
+Each reference-selection run uses one original normal training image per category. Transformed views of that image are not additional independent references.
 
 ## Measured results
 
@@ -18,7 +30,7 @@ Can an industrial inspection system recognize defects from only one defect-free 
 |---|---:|---:|---:|---:|---:|---:|
 | Clean | 96.52% | 98.14% | 95.96% | 96.26% | 57.94% | 91.72% |
 
-**Evaluation:** MVTec AD, all 15 categories, 3 deterministic reference choices per category, 45 clean runs. Each run uses one normal reference, frozen DINOv2 ViT-S/14 and 448-pixel short-edge resizing. Metrics are equal-weight category averages; AUPRO is evaluated up to a false-positive rate of 0.30. F1-max is a best-threshold summary, not a calibrated operating point.
+**Evaluation:** MVTec AD, all 15 categories, 3 deterministic reference choices per category, 45 clean runs. Each run uses one normal reference, frozen DINOv2 ViT-S/14 and 448-pixel short-edge resizing. Metrics are averaged across the three reference choices and then across the 15 categories with equal weight. Pixel AUPRO is evaluated up to a pixel false-positive rate of 0.30. F1-max uses the best threshold for the evaluated scores; it is not a calibrated operating-point metric.
 
 [Baseline metrics](reports/baseline_reproduction/summary.json) · [Category-level image AUROC](reports/baseline_reproduction/figures/image_auroc.svg) · [Pixel F1-max](reports/baseline_reproduction/figures/pixel_f1max.svg) · [Provenance](reports/baseline_reproduction/provenance.json)
 
@@ -34,9 +46,9 @@ All 180 perturbed evaluations were completed with the same test images and refer
 
 ![Anomaly detection pipeline schematic](assets/method_overview.svg)
 
-The baseline reproduces AnomalyDINO (WACV 2025). A frozen DINOv2 encoder extracts dense patch embeddings; a bank of normal reference patches is queried with FAISS nearest-neighbor search. Patch distances yield a spatial anomaly map, while top-patch pooling produces an image score. The controlled robustness experiments perturb only the test input, leaving reference images unchanged.
+AnomalyDINO (WACV 2025) uses a frozen DINOv2 encoder to extract dense patch embeddings from reference and test images. Normal reference embeddings form a memory bank. FAISS finds the nearest normal embedding for each test patch using normalized L2 distance. Patch-level distances form an anomaly map, while pooling the highest-scoring patches produces an image-level anomaly score. No model weights are updated. The robustness experiments transform only test inputs, keeping the normal reference fixed.
 
-The completed candidate study compares four banks: rotation-only, brightness, blur, and combined augmentation. Every bank uses one true normal reference and exactly 8,192 patch embeddings. All variants share test features and masks within matched comparisons.
+The augmentation study builds on the original rotation augmentation in AnomalyDINO. It compares four banks: rotation-only, brightness, blur and combined augmentation. Each bank uses one original normal reference and exactly 8,192 stored patch embeddings. Matched variants share test features and masks. The fixed budget controls the number of stored embeddings, not the complete computational cost.
 
 ### Fixed-budget reference augmentation
 
@@ -49,7 +61,7 @@ The completed candidate study compares four banks: rotation-only, brightness, bl
 | **Blur** | **96.60%** | **94.98%** | **90.35%** |
 | Combined | 96.52% | 94.88% | 90.30% |
 
-Blur augmentation improves strong-blur image AUROC by **1.54 percentage points** and pixel AUPRO by **0.16 pp** at equal bank cardinality. The image-level gain occurs in 13 of 15 categories; Transistor contributes the largest gain (+14.04 pp). Excluding Transistor, the mean gain remains +0.65 pp. Clean AUPRO decreases by 0.10 pp, and some category-level localization effects are negative. The result is exploratory, not independently validated on a held-out benchmark.
+Blur augmentation improves strong-blur image AUROC by **1.54 percentage points** and pixel AUPRO by **0.16 pp** at equal bank cardinality. The image-level gain occurs in 13 of 15 categories; Transistor contributes the largest gain (+14.04 pp). Excluding Transistor, the mean gain remains +0.65 pp. Clean AUPRO decreases by 0.10 pp, and some category-level localization effects are negative. The result is an empirical finding on MVTec AD, not evidence of statistical significance or generalization to another benchmark.
 
 [All 900 evaluations](reports/reference_augmentation/per_run.csv) · [Macro metrics](reports/reference_augmentation/macro.csv) · [Ablation protocol](protocols/reference_augmentation.md) · [All figures and LaTeX tables](reports/publication_assets/)
 
@@ -57,7 +69,7 @@ Blur augmentation improves strong-blur image AUROC by **1.54 percentage points**
 
 ![False-positive and false-negative rates under controlled imaging shifts](reports/publication_assets/figures/05_threshold_calibration.png)
 
-A fixed threshold was calibrated on 40 additional normal training images per category, excluding the three reference images. Across 225 matched condition/reference comparisons, strong blur increased the macro false-positive rate from **8.32% to 20.34% (+12.02 pp)**. This is one-shot reference detection with additional normal calibration data, not strictly one-shot total data usage. Calibration evaluates the original baseline only; it does not establish that augmentation reduces operational false alarms.
+For each reference choice, a threshold was calibrated on 40 additional normal training images per category, excluding all three reference images. The thresholds were frozen before applying them to the archived test scores. Across 225 matched condition/reference comparisons, strong blur increased the macro false-positive rate from **8.32% to 20.34% (+12.02 pp)**. This is one-shot reference detection with additional normal calibration data, not strictly one-shot total data usage. Calibration evaluates the original baseline only; it does not establish that augmentation reduces operational false alarms.
 
 [Threshold results](reports/threshold_calibration/summary.json) · [Calibration protocol](protocols/threshold_calibration.md)
 
@@ -69,7 +81,7 @@ Blur can raise a normal image's anomaly score and lower scores for real defects.
 
 [Selected measured cases](reports/lighting_blur/selected_blur_cases.csv) · [Final audit](reports/final_scientific_analysis/audit.json)
 
-## Engineering skills demonstrated
+## Implementation and research skills
 
 | Capability | Evidence |
 | --- | --- |
@@ -81,7 +93,19 @@ Blur can raise a normal image's anomaly score and lower scores for real defects.
 
 ## Explore the project
 
-Five executed notebooks provide the main research narrative; three public scripts expose the workflow. The original implementation is retained in a separate folder and in the recorded Git history.
+Five executed notebooks follow the research workflow, and three public Python scripts provide the entry points for experiments, evaluation and visualization. The retained implementation modules and historical commits preserve the original execution record.
+
+```text
+notebooks/      Research workflow and analysis
+scripts/        Three public Python entry points
+implementation/ Retained experiment modules
+protocols/      Experimental settings and reference manifests
+reports/        Numerical results and publication assets
+research_logs/  Historical execution and provenance
+configs/        Environment records
+jobs/           HPC job definitions
+third_party/    Pinned upstream AnomalyDINO implementation
+```
 
 | Notebook | What you will find |
 |---|---|
@@ -101,15 +125,21 @@ Supporting folders: [implementation](implementation/), [protocols](protocols/), 
 
 ## Reproducibility
 
-To inspect and regenerate the published analysis without a GPU or a DTU account:
+### Reproduce the reported analysis (CPU)
 
-    git clone https://github.com/basharbd/msc-visual-anomaly-detection.git
-    cd msc-visual-anomaly-detection
-    python -m pip install -r requirements.txt
-    python scripts/visualize.py
-    jupyter notebook
+The checked-in results allow readers to inspect the analysis and regenerate the publication assets without a GPU or DTU account. From a Python environment:
 
-The dataset notebook requires the separately obtained official dataset; the other four notebooks read the published small CSV and JSON files. All five notebooks were executed and validated on DTU HPC after restructuring. The generated numerical tables matched the verified originals byte for byte. The reorganized evaluation CLI also rebuilt all 900 ablation and 225 threshold comparisons from archived HPC records, matching every numerical table within 1e-12.
+```bash
+git clone https://github.com/basharbd/msc-visual-anomaly-detection.git
+cd msc-visual-anomaly-detection
+python -m pip install -r requirements.txt
+python scripts/visualize.py
+jupyter notebook
+```
+
+The dataset notebook requires a separately obtained official MVTec AD dataset (set `MVTEC_ROOT`); the other four notebooks read the checked-in CSV and JSON results. All five notebooks were executed and validated on DTU HPC after restructuring. The generated numerical tables matched the verified originals byte for byte. The reorganized evaluation CLI also rebuilt all 900 ablation and 225 threshold comparisons from archived HPC records, matching every numerical table within 1e-12.
+
+### Replay the experiments (GPU/HPC)
 
 For exact historical execution, see the [reproduction guide](REPRODUCIBILITY.md), the [pinned experiment commits](research_logs/night_run_30402340/README.md), the [900-row inference/evaluation hash manifest](research_logs/night_run_30402340/evaluation_manifest.csv), and the [original experiment protocols](protocols/). The full inference workflow uses DTU-specific dataset, CUDA, cache and storage paths. Raw maps and full dataset files remain on HPC. The reorganized entry points have not been independently GPU-replayed; original experimental commits remain authoritative for byte-level provenance.
 
@@ -119,7 +149,7 @@ For exact historical execution, see the [reproduction guide](REPRODUCIBILITY.md)
 - Oquab et al., *DINOv2: Learning Robust Visual Features without Supervision*. [Paper](https://arxiv.org/abs/2304.07193)
 - Bergmann et al., *MVTec AD — A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection*, CVPR 2019. [Official dataset and terms](https://www.mvtec.com/research-teaching/datasets/mvtec-ad)
 
-MVTec AD data is licensed CC BY-NC-SA 4.0; the benchmark results are academic research and do not establish commercial dataset-use rights. The new portfolio graphics use original schematics and numerical results rather than redistributing dataset images. Upstream code and weights retain their own licenses.
+MVTec AD data is licensed CC BY-NC-SA 4.0; the benchmark results are academic research and do not establish commercial dataset-use rights. The repository graphics use original schematics and numerical results rather than redistributing dataset images. Upstream code and weights retain their own licenses.
 
 ---
 
