@@ -1,5 +1,3 @@
-![Visual anomaly detection for industrial inspection](assets/project_banner.svg)
-
 # Vision Foundation Models for Industrial Anomaly Detection
 
 *Robustness and Reference Augmentation in One-Shot Learning*
@@ -15,6 +13,8 @@ Can an inspection system detect and locate defects using just one normal referen
 This research reproduces **AnomalyDINO** using frozen **DINOv2** features on all 15 categories of **MVTec AD**, studies sensitivity to brightness and Gaussian blur, and evaluates reference augmentation at a fixed memory-bank size.
 
 **Python · PyTorch · DINOv2 · FAISS · OpenCV · DTU HPC**
+
+![Visual anomaly detection for industrial inspection](assets/project_banner.svg)
 
 ## Key results
 
